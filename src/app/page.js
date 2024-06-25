@@ -226,9 +226,11 @@ It is a highly scalable and efficient transformer model trained directly on vide
               <div className="flex items-center gap-4">
                 <WandIcon className="w-10 h-10" />
                 <div>
-                  <CardTitle>Imagen</CardTitle>
+                  <CardTitle>Pictory AI</CardTitle>
                   <CardDescription>
-                    A text-to-image AI model developed by Google that can generate highly realistic images.
+                  Enterprise Teams
+
+Create highly engaging videos in minutes using the power of AI. No video editing experience required. Get Started For Free!
                   </CardDescription>
                 </div>
               </div>
@@ -236,14 +238,14 @@ It is a highly scalable and efficient transformer model trained directly on vide
             <CardContent>
               <div className="grid grid-cols-2 gap-4">
                 <img
-                  src="/placeholder.svg"
+                  src="/pictory.jpg"
                   width={300}
                   height={300}
                   alt="Imagen"
                   className="aspect-square object-cover rounded-md"
                 />
                 <img
-                  src="/placeholder.svg"
+                  src="/pictory.jpg"
                   width={300}
                   height={300}
                   alt="Imagen"

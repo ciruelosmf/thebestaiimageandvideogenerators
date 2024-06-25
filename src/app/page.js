@@ -51,9 +51,9 @@ export default function Component() {
 
       <header className="bg-background/80 backdrop-blur-sm sticky top-0 z-40 border-b border-b-muted">
         <div className="container max-w-7xl py-4 px-4 md:px-6 flex items-center justify-between">
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 ">
             <BotIcon className="w-6 h-6" />
-            <h1 className="md:text-xl text-base font-semibold  px-4 md:px-6">AI Image and Video Generators</h1>
+            <h1 className="md:text-xl text-base font-semibold text-amber-300  px-4 md:px-6">AI Image and Video Generators</h1>
           </div>
           <nav className="hidden md:flex items-center gap-4">
             <Link href="#" className="text-sm font-medium hover:text-primary" prefetch={false}>
@@ -89,7 +89,12 @@ export default function Component() {
               <div className="flex items-center gap-4">
                 <BrushIcon className="w-10 h-10" />
                 <div>
-                  <CardTitle>Midjourney</CardTitle>
+                  <CardTitle  style={{color: '#FF5733'}}  >
+                  
+                    Midjourney
+              
+                    
+                    </CardTitle>
                   <CardDescription>
                     An AI-powered image generation tool that creates unique and imaginative images from text prompts.
                   </CardDescription>
@@ -167,6 +172,20 @@ export default function Component() {
               </Link>
             </CardFooter>
           </Card>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
           <Card className="bg-background/80 backdrop-blur-sm border border-muted">
             <CardHeader>
               <div className="flex items-center gap-4">
@@ -175,10 +194,7 @@ export default function Component() {
                   <CardTitle>Dream Machine</CardTitle>
                   <CardDescription>
                   Dream Machine is an AI model that makes high quality, realistic videos fast from text and images.
-
-It is a highly scalable and efficient transformer model trained directly on videos making it capable of generating physically accurate, consistent and eventful shots. Dream Machine is our first step towards building a universal imagination engine and it is available to everyone now!
-
-
+                  It is a highly scalable and efficient transformer model trained directly on videos making it capable of generating physically accurate, consistent and eventful shots. Dream Machine is our first step towards building a universal imagination engine and it is available to everyone now!
                   </CardDescription>
                 </div>
               </div>
@@ -272,6 +288,46 @@ Create highly engaging videos in minutes using the power of AI. No video editing
 
 
 
+
+
+
+          <Card className="bg-background/80 backdrop-blur-sm border border-muted">
+            <CardHeader>
+              <div className="flex items-center gap-4">
+                <WandIcon className="w-10 h-10" />
+                <div>
+                  <CardTitle>PhotoAI</CardTitle>
+                  <CardDescription>
+                  Create AI photos of yourself! 
+                  </CardDescription>
+                </div>
+              </div>
+            </CardHeader>
+            <CardContent>
+              <div className="grid grid-cols-2 gap-4">
+                <img
+                  src="/pictory.jpg"
+                  width={300}
+                  height={300}
+                  alt="Imagen"
+                  className="aspect-square object-cover rounded-md"
+                />
+                <img
+                  src="/pictory.jpg"
+                  width={300}
+                  height={300}
+                  alt="Imagen"
+                  className="aspect-square object-cover rounded-md"
+                />
+              </div>
+            </CardContent>
+            <CardFooter>
+              <Link href="https://app.photoai.me/?via=aiimageandvideogenerators" className="inline-flex items-center gap-2 font-medium hover:text-primary" prefetch={false}>
+                Learn More
+                <ArrowRightIcon className="w-4 h-4" />
+              </Link>
+            </CardFooter>
+          </Card>
 
 
 

@@ -1,21 +1,59 @@
+"use client"
 import Image from "next/image";
 /**
  * v0 by Vercel.
- * @see https://v0.dev/t/N23P8ywA9ll
- * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
+ 
  */
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card"
+import DynamicBackground from '@/components/DynamicBackground'; // Make sure to create this file
+import Script from "next/script";
+
+
 
 export default function Component() {
   return (
-    <div className="bg-muted text-muted-foreground min-h-screen flex flex-col">
+
+
+
+
+
+
+    <div className="  relative min-h-screen flex flex-col items-center">
+
+
+<Script
+        strategy="lazyOnload"
+        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
+      />
+
+      <Script strategy="lazyOnload">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}',{
+          page_path: window.location.pathname,
+          
+});
+         `}
+      </Script>
+
+
+
+
+
+<DynamicBackground rows={10} cols={10} /> {/* Add this line */}
+
+
+
+
       <header className="bg-background/80 backdrop-blur-sm sticky top-0 z-40 border-b border-b-muted">
         <div className="container max-w-7xl py-4 px-4 md:px-6 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <BotIcon className="w-6 h-6" />
-            <h1 className="text-xl font-semibold">AI Image Generators</h1>
+            <h1 className="md:text-xl text-base font-semibold  px-4 md:px-6">AI Image and Video Generators</h1>
           </div>
           <nav className="hidden md:flex items-center gap-4">
             <Link href="#" className="text-sm font-medium hover:text-primary" prefetch={false}>
@@ -37,8 +75,15 @@ export default function Component() {
           </Button>
         </div>
       </header>
-      <main className="container max-w-7xl px-4 md:px-6 py-12 flex-1">
+
+      <main className="container   px-4 md:px-6 py-12 flex-1">
+
+      <div className="max-w-5xl mx-auto"> {/* Add this wrapper */}
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+
+
           <Card className="bg-background/80 backdrop-blur-sm border border-muted">
             <CardHeader>
               <div className="flex items-center gap-4">
@@ -75,6 +120,15 @@ export default function Component() {
                 <ArrowRightIcon className="w-4 h-4" />
               </Link>
             </CardFooter>
+
+
+
+
+
+
+
+
+
           </Card>
           <Card className="bg-background/80 backdrop-blur-sm border border-muted">
             <CardHeader>
@@ -118,9 +172,13 @@ export default function Component() {
               <div className="flex items-center gap-4">
                 <PencilIcon className="w-10 h-10" />
                 <div>
-                  <CardTitle>Stable Diffusion</CardTitle>
+                  <CardTitle>Dream Machine</CardTitle>
                   <CardDescription>
-                    An open-source AI model that can generate highly detailed images from text prompts.
+                  Dream Machine is an AI model that makes high quality, realistic videos fast from text and images.
+
+It is a highly scalable and efficient transformer model trained directly on videos making it capable of generating physically accurate, consistent and eventful shots. Dream Machine is our first step towards building a universal imagination engine and it is available to everyone now!
+
+
                   </CardDescription>
                 </div>
               </div>
@@ -150,6 +208,19 @@ export default function Component() {
               </Link>
             </CardFooter>
           </Card>
+
+
+
+
+
+
+
+
+
+
+
+
+
           <Card className="bg-background/80 backdrop-blur-sm border border-muted">
             <CardHeader>
               <div className="flex items-center gap-4">
@@ -187,8 +258,103 @@ export default function Component() {
               </Link>
             </CardFooter>
           </Card>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         </div>
+
+
+        </div>
+
+
       </main>
+
+
+
+
+
       <footer className="bg-background/80 backdrop-blur-sm border-t border-t-muted">
         <div className="container max-w-7xl py-6 px-4 md:px-6 flex items-center justify-between">
           <div className="flex items-center gap-2">

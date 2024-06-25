@@ -59,8 +59,8 @@ export default function Component() {
             <Link href="#" className="text-sm font-medium hover:text-primary" prefetch={false}>
               Home
             </Link>
-            <Link href="#" className="text-sm font-medium hover:text-primary" prefetch={false}>
-              Explore
+            <Link href="./blog" className="text-sm font-medium hover:text-primary" prefetch={false}>
+              Blog
             </Link>
             <Link href="#" className="text-sm font-medium hover:text-primary" prefetch={false}>
               About
@@ -76,6 +76,21 @@ export default function Component() {
         </div>
       </header>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       <main className="container   px-4 md:px-6 py-12 flex-1">
 
       <div className="max-w-5xl mx-auto"> {/* Add this wrapper */}
@@ -84,12 +99,75 @@ export default function Component() {
 
 
 
+
+
+
+        <Card className="bg-background/80 backdrop-blur-sm border border-muted">
+            <CardHeader>
+              <div className="flex items-center gap-4">
+                <WandIcon className="w-10 h-10" />
+                <div>
+                  <CardTitle  >PhotoAI</CardTitle>
+                  <CardDescription>
+                  Create AI photos of yourself! v
+                  </CardDescription>
+                </div>
+              </div>
+            </CardHeader>
+            <CardContent>
+              <div className="grid grid-cols-2 gap-4">
+                <img
+                  src="/pictory.jpg"
+                  width={300}
+                  height={300}
+                  alt="Imagen"
+                  className="aspect-square object-cover rounded-md"
+                />
+                <img
+                  src="/pictory.jpg"
+                  width={300}
+                  height={300}
+                  alt="Imagen"
+                  className="aspect-square object-cover rounded-md"
+                />
+              </div>
+            </CardContent>
+            <CardFooter>
+              <Link href="https://app.photoai.me/?via=aiimageandvideogenerators" className="inline-flex items-center gap-2 font-medium hover:text-primary" prefetch={false}>
+                Learn More
+                <ArrowRightIcon className="w-4 h-4" />
+              </Link>
+            </CardFooter>
+          </Card>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
           <Card className="bg-background/80 backdrop-blur-sm border border-muted">
             <CardHeader>
               <div className="flex items-center gap-4">
                 <BrushIcon className="w-10 h-10" />
                 <div>
-                  <CardTitle  style={{color: '#FF5733'}}  >
+                  <CardTitle     >
                   
                     Midjourney
               
@@ -120,7 +198,7 @@ export default function Component() {
               </div>
             </CardContent>
             <CardFooter>
-              <Link href="#" className="inline-flex items-center gap-2 font-medium hover:text-primary" prefetch={false}>
+              <Link href="https://www.midjourney.com/" className="inline-flex items-center gap-2 font-medium hover:text-primary" prefetch={false}>
                 Learn More
                 <ArrowRightIcon className="w-4 h-4" />
               </Link>
@@ -288,46 +366,6 @@ Create highly engaging videos in minutes using the power of AI. No video editing
 
 
 
-
-
-
-          <Card className="bg-background/80 backdrop-blur-sm border border-muted">
-            <CardHeader>
-              <div className="flex items-center gap-4">
-                <WandIcon className="w-10 h-10" />
-                <div>
-                  <CardTitle>PhotoAI</CardTitle>
-                  <CardDescription>
-                  Create AI photos of yourself! 
-                  </CardDescription>
-                </div>
-              </div>
-            </CardHeader>
-            <CardContent>
-              <div className="grid grid-cols-2 gap-4">
-                <img
-                  src="/pictory.jpg"
-                  width={300}
-                  height={300}
-                  alt="Imagen"
-                  className="aspect-square object-cover rounded-md"
-                />
-                <img
-                  src="/pictory.jpg"
-                  width={300}
-                  height={300}
-                  alt="Imagen"
-                  className="aspect-square object-cover rounded-md"
-                />
-              </div>
-            </CardContent>
-            <CardFooter>
-              <Link href="https://app.photoai.me/?via=aiimageandvideogenerators" className="inline-flex items-center gap-2 font-medium hover:text-primary" prefetch={false}>
-                Learn More
-                <ArrowRightIcon className="w-4 h-4" />
-              </Link>
-            </CardFooter>
-          </Card>
 
 
 

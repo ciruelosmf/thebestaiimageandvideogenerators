@@ -158,6 +158,191 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
 
 
 
+          <Link href="https://www.imagine.art/?ref=mwe1nji" className="block" prefetch={false}>
+          <Card className="bg-background/80 backdrop-blur-lg border border-muted">
+            <CardHeader>
+              <div className="flex items-center gap-4">     
+                <div>
+                  <CardTitle>Imagine AI Art Generator</CardTitle>
+                  <CardDescription>
+                  Create AI Art and turn your imaginations into reality with Imagine's AI Art Generator and produce stunning visuals to cover up your artistic thoughts.
+
+                  </CardDescription>
+                </div>
+              </div>
+            </CardHeader>
+            <CardContent>
+  <div className="grid grid-cols-2 gap-4">
+    <video
+      src="https://cdn2.imagine.art/imagine-frontend/assets/video/landing-page/tools/text-to-img.webm"
+      width={300}
+      height={300}
+      className="aspect-square object-cover rounded-md"
+      autoPlay
+      muted
+      loop
+      playsInline
+      preload="metadata"
+ 
+
+
+    >
+      Your browser does not support the video tag.
+    </video>
+    <video
+      src="https://cdn2.imagine.art/imagine-frontend/assets/video/landing-page/tools/text-to-video.webm"
+      width={300}
+      height={300}
+      className="aspect-square object-cover rounded-md"
+      autoPlay
+      muted
+      loop
+      playsInline
+           preload="metadata"
+    >
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</CardContent>
+            <CardFooter> 
+            </CardFooter>
+          </Card>
+          </Link>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <Link href="https://writesonic.com/photosonic-ai-art-generator" className="block" prefetch={false}>
+          <Card className="bg-background/80 backdrop-blur-lg border border-muted">
+            <CardHeader>
+              <div className="flex items-center gap-4">     
+                <div>
+                  <CardTitle>Writesonic </CardTitle>
+                  <CardDescription>
+                  Create something that has never been seen before. Let Writesonic’s AI art generator be your paintbrush. It's time to say goodbye to stock image hunting and awaiting new creatives for weeks.
+
+                  </CardDescription>
+                </div>
+              </div>
+            </CardHeader>
+            <CardContent>
+            <div className="grid grid-cols-2 gap-4">
+ 
+                <img
+                  src="./writesonic_1.webp "
+                  width={300}
+                  height={300}
+                  alt="Writesonic"
+                  className="aspect-square object-cover rounded-md"
+                />
+                <img
+                  src="./writesonic_2.webp"
+                  width={300}
+                  height={300}
+                  alt="Writesonic"
+                  className="aspect-square object-cover rounded-md"
+                />
+            </div>
+          </CardContent>
+            <CardFooter> 
+            </CardFooter>
+          </Card>
+          </Link>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <Link href="https://dreamstudio.ai/" className="block" prefetch={false}>
+          <Card className="bg-background/80 backdrop-blur-lg border border-muted">
+            <CardHeader>
+              <div className="flex items-center gap-4">     
+                <div>
+                  <CardTitle>DreamStudio </CardTitle>
+                  <CardDescription>
+                  Start generating the
+                  images of your dreams.
+
+                  </CardDescription>
+                </div>
+              </div>
+            </CardHeader>
+            <CardContent>
+            <div className="grid grid-cols-2 gap-4">
+ 
+                <img
+                  src="https://framerusercontent.com/images/DwlkJh0JL9ULdOk3P8Prepp67Q.jpg?scale-down-to=2048"
+                  width={300}
+                  height={300}
+                  alt="Writesonic"
+                  className="aspect-square object-cover rounded-md"
+                />
+                <img
+                  src="https://framerusercontent.com/images/bMB6nEwEWMvW06qGOkcFWFvlMA.jpg?scale-down-to=2048"
+                  width={300}
+                  height={300}
+                  alt="Writesonic"
+                  className="aspect-square object-cover rounded-md"
+                />
+            </div>
+          </CardContent>
+            <CardFooter> 
+            </CardFooter>
+          </Card>
+          </Link>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
           <Link href="https://lumalabs.ai/dream-machine" className="block" prefetch={false}>
           <Card className="bg-background/80 backdrop-blur-lg border border-muted">
             <CardHeader>
@@ -265,59 +450,6 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
 
 
 
-
-
-
-
-          <Link href="https://www.imagine.art/?ref=mwe1nji" className="block" prefetch={false}>
-          <Card className="bg-background/80 backdrop-blur-lg border border-muted">
-            <CardHeader>
-              <div className="flex items-center gap-4">     
-                <div>
-                  <CardTitle>Imagine AI Art Generator</CardTitle>
-                  <CardDescription>
-                  Create AI Art and turn your imaginations into reality with Imagine's AI Art Generator and produce stunning visuals to cover up your artistic thoughts.
-
-                  </CardDescription>
-                </div>
-              </div>
-            </CardHeader>
-            <CardContent>
-  <div className="grid grid-cols-2 gap-4">
-    <video
-      src="https://cdn2.imagine.art/imagine-frontend/assets/video/landing-page/tools/text-to-img.webm"
-      width={300}
-      height={300}
-      className="aspect-square object-cover rounded-md"
-      autoPlay
-      muted
-      loop
-      playsInline
-      preload="metadata"
-      preload="metadata"
-
-
-    >
-      Your browser does not support the video tag.
-    </video>
-    <video
-      src="https://cdn2.imagine.art/imagine-frontend/assets/video/landing-page/tools/text-to-video.webm"
-      width={300}
-      height={300}
-      className="aspect-square object-cover rounded-md"
-      autoPlay
-      muted
-      loop
-      playsInline
-    >
-      Your browser does not support the video tag.
-    </video>
-  </div>
-</CardContent>
-            <CardFooter> 
-            </CardFooter>
-          </Card>
-          </Link>
 
 
 
@@ -530,11 +662,12 @@ Create highly engaging videos in minutes using the power of AI. No video editing
             <span className="text-sm font-medium">AI Image Generators</span>
           </div>
           <nav className="hidden md:flex items-center gap-4">
-            <Link href="#" className="text-sm font-medium hover:text-primary" prefetch={false}>
+            <Link href="./privacy" className="text-sm font-medium hover:text-primary" prefetch={false}>
               Privacy
             </Link>
-            <Link href="#" className="text-sm font-medium hover:text-primary" prefetch={false}>
-              Terms
+ 
+            <Link href="./terms" className="text-sm font-medium hover:text-primary" prefetch={false}>
+            Terms
             </Link>
  
           </nav>

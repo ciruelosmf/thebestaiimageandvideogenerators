@@ -254,6 +254,78 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <Link href="https://www.imagine.art/?ref=mwe1nji" className="block" prefetch={false}>
+          <Card className="bg-background/80 backdrop-blur-lg border border-muted">
+            <CardHeader>
+              <div className="flex items-center gap-4">     
+                <div>
+                  <CardTitle>Imagine AI Art Generator</CardTitle>
+                  <CardDescription>
+                  Create AI Art and turn your imaginations into reality with Imagine's AI Art Generator and produce stunning visuals to cover up your artistic thoughts.
+
+                  </CardDescription>
+                </div>
+              </div>
+            </CardHeader>
+            <CardContent>
+  <div className="grid grid-cols-2 gap-4">
+    <video
+      src="https://cdn2.imagine.art/imagine-frontend/assets/video/landing-page/tools/text-to-img.webm"
+      width={300}
+      height={300}
+      className="aspect-square object-cover rounded-md"
+      autoPlay
+      muted
+      loop
+      playsInline
+      preload="metadata"
+      preload="metadata"
+
+
+    >
+      Your browser does not support the video tag.
+    </video>
+    <video
+      src="https://cdn2.imagine.art/imagine-frontend/assets/video/landing-page/tools/text-to-video.webm"
+      width={300}
+      height={300}
+      className="aspect-square object-cover rounded-md"
+      autoPlay
+      muted
+      loop
+      playsInline
+    >
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</CardContent>
+            <CardFooter> 
+            </CardFooter>
+          </Card>
+          </Link>
+
+
+
+
+
+
+
+
           <Link href="https://lumalabs.ai/dream-machine" className="block" prefetch={false}>
 
           <Card className="bg-background/80 backdrop-blur-lg border border-muted">

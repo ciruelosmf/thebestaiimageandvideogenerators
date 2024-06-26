@@ -117,14 +117,14 @@ export default function Component() {
             <CardContent>
               <div className="grid grid-cols-2 gap-4">
                 <img
-                  src="/pictory.jpg"
+                  src="/photoai.JPG"
                   width={300}
                   height={300}
                   alt="Imagen"
                   className="aspect-square object-cover rounded-md"
                 />
                 <img
-                  src="/pictory.jpg"
+                  src="/photoai.JPG"
                   width={300}
                   height={300}
                   alt="Imagen"

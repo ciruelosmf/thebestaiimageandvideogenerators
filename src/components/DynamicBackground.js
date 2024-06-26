@@ -23,18 +23,18 @@ const DynamicBackground = ({ rows = 10, cols = 10 }) => {
           return { ...rect, colorIndex: newIndex };
         })
       );
-    }, 100);
+    }, 1500);
 
     return () => clearInterval(interval);
   }, [rows, cols]);
 
   return (
     <div className="fixed inset-0 -z-10">
-      <div className={`grid w-full h-full  `} style={{gridTemplateColumns: `repeat(${cols}, 1fr)`, gridTemplateRows: `repeat(${rows}, 1fr)`}}>
+      <div className={`grid w-full h-full  `} style={{gridTemplateColumns: `repeat(${cols}, 2fr)`, gridTemplateRows: `repeat(${rows}, 1fr)`}}>
         {rectangles.map((rect, index) => (
           <div 
             key={index}
-            className="  transition-colors     duration-1000 linear"
+            className="        duration-1000 linear"
             style={{backgroundColor: colorValues[rect.colorIndex]}}
           />
         ))}

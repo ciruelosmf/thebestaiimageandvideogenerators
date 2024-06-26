@@ -44,12 +44,12 @@ export default function Component() {
 
 
 
-<DynamicBackground rows={10} cols={10} /> {/* Add this line */}
+<DynamicBackground rows={24} cols={8} /> {/* Add this line */}
 
 
 
 
-      <header className="bg-background/80 backdrop-blur-sm sticky top-0 z-40 border-b border-b-muted">
+      <header className="bg-background/80 backdrop-blur-lg sticky top-0 z-40 border-b border-b-muted">
         <div className="container max-w-7xl py-4 px-4 md:px-6 flex items-center justify-between">
           <div className="flex items-center gap-2 ">
             <BotIcon className="w-6 h-6" />
@@ -101,15 +101,18 @@ export default function Component() {
 
 
 
+        <Link href="https://app.photoai.me/?via=aiimageandvideogenerators" className="block" prefetch={false}>
 
-        <Card className="bg-background/80 backdrop-blur-sm border border-muted">
+        <Card className="bg-background/80 backdrop-blur-lg border border-muted">
             <CardHeader>
               <div className="flex items-center gap-4">
-                <WandIcon className="w-10 h-10" />
+                
                 <div>
                   <CardTitle  >PhotoAI</CardTitle>
                   <CardDescription>
-                  Create AI photos of yourself! v
+                  Boost your profile picture on Tinder, LinkedIn, Twitter, Instagram or elsewhere with photoai.me
+
+Upload photos of yourself and get new stunning AI photos! With photoai.me, you can generate AI images for as low as 20 cents per picture. Try it out.  
                   </CardDescription>
                 </div>
               </div>
@@ -117,14 +120,14 @@ export default function Component() {
             <CardContent>
               <div className="grid grid-cols-2 gap-4">
                 <img
-                  src="/photoai.JPG"
+                  src="/photoai_1.webp"
                   width={300}
                   height={300}
                   alt="Imagen"
                   className="aspect-square object-cover rounded-md"
                 />
                 <img
-                  src="/photoai.JPG"
+                  src="/photoai_2.webp"
                   width={300}
                   height={300}
                   alt="Imagen"
@@ -133,12 +136,12 @@ export default function Component() {
               </div>
             </CardContent>
             <CardFooter>
-              <Link href="https://app.photoai.me/?via=aiimageandvideogenerators" className="inline-flex items-center gap-2 font-medium hover:text-primary" prefetch={false}>
-                Learn More
-                <ArrowRightIcon className="w-4 h-4" />
-              </Link>
+             
+
+                 
             </CardFooter>
           </Card>
+          </Link>
 
 
 
@@ -155,17 +158,58 @@ export default function Component() {
 
 
 
-
-
-
-
-
-
-
-          <Card className="bg-background/80 backdrop-blur-sm border border-muted">
+          <Link href="https://lumalabs.ai/dream-machine" className="block" prefetch={false}>
+          <Card className="bg-background/80 backdrop-blur-lg border border-muted">
             <CardHeader>
               <div className="flex items-center gap-4">
-                <BrushIcon className="w-10 h-10" />
+       
+                <div>
+                  <CardTitle>Dream Machine</CardTitle>
+                  <CardDescription>
+                  Dream Machine is an AI model that makes high quality, realistic videos fast from text and images.
+                  It is capable of generating physically accurate, consistent and eventful shots. Available to everyone now!
+                  </CardDescription>
+                </div>
+              </div>
+            </CardHeader>
+            <CardContent>
+              <div className="grid grid-cols-2 gap-4">
+                <img
+                  src="/luma_1.JPG"
+                  width={300}
+                  height={300}
+                  alt="Luma Labs Dream Machine"
+                  className="aspect-square object-cover rounded-md"
+                />
+                <img
+                  src="/luma_2.JPG"
+                  width={300}
+                  height={300}
+                  alt="Luma Labs Dream Machine"
+                  className="aspect-square object-cover rounded-md"
+                />
+              </div>
+            </CardContent>
+            <CardFooter>
+
+            </CardFooter>
+          </Card>
+          </Link>
+
+
+
+
+
+
+
+
+
+          <Link href="https://lumalabs.ai/dream-machine" className="block" prefetch={false}>
+
+          <Card className="bg-background/80 backdrop-blur-lg border border-muted">
+            <CardHeader>
+              <div className="flex items-center gap-4">
+                 
                 <div>
                   <CardTitle     >
                   
@@ -198,25 +242,24 @@ export default function Component() {
               </div>
             </CardContent>
             <CardFooter>
-              <Link href="https://www.midjourney.com/" className="inline-flex items-center gap-2 font-medium hover:text-primary" prefetch={false}>
-                Learn More
-                <ArrowRightIcon className="w-4 h-4" />
-              </Link>
+ 
+  
             </CardFooter>
 
-
-
-
-
-
-
-
-
           </Card>
-          <Card className="bg-background/80 backdrop-blur-sm border border-muted">
+          </Link>
+
+
+
+
+
+
+          <Link href="https://lumalabs.ai/dream-machine" className="block" prefetch={false}>
+
+          <Card className="bg-background/80 backdrop-blur-lg border border-muted">
             <CardHeader>
               <div className="flex items-center gap-4">
-                <PaletteIcon className="w-10 h-10" />
+     
                 <div>
                   <CardTitle>DALL-E 2</CardTitle>
                   <CardDescription>
@@ -244,13 +287,12 @@ export default function Component() {
               </div>
             </CardContent>
             <CardFooter>
-              <Link href="#" className="inline-flex items-center gap-2 font-medium hover:text-primary" prefetch={false}>
-                Learn More
-                <ArrowRightIcon className="w-4 h-4" />
-              </Link>
+ 
+ 
             </CardFooter>
           </Card>
 
+          </Link>
 
 
 
@@ -264,61 +306,20 @@ export default function Component() {
 
 
 
-          <Card className="bg-background/80 backdrop-blur-sm border border-muted">
+
+
+
+
+
+
+
+          <Link href="https://lumalabs.ai/dream-machine" className="block" prefetch={false}>
+
+
+          <Card className="bg-background/80 backdrop-blur-lg border border-muted">
             <CardHeader>
               <div className="flex items-center gap-4">
-                <PencilIcon className="w-10 h-10" />
-                <div>
-                  <CardTitle>Dream Machine</CardTitle>
-                  <CardDescription>
-                  Dream Machine is an AI model that makes high quality, realistic videos fast from text and images.
-                  It is a highly scalable and efficient transformer model trained directly on videos making it capable of generating physically accurate, consistent and eventful shots. Dream Machine is our first step towards building a universal imagination engine and it is available to everyone now!
-                  </CardDescription>
-                </div>
-              </div>
-            </CardHeader>
-            <CardContent>
-              <div className="grid grid-cols-2 gap-4">
-                <img
-                  src="/placeholder.svg"
-                  width={300}
-                  height={300}
-                  alt="Stable Diffusion"
-                  className="aspect-square object-cover rounded-md"
-                />
-                <img
-                  src="/placeholder.svg"
-                  width={300}
-                  height={300}
-                  alt="Stable Diffusion"
-                  className="aspect-square object-cover rounded-md"
-                />
-              </div>
-            </CardContent>
-            <CardFooter>
-              <Link href="#" className="inline-flex items-center gap-2 font-medium hover:text-primary" prefetch={false}>
-                Learn More
-                <ArrowRightIcon className="w-4 h-4" />
-              </Link>
-            </CardFooter>
-          </Card>
-
-
-
-
-
-
-
-
-
-
-
-
-
-          <Card className="bg-background/80 backdrop-blur-sm border border-muted">
-            <CardHeader>
-              <div className="flex items-center gap-4">
-                <WandIcon className="w-10 h-10" />
+ 
                 <div>
                   <CardTitle>Pictory AI</CardTitle>
                   <CardDescription>
@@ -348,12 +349,11 @@ Create highly engaging videos in minutes using the power of AI. No video editing
               </div>
             </CardContent>
             <CardFooter>
-              <Link href="#" className="inline-flex items-center gap-2 font-medium hover:text-primary" prefetch={false}>
-                Learn More
-                <ArrowRightIcon className="w-4 h-4" />
-              </Link>
+ 
+ 
             </CardFooter>
           </Card>
+          </Link>
 
 
 
@@ -451,7 +451,7 @@ Create highly engaging videos in minutes using the power of AI. No video editing
 
 
 
-      <footer className="bg-background/80 backdrop-blur-sm border-t border-t-muted">
+      <footer className="bg-background/80 backdrop-blur-lg border-t border-t-muted">
         <div className="container max-w-7xl py-6 px-4 md:px-6 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <BotIcon className="w-6 h-6" />
@@ -464,20 +464,14 @@ Create highly engaging videos in minutes using the power of AI. No video editing
             <Link href="#" className="text-sm font-medium hover:text-primary" prefetch={false}>
               Terms
             </Link>
-            <Link href="#" className="text-sm font-medium hover:text-primary" prefetch={false}>
-              Cookies
-            </Link>
+ 
           </nav>
           <div className="flex items-center gap-4">
-            <Link href="#" className="text-sm font-medium hover:text-primary" prefetch={false}>
-              <GithubIcon className="w-5 h-5" />
-            </Link>
+ 
             <Link href="#" className="text-sm font-medium hover:text-primary" prefetch={false}>
               <TwitterIcon className="w-5 h-5" />
             </Link>
-            <Link href="#" className="text-sm font-medium hover:text-primary" prefetch={false}>
-              <LinkedinIcon className="w-5 h-5" />
-            </Link>
+ 
           </div>
         </div>
       </footer>

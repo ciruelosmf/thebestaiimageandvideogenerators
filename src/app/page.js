@@ -23,12 +23,12 @@ export default function Component() {
 
     <div className="  relative min-h-screen flex flex-col items-center">
 
-<Head>
+      <Head>
  
         <meta property="og:title" content="AI Image and Video Generators" />
         <meta
           property="og:description"
-          content="AI Image and Video Generators is a directory to discover the best tools to crreate stunning visuals using AI"
+          content="AI Image and Video Generators is a directory to discover the best tools to create stunning visuals using AI"
         />
         <meta
           property="og:image"

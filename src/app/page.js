@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card"
 import DynamicBackground from '@/components/DynamicBackground'; // Make sure to create this file
 import Script from "next/script";
+import Head from 'next/head';
 
 
 
@@ -21,6 +22,19 @@ export default function Component() {
 
 
     <div className="  relative min-h-screen flex flex-col items-center">
+
+<Head>
+ 
+        <meta property="og:title" content="AI Image and Video Generators" />
+        <meta
+          property="og:description"
+          content="AI Image and Video Generators is a directory to discover the best tools to crreate stunning visuals using AI"
+        />
+        <meta
+          property="og:image"
+          content="https://www.aiimageandvideogenerators.xyz/writesonic_1.webp"
+        />
+      </Head>
 
 
 <Script

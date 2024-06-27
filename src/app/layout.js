@@ -8,14 +8,14 @@ export const metadata = {
   description: "AI Image and Video Generators is a directory to discover the best tools to create stunning visuals using AI",
   twitter: {
     card: 'app',
-    title: 'Next.js',
-    description: 'The React Framework for the Web',
+    title: 'AI Image and Video Generators',
+    description: 'AI Image and Video Generators is a directory to discover the best tools to create stunning visuals using AI',
     siteId: '1467726470533754880',
-    creator: '@nextjs',
+    creator: '@AI Image and Video Generators',
     creatorId: '1467726470533754880',
     images: {
-      url: 'https://nextjs.org/og.png',
-      alt: 'Next.js Logo',
+      url: 'https://www.aiimageandvideogenerators.xyz/writesonic_1.webp',
+      alt: 'AI Image and Video Generators Logo',
     },
     app: {
       name: 'twitter_app',

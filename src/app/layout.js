@@ -10,11 +10,11 @@ export const metadata = {
     card: 'app',
     title: 'AI Image and Video Generators',
     description: 'AI Image and Video Generators is a directory to discover the best tools to create stunning visuals using AI',
-    siteId: '1467726470533754880',
+    siteId: '1467726470533754812',
     creator: '@AI Image and Video Generators',
-    creatorId: '1467726470533754880',
+    creatorId: '1467726470533754812',
     images: {
-      url: 'https://www.aiimageandvideogenerators.xyz/writesonic_1.webp',
+      url: 'opengraph-image.JPG',
       alt: 'AI Image and Video Generators Logo',
     },
     app: {

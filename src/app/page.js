@@ -86,6 +86,7 @@ export default function Component() {
           <Button variant="ghost" size="icon" className="md:hidden">
             <MenuIcon className="w-6 h-6" />
             <span className="sr-only">Toggle menu</span>
+            
           </Button>
         </div>
       </header>
@@ -107,19 +108,17 @@ export default function Component() {
 
       <main className="container   px-4 md:px-6 py-12 flex-1">
 
-      <div className="max-w-5xl mx-auto"> {/* Add this wrapper */}
+      <div className="max-w-5xl  mx-auto"> {/* Add this wrapper */}
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-
-
+        <div className="grid grid-cols-1  md:grid-cols-2 gap-8">
 
 
 
-        <Link href="https://app.photoai.me/?via=aiimageandvideogenerators" className="block" prefetch={false}>
 
-        <Card className="bg-background/90 bg-opacity-90 border border-muted shadow-md
-                 backdrop-blur-lg backdrop-filter
-                 [@supports_not_(backdrop-filter:blur(0))]:bg-red-100">
+
+        <Link  href="https://app.photoai.me/?via=aiimageandvideogenerators" className="block bg-background/90" prefetch={false}>
+
+        <Card>
             <CardHeader>
               <div className="flex items-center gap-4">
                 
@@ -677,6 +676,7 @@ Create highly engaging videos in minutes using the power of AI. No video editing
             <BotIcon className="w-6 h-6" />
             <span className="text-sm font-medium">AI Image Generators</span>
           </div>
+
           <nav className="hidden md:flex items-center gap-4">
             <Link href="./privacy" className="text-sm font-medium hover:text-primary" prefetch={false}>
               Privacy
@@ -687,13 +687,7 @@ Create highly engaging videos in minutes using the power of AI. No video editing
             </Link>
  
           </nav>
-          <div className="flex items-center gap-4">
- 
-            <Link href="#" className="text-sm font-medium hover:text-primary" prefetch={false}>
-              <TwitterIcon className="w-5 h-5" />
-            </Link>
- 
-          </div>
+
         </div>
       </footer>
     </div>

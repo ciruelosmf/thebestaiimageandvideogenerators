@@ -119,7 +119,7 @@ export default function Component() {
 
         <Card className="bg-background/90 bg-opacity-90 border border-muted shadow-md
                  backdrop-blur-lg backdrop-filter
-                 [@supports_not_(backdrop-filter:blur(0))]:bg-background">
+                 [@supports_not_(backdrop-filter:blur(0))]:bg-red-100">
             <CardHeader>
               <div className="flex items-center gap-4">
                 

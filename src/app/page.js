@@ -117,7 +117,7 @@ export default function Component() {
 
         <Link href="https://app.photoai.me/?via=aiimageandvideogenerators" className="block" prefetch={false}>
 
-        <Card className="bg-background/90 bg-opacity-90 border border-muted shadow-md md:backdrop-blur-lg md:backdrop-filter">
+        <Card className="bg-background/90 bg-opacity-90 border border-muted shadow-md backdrop-blur-xl md:backdrop-blur-lg md:backdrop-filter">
             <CardHeader>
               <div className="flex items-center gap-4">
                 

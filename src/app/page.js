@@ -28,7 +28,7 @@ export default function Component() {
         <meta property="og:title" content="AI Image and Video Generators" />
         <meta
           property="og:description"
-          content="AI Image and Video Generators is a directory to discover the best tools to create stunning visuals using AI"
+          content="AI Image and Video Generator is a directory to discover the best tools to create stunning visuals using AI"
         />
         <meta
           property="og:image"
@@ -117,7 +117,7 @@ export default function Component() {
 
         <Link href="https://app.photoai.me/?via=aiimageandvideogenerators" className="block" prefetch={false}>
 
-        <Card className="bg-background/80 backdrop-blur-lg border border-muted">
+        <Card className="bg-background/80 bg-opacity-90 backdrop-blur-lg backdrop-filter  border border-muted">
             <CardHeader>
               <div className="flex items-center gap-4">
                 

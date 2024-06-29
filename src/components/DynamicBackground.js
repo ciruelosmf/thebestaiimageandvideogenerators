@@ -34,7 +34,7 @@ const DynamicBackground = ({ rows = 10, cols = 10 }) => {
         {rectangles.map((rect, index) => (
           <div 
             key={index}
-            className="        duration-1000 linear"
+            className="duration-1000 linear shadow-lg  mb-1 mr-1"
             style={{backgroundColor: colorValues[rect.colorIndex]}}
           />
         ))}

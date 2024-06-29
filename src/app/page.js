@@ -63,7 +63,7 @@ export default function Component() {
 
 
 
-      <header className="bg-background/80 backdrop-blur-lg sticky top-0 z-40 border-b border-b-muted">
+      <header className=" sticky top-0 z-40 border-b border-b-muted">
         <div className="container max-w-7xl py-4 px-4 md:px-6 flex items-center justify-between">
           <div className="flex items-center gap-2 ">
             <BotIcon className="w-6 h-6" />
@@ -106,17 +106,54 @@ export default function Component() {
 
 
 
-      <main className="container   px-4 md:px-6 py-12 flex-1">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <main className="container   px-2 md:px-6 py-12 flex-1">
 
       <div className="max-w-5xl  mx-auto"> {/* Add this wrapper */}
 
-        <div className="grid grid-cols-1  md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1  md:grid-cols-2 gap-8 ">
 
 
 
 
 
-        <Link  href="https://app.photoai.me/?via=aiimageandvideogenerators" className="block bg-background/90" prefetch={false}>
+        <Link  href="https://app.photoai.me/?via=aiimageandvideogenerators" className="block bg-slate-50 opacity-85 shadow-lg  " prefetch={false}>
 
         <Card>
             <CardHeader>
@@ -173,8 +210,8 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
 
 
 
-          <Link href="https://www.imagine.art/?ref=mwe1nji" className="block" prefetch={false}>
-          <Card className="bg-background/80 backdrop-blur-lg border border-muted">
+          <Link href="https://www.imagine.art/?ref=mwe1nji" className="block bg-slate-50 opacity-85 shadow-lg" prefetch={false}>
+          <Card className="  ">
             <CardHeader>
               <div className="flex items-center gap-4">     
                 <div>
@@ -198,8 +235,6 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
       loop
       playsInline
       preload="metadata"
- 
-
 
     >
       Your browser does not support the video tag.
@@ -240,8 +275,8 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
 
 
 
-    <Link href="https://writesonic.com/photosonic-ai-art-generator" className="block" prefetch={false}>
-          <Card className="bg-background/80 backdrop-blur-lg border border-muted">
+    <Link href="https://writesonic.com/photosonic-ai-art-generator" className="block bg-slate-50 opacity-85 shadow-lg" prefetch={false}>
+          <Card className=" ">
             <CardHeader>
               <div className="flex items-center gap-4">     
                 <div>
@@ -295,8 +330,8 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
 
 
 
-          <Link href="https://dreamstudio.ai/" className="block" prefetch={false}>
-          <Card className="bg-background/80 backdrop-blur-lg border border-muted">
+          <Link href="https://dreamstudio.ai/" className="block bg-slate-50 opacity-85 shadow-lg" prefetch={false}>
+          <Card className="">
             <CardHeader>
               <div className="flex items-center gap-4">     
                 <div>
@@ -358,8 +393,8 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
 
 
 
-          <Link href="https://lumalabs.ai/dream-machine" className="block" prefetch={false}>
-          <Card className="bg-background/80 backdrop-blur-lg border border-muted">
+          <Link href="https://lumalabs.ai/dream-machine" className="block bg-slate-50 opacity-85 shadow-lg " prefetch={false}>
+          <Card className="">
             <CardHeader>
               <div className="flex items-center gap-4">
        
@@ -404,9 +439,9 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
 
 
 
-          <Link href="https://lumalabs.ai/dream-machine" className="block" prefetch={false}>
+          <Link href="https://lumalabs.ai/dream-machine" className="block bg-slate-50 opacity-85 shadow-lg" prefetch={false}>
 
-          <Card className="bg-background/80 backdrop-blur-lg border border-muted">
+          <Card className="">
             <CardHeader>
               <div className="flex items-center gap-4">
                  
@@ -473,9 +508,9 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
 
 
 
-          <Link href="https://lumalabs.ai/dream-machine" className="block" prefetch={false}>
+          <Link href="https://lumalabs.ai/dream-machine" className="block bg-slate-50 opacity-85 shadow-lg" prefetch={false}>
 
-          <Card className="bg-background/80 backdrop-blur-lg border border-muted">
+          <Card className="">
             <CardHeader>
               <div className="flex items-center gap-4">
      
@@ -532,10 +567,10 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
 
 
 
-          <Link href="https://lumalabs.ai/dream-machine" className="block" prefetch={false}>
+          <Link href="https://lumalabs.ai/dream-machine" className="block bg-slate-50 opacity-95 shadow-lg" prefetch={false}>
 
 
-          <Card className="bg-background/80 backdrop-blur-lg border border-muted">
+          <Card className="">
             <CardHeader>
               <div className="flex items-center gap-4">
  
@@ -670,7 +705,7 @@ Create highly engaging videos in minutes using the power of AI. No video editing
 
 
 
-      <footer className="bg-background/80 backdrop-blur-lg border-t border-t-muted">
+      <footer className=" border-t border-t-muted">
         <div className="container max-w-7xl py-6 px-4 md:px-6 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <BotIcon className="w-6 h-6" />

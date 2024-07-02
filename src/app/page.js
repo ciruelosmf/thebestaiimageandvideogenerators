@@ -93,7 +93,7 @@ export default function Component() {
 
 
 
-      <h1 className="   md:text-5xl text-center w-3/6 h-5/6 text-base font-semibold text-white  my-6 px-4 md:px-6">Discover Top AI Visual Tools.</h1>
+      <h1 className="   md:text-5xl text-center w-5/6 h-3/6 text-base font-semibold text-white  my-6 px-4 md:px-6">Discover Top AI Visual Tools.</h1>
 
 
 
@@ -457,15 +457,9 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
 
           <Card className="">
             <CardHeader>
-              <div className="flex items-center gap-4">
-                 
+              <div className="flex items-center gap-4">                 
                 <div>
-                  <CardTitle     >
-                  
-                    Midjourney
-              
-                    
-                    </CardTitle>
+                  <CardTitle>Midjourney</CardTitle>
                   <CardDescription>
                     An AI-powered image generation tool that creates unique and imaginative images from text prompts.
                   </CardDescription>
@@ -490,11 +484,8 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
                 />
               </div>
             </CardContent>
-            <CardFooter>
- 
-  
+            <CardFooter>  
             </CardFooter>
-
           </Card>
           </Link>
 
@@ -514,6 +505,52 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
 
 
 
+          <Link href="https://app.runwayml.com/login" className="block bg-slate-50 opacity-95 shadow-lg" prefetch={false}>
+          <Card className="  ">
+            <CardHeader>
+              <div className="flex items-center gap-4">     
+                <div>
+                  <CardTitle>Runway AI Gen-3 Alpha</CardTitle>
+                  <CardDescription>
+                  Produce hyper-realistic AI videos from text, image or video prompts. A new frontier for high-fidelity, controllable video generation.</CardDescription>
+                </div>
+              </div>
+            </CardHeader>
+            <CardContent>
+  <div className="grid grid-cols-2 gap-4">
+    <video
+      src="https://d3phaj0sisr2ct.cloudfront.net/site/videos/gen-3-alpha/carousel-01/gen-3-alpha-output-002.mp4"
+      width={300}
+      height={300}
+      className="aspect-square object-cover rounded-md"
+      autoPlay
+      muted
+      loop
+      playsInline
+      preload="metadata"
+
+    >
+      Your browser does not support the video tag.
+    </video>
+    <video
+      src="https://d3phaj0sisr2ct.cloudfront.net/site/videos/gen-3-alpha/homepage/carousel/gen-3-alpha-output-003.mp4"
+      width={300}
+      height={300}
+      className="aspect-square object-cover rounded-md"
+      autoPlay
+      muted
+      loop
+      playsInline
+           preload="metadata"
+    >
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</CardContent>
+            <CardFooter> 
+            </CardFooter>
+          </Card>
+          </Link>
 
 
 
@@ -522,14 +559,71 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
 
 
 
-          <Link href="https://lumalabs.ai/dream-machine" className="block bg-slate-50 opacity-95 shadow-lg" prefetch={false}>
+
+
+
+
+
+
+          <Link href="https://www.deepbrain.io/features/ai-video-generator" className="block bg-slate-50 opacity-95 shadow-lg" prefetch={false}>
+          <Card className="  ">
+            <CardHeader>
+              <div className="flex items-center gap-4">     
+                <div>
+                              <CardTitle>DeepBrain AI</CardTitle>
+                              <CardDescription>
+                              Save time and money by turning any text into high quality videos in minutes. No cameras, mics, or actors needed.
+
+
+</CardDescription>
+                            </div>
+                          </div>
+                        </CardHeader>
+                        <CardContent>
+              <div className="grid grid-cols-2 gap-4">
+              <img
+                  src=" https://cdn.prod.website-files.com/63da3362f67ed6f71c9489c1/660d14a6d88b2b2db8e26809_006.png"
+                  width={300}
+                  height={300}
+                  alt="Midjourney"
+                  className="aspect-square object-cover rounded-md shadow-lg"
+                />
+                <img
+                  src="https://cdn.prod.website-files.com/63da3362f67ed6f71c9489c1/660d14a67022cce110e967ee_001.png"
+                  width={300}
+                  height={300}
+                  alt="Midjourney"
+                  className="aspect-square object-cover rounded-md shadow-lg"
+                />
+              </div>
+</CardContent>
+            <CardFooter> 
+            </CardFooter>
+          </Card>
+          </Link>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <Link href="https://openai.com/index/dall-e-3/" className="block bg-slate-50 opacity-95 shadow-lg" prefetch={false}>
 
           <Card className="">
             <CardHeader>
               <div className="flex items-center gap-4">
      
                 <div>
-                  <CardTitle>DALL-E 2</CardTitle>
+                  <CardTitle>DALL-E 3</CardTitle>
                   <CardDescription>
                     A powerful AI model that can create unique images from text descriptions.
                   </CardDescription>
@@ -539,14 +633,14 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
             <CardContent>
               <div className="grid grid-cols-2 gap-4">
                 <img
-                  src="/placeholder.svg"
+                  src="https://images.ctfassets.net/kftzwdyauwt9/As8KNbCDwnOSNYCPHRPOR/5cd4506d01ddc8b772cdb206327b0985/hero-still-life-desktop.jpg?w=640&q=80&fm=webp"
                   width={300}
                   height={300}
                   alt="DALL-E 2"
                   className="aspect-square object-cover rounded-md"
                 />
                 <img
-                  src="/placeholder.svg"
+                  src="https://images.ctfassets.net/kftzwdyauwt9/5JZsznv2kZBJhcntpSLEL9/fbe72de7edaceb8a44176170312ccf2a/picnic-cherry-tree.jpeg?w=1080&q=90&fm=webp"
                   width={300}
                   height={300}
                   alt="DALL-E 2"

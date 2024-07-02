@@ -93,7 +93,7 @@ export default function Component() {
 
 
 
-      <h1 className="   md:text-5xl text-center w-3/6 h-5/6 text-base font-semibold text-white  my-6 px-4 md:px-6">Your go-to resource for exploring the cutting-edge world of AI-powered visual content creation.</h1>
+      <h1 className="   md:text-5xl text-center w-3/6 h-5/6 text-base font-semibold text-white  my-6 px-4 md:px-6">Discover Top AI Visual Tools.</h1>
 
 
 
@@ -144,9 +144,9 @@ export default function Component() {
 
 
 
-      <main className="container   px-2 md:px-6 pb-12 flex-1">
+      <main className="container  md:max-w-screen-2xl	 max-w-4xl px-2 md:px-6 pb-12 flex-1">
 
-      <div className="max-w-8xl  mx-auto"> {/* Add this wrapper */}
+      <div className="    mx-auto"> {/* Add this wrapper */}
 
         <div className="grid grid-cols-1  md:grid-cols-3 gap-8 md:gap-4 ">
 
@@ -349,17 +349,17 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
             <div className="grid grid-cols-2 gap-4">
  
                 <img
-                  src="https://framerusercontent.com/images/DwlkJh0JL9ULdOk3P8Prepp67Q.jpg?scale-down-to=2048"
+                  src="./dreamstudio_1.jfif"
                   width={300}
                   height={300}
-                  alt="Writesonic"
+                  alt="dreamstudio_1"
                   className="aspect-square object-cover rounded-md"
                 />
                 <img
-                  src="https://framerusercontent.com/images/bMB6nEwEWMvW06qGOkcFWFvlMA.jpg?scale-down-to=2048"
+                  src="./dreamstudio_2.jfif"
                   width={300}
                   height={300}
-                  alt="Writesonic"
+                  alt="dreamstudio_1"
                   className="aspect-square object-cover rounded-md"
                 />
             </div>
@@ -410,20 +410,34 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
             </CardHeader>
             <CardContent>
               <div className="grid grid-cols-2 gap-4">
-                <img
-                  src="/luma_1.JPG"
+             
+             
+              <img
+                  src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*8-R5XPmVZyV9ZMTjhUm_RQ.gif"
                   width={300}
                   height={300}
-                  alt="Luma Labs Dream Machine"
+                  alt="dreamstudio_1"
                   className="aspect-square object-cover rounded-md"
                 />
-                <img
-                  src="/luma_2.JPG"
-                  width={300}
-                  height={300}
-                  alt="Luma Labs Dream Machine"
-                  className="aspect-square object-cover rounded-md"
-                />
+
+ 
+
+
+<video
+      src="https://cdn-luma.com/public/lumalabs.ai/june-12-launch-dream-machine-high-res/assets/dream-machine/featured/videos/2.webm"
+      width={300}
+      height={300}
+      className="aspect-square object-cover rounded-md"
+      autoPlay
+      muted
+      loop
+      playsInline
+           preload="metadata"
+    >
+      Your browser does not support the video tag.
+    </video>
+
+ 
               </div>
             </CardContent>
             <CardFooter>
@@ -434,13 +448,12 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
 
 
 
+   
 
 
 
 
-
-
-          <Link href="https://lumalabs.ai/dream-machine" className="block bg-slate-50 opacity-95 shadow-lg" prefetch={false}>
+          <Link href="https://www.midjourney.com/home" className="block bg-slate-50 opacity-95 shadow-lg" prefetch={false}>
 
           <Card className="">
             <CardHeader>
@@ -462,18 +475,18 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
             <CardContent>
               <div className="grid grid-cols-2 gap-4">
                 <img
-                  src="/placeholder.svg"
+                  src=" ./dj_1.jpg   "
                   width={300}
                   height={300}
                   alt="Midjourney"
-                  className="aspect-square object-cover rounded-md"
+                  className="aspect-square object-cover rounded-md shadow-lg"
                 />
                 <img
-                  src="/placeholder.svg"
+                  src="./dj_2.jpg "
                   width={300}
                   height={300}
                   alt="Midjourney"
-                  className="aspect-square object-cover rounded-md"
+                  className="aspect-square object-cover rounded-md shadow-lg"
                 />
               </div>
             </CardContent>

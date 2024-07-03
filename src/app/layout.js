@@ -7,30 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "AI Image and Video Generators",
   description: "AI Image and Video Generators is a directory to discover the best tools to create stunning visuals using AI",
-  twitter: {
-    card: 'app',
-    title: 'AI Image and Video Generators',
-    description: 'AI Image and Video Generators is a directory to discover the best tools to create stunning visuals using AI',
-    siteId: '1467726470533754812',
-    creator: '@AI Image and Video Generators',
-    creatorId: '1467726470533754812',
-    images: {
-      url: './opengraph-image.png',
-      alt: 'AI Image and Video Generators Logo',
-    },
-    app: {
-      name: 'twitter_app',
-      id: {
-        iphone: 'twitter_app://iphone',
-        ipad: 'twitter_app://ipad',
-        googleplay: 'twitter_app://googleplay',
-      },
-      url: {
-        iphone: 'https://iphone_url',
-        ipad: 'https://ipad_url',
-      },
-    },
-  },
+ 
 };
 
 export default function RootLayout({ children }) {

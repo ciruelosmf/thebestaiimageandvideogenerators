@@ -15,7 +15,7 @@ export const metadata = {
     creator: '@AI Image and Video Generators',
     creatorId: '1467726470533754812',
     images: {
-      url: './opengraph-image.JPG',
+      url: './opengraph-image.png',
       alt: 'AI Image and Video Generators Logo',
     },
     app: {

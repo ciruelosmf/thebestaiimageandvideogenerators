@@ -93,7 +93,7 @@ export default function Component() {
 
 
 
-      <h1 className="   md:text-5xl text-center w-5/6 h-3/6 text-base font-semibold text-white  my-6 px-4 md:px-6">Discover Top AI Visual Tools.</h1>
+      <h1 className="   md:text-5xl text-center w-5/6 h-3/6 text-base font-semibold text-white  my-3 md:my-4 px-4 md:px-6">Discover Top AI Visual Tools.</h1>
 
 
 

@@ -676,8 +676,6 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
 
 
           <Link href="https://lumalabs.ai/dream-machine" className="block bg-slate-50 opacity-95 shadow-lg" prefetch={false}>
-
-
           <Card className="">
             <CardHeader>
               <div className="flex items-center gap-4">
@@ -685,9 +683,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
                 <div>
                   <CardTitle>Pictory AI</CardTitle>
                   <CardDescription>
-                  Enterprise Teams
-
-Create highly engaging videos in minutes using the power of AI. No video editing experience required. Get Started For Free!
+                  Enterprise Teams Create highly engaging videos in minutes using the power of AI. No video editing experience required. Get Started For Free!
                   </CardDescription>
                 </div>
               </div>
@@ -710,9 +706,7 @@ Create highly engaging videos in minutes using the power of AI. No video editing
                 />
               </div>
             </CardContent>
-            <CardFooter>
- 
- 
+            <CardFooter> 
             </CardFooter>
           </Card>
           </Link>
@@ -747,6 +741,41 @@ Create highly engaging videos in minutes using the power of AI. No video editing
 
 
 
+          <Link href="https://www.videofast.app/" className="block bg-slate-50 opacity-95 shadow-lg" prefetch={false}>
+          <Card className="">
+            <CardHeader>
+              <div className="flex items-center gap-4">
+ 
+                <div>
+                  <CardTitle>VideoFast </CardTitle>
+                  <CardDescription>
+                  Video Fast is an online video generation tool to create high-quality videos with AI-generated avatars and voices in minutes
+                  </CardDescription>
+                </div>
+              </div>
+            </CardHeader>
+            <CardContent>
+              <div className="grid grid-cols-2 gap-4">
+                <img
+                  src="https://framerusercontent.com/images/rbCdOqlduGxFDJRA1VMw6QJx0s.gif"
+                  width={300}
+                  height={300}
+                  alt="Imagen"
+                  className="aspect-square object-cover rounded-md"
+                />
+                <img
+                  src="https://framerusercontent.com/images/YR0QoptQ9rYXwm2co5MkWmSsgUg.gif"
+                  width={300}
+                  height={300}
+                  alt="Imagen"
+                  className="aspect-square object-cover rounded-md"
+                />
+              </div>
+            </CardContent>
+            <CardFooter> 
+            </CardFooter>
+          </Card>
+          </Link>
 
 
 
@@ -754,6 +783,138 @@ Create highly engaging videos in minutes using the power of AI. No video editing
 
 
 
+
+
+
+
+
+
+
+
+
+
+          <Link href="https://www.videofast.app/" className="block bg-slate-50 opacity-95 shadow-lg" prefetch={false}>
+          <Card className="">
+            <CardHeader>
+              <div className="flex items-center gap-4">
+ 
+                <div>
+                  <CardTitle>OpusClip  </CardTitle>
+                  <CardDescription>
+                  OpusClip is a generative AI video tool that repurposes long videos into shorts in one click. Powered by     OPENAI                
+
+                  </CardDescription>
+                </div>
+              </div>
+            </CardHeader>
+            <CardContent>
+              <div className="grid grid-cols-2 gap-4">
+              <video
+      src="https://ext.cdn.opus.pro/corp-it/landing-page/desktop_update.mp4"
+      width={300}
+      height={300}
+      className="aspect-square object-cover rounded-md"
+      autoPlay
+      muted
+      loop
+      playsInline
+      preload="metadata"
+
+    >
+      Your browser does not support the video tag.
+    </video>
+    <video
+      src="https://assets-global.website-files.com/6388604483b03a9ecb34d695/65bb7ef012f2fd3fed4c1231_OpusClip%20Video%203-transcode.mp4"
+      width={300}
+      height={300}
+      className="aspect-square object-cover rounded-md"
+      autoPlay
+      muted
+      loop
+      playsInline
+           preload="metadata"
+    >
+      Your browser does not support the video tag.
+    </video>
+              </div>
+            </CardContent>
+            <CardFooter> 
+            </CardFooter>
+          </Card>
+          </Link>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <Link href="https://virbo.wondershare.com/" className="block bg-slate-50 opacity-95 shadow-lg" prefetch={false}>
+          <Card className="">
+            <CardHeader>
+              <div className="flex items-center gap-4">
+ 
+                <div>
+                  <CardTitle>          Wondershare Virbo
+                  </CardTitle>
+                  <CardDescription>
+                  Generate Engaging AI Videos in Minutes! Convert text into expert spokesperson videos in 460+ voices and languages with ease.
+             
+
+                  </CardDescription>
+                </div>
+              </div>
+            </CardHeader>
+            <CardContent>
+              <div className="grid grid-cols-2 gap-4">
+              <video
+      src="https://virbo.wondershare.com/assets/video/homepage2024/banner-video.mp4"
+      width={300}
+      height={300}
+      className="aspect-square object-cover rounded-md"
+      autoPlay
+      muted
+      loop
+      playsInline
+      preload="metadata"
+
+    >
+      Your browser does not support the video tag.
+    </video>
+    <video
+      src="https://virbo.wondershare.com/assets/video/homepage2024/education-training.mp4"
+      width={300}
+      height={300}
+      className="aspect-square object-cover rounded-md"
+      autoPlay
+      muted
+      loop
+      playsInline
+           preload="metadata"
+    >
+      Your browser does not support the video tag.
+    </video>
+              </div>
+            </CardContent>
+            <CardFooter> 
+            </CardFooter>
+          </Card>
+          </Link>
 
 
 

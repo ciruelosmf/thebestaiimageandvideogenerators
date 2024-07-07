@@ -276,6 +276,85 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
 
 
 
+
+
+
+
+
+
+
+
+
+          <Link href="       https://app.artisse.ai/?via=aiimageandvideogenerators" className="block bg-slate-50 opacity-95 shadow-lg" prefetch={false}>
+          <Card className="">
+            <CardHeader>
+              <div className="flex items-center gap-4">
+ 
+                <div>
+                  <CardTitle>         Artisse AI
+                  </CardTitle>
+                  <CardDescription>
+                  Redefine Photography. Stunning photos in minutes. Effortless creativity for any purpose with personal AI photos.
+             
+
+                  </CardDescription>
+                </div>
+              </div>
+            </CardHeader>
+            <CardContent>
+              <div className="grid grid-cols-2 gap-4">
+
+
+              <video
+     src="https://artisse.ai/wp-content/uploads/2024/06/Web-Hero-Animation.mp4"
+      width={300}
+      height={300}
+      className="aspect-square object-cover rounded-md"
+      autoPlay
+      muted
+      loop
+      playsInline
+           preload="metadata"
+    >
+          </video>
+
+          <video
+     src="https://artisse.ai/wp-content/uploads/2024/06/Actual-photo.mp4"
+      width={300}
+      height={300}
+      className="aspect-square object-cover rounded-md"
+      autoPlay
+      muted
+      loop
+      playsInline
+           preload="metadata"
+    >
+          </video>
+              </div>
+            </CardContent>
+            <CardFooter> 
+            </CardFooter>
+          </Card>
+          </Link>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <Link href="https://writesonic.com/photosonic-ai-art-generator" className="block bg-slate-50 opacity-95 shadow-lg" prefetch={false}>
           <Card className=" ">
             <CardHeader>
@@ -883,7 +962,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
             <CardContent>
               <div className="grid grid-cols-2 gap-4">
               <video
-      src="https://virbo.wondershare.com/assets/video/homepage2024/banner-video.mp4"
+      src="https://virbo.wondershare.com/assets/video/homepage2024/step1-video.mp4"
       width={300}
       height={300}
       className="aspect-square object-cover rounded-md"
@@ -916,6 +995,119 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
           </Card>
           </Link>
 
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+          <Link href="       https://collov.ai/" className="block bg-slate-50 opacity-95 shadow-lg" prefetch={false}>
+          <Card className="">
+            <CardHeader>
+              <div className="flex items-center gap-4">
+ 
+                <div>
+                  <CardTitle>         Collov AI
+                  </CardTitle>
+                  <CardDescription>
+                  collov.ai uses artificial intelligence to transforms your interior aspirations into stunning, visionary design renderings, merging convenience with aesthetics. You’ll love the Collov way.
+             
+
+                  </CardDescription>
+                </div>
+              </div>
+            </CardHeader>
+            <CardContent>
+              <div className="grid grid-cols-2 gap-4">
+              <img
+
+      src="https://collov.ai/img/interior.2df65ae7.jpg"
+      width={300}
+      height={300}
+      className="aspect-square object-cover rounded-md"
+ 
+
+      />
+      
+     
+    <img
+                  src="https://d17axom7zrjq3q.cloudfront.net/20230901/7e2c925c-fb7e-48f9-9001-7296343f4bd3.jpg"
+                  width={300}
+                  height={300}
+                  alt="Imagen"
+                  className="aspect-square object-cover rounded-md"
+                />
+              </div>
+            </CardContent>
+            <CardFooter> 
+            </CardFooter>
+          </Card>
+          </Link>
+
+ 
+
+
+
+
+
+
+
+
+
+
+          <Link href="       https://interiorai.com/?via=aiimageandvideogenerators" className="block bg-slate-50 opacity-95 shadow-lg" prefetch={false}>
+          <Card className="">
+            <CardHeader>
+              <div className="flex items-center gap-4">
+ 
+                <div>
+                  <CardTitle>         Interior AI
+                  </CardTitle>
+                  <CardDescription>
+                  Redesign your interior in seconds using AI.
+                  Save money and use AI to redesign your interior from your laptop or phone instead of hiring an expensive interior designer
+             
+
+                  </CardDescription>
+                </div>
+              </div>
+            </CardHeader>
+            <CardContent>
+              <div className="grid grid-cols-2 gap-4">
+              <img
+
+      src="https://interiorai.com/cdn-cgi/image/format=jpeg,fit=cover,width=1536,quality=75/https://r2-us-west.interiorai.com/1707042290-620e079153d29aea78df57c4da248a9d-1.png"
+      width={300}
+      height={300}
+      className="aspect-square object-cover rounded-md"
+ 
+
+      />
+      
+     
+    <img
+                  src="https://customer-ecy0wgmn1dow5gsd.cloudflarestream.com/af09f55d3aa552d2c07713031191f363/thumbnails/thumbnail.jpg?time=&height=600"
+                  width={300}
+                  height={300}
+                  alt="Imagen"
+                  className="aspect-square object-cover rounded-md"
+                />
+              </div>
+            </CardContent>
+            <CardFooter> 
+            </CardFooter>
+          </Card>
+          </Link>
 
 
 

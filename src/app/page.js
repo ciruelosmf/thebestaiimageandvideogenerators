@@ -75,6 +75,9 @@ export default function Component() {
             <Link href="./blog" className="text-sm font-medium hover:text-primary" prefetch={false}>
               Blog
             </Link>
+            <Link href="./prompts" className="text-sm font-medium hover:text-primary" prefetch={false}>
+              Prompts
+            </Link>
             <Link href="./about" className="text-sm font-medium hover:text-primary" prefetch={false}>
               About
             </Link>
@@ -177,14 +180,14 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
                   width={300}
                   height={300}
                   alt="Imagen"
-                  className="aspect-square object-cover rounded-md  shadow-lg"
+                  className="  object-cover  shadow-lg"
                 />
                 <img
                   src="/photoai_2.webp"
                   width={300}
                   height={300}
                   alt="Imagen"
-                  className="aspect-square object-cover rounded-md  shadow-lg"
+                  className="  object-cover  shadow-lg"
                 />
               </div>
             </CardContent>
@@ -230,7 +233,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
       src="https://cdn2.imagine.art/imagine-frontend/assets/video/landing-page/tools/text-to-img.webm"
       width={300}
       height={300}
-      className="aspect-square object-cover rounded-md  shadow-lg"
+      className="aspect-square object-cover  shadow-lg"
       autoPlay
       muted
       loop
@@ -244,7 +247,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
       src="https://cdn2.imagine.art/imagine-frontend/assets/video/landing-page/tools/text-to-video.webm"
       width={300}
       height={300}
-      className="aspect-square object-cover rounded-md  shadow-lg"
+      className="aspect-square object-cover  shadow-lg"
       autoPlay
       muted
       loop
@@ -309,7 +312,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
      src="https://artisse.ai/wp-content/uploads/2024/06/Web-Hero-Animation.mp4"
       width={300}
       height={300}
-      className="aspect-square object-cover rounded-md   "
+      className="aspect-square object-cover   "
       autoPlay
       muted
       loop
@@ -322,7 +325,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
      src="https://artisse.ai/wp-content/uploads/2024/06/Actual-photo.mp4"
       width={300}
       height={300}
-      className="aspect-square object-cover rounded-md  "
+      className="aspect-square object-cover  "
       autoPlay
       muted
       loop
@@ -376,14 +379,14 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
                   width={300}
                   height={300}
                   alt="Writesonic"
-                  className="aspect-square object-cover rounded-md  shadow-lg"
+                  className="aspect-square object-cover  shadow-lg"
                 />
                 <img
                   src="./writesonic_2.webp"
                   width={300}
                   height={300}
                   alt="Writesonic"
-                  className="aspect-square object-cover rounded-md  shadow-lg"
+                  className="aspect-square object-cover  shadow-lg"
                 />
             </div>
           </CardContent>
@@ -432,14 +435,14 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
                   width={300}
                   height={300}
                   alt="dreamstudio_1"
-                  className="aspect-square object-cover rounded-md  shadow-lg"
+                  className="aspect-square object-cover  shadow-lg"
                 />
                 <img
                   src="./dreamstudio_2.jfif"
                   width={300}
                   height={300}
                   alt="dreamstudio_1"
-                  className="aspect-square object-cover rounded-md  shadow-lg"
+                  className="aspect-square object-cover  shadow-lg"
                 />
             </div>
           </CardContent>
@@ -496,7 +499,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
                   width={300}
                   height={300}
                   alt="dreamstudio_1"
-                  className="aspect-square object-cover rounded-md  shadow-lg"
+                  className="aspect-square object-cover  shadow-lg"
                 />
 
  
@@ -506,7 +509,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
       src="https://cdn-luma.com/public/lumalabs.ai/june-12-launch-dream-machine-high-res/assets/dream-machine/featured/videos/2.webm"
       width={300}
       height={300}
-      className="aspect-square object-cover rounded-md  shadow-lg"
+      className="aspect-square object-cover  shadow-lg"
       autoPlay
       muted
       loop
@@ -601,7 +604,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
       src="https://d3phaj0sisr2ct.cloudfront.net/site/videos/gen-3-alpha/carousel-01/gen-3-alpha-output-002.mp4"
       width={300}
       height={300}
-      className="aspect-square object-cover rounded-md  shadow-lg"
+      className="aspect-square object-cover  shadow-lg"
       autoPlay
       muted
       loop
@@ -615,7 +618,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
       src="https://d3phaj0sisr2ct.cloudfront.net/site/videos/gen-3-alpha/homepage/carousel/gen-3-alpha-output-003.mp4"
       width={300}
       height={300}
-      className="aspect-square object-cover rounded-md  shadow-lg"
+      className="aspect-square object-cover  shadow-lg"
       autoPlay
       muted
       loop
@@ -665,14 +668,14 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
                   width={300}
                   height={300}
                   alt="Midjourney"
-                  className="aspect-square object-cover rounded-md  shadow-lg shadow-lg"
+                  className="aspect-square object-cover  shadow-lg shadow-lg"
                 />
                 <img
                   src="https://cdn.prod.website-files.com/63da3362f67ed6f71c9489c1/660d14a67022cce110e967ee_001.png"
                   width={300}
                   height={300}
                   alt="Midjourney"
-                  className="aspect-square object-cover rounded-md  shadow-lg shadow-lg"
+                  className="aspect-square object-cover  shadow-lg shadow-lg"
                 />
               </div>
 </CardContent>
@@ -716,14 +719,14 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
                   width={300}
                   height={300}
                   alt="DALL-E 2"
-                  className="aspect-square object-cover rounded-md  shadow-lg"
+                  className="aspect-square object-cover  shadow-lg"
                 />
                 <img
                   src="https://images.ctfassets.net/kftzwdyauwt9/5JZsznv2kZBJhcntpSLEL9/fbe72de7edaceb8a44176170312ccf2a/picnic-cherry-tree.jpeg?w=1080&q=90&fm=webp"
                   width={300}
                   height={300}
                   alt="DALL-E 2"
-                  className="aspect-square object-cover rounded-md  shadow-lg"
+                  className="aspect-square object-cover  shadow-lg"
                 />
               </div>
             </CardContent>
@@ -770,18 +773,18 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
             <CardContent>
               <div className="grid grid-cols-2 gap-4">
                 <img
-                  src="/pictory.jpg"
+                  src="/pictory.JPG"
                   width={300}
                   height={300}
                   alt="Imagen"
-                  className="aspect-square object-cover rounded-md  shadow-lg"
+                  className="aspect-square object-cover  shadow-lg"
                 />
                 <img
-                  src="/pictory.jpg"
+                  src="/pictory.JPG"
                   width={300}
                   height={300}
                   alt="Imagen"
-                  className="aspect-square object-cover rounded-md  shadow-lg"
+                  className="aspect-square object-cover  shadow-lg"
                 />
               </div>
             </CardContent>
@@ -840,14 +843,14 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
                   width={300}
                   height={300}
                   alt="Imagen"
-                  className="aspect-square object-cover rounded-md  shadow-lg"
+                  className="aspect-square object-cover  shadow-lg"
                 />
                 <img
                   src="https://framerusercontent.com/images/YR0QoptQ9rYXwm2co5MkWmSsgUg.gif"
                   width={300}
                   height={300}
                   alt="Imagen"
-                  className="aspect-square object-cover rounded-md  shadow-lg"
+                  className="aspect-square object-cover  shadow-lg"
                 />
               </div>
             </CardContent>
@@ -872,7 +875,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
 
 
 
-          <Link href="https://www.videofast.app/" className="block  " prefetch={false}>
+          <Link href="https://www.opus.pro/" className="block  " prefetch={false}>
           <Card className="">
             <CardHeader>
               <div className="flex items-center gap-4">
@@ -892,7 +895,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
       src="https://ext.cdn.opus.pro/corp-it/landing-page/desktop_update.mp4"
       width={300}
       height={300}
-      className="aspect-square object-cover rounded-md  shadow-lg"
+      className="aspect-square object-cover  shadow-lg"
       autoPlay
       muted
       loop
@@ -906,7 +909,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
       src="https://assets-global.website-files.com/6388604483b03a9ecb34d695/65bb7ef012f2fd3fed4c1231_OpusClip%20Video%203-transcode.mp4"
       width={300}
       height={300}
-      className="aspect-square object-cover rounded-md  shadow-lg"
+      className="aspect-square object-cover  shadow-lg"
       autoPlay
       muted
       loop
@@ -965,7 +968,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
       src="https://virbo.wondershare.com/assets/video/homepage2024/step1-video.mp4"
       width={300}
       height={300}
-      className="aspect-square object-cover rounded-md  shadow-lg"
+      className="aspect-square object-cover  shadow-lg"
       autoPlay
       muted
       loop
@@ -979,7 +982,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
       src="https://virbo.wondershare.com/assets/video/homepage2024/education-training.mp4"
       width={300}
       height={300}
-      className="aspect-square object-cover rounded-md  shadow-lg"
+      className="aspect-square object-cover  shadow-lg"
       autoPlay
       muted
       loop
@@ -1034,7 +1037,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
       src="https://collov.ai/img/interior.2df65ae7.jpg"
       width={300}
       height={300}
-      className="aspect-square object-cover rounded-md  shadow-lg"
+      className="aspect-square object-cover  shadow-lg"
  
 
       />
@@ -1045,7 +1048,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
                   width={300}
                   height={300}
                   alt="Imagen"
-                  className="aspect-square object-cover rounded-md  shadow-lg"
+                  className="aspect-square object-cover  shadow-lg"
                 />
               </div>
             </CardContent>
@@ -1089,7 +1092,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
       src="https://interiorai.com/cdn-cgi/image/format=jpeg,fit=cover,width=1536,quality=75/https://r2-us-west.interiorai.com/1707042290-620e079153d29aea78df57c4da248a9d-1.png"
       width={300}
       height={300}
-      className="aspect-square object-cover rounded-md  shadow-lg"
+      className="aspect-square object-cover  shadow-lg"
  
 
       />
@@ -1100,7 +1103,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
                   width={300}
                   height={300}
                   alt="Imagen"
-                  className="aspect-square object-cover rounded-md  shadow-lg"
+                  className="aspect-square object-cover  shadow-lg"
                 />
               </div>
             </CardContent>
@@ -1157,7 +1160,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
 "
       width={300}
       height={300}
-      className="aspect-square object-cover rounded-md  shadow-lg"
+      className="aspect-square object-cover  shadow-lg"
       autoPlay
       muted
       loop
@@ -1174,7 +1177,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
 "
       width={300}
       height={300}
-      className="aspect-square object-cover rounded-md  shadow-lg"
+      className="aspect-square object-cover  shadow-lg"
       autoPlay
       muted
       loop
@@ -1222,15 +1225,15 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
         <div className="container max-w-7xl py-6 px-4 md:px-6 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <BotIcon className="w-6 h-6" />
-            <span className="text-sm font-medium">AI Image Generators</span>
+            <span className="text-sm font-medium px-4 ">AI Image Generators</span>
           </div>
 
           <nav className="hidden md:flex items-center gap-4">
-            <Link href="./privacy" className="text-sm font-medium hover:text-primary" prefetch={false}>
+            <Link href="./privacy" className="text-sm font-medium hover:text-primary px-4  " prefetch={false}>
               Privacy
             </Link>
  
-            <Link href="./terms" className="text-sm font-medium hover:text-primary" prefetch={false}>
+            <Link href="./terms" className="text-sm font-medium hover:text-primary px-4 " prefetch={false}>
             Terms
             </Link>
  

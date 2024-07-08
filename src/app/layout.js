@@ -31,6 +31,7 @@ export default function RootLayout({ children }) {
 });
          `}
       </Script>
+      <meta name="saashub-verification" content="71q2g0y0qjqw" />
 
           </head>
 

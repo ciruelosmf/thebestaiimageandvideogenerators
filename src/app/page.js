@@ -1132,11 +1132,63 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
 
 
 
+          <Link href="       https://www.basedlabs.ai/?via=aiimageandvideogenerators" className="block bg-slate-50 opacity-95 shadow-lg" prefetch={false}>
+          <Card className="">
+            <CardHeader>
+              <div className="flex items-center gap-4">
+ 
+                <div>
+                  <CardTitle>         BasedLabs AI
+                  </CardTitle>
+                  <CardDescription>
+                  From AI anime art, AI image generation, and AI image extending. BasedLabs offers a lot of based AI tools to help you do more.
 
 
+             
 
+                  </CardDescription>
+                </div>
+              </div>
+            </CardHeader>
+            <CardContent>
+              <div className="grid grid-cols-2 gap-4">
+              <video
+      src="https://cdn.basedlabs.ai/a3960a51-6463-4271-b8fa-4c830a5df9a1
+"
+      width={300}
+      height={300}
+      className="aspect-square object-cover rounded-md"
+      autoPlay
+      muted
+      loop
+      playsInline
+      preload="metadata"
 
-
+    >
+      Your browser does not support the video tag.
+    </video>
+    <video
+      src="
+          
+          https://cdn.basedlabs.ai/8cf57d10-2598-11ef-91c0-6b7a39e8938f.mp4
+"
+      width={300}
+      height={300}
+      className="aspect-square object-cover rounded-md"
+      autoPlay
+      muted
+      loop
+      playsInline
+           preload="metadata"
+    >
+      Your browser does not support the video tag.
+    </video>
+              </div>
+            </CardContent>
+            <CardFooter> 
+            </CardFooter>
+          </Card>
+          </Link>
 
 
 

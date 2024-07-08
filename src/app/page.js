@@ -63,7 +63,7 @@ export default function Component() {
 
 
 
-      <header className=" sticky top-0 z-40 border-b border-b-muted block bg-slate-50 opacity-95 shadow-lg ">
+      <header className=" sticky top-0 z-40 border-b border-b-muted block bg-slate-50  ">
         <div className="container max-w-7xl py-2 px-4 md:px-6 flex items-center justify-between">
           <div className="flex flex-wrap items-center justify-center gap-2 ">
             <BotIcon className="w-6 h-6" />
@@ -144,19 +144,19 @@ export default function Component() {
 
 
 
-      <main className="container  md:max-w-screen-2xl	 max-w-4xl px-2 md:px-6 pb-12 flex-1">
+      <main className="container  md:max-w-screen-7xl	 max-w-fit px-2 md:px-6 pb-12 flex-1">
 
       <div className="    mx-auto"> {/* Add this wrapper */}
 
-        <div className="grid grid-cols-1  md:grid-cols-3 gap-8 md:gap-4 ">
+        <div className="grid grid-cols-1  md:grid-cols-5 gap-8 md:gap-5  ">
 
 
 
 
 
-        <Link  href="https://app.photoai.me/?via=aiimageandvideogenerators" className="  block bg-slate-50 opacity-95 shadow-lg  " prefetch={false}>
+        <Link  href="https://app.photoai.me/?via=aiimageandvideogenerators" className="  block      " prefetch={false}>
 
-        <Card>
+        <Card className="  block      ">
             <CardHeader>
               <div className="flex items-center gap-4">
                 
@@ -177,14 +177,14 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
                   width={300}
                   height={300}
                   alt="Imagen"
-                  className="aspect-square object-cover rounded-md"
+                  className="aspect-square object-cover rounded-md  shadow-lg"
                 />
                 <img
                   src="/photoai_2.webp"
                   width={300}
                   height={300}
                   alt="Imagen"
-                  className="aspect-square object-cover rounded-md"
+                  className="aspect-square object-cover rounded-md  shadow-lg"
                 />
               </div>
             </CardContent>
@@ -211,7 +211,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
 
 
 
-          <Link href="https://www.imagine.art/?ref=mwe1nji" className="block bg-slate-50 opacity-95 shadow-lg" prefetch={false}>
+          <Link href="https://www.imagine.art/?ref=mwe1nji" className="block  " prefetch={false}>
           <Card className="  ">
             <CardHeader>
               <div className="flex items-center gap-4">     
@@ -230,7 +230,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
       src="https://cdn2.imagine.art/imagine-frontend/assets/video/landing-page/tools/text-to-img.webm"
       width={300}
       height={300}
-      className="aspect-square object-cover rounded-md"
+      className="aspect-square object-cover rounded-md  shadow-lg"
       autoPlay
       muted
       loop
@@ -244,7 +244,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
       src="https://cdn2.imagine.art/imagine-frontend/assets/video/landing-page/tools/text-to-video.webm"
       width={300}
       height={300}
-      className="aspect-square object-cover rounded-md"
+      className="aspect-square object-cover rounded-md  shadow-lg"
       autoPlay
       muted
       loop
@@ -285,7 +285,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
 
 
 
-          <Link href="       https://app.artisse.ai/?via=aiimageandvideogenerators" className="block bg-slate-50 opacity-95 shadow-lg" prefetch={false}>
+          <Link href="       https://app.artisse.ai/?via=aiimageandvideogenerators" className="block  " prefetch={false}>
           <Card className="">
             <CardHeader>
               <div className="flex items-center gap-4">
@@ -309,7 +309,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
      src="https://artisse.ai/wp-content/uploads/2024/06/Web-Hero-Animation.mp4"
       width={300}
       height={300}
-      className="aspect-square object-cover rounded-md"
+      className="aspect-square object-cover rounded-md   "
       autoPlay
       muted
       loop
@@ -322,7 +322,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
      src="https://artisse.ai/wp-content/uploads/2024/06/Actual-photo.mp4"
       width={300}
       height={300}
-      className="aspect-square object-cover rounded-md"
+      className="aspect-square object-cover rounded-md  "
       autoPlay
       muted
       loop
@@ -355,7 +355,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
 
 
 
-    <Link href="https://writesonic.com/photosonic-ai-art-generator" className="block bg-slate-50 opacity-95 shadow-lg" prefetch={false}>
+    <Link href="https://writesonic.com/photosonic-ai-art-generator" className="block  " prefetch={false}>
           <Card className=" ">
             <CardHeader>
               <div className="flex items-center gap-4">     
@@ -376,14 +376,14 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
                   width={300}
                   height={300}
                   alt="Writesonic"
-                  className="aspect-square object-cover rounded-md"
+                  className="aspect-square object-cover rounded-md  shadow-lg"
                 />
                 <img
                   src="./writesonic_2.webp"
                   width={300}
                   height={300}
                   alt="Writesonic"
-                  className="aspect-square object-cover rounded-md"
+                  className="aspect-square object-cover rounded-md  shadow-lg"
                 />
             </div>
           </CardContent>
@@ -410,7 +410,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
 
 
 
-          <Link href="https://dreamstudio.ai/" className="block bg-slate-50 opacity-95 shadow-lg" prefetch={false}>
+          <Link href="https://dreamstudio.ai/" className="block   " prefetch={false}>
           <Card className="">
             <CardHeader>
               <div className="flex items-center gap-4">     
@@ -432,14 +432,14 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
                   width={300}
                   height={300}
                   alt="dreamstudio_1"
-                  className="aspect-square object-cover rounded-md"
+                  className="aspect-square object-cover rounded-md  shadow-lg"
                 />
                 <img
                   src="./dreamstudio_2.jfif"
                   width={300}
                   height={300}
                   alt="dreamstudio_1"
-                  className="aspect-square object-cover rounded-md"
+                  className="aspect-square object-cover rounded-md  shadow-lg"
                 />
             </div>
           </CardContent>
@@ -473,7 +473,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
 
 
 
-          <Link href="https://lumalabs.ai/dream-machine" className="block bg-slate-50 opacity-95 shadow-lg " prefetch={false}>
+          <Link href="https://lumalabs.ai/dream-machine" className="block   " prefetch={false}>
           <Card className="">
             <CardHeader>
               <div className="flex items-center gap-4">
@@ -496,7 +496,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
                   width={300}
                   height={300}
                   alt="dreamstudio_1"
-                  className="aspect-square object-cover rounded-md"
+                  className="aspect-square object-cover rounded-md  shadow-lg"
                 />
 
  
@@ -506,7 +506,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
       src="https://cdn-luma.com/public/lumalabs.ai/june-12-launch-dream-machine-high-res/assets/dream-machine/featured/videos/2.webm"
       width={300}
       height={300}
-      className="aspect-square object-cover rounded-md"
+      className="aspect-square object-cover rounded-md  shadow-lg"
       autoPlay
       muted
       loop
@@ -532,7 +532,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
 
 
 
-          <Link href="https://www.midjourney.com/home" className="block bg-slate-50 opacity-95 shadow-lg" prefetch={false}>
+          <Link href="https://www.midjourney.com/home" className="block  " prefetch={false}>
 
           <Card className="">
             <CardHeader>
@@ -552,14 +552,14 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
                   width={300}
                   height={300}
                   alt="Midjourney"
-                  className="aspect-square object-cover rounded-md shadow-lg"
+                  className="aspect-square object-cover "
                 />
                 <img
                   src="./dj_2.jpg "
                   width={300}
                   height={300}
                   alt="Midjourney"
-                  className="aspect-square object-cover rounded-md shadow-lg"
+                  className="aspect-square object-cover"
                 />
               </div>
             </CardContent>
@@ -584,7 +584,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
 
 
 
-          <Link href="https://app.runwayml.com/login" className="block bg-slate-50 opacity-95 shadow-lg" prefetch={false}>
+          <Link href="https://app.runwayml.com/login" className="block  " prefetch={false}>
           <Card className="  ">
             <CardHeader>
               <div className="flex items-center gap-4">     
@@ -601,7 +601,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
       src="https://d3phaj0sisr2ct.cloudfront.net/site/videos/gen-3-alpha/carousel-01/gen-3-alpha-output-002.mp4"
       width={300}
       height={300}
-      className="aspect-square object-cover rounded-md"
+      className="aspect-square object-cover rounded-md  shadow-lg"
       autoPlay
       muted
       loop
@@ -615,7 +615,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
       src="https://d3phaj0sisr2ct.cloudfront.net/site/videos/gen-3-alpha/homepage/carousel/gen-3-alpha-output-003.mp4"
       width={300}
       height={300}
-      className="aspect-square object-cover rounded-md"
+      className="aspect-square object-cover rounded-md  shadow-lg"
       autoPlay
       muted
       loop
@@ -644,7 +644,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
 
 
 
-          <Link href="https://www.deepbrain.io/features/ai-video-generator" className="block bg-slate-50 opacity-95 shadow-lg" prefetch={false}>
+          <Link href="https://www.deepbrain.io/features/ai-video-generator" className="block  " prefetch={false}>
           <Card className="  ">
             <CardHeader>
               <div className="flex items-center gap-4">     
@@ -665,14 +665,14 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
                   width={300}
                   height={300}
                   alt="Midjourney"
-                  className="aspect-square object-cover rounded-md shadow-lg"
+                  className="aspect-square object-cover rounded-md  shadow-lg shadow-lg"
                 />
                 <img
                   src="https://cdn.prod.website-files.com/63da3362f67ed6f71c9489c1/660d14a67022cce110e967ee_001.png"
                   width={300}
                   height={300}
                   alt="Midjourney"
-                  className="aspect-square object-cover rounded-md shadow-lg"
+                  className="aspect-square object-cover rounded-md  shadow-lg shadow-lg"
                 />
               </div>
 </CardContent>
@@ -695,7 +695,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
 
 
 
-          <Link href="https://openai.com/index/dall-e-3/" className="block bg-slate-50 opacity-95 shadow-lg" prefetch={false}>
+          <Link href="https://openai.com/index/dall-e-3/" className="block  " prefetch={false}>
 
           <Card className="">
             <CardHeader>
@@ -716,14 +716,14 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
                   width={300}
                   height={300}
                   alt="DALL-E 2"
-                  className="aspect-square object-cover rounded-md"
+                  className="aspect-square object-cover rounded-md  shadow-lg"
                 />
                 <img
                   src="https://images.ctfassets.net/kftzwdyauwt9/5JZsznv2kZBJhcntpSLEL9/fbe72de7edaceb8a44176170312ccf2a/picnic-cherry-tree.jpeg?w=1080&q=90&fm=webp"
                   width={300}
                   height={300}
                   alt="DALL-E 2"
-                  className="aspect-square object-cover rounded-md"
+                  className="aspect-square object-cover rounded-md  shadow-lg"
                 />
               </div>
             </CardContent>
@@ -754,7 +754,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
 
 
 
-          <Link href="https://lumalabs.ai/dream-machine" className="block bg-slate-50 opacity-95 shadow-lg" prefetch={false}>
+          <Link href="https://lumalabs.ai/dream-machine" className="block  " prefetch={false}>
           <Card className="">
             <CardHeader>
               <div className="flex items-center gap-4">
@@ -774,14 +774,14 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
                   width={300}
                   height={300}
                   alt="Imagen"
-                  className="aspect-square object-cover rounded-md"
+                  className="aspect-square object-cover rounded-md  shadow-lg"
                 />
                 <img
                   src="/pictory.jpg"
                   width={300}
                   height={300}
                   alt="Imagen"
-                  className="aspect-square object-cover rounded-md"
+                  className="aspect-square object-cover rounded-md  shadow-lg"
                 />
               </div>
             </CardContent>
@@ -820,7 +820,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
 
 
 
-          <Link href="https://www.videofast.app/" className="block bg-slate-50 opacity-95 shadow-lg" prefetch={false}>
+          <Link href="https://www.videofast.app/" className="block  " prefetch={false}>
           <Card className="">
             <CardHeader>
               <div className="flex items-center gap-4">
@@ -840,14 +840,14 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
                   width={300}
                   height={300}
                   alt="Imagen"
-                  className="aspect-square object-cover rounded-md"
+                  className="aspect-square object-cover rounded-md  shadow-lg"
                 />
                 <img
                   src="https://framerusercontent.com/images/YR0QoptQ9rYXwm2co5MkWmSsgUg.gif"
                   width={300}
                   height={300}
                   alt="Imagen"
-                  className="aspect-square object-cover rounded-md"
+                  className="aspect-square object-cover rounded-md  shadow-lg"
                 />
               </div>
             </CardContent>
@@ -872,7 +872,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
 
 
 
-          <Link href="https://www.videofast.app/" className="block bg-slate-50 opacity-95 shadow-lg" prefetch={false}>
+          <Link href="https://www.videofast.app/" className="block  " prefetch={false}>
           <Card className="">
             <CardHeader>
               <div className="flex items-center gap-4">
@@ -892,7 +892,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
       src="https://ext.cdn.opus.pro/corp-it/landing-page/desktop_update.mp4"
       width={300}
       height={300}
-      className="aspect-square object-cover rounded-md"
+      className="aspect-square object-cover rounded-md  shadow-lg"
       autoPlay
       muted
       loop
@@ -906,7 +906,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
       src="https://assets-global.website-files.com/6388604483b03a9ecb34d695/65bb7ef012f2fd3fed4c1231_OpusClip%20Video%203-transcode.mp4"
       width={300}
       height={300}
-      className="aspect-square object-cover rounded-md"
+      className="aspect-square object-cover rounded-md  shadow-lg"
       autoPlay
       muted
       loop
@@ -943,7 +943,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
 
 
 
-          <Link href="https://virbo.wondershare.com/" className="block bg-slate-50 opacity-95 shadow-lg" prefetch={false}>
+          <Link href="https://virbo.wondershare.com/" className="block  " prefetch={false}>
           <Card className="">
             <CardHeader>
               <div className="flex items-center gap-4">
@@ -965,7 +965,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
       src="https://virbo.wondershare.com/assets/video/homepage2024/step1-video.mp4"
       width={300}
       height={300}
-      className="aspect-square object-cover rounded-md"
+      className="aspect-square object-cover rounded-md  shadow-lg"
       autoPlay
       muted
       loop
@@ -979,7 +979,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
       src="https://virbo.wondershare.com/assets/video/homepage2024/education-training.mp4"
       width={300}
       height={300}
-      className="aspect-square object-cover rounded-md"
+      className="aspect-square object-cover rounded-md  shadow-lg"
       autoPlay
       muted
       loop
@@ -1011,7 +1011,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
 
 
 
-          <Link href="       https://collov.ai/" className="block bg-slate-50 opacity-95 shadow-lg" prefetch={false}>
+          <Link href="       https://collov.ai/" className="block  " prefetch={false}>
           <Card className="">
             <CardHeader>
               <div className="flex items-center gap-4">
@@ -1034,7 +1034,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
       src="https://collov.ai/img/interior.2df65ae7.jpg"
       width={300}
       height={300}
-      className="aspect-square object-cover rounded-md"
+      className="aspect-square object-cover rounded-md  shadow-lg"
  
 
       />
@@ -1045,7 +1045,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
                   width={300}
                   height={300}
                   alt="Imagen"
-                  className="aspect-square object-cover rounded-md"
+                  className="aspect-square object-cover rounded-md  shadow-lg"
                 />
               </div>
             </CardContent>
@@ -1065,7 +1065,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
 
 
 
-          <Link href="       https://interiorai.com/?via=aiimageandvideogenerators" className="block bg-slate-50 opacity-95 shadow-lg" prefetch={false}>
+          <Link href="       https://interiorai.com/?via=aiimageandvideogenerators" className="block  " prefetch={false}>
           <Card className="">
             <CardHeader>
               <div className="flex items-center gap-4">
@@ -1089,7 +1089,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
       src="https://interiorai.com/cdn-cgi/image/format=jpeg,fit=cover,width=1536,quality=75/https://r2-us-west.interiorai.com/1707042290-620e079153d29aea78df57c4da248a9d-1.png"
       width={300}
       height={300}
-      className="aspect-square object-cover rounded-md"
+      className="aspect-square object-cover rounded-md  shadow-lg"
  
 
       />
@@ -1100,7 +1100,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
                   width={300}
                   height={300}
                   alt="Imagen"
-                  className="aspect-square object-cover rounded-md"
+                  className="aspect-square object-cover rounded-md  shadow-lg"
                 />
               </div>
             </CardContent>
@@ -1132,7 +1132,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
 
 
 
-          <Link href="       https://www.basedlabs.ai/?via=aiimageandvideogenerators" className="block bg-slate-50 opacity-95 shadow-lg" prefetch={false}>
+          <Link href="       https://www.basedlabs.ai/?via=aiimageandvideogenerators" className="block  " prefetch={false}>
           <Card className="">
             <CardHeader>
               <div className="flex items-center gap-4">
@@ -1157,7 +1157,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
 "
       width={300}
       height={300}
-      className="aspect-square object-cover rounded-md"
+      className="aspect-square object-cover rounded-md  shadow-lg"
       autoPlay
       muted
       loop
@@ -1174,7 +1174,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
 "
       width={300}
       height={300}
-      className="aspect-square object-cover rounded-md"
+      className="aspect-square object-cover rounded-md  shadow-lg"
       autoPlay
       muted
       loop
@@ -1218,7 +1218,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
 
 
 
-      <footer className=" border-t border-t-muted bg-slate-50 opacity-95 shadow-lg">
+      <footer className=" border-t border-t-muted bg-slate-50 ">
         <div className="container max-w-7xl py-6 px-4 md:px-6 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <BotIcon className="w-6 h-6" />

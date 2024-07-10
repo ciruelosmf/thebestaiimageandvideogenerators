@@ -33,6 +33,50 @@ export default function Blog() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
         <h1 className="text-3xl font-bold text-center text-gray-900 mb-8">Discover Prompts to Ignite Your AI Creations</h1>
         <div className="prose prose-lg mx-auto">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <p className="mb-12">
+        <h2 className="text-lg font-bold  text-gray-900 mb-2"> Create mind maps with Claude 3.5 Sonnet</h2>
+
+Claude 3.5 Sonnet can generate detailed mind maps of video shot types and elements, which can significantly improve your prompts for AI video generation with other AI tools like Runway Gen-3 or Luma Dream Machine.
+
+Step-by-step:
+
+Head over to Claude AI.
+
+Use the following prompt: "I am using a video generator. Please give me a map of all the different types of shots and things I can enter for my prompt."
+
+Explore the map and craft detailed prompts to use for AI video generator tools!
+
+source: the rundown AI
+          </p>
+
+
+
+
+<div class="divide-y divide-dashed">
+  <div>-</div>
+ 
+</div>
+
+
+
+
+
+
+
           <p className="mb-12">
           Chibi [SUBJECT], [COLOR PALLETE], 3d model vinyl toy, white background, front perspective, minimalistic, OC renderer, C4D
           </p>
@@ -81,7 +125,7 @@ export default function Blog() {
 
           <p className="mb-12">
 
-          Render an Atmospheric, cinematic cityscape at golden hour, dramatic lighting silhouetting grand architecture against a textured sky. Use unique perspective, framed by natural elements, reflecting urban grandeur blended with nature's tranquil beauty. A true visual feast."
+          Render an Atmospheric, cinematic cityscape at golden hour, dramatic lighting silhouetting grand architecture against a textured sky. Use unique perspective, framed by natural elements, reflecting urban grandeur blended with nature's tranquil beauty. A true visual feast.
 
 
           </p>

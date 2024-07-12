@@ -1209,6 +1209,99 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <Link href="       https://magnific.ai/" className="block  " prefetch={false}>
+          <Card className="">
+            <CardHeader>
+              <div className="flex items-center gap-4">
+ 
+                <div>
+                  <CardTitle>         Magnific 
+                  </CardTitle>
+                  <CardDescription>
+                  The most advanced AI tech to achieve insanely high-res upscaling. Not only upscale, enhance & transform! Magnific can reimagine as many details as you wish guided by your own prompt and parameters!           
+                  </CardDescription>
+                </div>
+              </div>
+            </CardHeader>
+            <CardContent>
+              <div className="grid grid-cols-2 gap-4">
+              <img
+                  src="https://magnific.ai/magnific-highres2low.jpg"
+                  width={300}
+                  height={300}
+                  alt="Imagen"
+                  className="aspect-square object-cover  shadow-lg"
+                />
+
+                  <img
+                  src="https://magnific.ai/ilu8low.jpg"
+                  width={300}
+                  height={300}
+                  alt="Imagen"
+                  className="aspect-square object-cover  shadow-lg"
+                />
+              </div>
+            </CardContent>
+            <CardFooter> 
+            </CardFooter>
+          </Card>
+          </Link>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         </div>
 
 

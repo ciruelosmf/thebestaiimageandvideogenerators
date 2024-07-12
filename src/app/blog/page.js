@@ -37,6 +37,47 @@ export default function Blog() {
         
         <h1 className="text-3xl font-bold text-center text-gray-900 mb-12">Blog Posts</h1>
         <ul className="space-y-6">
+
+
+
+
+
+
+
+        <li>
+            <Link href="/blog/posts/best-ai-video-generators" className="text-xl font-semibold text-blue-600 hover:text-blue-800">
+            The best AI video generators
+            </Link>
+          </li>
+
+
+
+
+          <li>
+            <Link href="/blog/posts/best-ai-image-generators" className="text-xl font-semibold text-blue-600 hover:text-blue-800">
+            The best AI image generators
+            </Link>
+          </li>
+
+
+
+
+        <li>
+            <Link href="/blog/posts/guide-creating-marketing-campaign-using-AI-tools" className="text-xl font-semibold text-blue-600 hover:text-blue-800">
+              From Concept to Creation: A Step-by-Step Guide to Creating a Marketing Campaign Using AI Visual Tools
+            </Link>
+          </li>
+
+
+
+
+
+
+
+
+
+
+
           <li>
             <Link href="/blog/posts/top-ai-image-generation-tools-2024" className="text-xl font-semibold text-blue-600 hover:text-blue-800">
               Top 10 AI Image Generation Tools for 2024: A Comprehensive Comparison
@@ -57,17 +98,60 @@ export default function Blog() {
               The Ethics of AI-Generated Visuals: Copyright, Authenticity, and Future Regulations
             </Link>
           </li>
+
+
+
+
+
+
           <li>
             <Link href="/blog/posts/guide-creating-marketing-campaign-using-AI-tools" className="text-xl font-semibold text-blue-600 hover:text-blue-800">
               From Concept to Creation: A Step-by-Step Guide to Creating a Marketing Campaign Using AI Visual Tools
             </Link>
           </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         </ul>
-        <div className="mt-12">
+
+
+
+
+
+
+
+
+       <div className="mt-12">
           <Link href="/" className="text-sm font-medium hover:text-primary" prefetch={false}>
             Go to Homepage
           </Link>
         </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       </div>
     </section>
 

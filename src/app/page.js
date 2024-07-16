@@ -1301,6 +1301,134 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
 
 
 
+          <Link href="        https://cgdream.ai/   " className="block  " prefetch={false}>
+          <Card className="">
+            <CardHeader>
+              <div className="flex items-center gap-4">
+ 
+                <div>
+                  <CardTitle>         CGDream AI Image Generator 
+                  </CardTitle>
+                  <CardDescription>
+                  Take full control of your visuals with our AI image generator, creating stunning images with various customization options, filters, and 3D controls.          
+                  </CardDescription>
+                </div>
+              </div>
+            </CardHeader>
+            <CardContent>
+              <div className="grid grid-cols-2 gap-4">
+              <img
+                  src="https://cdn.prod.website-files.com/668281ece7b010ab6b0d2eac/6691549e18a22e39ee6ad5e3_hero-img.jpg"
+                  width={300}
+                  height={300}
+                  alt="Imagen"
+                  className="aspect-square object-cover  shadow-lg"
+                />
+
+                  <img
+                  src="https://cdn.prod.website-files.com/668281ece7b010ab6b0d2eac/668fe73923d765b325136a8e_hamster%202.jpg"
+                  width={300}
+                  height={300}
+                  alt="Imagen"
+                  className="aspect-square object-cover  shadow-lg"
+                />
+              </div>
+            </CardContent>
+            <CardFooter> 
+            </CardFooter>
+          </Card>
+          </Link>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <Link href="       https://rendernet.ai/   " className="block  " prefetch={false}>
+          <Card className="">
+            <CardHeader>
+              <div className="flex items-center gap-4">
+ 
+                <div>
+                  <CardTitle>         RenderNet 
+                  </CardTitle>
+                  <CardDescription>
+                  Create AI characters with complete control and consistency. Create your own character! Generate exact poses. Get the same face. Change anything in any image.
+
+
+          
+                  </CardDescription>
+                </div>
+              </div>
+            </CardHeader>
+            <CardContent>
+              <div className="grid grid-cols-2 gap-4">
+              <img
+                  src="https://rendernet.ai/static/media/change-it-image.9701387e16f07050eedc.webp"
+                  width={300}
+                  height={300}
+                  alt="Imagen"
+                  className="aspect-square object-cover  shadow-lg"
+                />
+
+                  <img
+                  src="https://rendernet.ai/static/media/multi-model-image.02bddfe39efcb92115c0.webp"
+                  width={300}
+                  height={300}
+                  alt="Imagen"
+                  className="aspect-square object-cover  shadow-lg"
+                />
+              </div>
+            </CardContent>
+            <CardFooter> 
+            </CardFooter>
+          </Card>
+          </Link>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         </div>
 

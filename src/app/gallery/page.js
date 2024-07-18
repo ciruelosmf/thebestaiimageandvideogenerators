@@ -159,51 +159,19 @@ export default function Component() {
 
 
 
-
-
-        <Link  href="https://app.photoai.me/?via=aiimageandvideogenerators" className="         " prefetch={false}>
-
-        <Card className="  block      ">
-         
-              <div className="flex items-center gap-4">
-                
-                <div>
-                  <CardTitle  >PhotoAI</CardTitle>
  
-                </div>
-              </div>
-           
-            
-              <div className="grid grid-cols-2 gap-4">
-                <img
-                  src="/photoai_3.jpg"
-                  width={300}
-                  height={300}
-                  alt="Imagen"
-                  className="  object-cover  shadow-lg"
-                />
-                <img
-                  src="/photoai_2.webp"
-                  width={300}
-                  height={300}
-                  alt="Imagen"
-                  className="  object-cover  shadow-lg"
-                />
-              </div>        
-          </Card>
-          </Link>
 
 
 
 <Link  href="https://app.photoai.me/?via=aiimageandvideogenerators" className="         " prefetch={false}>
-<Card className="  block      "> 
-                        <div className="flex items-center gap-4">                            
+<Card className="  block      p-1 "> 
+                        <div className="flex items-center gap-1">                            
                             <div>
                             <CardTitle  >PhotoAI</CardTitle>
                             </div>
                         </div>                    
                         
-                        <div className="grid grid-cols-2 gap-4">
+                        <div className="grid grid-cols-2 gap-1">
                             <img
                             src="/photoai_3.jpg"
                             width={300}
@@ -232,27 +200,45 @@ export default function Component() {
 
 
 
-  <Link  href="https://app.photoai.me/?via=aiimageandvideogenerators" className="         " prefetch={false}>
-<Card className="  block      "> 
-                        <div className="flex items-center gap-4">                            
+  <Link  href="https://lumalabs.ai/dream-machine" className="         " prefetch={false}>
+<Card className="  block     p-1 "> 
+                        <div className="flex items-center gap-1">                            
                             <div>
-                            <CardTitle  >PhotoAI</CardTitle>
+                            <CardTitle  >Luma Dream Machine</CardTitle>
                             </div>
                         </div>                    
                         
-                        <div className="grid grid-cols-2 gap-4">
-                            <img
-                            src="/photoai_3.jpg"
-                            width={300}
-                            height={300}
-                            alt="Imagen"
-                            className="  object-cover  shadow-lg"    />
-                            <img
-                            src="/photoai_2.webp"
-                            width={300}
-                            height={300}
-                            alt="Imagen"
-                            className="  object-cover  shadow-lg"   />
+                        <div className="grid grid-cols-2 gap-1">
+
+                        <video
+                                src="https://cdn-luma.com/public/lumalabs.ai/june-12-launch-dream-machine-high-res/assets/dream-machine/featured/videos/5.webm"
+                                width={300}
+                                height={300}
+                                className="aspect-square object-cover  shadow-lg"
+                                autoPlay
+                                muted
+                                loop
+                                playsInline
+                                preload="metadata"
+
+                                >
+                                Your browser does not support the video tag.
+                                </video>
+                                <video
+                                src="https://cdn-luma.com/public/lumalabs.ai/june-12-launch-dream-machine-high-res/assets/dream-machine/featured/videos/6.webm"
+                                width={300}
+                                height={300}
+                                className="aspect-square object-cover  shadow-lg"
+                                autoPlay
+                                muted
+                                loop
+                                playsInline
+                                    preload="metadata"
+                                >
+                                Your browser does not support the video tag.
+                        </video>
+
+
                         </div>        
   </Card>
   </Link>
@@ -267,31 +253,48 @@ export default function Component() {
 
 
 
-  <Link  href="https://app.photoai.me/?via=aiimageandvideogenerators" className="         " prefetch={false}>
-<Card className="  block      "> 
-                        <div className="flex items-center gap-4">                            
+  <Link  href="https://app.leonardo.ai/?via=aiimageandvideogenerators" className="         " prefetch={false}>
+<Card className="  block     p-1 "> 
+                        <div className="flex items-center gap-1">                            
                             <div>
-                            <CardTitle  >PhotoAI</CardTitle>
+                            <CardTitle  >Leonardo.Ai</CardTitle>
                             </div>
                         </div>                    
                         
-                        <div className="grid grid-cols-2 gap-4">
-                            <img
-                            src="/photoai_3.jpg"
-                            width={300}
-                            height={300}
-                            alt="Imagen"
-                            className="  object-cover  shadow-lg"    />
-                            <img
-                            src="/photoai_2.webp"
-                            width={300}
-                            height={300}
-                            alt="Imagen"
-                            className="  object-cover  shadow-lg"   />
+                        <div className="grid grid-cols-2 gap-1">
+
+                        <video
+                                src="https://leonardo-cdn.b-cdn.net/wp-content/uploads/2024/05/cat-space-med-1.mp4"
+                                width={300}
+                                height={300}
+                                className="aspect-square object-cover  shadow-lg"
+                                autoPlay
+                                muted
+                                loop
+                                playsInline
+                                preload="metadata"
+
+                                >
+                                Your browser does not support the video tag.
+                                </video>
+                                <video
+                                src="https://leonardo-cdn.b-cdn.net/wp-content/uploads/2024/05/Image_gen_email__.webm"
+                                width={300}
+                                height={300}
+                                className="aspect-square object-cover  shadow-lg"
+                                autoPlay
+                                muted
+                                loop
+                                playsInline
+                                    preload="metadata"
+                                >
+                                Your browser does not support the video tag.
+                        </video>
+
+
                         </div>        
   </Card>
   </Link>
-
 
 
 

@@ -442,6 +442,55 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
 
 
 
+ 
+
+
+
+
+          <Link href="       https://fliki.ai/?via=aiimageandvideogenerators" className="block  " prefetch={false}>
+          <Card className="">
+            <CardHeader>
+              <div className="flex items-center gap-4">
+ 
+                <div>
+                  <CardTitle>         Leonardo.Ai
+ 
+                  </CardTitle>
+                  <CardDescription>
+                  With Leonardo.Ai, you can unlock your creative potential, crafting unique AI-driven art for galleries,
+portfolios, digital displays, social media showcases, or personal projects. 
+
+
+             
+
+                  </CardDescription>
+                </div>
+              </div>
+            </CardHeader>
+            <CardContent>
+              <div className="grid grid-cols-2 gap-4">
+
+
+              <img
+                  src="           https://leonardo-cdn.b-cdn.net/wp-content/uploads/2024/04/AI-Video-of-alien-in-Las-vegas.gif "
+                  width={300}
+                  height={300}
+                  alt="Writesonic"
+                  className="aspect-square object-cover  shadow-lg"
+                />
+                <img
+                  src="https://leonardo-cdn.b-cdn.net/wp-content/uploads/2024/03/retro-Anime-landscape-snow-covered-AI-art-768x439.jpg"
+                  width={300}
+                  height={300}
+                  alt="Writesonic"
+                  className="aspect-square object-cover  shadow-lg"
+                />
+              </div>
+            </CardContent>
+            <CardFooter> 
+            </CardFooter>
+          </Card>
+          </Link>
 
 
 

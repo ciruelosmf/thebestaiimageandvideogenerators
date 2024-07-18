@@ -10,6 +10,7 @@ import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter }
 import DynamicBackground from '@/components/DynamicBackground'; // Make sure to create this file
 import Script from "next/script";
 import Head from 'next/head';
+ 
 
 
 
@@ -71,6 +72,9 @@ export default function Component() {
           <nav className=" flex flex-row items-center gap-4">
             <Link href="#" className="text-sm font-medium hover:text-primary" prefetch={false}>
               Home
+            </Link>
+            <Link href="./gallery" className="text-sm font-medium hover:text-primary" prefetch={false}>
+              Gallery
             </Link>
             <Link href="./blog" className="text-sm font-medium hover:text-primary" prefetch={false}>
               Blog
@@ -339,6 +343,108 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
             </CardFooter>
           </Card>
           </Link>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <Link href="       https://fliki.ai/?via=aiimageandvideogenerators" className="block  " prefetch={false}>
+          <Card className="">
+            <CardHeader>
+              <div className="flex items-center gap-4">
+ 
+                <div>
+                  <CardTitle>         Fliki 
+                  </CardTitle>
+                  <CardDescription>
+                  Fliki helps you create audio and video content at scale with the power of generative AI.
+
+
+             
+
+                  </CardDescription>
+                </div>
+              </div>
+            </CardHeader>
+            <CardContent>
+              <div className="grid grid-cols-2 gap-4">
+
+
+              <img
+                  src="          https://cdn.fliki.ai/image/page/6311d2bb7719d50f37562296/65f4622e06d2650204d20b2d.jpg "
+                  width={300}
+                  height={300}
+                  alt="Writesonic"
+                  className="aspect-square object-cover  shadow-lg"
+                />
+                <img
+                  src="https://cdn.fliki.ai/image/page/6311d2bb7719d50f37562296/65f2f0c54768a6979a0548b5.jpg"
+                  width={300}
+                  height={300}
+                  alt="Writesonic"
+                  className="aspect-square object-cover  shadow-lg"
+                />
+              </div>
+            </CardContent>
+            <CardFooter> 
+            </CardFooter>
+          </Card>
+          </Link>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1446,18 +1552,29 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
         <div className="container max-w-7xl py-6 px-4 md:px-6 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <BotIcon className="w-6 h-6" />
-            <span className="text-sm font-medium px-4 ">AI Image Generators</span>
+            <span className="text-sm font-medium px-4 ">AI Image and Video Generators</span>
           </div>
 
           <nav className="hidden md:flex items-center gap-4">
-            <Link href="./privacy" className="text-sm font-medium hover:text-primary px-4  " prefetch={false}>
+            <Link href="./privacy" className="hover:text-gray-700 transition-colors   " prefetch={false}>
               Privacy
             </Link>
  
-            <Link href="./terms" className="text-sm font-medium hover:text-primary px-4 " prefetch={false}>
+            <Link href="./terms" className="hover:text-gray-700 transition-colors " prefetch={false}>
             Terms
             </Link>
  
+
+            <Link className="hover:text-gray-700 transition-colors" href="https://x.com/bestaigeneratrs">
+              X
+            </Link>
+
+            <Link className="hover:text-gray-700 transition-colors" href="https://x.com/bestaigeneratrs">
+              YouTube
+            </Link>
+
+
+
           </nav>
 
         </div>

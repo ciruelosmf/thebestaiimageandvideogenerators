@@ -526,8 +526,7 @@ portfolios, digital displays, social media showcases, or personal projects.
  
                   </CardTitle>
                   <CardDescription>
-                  With Leonardo.Ai, you can unlock your creative potential, crafting unique AI-driven art for galleries,
-portfolios, digital displays, social media showcases, or personal projects. 
+                  Get professional business headshots in minutes with our AI-photographer. Upload photos, pick your styles & receive 120+ headshots.
 
 
              

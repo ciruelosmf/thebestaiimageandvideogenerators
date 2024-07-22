@@ -1,3 +1,4 @@
+"use client"
 import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardHeader, CardContent, CardFooter } from '@/components/ui/card';
@@ -44,13 +45,8 @@ export default function BotStatus() {
           )}
           {status && (
             <div>
-              <p><strong>Status:</strong> {status.ok ? 'Online' : 'Offline'}</p>
-              {status.result && (
-                <>
-                  <p><strong>Bot Name:</strong> {status.result.first_name}</p>
-                  <p><strong>Username:</strong> @{status.result.username}</p>
-                </>
-              )}
+              <p><strong>Message:</strong> {status.message}</p>
+ s
             </div>
           )}
         </CardContent>

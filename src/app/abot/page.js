@@ -13,7 +13,7 @@ export default function BotStatus() {
     setIsLoading(true);
     setError(null);
     try {
-      const response = await fetch('https://telegram-bot-vercel-three-inky.vercel.app/api/bot');
+      const response = await fetch(' ');
       if (!response.ok) {
         throw new Error('Failed to fetch bot status');
       }

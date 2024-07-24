@@ -173,7 +173,7 @@ export default function Component() {
                         
                         <div className="grid grid-cols-2 gap-1">
                             <img
-                            src="/photoai_3.jpg"
+                            src="/photoai_3.JPG"
                             width={300}
                             height={300}
                             alt="Imagen"

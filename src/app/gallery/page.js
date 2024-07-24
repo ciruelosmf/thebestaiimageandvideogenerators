@@ -59,7 +59,7 @@ export default function Component() {
 
 
 
-<DynamicBackground rows={12} cols={12} /> {/* Add this line */}
+<DynamicBackground rows={8} cols={12} /> {/* Add this line */}
 
 
 
@@ -100,7 +100,7 @@ export default function Component() {
 
 
 
-      <h1 className="   md:text-5xl text-center w-5/6 h-3/6 text-base font-semibold text-white  my-3 md:my-4 px-4 md:px-6">Discover Top AI Visual Tools.</h1>
+      <h1 className="   md:text-5xl text-center w-5/6 h-3/6 text-base font-semibold text-white  my-3 md:my-4 px-4 md:px-6">Gallery of AI art made by our listed tools</h1>
 
 
 
@@ -295,6 +295,81 @@ export default function Component() {
                         </div>        
   </Card>
   </Link>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <Link  href=" https://www.basedlabs.ai/?via=aiimageandvideogenerators" className="         " prefetch={false}>
+<Card className="  block     p-1 "> 
+                        <div className="flex items-center gap-1">                            
+                            <div>
+                            <CardTitle  >BasedLabs</CardTitle>
+                            </div>
+                        </div>                    
+                        
+                        <div className="grid grid-cols-2 gap-1">
+
+                        <video
+                                src="https://cdn.basedlabs.ai/2d245b40-490b-11ef-b2e9-3bd1b01acac4.mp4"
+                                width={300}
+                                height={300}
+                                className="aspect-square object-cover  shadow-lg"
+                                autoPlay
+                                muted
+                                loop
+                                playsInline
+                                preload="metadata"
+
+                                >
+                                Your browser does not support the video tag.
+                                </video>
+                                <video
+                                src="https://cdn.basedlabs.ai/9c7f8ea0-3a98-11ef-9d9b-e54cf96b531b.mp4"
+                                width={300}
+                                height={300}
+                                className="aspect-square object-cover  shadow-lg"
+                                autoPlay
+                                muted
+                                loop
+                                playsInline
+                                    preload="metadata"
+                                >
+                                Your browser does not support the video tag.
+                        </video>
+
+
+                        </div>        
+  </Card>
+  </Link>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

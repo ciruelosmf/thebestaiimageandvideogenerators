@@ -59,7 +59,7 @@ export default function Component() {
 
 
 
-<DynamicBackground rows={12} cols={12} /> {/* Add this line */}
+<DynamicBackground rows={8} cols={12} /> {/* Add this line */}
 
 
 
@@ -70,7 +70,7 @@ export default function Component() {
             <BotIcon className="w-6 h-6" />
             <h1 className="md:text-xl text-base font-semibold text-black  px-4 md:px-6">AI Image and Video Generators</h1>
           <nav className=" flex flex-row items-center gap-4">
-            <Link href="#" className="text-sm font-medium hover:text-primary" prefetch={false}>
+            <Link href="/" className="text-sm font-medium hover:text-primary" prefetch={false}>
               Home
             </Link>
             <Link href="./gallery" className="text-sm font-medium hover:text-primary" prefetch={false}>
@@ -1449,6 +1449,63 @@ portfolios, digital displays, social media showcases, or personal projects.
 
 
 
+          <Link href="      https://www.midjourney.com/home" className="block  " prefetch={false}>
+          <Card className="">
+            <CardHeader>
+              <div className="flex items-center gap-4">
+ 
+                <div>
+                  <CardTitle>         Midjourney 
+                  </CardTitle>
+                  <CardDescription>
+                  No matter what type of AI art you create, Midjourney can do it.         
+                  </CardDescription>
+                </div>
+              </div>
+            </CardHeader>
+            <CardContent>
+              <div className="grid grid-cols-2 gap-4">
+              <img
+                  src="https://cdn.midjourney.com/6b8dda59-8d2a-4b9f-a3ef-3a3abea3f1a4/0_1_640_N.webp"
+                  width={300}
+                  height={300}
+                  alt="Imagen"
+                  className="aspect-square object-cover  shadow-lg"
+                />
+
+                  <img
+                  src="https://cdn.midjourney.com/c30cc361-2e2e-4f3d-a2c5-a8856dae5f4e/0_1_640_N.webp"
+                  width={300}
+                  height={300}
+                  alt="Imagen"
+                  className="aspect-square object-cover  shadow-lg"
+                />
+              </div>
+            </CardContent>
+            <CardFooter> 
+            </CardFooter>
+          </Card>
+          </Link>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1617,7 +1674,7 @@ portfolios, digital displays, social media showcases, or personal projects.
             <CardContent>
               <div className="grid grid-cols-2 gap-4">
               <img
-                  src="https://rendernet.ai/static/media/change-it-image.9701387e16f07050eedc.webp"
+                  src="https://rendernet.ai/images/second-p-1080.webp"
                   width={300}
                   height={300}
                   alt="Imagen"
@@ -1625,7 +1682,7 @@ portfolios, digital displays, social media showcases, or personal projects.
                 />
 
                   <img
-                  src="https://rendernet.ai/static/media/multi-model-image.02bddfe39efcb92115c0.webp"
+                  src="https://rendernet.ai/images/TrueTouch-landing-page-p-1080.webp"
                   width={300}
                   height={300}
                   alt="Imagen"
@@ -1679,6 +1736,10 @@ portfolios, digital displays, social media showcases, or personal projects.
           </div>
 
           <nav className="hidden md:flex items-center gap-4">
+          <Link href="/" className="hover:text-gray-700 transition-colors   " prefetch={false}>
+              Home
+            </Link>
+
             <Link href="./privacy" className="hover:text-gray-700 transition-colors   " prefetch={false}>
               Privacy
             </Link>

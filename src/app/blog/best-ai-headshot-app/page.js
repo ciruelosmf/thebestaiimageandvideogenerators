@@ -67,14 +67,14 @@ While the cost savings are impressive, the real game-changer is convenience. Upl
 
 
 <img
-    src="           https://storage.googleapis.com/headshothq/style/1333086c-268e-46c4-ad23-6210942d84ec.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=headshotpro-backend-production%40stockai-362303.iam.gserviceaccount.com%2F20240720%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20240720T020158Z&X-Goog-Expires=518400&X-Goog-SignedHeaders=host&X-Goog-Signature=26c545b0bb640933eb5e84af2016b12a8f75333ad67534f095cbb445fabf1cd713373567120a78aa09046e6e9fb0752ad92b744bf6e63c686f6e9c9c09ecb9a42623dbce2cc37e658475e953f69ef446e6799a06085eed24678f0a7952293ff4532b9ce781d5b502863951c30c9c4f60328546ddc5fb63c5e8c0cca0ed9f2499a4e6ce672f0ce041367feecfb2d72809aa8ff780b7c25b98223befe3b47bc6cd197f7f601eb03142486f1225dec0873174d0c5ed6219338b1166f92d336fd9afa51fab611028c807a3443e546d96363c0016b5513353667b433cbc1aba4c17638d43c06b059b3528699434320681a24e83ae2701be6ca574a76e2e4b298ae26f"
+    src="           https://www.headshotpro.com/_nuxt/img/image-2.9d38de4.png"
     width={300}
     height={300}
-    alt="Writesonic"
+    alt="HeadshotPro"
     className="aspect-square object-cover  shadow-lg"
   />
   <img
-    src="https://storage.googleapis.com/postcrafts-public-content/headshotpro/reviews/6662d6c81667a62d19833d5e-6662e42adcb33e12239f19ab-thumbnail.png?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=headshotpro-backend-production%40stockai-362303.iam.gserviceaccount.com%2F20240720%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20240720T020217Z&X-Goog-Expires=518400&X-Goog-SignedHeaders=host&X-Goog-Signature=0e6701450cda6d9307097d5cdbfdf05350a223252116370154f2956a02fba011507635f0f47b02693fbfac7c0134252e4cb24f4f08b05ed43a9a71e2451f8843ce4241f55ef7a2964c28f1dd28c5990b7927e527054f9d38e88db1deca36ac979b4857ceb05f24f0e6a655b6a9648cc4abc701a22a021b03e5b80d93e0e5ce0c941a148a098be81d722b0784ae4c0049494291de3511d0382e4119e645e6404905b0ad8eb01bd79acd7793242b6dd632945826454d83087546c5905a4e5a274d6751dd33e63821fe00acafaccec6ab642683db6bf65aec0b63e58ce479c547a2fe1b12158e71c7d930fcee1a395fc0935701fb2e3d31011d852c06877c071674"
+    src="https://storage.googleapis.com/postcrafts-public-content/headshotpro/reviews/6651266c7e832c30b74cde61-665372bb06f84a2facf0cf6d-thumbnail.png?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=headshotpro-backend-production%40stockai-362303.iam.gserviceaccount.com%2F20240726%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20240726T023937Z&X-Goog-Expires=518400&X-Goog-SignedHeaders=host&X-Goog-Signature=6933d9e7f08160c71e775f017d19389b34e89741c5e6c8c6ccf4bd08d55d6eadd7c52ba16891de7f848f9b4a18f535a97669d1321372c7e37a729b35720148fcfc1074c736be25cdf8e204259c3198cc451d342865afbd0ca486477862a1da31c842a0ff1ac444d7efb4d63fcede009784d4f34643d20e7f76053f0609850a3f371acefc657b016b5aff0d83789be8fc8af215dac5db31d81e42218797233b671eb1d8c57cf0382219c36dc8f8f428973fc02f79b65a8e9fb4173d43dabbae1c2e15219c197b7f53be5ffaa8770396e3078b83a6037ef8377a692ad75356536f15a3cbd65186d03b5f1d329a2390e8c3888dec306d19034127971dbf4bdd51a6"
     width={300}
     height={300}
     alt="Writesonic"

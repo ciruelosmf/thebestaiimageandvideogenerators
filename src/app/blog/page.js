@@ -44,6 +44,16 @@ export default function Blog() {
 
 
 
+
+        <li>
+            <Link href="/blog/best-ai-headshot-app" className="text-xl font-semibold text-blue-600 hover:text-blue-800">
+            The Best AI Headshot Generator
+            </Link>
+          </li>
+
+
+
+
         <li>
             <Link href="/blog/posts/best-ai-video-generators" className="text-xl font-semibold text-blue-600 hover:text-blue-800">
             The best AI video generators
@@ -56,6 +66,17 @@ export default function Blog() {
           <li>
             <Link href="/blog/posts/best-ai-image-generators" className="text-xl font-semibold text-blue-600 hover:text-blue-800">
             The best AI image generators
+            </Link>
+          </li>
+
+
+
+
+
+
+          <li>
+            <Link href="/blog/ai-video-creation-tools-future-visual-content" className="text-xl font-semibold text-blue-600 hover:text-blue-800">
+            Top AI Video Creation Tools: The Future of Visual Content
             </Link>
           </li>
 

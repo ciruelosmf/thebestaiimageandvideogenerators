@@ -84,8 +84,8 @@ While the cost savings are impressive, the real game-changer is convenience. Upl
 
           <h2 className="text-2xl font-semibold mt-8 mb-4"> The Best AI Headshot Generator</h2>
 
-          Here's a rewrite of the text in a different style, focusing on a more casual, conversational tone with a dash of humor:
-'''
+          <p className="mb-4">
+          
 Alright, folks, let's talk HeadshotPro - this bad boy blew our socks off in the AI headshot arena. We're talking eerily lifelike portraits that'll have you doing a double-take. Seriously, these pics could give your fancy-pants professional photographer a run for their money.
 So, what's the deal with HeadshotPro? Let me break it down for you:
 
@@ -96,6 +96,7 @@ Dress to Impress: Here's the kicker - HeadshotPro lets you play virtual dress-up
 
 
 Bottom line? If you want AI headshots that'll make people wonder if you've got a twin working as a model, HeadshotPro is your golden ticket. It's like having a personal photographer, stylist, and Photoshop wizard all rolled into one AI-powered package. Now that's what we call a head shot!
+</p>
           
 
 

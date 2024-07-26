@@ -29,9 +29,12 @@ export default function Blog() {
          `}
       </Script>
 
+
+
+
  
 
-      <section className="bg-slate-50 py-16">
+      <section className="bg-green-50 py-16">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
         <h1 className="text-3xl font-bold text-center text-gray-900 mb-8">
           How AI-Generated Videos Are Revolutionizing Content Creation
@@ -41,16 +44,7 @@ export default function Blog() {
             The world of content creation is experiencing a seismic shift with the advent of AI-generated videos. These cutting-edge tools are not just changing the game; they're rewriting the rules entirely.
           </p>
 
-          <h2 className="text-2xl font-semibold mt-8 mb-4">Popular AI Video Generation Tools</h2>
-          <p className="mb-4">
-            Several tools are leading this revolution:
-          </p>
-          <ul className="list-disc pl-6 mb-4">
-            <li><strong>Synthesia:</strong> Create professional video content using AI avatars.</li>
-            <li><strong>Runway ML:</strong> Offers advanced video editing and generation capabilities.</li>
-            <li><strong>DeepBrain AI:</strong> Specializes in creating AI-powered virtual humans.</li>
-            <li><strong>Lumen5:</strong> Transforms text content into engaging video stories.</li>
-          </ul>
+ 
 
           <h2 className="text-2xl font-semibold mt-8 mb-4">Cost Considerations</h2>
           <p className="mb-4">
@@ -90,6 +84,15 @@ export default function Blog() {
           <p className="font-semibold mb-12">
             Ready to dive into the world of AI-generated videos? Explore our directory to find the perfect tool for your next project!
           </p>
+
+
+          <Link href="https://app.leonardo.ai/?via=aiimageandvideogenerators" className="  font-medium hover:text-primary" prefetch={false}>
+          <h2 className="text-4xl font-semibold mt-8 mb-4">Check out one of the best video tools: </h2>
+          <p className="text-3xl mb-12">Leonardo Ai
+          </p>
+          </Link>
+         
+
 
           <Link href="/" className="text-sm font-medium hover:text-primary" prefetch={false}>
             Go to Homepage

@@ -100,15 +100,22 @@ Bottom line? If you want AI headshots that'll make people wonder if you've got a
           
 
 
-<Link href="     https://www.headshotpro.com/?via=aiimageandvideogenerators" className="text-xl font-medium hover:text-primary" prefetch={false}> 
+ 
+
+ 
+
+
+          <div className="flex flex-col">
+
+          <Link href="     https://www.headshotpro.com/?via=aiimageandvideogenerators" className="text-xl font-medium hover:text-primary" prefetch={false}> 
 HeadshotPro website
 
 </Link>
 
-
-          <Link href="/" className="text-sm font-medium hover:text-primary" prefetch={false}>
-            Go to Homepage
-          </Link>
+<Link href="/" className="text-xl font-medium hover:text-primary mb-4" prefetch={false}>
+  Go to Homepage
+</Link>
+</div>
         </div>
       </div>
     </section>

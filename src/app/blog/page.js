@@ -55,7 +55,7 @@ export default function Blog() {
 
 
         <li>
-            <Link href="/blog/posts/best-ai-video-generators" className="text-xl font-semibold text-blue-600 hover:text-blue-800">
+            <Link href="/blog/best-ai-video-generators" className="text-xl font-semibold text-blue-600 hover:text-blue-800">
             The best AI video generators
             </Link>
           </li>
@@ -64,7 +64,7 @@ export default function Blog() {
 
 
           <li>
-            <Link href="/blog/posts/best-ai-image-generators" className="text-xl font-semibold text-blue-600 hover:text-blue-800">
+            <Link href="/blog/best-ai-image-generators" className="text-xl font-semibold text-blue-600 hover:text-blue-800">
             The best AI image generators
             </Link>
           </li>
@@ -84,7 +84,7 @@ export default function Blog() {
 
 
         <li>
-            <Link href="/blog/posts/guide-creating-marketing-campaign-using-AI-tools" className="text-xl font-semibold text-blue-600 hover:text-blue-800">
+            <Link href="/blog/guide-creating-marketing-campaign-using-AI-tools" className="text-xl font-semibold text-blue-600 hover:text-blue-800">
               From Concept to Creation: A Step-by-Step Guide to Creating a Marketing Campaign Using AI Visual Tools
             </Link>
           </li>
@@ -92,6 +92,13 @@ export default function Blog() {
 
 
 
+          <li>
+            <Link href="/blog/ai-generated-videos-content-creation" className="text-xl font-semibold text-blue-600 hover:text-blue-800">
+            How AI-Generated Videos Are Revolutionizing Content Creations
+            </Link>
+          </li>
+
+
 
 
 
@@ -100,12 +107,12 @@ export default function Blog() {
 
 
           <li>
-            <Link href="/blog/posts/top-ai-image-generation-tools-2024" className="text-xl font-semibold text-blue-600 hover:text-blue-800">
+            <Link href="/blog/top-ai-image-generation-tools-2024" className="text-xl font-semibold text-blue-600 hover:text-blue-800">
               Top 10 AI Image Generation Tools for 2024: A Comprehensive Comparison
             </Link>
           </li>
           <li>
-            <Link href="/blog/posts/ai-generated-videos-content-creation" className="text-xl font-semibold text-blue-600 hover:text-blue-800">
+            <Link href="/blog/ai-generated-videos-content-creation" className="text-xl font-semibold text-blue-600 hover:text-blue-800">
               How AI-Generated Videos Are Revolutionizing Content Creation
             </Link>
           </li>
@@ -115,22 +122,13 @@ export default function Blog() {
             </Link>
           </li>
           <li>
-            <Link href="/blog/posts/ethics-ai-generated-visuals" className="text-xl font-semibold text-blue-600 hover:text-blue-800">
+            <Link href="/blog/ethics-ai-generated-visuals" className="text-xl font-semibold text-blue-600 hover:text-blue-800">
               The Ethics of AI-Generated Visuals: Copyright, Authenticity, and Future Regulations
             </Link>
           </li>
 
 
-
-
-
-
-          <li>
-            <Link href="/blog/posts/guide-creating-marketing-campaign-using-AI-tools" className="text-xl font-semibold text-blue-600 hover:text-blue-800">
-              From Concept to Creation: A Step-by-Step Guide to Creating a Marketing Campaign Using AI Visual Tools
-            </Link>
-          </li>
-
+ 
 
 
 

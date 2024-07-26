@@ -70,7 +70,7 @@ export default function Component() {
             <BotIcon className="w-6 h-6" />
             <h1 className="md:text-xl text-base font-semibold text-black  px-4 md:px-6">AI Image and Video Generators</h1>
           <nav className=" flex flex-row items-center gap-4">
-            <Link href="#" className="text-sm font-medium hover:text-primary" prefetch={false}>
+            <Link href="/" className="text-sm font-medium hover:text-primary" prefetch={false}>
               Home
             </Link>
             <Link href="./gallery" className="text-sm font-medium hover:text-primary" prefetch={false}>

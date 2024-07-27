@@ -33,7 +33,7 @@ export default function Blog() {
       </Script>
 
  
-      <DynamicBackground rows={8} cols={12} /> {/* Add this line */}
+      <DynamicBackground rows={3} cols={5} /> {/* Add this line */}
 
 
 

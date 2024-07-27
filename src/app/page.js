@@ -59,7 +59,7 @@ export default function Component() {
 
 
 
-<DynamicBackground rows={8} cols={12} /> {/* Add this line */}
+<DynamicBackground rows={8} cols={7} /> {/* Add this line */}
 
 
 

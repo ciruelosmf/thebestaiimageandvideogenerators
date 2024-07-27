@@ -1413,7 +1413,7 @@ portfolios, digital displays, social media showcases, or personal projects.
       playsInline
            preload="metadata"
     >
-      Your browser does not support the video tag.
+      Your browser   support the video tag.
     </video>
               </div>
             </CardContent>

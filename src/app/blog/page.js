@@ -14,7 +14,8 @@ export default function Blog() {
 
 
 
-    <div className=" ">
+    < div className="  relative min-h-screen flex flex-col items-center">
+
             <Script
         strategy="lazyOnload"
         src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
@@ -34,6 +35,44 @@ export default function Blog() {
 
  
       <DynamicBackground rows={3} cols={5} /> {/* Add this line */}
+
+
+
+
+
+      <header className=" sticky top-0 z-40 border-b border-b-muted block bg-slate-50  ">
+        <div className="container max-w-7xl py-2 px-4 md:px-6 flex items-center justify-between">
+          <div className="flex flex-wrap items-center justify-center gap-2 ">
+             
+            <h1 className="md:text-xl text-base font-semibold text-black  px-4 md:px-6">AI Image and Video Generators - AI directory</h1>
+          <nav className=" flex flex-row items-center gap-4">
+            <Link href="/" className="text-sm font-medium hover:text-primary" prefetch={false}>
+              Home
+            </Link>
+            <Link href="/gallery" className="text-sm font-medium hover:text-primary" prefetch={false}>
+              Gallery
+            </Link>
+            <Link href="/blog" className="text-sm font-medium hover:text-primary" prefetch={false}>
+              Blog
+            </Link>
+            <Link href="/prompts" className="text-sm font-medium hover:text-primary" prefetch={false}>
+              Prompts
+            </Link>
+            <Link href="/about" className="text-sm font-medium hover:text-primary" prefetch={false}>
+              About
+            </Link>
+            <Link href="/contact" className="text-sm font-medium hover:text-primary" prefetch={false}>
+              Contact
+            </Link>
+          </nav>
+          </div>
+ 
+        </div>
+
+
+        
+
+      </header>
 
 
 
@@ -148,6 +187,7 @@ export default function Blog() {
 
 
 
+
         </ul>
 
 
@@ -156,13 +196,7 @@ export default function Blog() {
 
 
 
-
-       <div className="mt-12">
-          <Link href="/" className="text-sm font-medium text-slate-50 hover:text-primary" prefetch={false}>
-            Go to Homepage
-          </Link>
-        </div>
-
+ 
 
 
 

@@ -98,7 +98,7 @@
             </h2>
 
             <p className="mb-4">
-            Among the most notable free AI image generators are Midjourney and DALL·E. Midjourney is known for its ability to create stunning and imaginative visuals from simple text prompts. It operates within Discord, allowing users to interact with the bot and generate images in real-time. On the other hand, DALL·E, developed by OpenAI, is notable for its capability to generate highly detailed images from textual descriptions, including fantastical and surreal elements. Both tools offer free trials, enabling users to explore their features without any initial investment. 
+            Among the most notable free AI image generators are Midjourney and DALL E. Midjourney is known for its ability to create stunning and imaginative visuals from simple text prompts. It operates within Discord, allowing users to interact with the bot and generate images in real-time. On the other hand, DALL E, developed by OpenAI, is notable for its capability to generate highly detailed images from textual descriptions, including fantastical and surreal elements. Both tools offer free trials, enabling users to explore their features without any initial investment. 
             </p>
 
             <h2 className="text-2xl font-semibold mt-16 mb-4">
@@ -106,7 +106,7 @@
             </h2>
 
             <p className="mb-4">
-            To maximize the potential of AI image generators like Midjourney and DALL·E, users should craft detailed and specific prompts. The more context and description provided, the better the generated images will align with user expectations. It's also beneficial to experiment with different styles and formats, as these tools can produce a wide range of artistic interpretations. Additionally, users should stay updated on the latest features and community tips to enhance their experience further.
+            To maximize the potential of AI image generators like Midjourney and DALL E, users should craft detailed and specific prompts. The more context and description provided, the better the generated images will align with user expectations. It's also beneficial to experiment with different styles and formats, as these tools can produce a wide range of artistic interpretations. Additionally, users should stay updated on the latest features and community tips to enhance their experience further.
             </p>
 
             {/* ... (rest of the component code) ... */}

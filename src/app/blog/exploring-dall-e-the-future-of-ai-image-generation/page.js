@@ -82,31 +82,31 @@
     <section className=" text-gray-100 py-16">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
             <h1 className="text-4xl font-bold text-center mb-12">
-            Exploring DALL·E: The Future of AI Image Generation 
+            Exploring DALL E: The Future of AI Image Generation 
             </h1>
 
             <h2 className="text-2xl font-semibold mt-8 mb-4">
-            What is DALL·E?       
+            What is DALL E?       
             </h2>
 
             <p className="mb-4">
-            DALL·E is an advanced AI model developed by OpenAI that generates images from textual descriptions. It is capable of creating a wide variety of images, ranging from realistic photographs to imaginative artwork, based solely on the prompts provided by users. This innovative tool utilizes a version of the GPT-3 architecture, allowing it to understand and interpret complex language inputs to produce corresponding visual outputs.     
+            DALL E is an advanced AI model developed by OpenAI that generates images from textual descriptions. It is capable of creating a wide variety of images, ranging from realistic photographs to imaginative artwork, based solely on the prompts provided by users. This innovative tool utilizes a version of the GPT-3 architecture, allowing it to understand and interpret complex language inputs to produce corresponding visual outputs.     
             </p>
 
             <h2 className="text-2xl font-semibold mt-16 mb-4">
-            How DALL·E Works   
+            How DALL E Works   
             </h2>
 
             <p className="mb-4">
-            The underlying technology of DALL·E combines natural language processing with image synthesis. Users input descriptive text, and the model processes this information to create unique images that align with the description. DALL·E's training involved a diverse dataset of images and their textual descriptions, enabling it to learn associations between words and visual elements. This capability makes it possible to generate images that are not only coherent but also creatively diverse. 
+            The underlying technology of DALL E combines natural language processing with image synthesis. Users input descriptive text, and the model processes this information to create unique images that align with the description. DALL E's training involved a diverse dataset of images and their textual descriptions, enabling it to learn associations between words and visual elements. This capability makes it possible to generate images that are not only coherent but also creatively diverse. 
             </p>
 
             <h2 className="text-2xl font-semibold mt-16 mb-4">
-            Comparing DALL·E and Midjourney AI  
+            Comparing DALL E and Midjourney AI  
             </h2>
 
             <p className="mb-4">
-            While DALL·E is renowned for its ability to generate images from text, Midjourney AI is another prominent tool in the realm of AI-generated visuals. Midjourney focuses on creating artistic interpretations of prompts, often resulting in stylistically rich images. Both tools have their unique strengths; DALL·E excels in producing realistic images, while Midjourney is favored for its artistic flair. Users may choose between these tools based on their specific needs, whether they seek realistic portrayals or creative art.
+            While DALL E is renowned for its ability to generate images from text, Midjourney AI is another prominent tool in the realm of AI-generated visuals. Midjourney focuses on creating artistic interpretations of prompts, often resulting in stylistically rich images. Both tools have their unique strengths; DALL E excels in producing realistic images, while Midjourney is favored for its artistic flair. Users may choose between these tools based on their specific needs, whether they seek realistic portrayals or creative art.
             </p>
 
             {/* ... (rest of the component code) ... */}

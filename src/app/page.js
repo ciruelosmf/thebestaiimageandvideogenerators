@@ -26,10 +26,10 @@ export default function Component() {
 
       <Head>
  
-        <meta property="og:title" content="AI Image and Video Generators" />
+        <meta property="og:title" content="✨AI Image and Video Generators" />
         <meta
           property="og:description"
-          content="AI Image and Video Generator is a directory to discover the best tools to create stunning visuals using AI"
+          content="✨AI Image and Video Generator is a directory to discover the best tools to create stunning visuals using AI"
         />
         <meta
           property="og:image"
@@ -161,18 +161,16 @@ export default function Component() {
 
 
 
-        <Link  href="https://app.photoai.me/?via=aiimageandvideogenerators" className="  block      " prefetch={false}>
+        <Link  href="https://photoai.com/?via=aiimageandvideogenerators" className="  block      " prefetch={false}>
 
         <Card className="  block      ">
             <CardHeader>
               <div className="flex items-center gap-4">
                 
                 <div>
-                  <CardTitle  >PhotoAI</CardTitle>
+                  <CardTitle  >Photo AI</CardTitle>
                   <CardDescription>
-                  Boost your profile picture on Tinder, LinkedIn, Twitter, Instagram or elsewhere with photoai.me
-
-Upload photos of yourself and get new stunning AI photos! With photoai.me, you can generate AI images for as low as 20 cents per picture. Try it out.  
+                  Generate photorealistic images of people with AI. Take stunning photos of people with the first AI Photographer! Generate photo and video content for your social media with AI. Save time and money and do an AI photo shoot from your laptop or phone instead of hiring an expensive photographer
                   </CardDescription>
                 </div>
               </div>
@@ -180,14 +178,14 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
             <CardContent>
               <div className="grid grid-cols-2 gap-4">
                 <img
-                  src="/photoai_1.webp"
+                  src="https://photoai.com/cdn-cgi/image/format=jpeg,fit=cover,width=1024,height=1536,quality=85/https://r2-us-west.photoai.com/1714367707-fe95d71da3629a819fb7d3cc6d54ed66-1.png"
                   width={300}
                   height={300}
                   alt="Imagen"
                   className="  object-cover  shadow-lg"
                 />
                 <img
-                  src="/photoai_2.webp"
+                  src="https://photoai.com/cdn-cgi/image/format=jpeg,fit=cover,width=1024,height=1536,quality=85/https://r2-us-west.photoai.com/1714375671-3314ee966836d14b0a3756b9f88d6f01-2.png"
                   width={300}
                   height={300}
                   alt="Imagen"
@@ -632,6 +630,69 @@ portfolios, digital displays, social media showcases, or personal projects.
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <Link  href="https://app.photoai.me/?via=aiimageandvideogenerators" className="  block      " prefetch={false}>
+
+<Card className="  block      ">
+    <CardHeader>
+      <div className="flex items-center gap-4">
+        
+        <div>
+          <CardTitle  >PhotoAI</CardTitle>
+          <CardDescription>
+          Boost your profile picture on Tinder, LinkedIn, Twitter, Instagram or elsewhere with photoai.me
+
+Upload photos of yourself and get new stunning AI photos! With photoai.me, you can generate AI images for as low as 20 cents per picture. Try it out.  
+          </CardDescription>
+        </div>
+      </div>
+    </CardHeader>
+    <CardContent>
+      <div className="grid grid-cols-2 gap-4">
+        <img
+          src="/photoai_1.webp"
+          width={300}
+          height={300}
+          alt="Imagen"
+          className="  object-cover  shadow-lg"
+        />
+        <img
+          src="/photoai_2.webp"
+          width={300}
+          height={300}
+          alt="Imagen"
+          className="  object-cover  shadow-lg"
+        />
+      </div>
+    </CardContent>
+    <CardFooter>
+     
+
+         
+    </CardFooter>
+  </Card>
+  </Link>
 
 
 
@@ -1307,7 +1368,7 @@ portfolios, digital displays, social media showcases, or personal projects.
                   </CardTitle>
                   <CardDescription>
                   Redesign your interior in seconds using AI.
-                  Save money and use AI to redesign your interior from your laptop or phone instead of hiring an expensive interior designer
+                  Save money and use AI to redesign your interior from your laptop or phone instead of hiring an expensive interior designer.
              
 
                   </CardDescription>
@@ -1385,8 +1446,7 @@ portfolios, digital displays, social media showcases, or personal projects.
             <CardContent>
               <div className="grid grid-cols-2 gap-4">
               <video
-      src="https://cdn.basedlabs.ai/a3960a51-6463-4271-b8fa-4c830a5df9a1
-"
+      src="https://cdn.basedlabs.ai/a3960a51-6463-4271-b8fa-4c830a5df9a1"
       width={300}
       height={300}
       className="aspect-square object-cover  shadow-lg"
@@ -1394,16 +1454,11 @@ portfolios, digital displays, social media showcases, or personal projects.
       muted
       loop
       playsInline
-      preload="metadata"
-
-    >
+      preload="metadata">
       Your browser does not support the video tag.
     </video>
     <video
-      src="
-          
-          https://cdn.basedlabs.ai/8cf57d10-2598-11ef-91c0-6b7a39e8938f.mp4
-"
+      src="https://cdn.basedlabs.ai/8cf57d10-2598-11ef-91c0-6b7a39e8938f.mp4"
       width={300}
       height={300}
       className="aspect-square object-cover  shadow-lg"

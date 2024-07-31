@@ -5,8 +5,8 @@ import Head from 'next/head';
 const inter = Inter({ subsets: ["latin"] });
 import { CSPostHogProvider } from './providers'
 export const metadata = {
-  title: "AI Image and Video Generators",
-  description: "AI Image and Video Generators is a directory to discover the best tools to create stunning visuals using AI",
+  title: "✨AI Image and Video Generators",
+  description: "✨AI Image and Video Generators is a directory to discover the best tools to create stunning visuals using AI",
  
 };
 

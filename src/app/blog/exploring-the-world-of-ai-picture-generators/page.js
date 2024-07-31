@@ -94,11 +94,11 @@
             </p>
 
             <h2 className="text-2xl font-semibold mt-16 mb-4">
-            Popular AI Picture Generators: Midjourney and DALL·E   
+            Popular AI Picture Generators: Midjourney and DALL E   
             </h2>
 
             <p className="mb-4">
-            Among the many AI picture generators available, Midjourney and DALL·E stand out for their capabilities and user-friendly interfaces. Midjourney is known for its focus on artistic styles and creativity, allowing users to generate images that reflect various artistic movements. DALL·E, developed by OpenAI, excels in generating images from complex prompts, showcasing its ability to understand and visualize intricate concepts. Both tools have revolutionized the way creators approach visual content, enabling them to explore new ideas and enhance their projects. 
+            Among the many AI picture generators available, Midjourney and DALL E stand out for their capabilities and user-friendly interfaces. Midjourney is known for its focus on artistic styles and creativity, allowing users to generate images that reflect various artistic movements. DALL E, developed by OpenAI, excels in generating images from complex prompts, showcasing its ability to understand and visualize intricate concepts. Both tools have revolutionized the way creators approach visual content, enabling them to explore new ideas and enhance their projects. 
             </p>
 
             <h2 className="text-2xl font-semibold mt-16 mb-4">

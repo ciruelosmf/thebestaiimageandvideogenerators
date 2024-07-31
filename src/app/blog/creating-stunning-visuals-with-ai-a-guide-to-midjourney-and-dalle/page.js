@@ -82,7 +82,7 @@
     <section className=" text-gray-100 py-16">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
             <h1 className="text-4xl font-bold text-center mb-12">
-            Creating Stunning Visuals with AI: A Guide to Midjourney and DALL·E 
+            Creating Stunning Visuals with AI: A Guide to Midjourney and DALLï¿½E 
             </h1>
 
             <h2 className="text-2xl font-semibold mt-8 mb-4">
@@ -90,7 +90,7 @@
             </h2>
 
             <p className="mb-4">
-            Artificial Intelligence (AI) has revolutionized the way we create visual content. AI image generators like Midjourney and DALL·E utilize advanced algorithms to transform text prompts into stunning images. These tools analyze vast datasets to understand patterns and generate visuals that align with user inputs. This capability opens up new avenues for artists, marketers, and content creators looking to produce unique artwork quickly and efficiently.     
+            Artificial Intelligence AI has revolutionized the way we create visual content. AI image generators like Midjourney and DALLï¿½E utilize advanced algorithms to transform text prompts into stunning images. These tools analyze vast datasets to understand patterns and generate visuals that align with user inputs. This capability opens up new avenues for artists, marketers, and content creators looking to produce unique artwork quickly and efficiently.     
             </p>
 
             <h2 className="text-2xl font-semibold mt-16 mb-4">
@@ -102,11 +102,11 @@
             </p>
 
             <h2 className="text-2xl font-semibold mt-16 mb-4">
-            DALL·E: Pioneering AI Art Generation  
+            DALLï¿½E: Pioneering AI Art Generation  
             </h2>
 
             <p className="mb-4">
-            DALL·E, developed by OpenAI, is another leading tool in AI image generation. It stands out for its ability to create highly detailed images from simple text prompts. DALL·E employs a variant of the GPT-3 model, allowing it to understand and generate complex visuals that often blend multiple concepts seamlessly. This makes it particularly useful for creative industries, where unique and imaginative visuals are crucial. Furthermore, DALL·E's capacity to generate variations of a single concept offers users a plethora of options to choose from.
+            DALLï¿½E, developed by OpenAI, is another leading tool in AI image generation. It stands out for its ability to create highly detailed images from simple text prompts. DALLï¿½E employs a variant of the GPT-3 model, allowing it to understand and generate complex visuals that often blend multiple concepts seamlessly. This makes it particularly useful for creative industries, where unique and imaginative visuals are crucial. Furthermore, DALLï¿½E's capacity to generate variations of a single concept offers users a plethora of options to choose from.
             </p>
 
             {/* ... (rest of the component code) ... */}

@@ -133,6 +133,7 @@ export default function Component() {
                   height={300}
                   alt="Photo AI"
                   className="  object-cover  shadow-lg"
+                  loading="lazy" 
                 />
                 <img
                   src="/photoaicom_2.jpg"
@@ -140,7 +141,9 @@ export default function Component() {
                   height={300}
                   alt="Photo AI"
                   className="  object-cover  shadow-lg"
+                  loading="lazy" 
                 />
+
               </div>
             </CardContent>
             <CardFooter>
@@ -362,6 +365,7 @@ export default function Component() {
                   height={300}
                   alt="Fliki"
                   className="aspect-square object-cover  shadow-lg"
+                  loading="lazy" 
                 />
                 <img
                   src="./fliki_2.jpg"
@@ -369,6 +373,7 @@ export default function Component() {
                   height={300}
                   alt="Fliki"
                   className="aspect-square object-cover  shadow-lg"
+                  loading="lazy" 
                 />
               </div>
             </CardContent>
@@ -425,6 +430,7 @@ portfolios, digital displays, social media showcases, or personal projects.
                   height={300}
                   alt="Leonardoai.jpg"
                   className="aspect-square object-cover  shadow-lg"
+                  loading="lazy" 
                 />
                 <img
                   src="./Leonardoai.jpg"
@@ -432,6 +438,7 @@ portfolios, digital displays, social media showcases, or personal projects.
                   height={300}
                   alt="Leonardoai.jpg"
                   className="aspect-square object-cover  shadow-lg"
+                  loading="lazy" 
                 />
               </div>
             </CardContent>
@@ -796,6 +803,8 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
                   height={300}
                   alt="Midjourney"
                   className="aspect-square object-cover "
+      loading="lazy" 
+
                 />
                 <img
                   src="./dj_2.jpg "
@@ -803,6 +812,8 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
                   height={300}
                   alt="Midjourney"
                   className="aspect-square object-cover"
+      loading="lazy" 
+
                 />
               </div>
             </CardContent>
@@ -909,6 +920,8 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
                   height={300}
                   alt="DeepBrain AI"
                   className="aspect-square object-cover  shadow-lg shadow-lg"
+      loading="lazy" 
+
                 />
                 <img
                   src="./DeepBrainAI_2.jpg"
@@ -916,6 +929,8 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
                   height={300}
                   alt="DeepBrain AI"
                   className="aspect-square object-cover  shadow-lg shadow-lg"
+                  loading="lazy" 
+
                 />
               </div>
 </CardContent>
@@ -960,6 +975,8 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
                   height={300}
                   alt="DALL-E 2"
                   className="aspect-square object-cover  shadow-lg"
+      loading="lazy" 
+
                 />
                 <img
                   src="https://images.ctfassets.net/kftzwdyauwt9/5JZsznv2kZBJhcntpSLEL9/fbe72de7edaceb8a44176170312ccf2a/picnic-cherry-tree.jpeg?w=1080&q=90&fm=webp"
@@ -967,6 +984,8 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
                   height={300}
                   alt="DALL-E 2"
                   className="aspect-square object-cover  shadow-lg"
+                  loading="lazy" 
+
                 />
               </div>
             </CardContent>
@@ -977,6 +996,9 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
           </Card>
 
           </Link>
+
+
+
 
 
 
@@ -1018,6 +1040,8 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
                   height={300}
                   alt="Imagen"
                   className="aspect-square object-cover  shadow-lg"
+      loading="lazy" 
+
                 />
                 <img
                   src="/pictory.JPG"
@@ -1025,6 +1049,8 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
                   height={300}
                   alt="Imagen"
                   className="aspect-square object-cover  shadow-lg"
+      loading="lazy" 
+
                 />
               </div>
             </CardContent>
@@ -1032,6 +1058,8 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
             </CardFooter>
           </Card>
           </Link>
+
+
 
 
 
@@ -1084,6 +1112,8 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
                   height={300}
                   alt="Imagen"
                   className="aspect-square object-cover  shadow-lg"
+      loading="lazy" 
+
                 />
                 <img
                   src="https://framerusercontent.com/images/YR0QoptQ9rYXwm2co5MkWmSsgUg.gif"
@@ -1091,6 +1121,8 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
                   height={300}
                   alt="Imagen"
                   className="aspect-square object-cover  shadow-lg"
+      loading="lazy" 
+
                 />
               </div>
             </CardContent>
@@ -1098,6 +1130,14 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
             </CardFooter>
           </Card>
           </Link>
+
+
+
+
+
+
+
+
 
 
 
@@ -1164,6 +1204,12 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
             </CardFooter>
           </Card>
           </Link>
+
+
+
+
+
+
 
 
 
@@ -1254,6 +1300,17 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
 
 
 
+
+
+
+
+
+
+
+
+
+
+
           <Link href="       https://collov.ai/" className="block  " prefetch={false}>
           <Card className="">
             <CardHeader>
@@ -1273,13 +1330,12 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
             <CardContent>
               <div className="grid grid-cols-2 gap-4">
               <img
-
       src="https://collov.ai/img/interior.2df65ae7.jpg"
       width={300}
       height={300}
       className="aspect-square object-cover  shadow-lg"
- 
-
+      loading="lazy" 
+      alt="Collov AI"
       />
       
      
@@ -1287,8 +1343,10 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
                   src="https://d17axom7zrjq3q.cloudfront.net/20230901/7e2c925c-fb7e-48f9-9001-7296343f4bd3.jpg"
                   width={300}
                   height={300}
-                  alt="Imagen"
+                  alt="Collov AI"
                   className="aspect-square object-cover  shadow-lg"
+                  loading="lazy" 
+
                 />
               </div>
             </CardContent>
@@ -1298,6 +1356,21 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
           </Link>
 
  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1333,7 +1406,8 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
       width={300}
       height={300}
       className="aspect-square object-cover  shadow-lg"
- 
+      loading="lazy" 
+      alt="Interior AI"
 
       />
       
@@ -1342,8 +1416,9 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
                   src="https://customer-ecy0wgmn1dow5gsd.cloudflarestream.com/af09f55d3aa552d2c07713031191f363/thumbnails/thumbnail.jpg?time=&height=600"
                   width={300}
                   height={300}
-                  alt="Imagen"
+                  alt="Interior AI"
                   className="aspect-square object-cover  shadow-lg"
+                  loading="lazy" 
                 />
               </div>
             </CardContent>
@@ -1474,16 +1549,18 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
                   src="https://cdn.midjourney.com/6b8dda59-8d2a-4b9f-a3ef-3a3abea3f1a4/0_1_640_N.webp"
                   width={300}
                   height={300}
-                  alt="Imagen"
+                  alt="Midjourney"
                   className="aspect-square object-cover  shadow-lg"
+                  loading="lazy" 
                 />
 
                   <img
                   src="https://cdn.midjourney.com/c30cc361-2e2e-4f3d-a2c5-a8856dae5f4e/0_1_640_N.webp"
                   width={300}
                   height={300}
-                  alt="Imagen"
+                  alt="Midjourney"
                   className="aspect-square object-cover  shadow-lg"
+                  loading="lazy" 
                 />
               </div>
             </CardContent>
@@ -1540,6 +1617,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
                   height={300}
                   alt="Imagen"
                   className="aspect-square object-cover  shadow-lg"
+                  loading="lazy" 
                 />
 
                   <img
@@ -1548,6 +1626,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
                   height={300}
                   alt="Imagen"
                   className="aspect-square object-cover  shadow-lg"
+                  loading="lazy" 
                 />
               </div>
             </CardContent>
@@ -1614,6 +1693,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
                   height={300}
                   alt="Imagen"
                   className="aspect-square object-cover  shadow-lg"
+                  loading="lazy" 
                 />
 
                   <img
@@ -1622,6 +1702,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
                   height={300}
                   alt="Imagen"
                   className="aspect-square object-cover  shadow-lg"
+                  loading="lazy" 
                 />
               </div>
             </CardContent>
@@ -1684,6 +1765,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
                   height={300}
                   alt="Imagen"
                   className="aspect-square object-cover  shadow-lg"
+                  loading="lazy" 
                 />
 
                   <img
@@ -1692,6 +1774,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
                   height={300}
                   alt="Imagen"
                   className="aspect-square object-cover  shadow-lg"
+                  loading="lazy" 
                 />
               </div>
             </CardContent>

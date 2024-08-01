@@ -127,7 +127,7 @@ export default function Component() {
             </CardHeader>
             <CardContent>
               <div className="grid grid-cols-2 gap-4">
-                <img
+              <Image
                   src="/photoaicom_1.jpg"
                   width={300}
                   height={300}
@@ -135,7 +135,7 @@ export default function Component() {
                   className="  object-cover  shadow-lg"
                   loading="lazy" 
                 />
-                <img
+                <Image
                   src="/photoaicom_2.jpg"
                   width={300}
                   height={300}
@@ -359,16 +359,18 @@ export default function Component() {
               <div className="grid grid-cols-2 gap-4">
 
 
-              <img
-                  src="          ./fliki_1.jpg "
+              <Image
+
+                  src="/fliki_1.jpg "
                   width={300}
                   height={300}
                   alt="Fliki"
                   className="aspect-square object-cover  shadow-lg"
                   loading="lazy" 
                 />
-                <img
-                  src="./fliki_2.jpg"
+                              <Image
+
+                  src="/fliki_2.jpg"
                   width={300}
                   height={300}
                   alt="Fliki"
@@ -381,6 +383,23 @@ export default function Component() {
             </CardFooter>
           </Card>
           </Link>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -425,15 +444,17 @@ portfolios, digital displays, social media showcases, or personal projects.
 
 
               <img
-                  src="           https://leonardo-cdn.b-cdn.net/wp-content/uploads/2024/04/AI-Video-of-alien-in-Las-vegas.gif "
+
+                  src="https://leonardo-cdn.b-cdn.net/wp-content/uploads/2024/04/AI-Video-of-alien-in-Las-vegas.gif "
                   width={300}
                   height={300}
                   alt="Leonardoai.jpg"
                   className="aspect-square object-cover  shadow-lg"
                   loading="lazy" 
                 />
-                <img
-                  src="./Leonardoai.jpg"
+                              <Image
+
+                  src="/Leonardoai.jpg"
                   width={300}
                   height={300}
                   alt="Leonardoai.jpg"
@@ -446,6 +467,17 @@ portfolios, digital displays, social media showcases, or personal projects.
             </CardFooter>
           </Card>
           </Link>
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -494,15 +526,17 @@ portfolios, digital displays, social media showcases, or personal projects.
               <div className="grid grid-cols-2 gap-4">
 
 
-              <img
-                  src=" HeadshotPro_1.jpg      "
+              <Image
+
+                  src="/HeadshotPro_1.jpg"
                   width={300}
                   height={300}
                   alt="HeadshotPro"
                   className="aspect-square object-cover  shadow-lg"
                 />
-                <img
-                      src="HeadshotPro_2.jpg"
+                             <Image
+
+                      src="/HeadshotPro_2.jpg"
                       width={300}
                   height={300}
                   alt="HeadshotPro"

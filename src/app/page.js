@@ -67,7 +67,7 @@ export default function Component() {
       <header className=" sticky top-0 z-40 border-b border-b-muted block bg-slate-50  ">
         <div className="container max-w-7xl py-2 px-4 md:px-6 flex items-center justify-between">
           <div className="flex flex-wrap items-center justify-center gap-2 ">
-            <BotIcon className="w-6 h-6" />
+ 
             <h1 className="md:text-xl text-base font-semibold text-black  px-4 md:px-6">AI Image and Video Generators - AI directory</h1>
           <nav className=" flex flex-row items-center gap-4">
             <Link href="/" className="text-sm font-medium hover:text-primary" prefetch={false}>
@@ -131,14 +131,14 @@ export default function Component() {
                   src="/photoaicom_1.jpg"
                   width={300}
                   height={300}
-                  alt="Imagen"
+                  alt="Photo AI"
                   className="  object-cover  shadow-lg"
                 />
                 <img
                   src="/photoaicom_2.jpg"
                   width={300}
                   height={300}
-                  alt="Imagen"
+                  alt="Photo AI"
                   className="  object-cover  shadow-lg"
                 />
               </div>
@@ -423,14 +423,14 @@ portfolios, digital displays, social media showcases, or personal projects.
                   src="           https://leonardo-cdn.b-cdn.net/wp-content/uploads/2024/04/AI-Video-of-alien-in-Las-vegas.gif "
                   width={300}
                   height={300}
-                  alt="Writesonic"
+                  alt="Leonardoai.jpg"
                   className="aspect-square object-cover  shadow-lg"
                 />
                 <img
-                  src="leonardoai.jpg"
+                  src="./Leonardoai.jpg"
                   width={300}
                   height={300}
-                  alt="Writesonic"
+                  alt="Leonardoai.jpg"
                   className="aspect-square object-cover  shadow-lg"
                 />
               </div>
@@ -904,17 +904,17 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
                         <CardContent>
               <div className="grid grid-cols-2 gap-4">
               <img
-                  src="./deepbrainai_1.jpg"
+                  src="./DeepBrainAI_1.jpg"
                   width={300}
                   height={300}
-                  alt="Midjourney"
+                  alt="DeepBrain AI"
                   className="aspect-square object-cover  shadow-lg shadow-lg"
                 />
                 <img
-                  src="./deepbrainai_2.jpg"
+                  src="./DeepBrainAI_2.jpg"
                   width={300}
                   height={300}
-                  alt="Midjourney"
+                  alt="DeepBrain AI"
                   className="aspect-square object-cover  shadow-lg shadow-lg"
                 />
               </div>

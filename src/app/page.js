@@ -68,7 +68,7 @@ export default function Component() {
         <div className="container max-w-7xl py-2 px-4 md:px-6 flex items-center justify-between">
           <div className="flex flex-wrap items-center justify-center gap-2 ">
             <BotIcon className="w-6 h-6" />
-            <h1 className="md:text-xl text-base font-semibold text-black  px-4 md:px-6">AI Image and Video Generators</h1>
+            <h1 className="md:text-xl text-base font-semibold text-black  px-4 md:px-6">AI Image and Video Generators - AI directory</h1>
           <nav className=" flex flex-row items-center gap-4">
             <Link href="/" className="text-sm font-medium hover:text-primary" prefetch={false}>
               Home
@@ -99,7 +99,7 @@ export default function Component() {
 
 
 
-      <h1 className="   md:text-5xl text-center w-5/6 h-3/6 text-base font-semibold text-white  my-3 md:my-4 px-4 md:px-6">Discover Top AI Visual Tools.</h1>
+      <h1 className="   md:text-5xl text-center w-5/6 h-3/6 text-base font-semibold text-white  my-3 md:mb-6 px-4 md:px-6">Discover Top AI Visual Tools.</h1>
 
       <main className="container  md:max-w-screen-7xl	 max-w-fit px-2 md:px-6 pb-12 flex-1">
 
@@ -128,14 +128,14 @@ export default function Component() {
             <CardContent>
               <div className="grid grid-cols-2 gap-4">
                 <img
-                  src="/photoaicom_1.JPG"
+                  src="/photoaicom_1.jpg"
                   width={300}
                   height={300}
                   alt="Imagen"
                   className="  object-cover  shadow-lg"
                 />
                 <img
-                  src="/photoaicom_1.JPG"
+                  src="/photoaicom_2.jpg"
                   width={300}
                   height={300}
                   alt="Imagen"
@@ -357,14 +357,14 @@ export default function Component() {
 
 
               <img
-                  src="          ./fliki_1.JPG "
+                  src="          ./fliki_1.jpg "
                   width={300}
                   height={300}
                   alt="Fliki"
                   className="aspect-square object-cover  shadow-lg"
                 />
                 <img
-                  src="./fliki_1.JPG"
+                  src="./fliki_2.jpg"
                   width={300}
                   height={300}
                   alt="Fliki"
@@ -427,7 +427,7 @@ portfolios, digital displays, social media showcases, or personal projects.
                   className="aspect-square object-cover  shadow-lg"
                 />
                 <img
-                  src="https://leonardo-cdn.b-cdn.net/wp-content/uploads/2024/03/retro-Anime-landscape-snow-covered-AI-art-768x439.jpg"
+                  src="leonardoai.jpg"
                   width={300}
                   height={300}
                   alt="Writesonic"
@@ -488,14 +488,14 @@ portfolios, digital displays, social media showcases, or personal projects.
 
 
               <img
-                  src=" https://www.headshotpro.com/_nuxt/img/image-2.9d38de4.png      "
+                  src=" HeadshotPro_1.jpg      "
                   width={300}
                   height={300}
                   alt="HeadshotPro"
                   className="aspect-square object-cover  shadow-lg"
                 />
                 <img
-                      src="https://storage.googleapis.com/postcrafts-public-content/headshotpro/reviews/6651266c7e832c30b74cde61-665372bb06f84a2facf0cf6d-thumbnail.png?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=headshotpro-backend-production%40stockai-362303.iam.gserviceaccount.com%2F20240726%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20240726T023937Z&X-Goog-Expires=518400&X-Goog-SignedHeaders=host&X-Goog-Signature=6933d9e7f08160c71e775f017d19389b34e89741c5e6c8c6ccf4bd08d55d6eadd7c52ba16891de7f848f9b4a18f535a97669d1321372c7e37a729b35720148fcfc1074c736be25cdf8e204259c3198cc451d342865afbd0ca486477862a1da31c842a0ff1ac444d7efb4d63fcede009784d4f34643d20e7f76053f0609850a3f371acefc657b016b5aff0d83789be8fc8af215dac5db31d81e42218797233b671eb1d8c57cf0382219c36dc8f8f428973fc02f79b65a8e9fb4173d43dabbae1c2e15219c197b7f53be5ffaa8770396e3078b83a6037ef8377a692ad75356536f15a3cbd65186d03b5f1d329a2390e8c3888dec306d19034127971dbf4bdd51a6"
+                      src="HeadshotPro_2.jpg"
                       width={300}
                   height={300}
                   alt="HeadshotPro"
@@ -904,14 +904,14 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
                         <CardContent>
               <div className="grid grid-cols-2 gap-4">
               <img
-                  src=" https://cdn.prod.website-files.com/63da3362f67ed6f71c9489c1/660d14a6d88b2b2db8e26809_006.png"
+                  src="./deepbrainai_1.jpg"
                   width={300}
                   height={300}
                   alt="Midjourney"
                   className="aspect-square object-cover  shadow-lg shadow-lg"
                 />
                 <img
-                  src="https://cdn.prod.website-files.com/63da3362f67ed6f71c9489c1/660d14a67022cce110e967ee_001.png"
+                  src="./deepbrainai_2.jpg"
                   width={300}
                   height={300}
                   alt="Midjourney"

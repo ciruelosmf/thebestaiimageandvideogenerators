@@ -120,7 +120,7 @@ export default function Component() {
                 <div>
                   <CardTitle  >Photo AI</CardTitle>
                   <CardDescription>
-                  Generate photorealistic images of people with AI. Take stunning photos of people with the first AI Photographer! Generate photo and video content for your social media with AI. Save time and money and do an AI photo shoot from your laptop or phone instead of hiring an expensive photographer
+                  Generate photorealistic images of people with AI.  Save time and money and do an AI photo shoot from your laptop or phone instead of hiring an expensive photographer
                   </CardDescription>
                 </div>
               </div>
@@ -277,7 +277,7 @@ export default function Component() {
 
               <Image
 
-                  src="/fliki_1.jpg "
+                  src="/fliki_1.jpg"
                   width={300}
                   height={300}
                   alt="Fliki"

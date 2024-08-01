@@ -243,6 +243,97 @@ export default function Component() {
 
 
 
+
+
+
+
+
+
+
+
+
+
+          <Link href="       https://fliki.ai/?via=aiimageandvideogenerators" className="block  " prefetch={false}>
+          <Card className="">
+            <CardHeader>
+              <div className="flex items-center gap-4">
+ 
+                <div>
+                  <CardTitle>         Fliki 
+                  </CardTitle>
+                  <CardDescription>
+                  Fliki helps you create audio and video content at scale with the power of generative AI.
+
+
+             
+
+                  </CardDescription>
+                </div>
+              </div>
+            </CardHeader>
+            <CardContent>
+              <div className="grid grid-cols-2 gap-4">
+
+
+              <Image
+
+                  src="/fliki_1.jpg "
+                  width={300}
+                  height={300}
+                  alt="Fliki"
+                  className="aspect-square object-cover  shadow-lg"
+                  loading="lazy" 
+                />
+                              <Image
+
+                  src="/fliki_2.jpg"
+                  width={300}
+                  height={300}
+                  alt="Fliki"
+                  className="aspect-square object-cover  shadow-lg"
+                  loading="lazy" 
+                />
+              </div>
+            </CardContent>
+            <CardFooter> 
+            </CardFooter>
+          </Card>
+          </Link>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
           <Link href="       https://app.artisse.ai/?via=aiimageandvideogenerators" className="block  " prefetch={false}>
           <Card className="">
             <CardHeader>
@@ -337,16 +428,26 @@ export default function Component() {
 
 
 
-          <Link href="       https://fliki.ai/?via=aiimageandvideogenerators" className="block  " prefetch={false}>
+
+
+
+
+
+
+
+
+
+          <Link href="     https://www.headshotpro.com/?via=aiimageandvideogenerators" className="block  " prefetch={false}>
           <Card className="">
             <CardHeader>
               <div className="flex items-center gap-4">
  
                 <div>
-                  <CardTitle>         Fliki 
+                  <CardTitle>         HeadshotPro 
+ 
                   </CardTitle>
                   <CardDescription>
-                  Fliki helps you create audio and video content at scale with the power of generative AI.
+                  Get professional business headshots in minutes with our AI-photographer. Upload photos, pick your styles & receive 120+ headshots.
 
 
              
@@ -361,21 +462,19 @@ export default function Component() {
 
               <Image
 
-                  src="/fliki_1.jpg "
+                  src="/HeadshotPro_1.jpg"
                   width={300}
                   height={300}
-                  alt="Fliki"
+                  alt="HeadshotPro"
                   className="aspect-square object-cover  shadow-lg"
-                  loading="lazy" 
                 />
-                              <Image
+                             <Image
 
-                  src="/fliki_2.jpg"
-                  width={300}
+                      src="/HeadshotPro_2.jpg"
+                      width={300}
                   height={300}
-                  alt="Fliki"
+                  alt="HeadshotPro"
                   className="aspect-square object-cover  shadow-lg"
-                  loading="lazy" 
                 />
               </div>
             </CardContent>
@@ -383,6 +482,13 @@ export default function Component() {
             </CardFooter>
           </Card>
           </Link>
+
+
+
+
+
+
+
 
 
 
@@ -503,65 +609,6 @@ portfolios, digital displays, social media showcases, or personal projects.
 
 
 
-         <Link href="     https://www.headshotpro.com/?via=aiimageandvideogenerators" className="block  " prefetch={false}>
-          <Card className="">
-            <CardHeader>
-              <div className="flex items-center gap-4">
- 
-                <div>
-                  <CardTitle>         HeadshotPro 
- 
-                  </CardTitle>
-                  <CardDescription>
-                  Get professional business headshots in minutes with our AI-photographer. Upload photos, pick your styles & receive 120+ headshots.
-
-
-             
-
-                  </CardDescription>
-                </div>
-              </div>
-            </CardHeader>
-            <CardContent>
-              <div className="grid grid-cols-2 gap-4">
-
-
-              <Image
-
-                  src="/HeadshotPro_1.jpg"
-                  width={300}
-                  height={300}
-                  alt="HeadshotPro"
-                  className="aspect-square object-cover  shadow-lg"
-                />
-                             <Image
-
-                      src="/HeadshotPro_2.jpg"
-                      width={300}
-                  height={300}
-                  alt="HeadshotPro"
-                  className="aspect-square object-cover  shadow-lg"
-                />
-              </div>
-            </CardContent>
-            <CardFooter> 
-            </CardFooter>
-          </Card>
-          </Link>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -643,6 +690,186 @@ portfolios, digital displays, social media showcases, or personal projects.
 
 
 
+
+
+
+
+
+
+
+
+
+          <Link href="https://lumalabs.ai/dream-machine" className="block   " prefetch={false}>
+          <Card className="">
+            <CardHeader>
+              <div className="flex items-center gap-4">
+                       <div>
+                  <CardTitle>Dream Machine</CardTitle>
+                  <CardDescription>
+                  Dream Machine is an AI model that makes high quality, realistic videos fast from text and images.
+                  It is capable of generating physically accurate, consistent and eventful shots. Available to everyone now!
+                  </CardDescription>
+                </div>
+              </div>
+            </CardHeader>
+            <CardContent>
+              <div className="grid grid-cols-2 gap-4">         
+                           <img
+                  src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*8-R5XPmVZyV9ZMTjhUm_RQ.gif"
+                  width={300}
+                  height={300}
+                  alt="dreamstudio_1"
+                  className="aspect-square object-cover  shadow-lg"
+                />
+<video
+      src="https://cdn-luma.com/public/lumalabs.ai/june-12-launch-dream-machine-high-res/assets/dream-machine/featured/videos/2.webm"
+      width={300}
+      height={300}
+      className="aspect-square object-cover  shadow-lg"
+      autoPlay
+      muted
+      loop
+      playsInline
+           preload="metadata"
+    >
+    </video> 
+              </div>
+            </CardContent>
+            <CardFooter>
+            </CardFooter>
+          </Card>
+          </Link>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <Link href="       https://www.basedlabs.ai/?via=aiimageandvideogenerators" className="block  " prefetch={false}>
+          <Card className="">
+            <CardHeader>
+              <div className="flex items-center gap-4">
+ 
+                <div>
+                  <CardTitle>         BasedLabs AI
+                  </CardTitle>
+                  <CardDescription>
+                  From AI anime art, AI image generation, and AI image extending. BasedLabs offers a lot of based AI tools to help you do more.
+
+
+             
+
+                  </CardDescription>
+                </div>
+              </div>
+            </CardHeader>
+            <CardContent>
+              <div className="grid grid-cols-2 gap-4">
+              <video
+      src="https://cdn.basedlabs.ai/a3960a51-6463-4271-b8fa-4c830a5df9a1"
+      width={300}
+      height={300}
+      className="aspect-square object-cover  shadow-lg"
+      autoPlay
+      muted
+      loop
+      playsInline
+      preload="metadata">
+      Your browser does not support the video tag.
+    </video>
+    <video
+      src="https://cdn.basedlabs.ai/8cf57d10-2598-11ef-91c0-6b7a39e8938f.mp4"
+      width={300}
+      height={300}
+      className="aspect-square object-cover  shadow-lg"
+      autoPlay
+      muted
+      loop
+      playsInline
+           preload="metadata"
+    >
+      Your browser  aa support the video tag.
+    </video>
+              </div>
+            </CardContent>
+            <CardFooter> 
+            </CardFooter>
+          </Card>
+          </Link>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
           <Link  href="https://app.photoai.me/?via=aiimageandvideogenerators" className="  block      " prefetch={false}>
 
 <Card className="  block      ">
@@ -694,7 +921,25 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
 
 
 
-          <Link href="https://dreamstudio.ai/" className="block   " prefetch={false}>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <Link href="https://dreamstudio.ai/" className="block   " prefetch={false}>
           <Card className="">
             <CardHeader>
               <div className="flex items-center gap-4">     
@@ -757,61 +1002,12 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
 
 
 
-          <Link href="https://lumalabs.ai/dream-machine" className="block   " prefetch={false}>
-          <Card className="">
-            <CardHeader>
-              <div className="flex items-center gap-4">
-       
-                <div>
-                  <CardTitle>Dream Machine</CardTitle>
-                  <CardDescription>
-                  Dream Machine is an AI model that makes high quality, realistic videos fast from text and images.
-                  It is capable of generating physically accurate, consistent and eventful shots. Available to everyone now!
-                  </CardDescription>
-                </div>
-              </div>
-            </CardHeader>
-            <CardContent>
-              <div className="grid grid-cols-2 gap-4">
-             
-             
-              <img
-                  src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*8-R5XPmVZyV9ZMTjhUm_RQ.gif"
-                  width={300}
-                  height={300}
-                  alt="dreamstudio_1"
-                  className="aspect-square object-cover  shadow-lg"
-                />
-
- 
-
-
-<video
-      src="https://cdn-luma.com/public/lumalabs.ai/june-12-launch-dream-machine-high-res/assets/dream-machine/featured/videos/2.webm"
-      width={300}
-      height={300}
-      className="aspect-square object-cover  shadow-lg"
-      autoPlay
-      muted
-      loop
-      playsInline
-           preload="metadata"
-    >
-      Your browser does not support the video tag.
-    </video>
-
- 
-              </div>
-            </CardContent>
-            <CardFooter>
-
-            </CardFooter>
-          </Card>
-          </Link>
 
 
 
-   
+
+
+
 
 
 
@@ -832,7 +1028,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
             <CardContent>
               <div className="grid grid-cols-2 gap-4">
                 <img
-                  src=" ./dj_1.jpg   "
+                  src=" ./midjourney_1.webp   "
                   width={300}
                   height={300}
                   alt="Midjourney"
@@ -841,7 +1037,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
 
                 />
                 <img
-                  src="./dj_2.jpg "
+                  src="./midjourney_2.webp "
                   width={300}
                   height={300}
                   alt="Midjourney"
@@ -855,6 +1051,97 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
             </CardFooter>
           </Card>
           </Link>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <Link href="       https://interiorai.com/?via=aiimageandvideogenerators" className="block  " prefetch={false}>
+          <Card className="">
+            <CardHeader>
+              <div className="flex items-center gap-4">
+ 
+                <div>
+                  <CardTitle>         Interior AI
+                  </CardTitle>
+                  <CardDescription>
+                  Redesign your interior in seconds using AI.
+                  Save money and use AI to redesign your interior from your laptop or phone instead of hiring an expensive interior designer.
+             
+
+                  </CardDescription>
+                </div>
+              </div>
+            </CardHeader>
+            <CardContent>
+              <div className="grid grid-cols-2 gap-4">
+              <img
+
+      src="./interiorai_1.jpg"
+      width={300}
+      height={300}
+      className="aspect-square object-cover  shadow-lg"
+      loading="lazy" 
+      alt="Interior AI"
+
+      />
+      
+     
+    <img
+                  src="./interiorai_2.jpg"
+                  width={300}
+                  height={300}
+                  alt="Interior AI"
+                  className="aspect-square object-cover  shadow-lg"
+                  loading="lazy" 
+                />
+              </div>
+            </CardContent>
+            <CardFooter> 
+            </CardFooter>
+          </Card>
+          </Link>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1415,194 +1702,51 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
 
 
 
-          <Link href="       https://interiorai.com/?via=aiimageandvideogenerators" className="block  " prefetch={false}>
-          <Card className="">
-            <CardHeader>
-              <div className="flex items-center gap-4">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  
-                <div>
-                  <CardTitle>         Interior AI
-                  </CardTitle>
-                  <CardDescription>
-                  Redesign your interior in seconds using AI.
-                  Save money and use AI to redesign your interior from your laptop or phone instead of hiring an expensive interior designer.
-             
-
-                  </CardDescription>
-                </div>
-              </div>
-            </CardHeader>
-            <CardContent>
-              <div className="grid grid-cols-2 gap-4">
-              <img
-
-      src="https://interiorai.com/cdn-cgi/image/format=jpeg,fit=cover,width=1536,quality=75/https://r2-us-west.interiorai.com/1707042290-620e079153d29aea78df57c4da248a9d-1.png"
-      width={300}
-      height={300}
-      className="aspect-square object-cover  shadow-lg"
-      loading="lazy" 
-      alt="Interior AI"
-
-      />
-      
-     
-    <img
-                  src="https://customer-ecy0wgmn1dow5gsd.cloudflarestream.com/af09f55d3aa552d2c07713031191f363/thumbnails/thumbnail.jpg?time=&height=600"
-                  width={300}
-                  height={300}
-                  alt="Interior AI"
-                  className="aspect-square object-cover  shadow-lg"
-                  loading="lazy" 
-                />
-              </div>
-            </CardContent>
-            <CardFooter> 
-            </CardFooter>
-          </Card>
-          </Link>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          <Link href="       https://www.basedlabs.ai/?via=aiimageandvideogenerators" className="block  " prefetch={false}>
-          <Card className="">
-            <CardHeader>
-              <div className="flex items-center gap-4">
- 
-                <div>
-                  <CardTitle>         BasedLabs AI
-                  </CardTitle>
-                  <CardDescription>
-                  From AI anime art, AI image generation, and AI image extending. BasedLabs offers a lot of based AI tools to help you do more.
-
-
-             
-
-                  </CardDescription>
-                </div>
-              </div>
-            </CardHeader>
-            <CardContent>
-              <div className="grid grid-cols-2 gap-4">
-              <video
-      src="https://cdn.basedlabs.ai/a3960a51-6463-4271-b8fa-4c830a5df9a1"
-      width={300}
-      height={300}
-      className="aspect-square object-cover  shadow-lg"
-      autoPlay
-      muted
-      loop
-      playsInline
-      preload="metadata">
-      Your browser does not support the video tag.
-    </video>
-    <video
-      src="https://cdn.basedlabs.ai/8cf57d10-2598-11ef-91c0-6b7a39e8938f.mp4"
-      width={300}
-      height={300}
-      className="aspect-square object-cover  shadow-lg"
-      autoPlay
-      muted
-      loop
-      playsInline
-           preload="metadata"
-    >
-      Your browser  aa support the video tag.
-    </video>
-              </div>
-            </CardContent>
-            <CardFooter> 
-            </CardFooter>
-          </Card>
-          </Link>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          <Link href="      https://www.midjourney.com/home" className="block  " prefetch={false}>
-          <Card className="">
-            <CardHeader>
-              <div className="flex items-center gap-4">
- 
-                <div>
-                  <CardTitle>         Midjourney 
-                  </CardTitle>
-                  <CardDescription>
-                  No matter what type of AI art you create, Midjourney can do it.         
-                  </CardDescription>
-                </div>
-              </div>
-            </CardHeader>
-            <CardContent>
-              <div className="grid grid-cols-2 gap-4">
-              <img
-                  src="https://cdn.midjourney.com/6b8dda59-8d2a-4b9f-a3ef-3a3abea3f1a4/0_1_640_N.webp"
-                  width={300}
-                  height={300}
-                  alt="Midjourney"
-                  className="aspect-square object-cover  shadow-lg"
-                  loading="lazy" 
-                />
-
-                  <img
-                  src="https://cdn.midjourney.com/c30cc361-2e2e-4f3d-a2c5-a8856dae5f4e/0_1_640_N.webp"
-                  width={300}
-                  height={300}
-                  alt="Midjourney"
-                  className="aspect-square object-cover  shadow-lg"
-                  loading="lazy" 
-                />
-              </div>
-            </CardContent>
-            <CardFooter> 
-            </CardFooter>
-          </Card>
-          </Link>
-
 
 
 

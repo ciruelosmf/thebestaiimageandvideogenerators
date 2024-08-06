@@ -25,7 +25,6 @@ export default function Component() {
     <div className="  relative min-h-screen flex flex-col items-center">
 
       <Head>
- 
         <meta property="og:title" content="✨AI Image and Video Generators" />
         <meta
           property="og:description"

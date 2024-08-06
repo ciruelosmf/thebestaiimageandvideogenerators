@@ -5,10 +5,19 @@
     import Script from "next/script";
     import Link from "next/link"
     import DynamicBackground from '@/components/DynamicBackground';
+    import Head from 'next/head';
 
     export default function Blog() {
     return (
         <div className="relative min-h-screen flex flex-col items-center">
+
+
+
+ 
+
+
+
+
             <Script
                 strategy="lazyOnload"
                 src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
@@ -40,7 +49,7 @@
         <div className="container max-w-7xl py-2 px-4 md:px-6 flex items-center justify-between">
           <div className="flex flex-wrap items-center justify-center gap-2 ">
              
-            <h1 className="md:text-xl text-base font-semibold text-black  px-4 md:px-6">AI Image and Video Generators - AI directory</h1>
+            <h2 className="md:text-xl text-base font-semibold text-black  px-4 md:px-6">AI Image and Video Generators - AI directory</h2>
           <nav className=" flex flex-row items-center gap-4">
             <Link href="/" className="text-sm font-medium hover:text-primary" prefetch={false}>
               Home
@@ -61,13 +70,8 @@
               Contact
             </Link>
           </nav>
-          </div>
- 
+          </div> 
         </div>
-
-
-        
-
       </header>
 
 

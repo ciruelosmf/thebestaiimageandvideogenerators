@@ -160,7 +160,7 @@
 
               </Link>
 
-              <Link href="https://www.aiimageandvideogenerators.xyz/" className="ftext-xl font-medium hover:text-primary  " prefetch={ffalse}> 
+              <Link href="https://www.aiimageandvideogenerators.xyz/" className="ftext-xl font-medium hover:text-primary  " prefetch={false}> 
             <span class="font-bold text-2xl text-red-300   ">    Go to the Homepage and discover new tolls like this one!</span>
 
 

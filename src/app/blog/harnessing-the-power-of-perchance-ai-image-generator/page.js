@@ -98,7 +98,7 @@
             </h2>
 
             <p className="mb-4">
-            To use Perchance AI effectively, users should begin by outlining their vision. This includes defining the image’s style, color palette, and subject matter. Once the parameters are established, the AI generates a series of images based on the input. Users can then select their favorites and make further modifications as needed. For example, if you are a social media manager, you can leverage Perchance AI to create eye-catching graphics for your campaigns. 
+            To use Perchance AI effectively, users should begin by outlining their vision. This includes defining the image's style, color palette, and subject matter. Once the parameters are established, the AI generates a series of images based on the input. Users can then select their favorites and make further modifications as needed. For example, if you are a social media manager, you can leverage Perchance AI to create eye-catching graphics for your campaigns. 
             </p>
 
             <h2 className="text-2xl font-semibold mt-16 mb-4">

@@ -106,7 +106,7 @@
             </h2>
 
             <p className="mb-4">
-            To effectively leverage AVC Labs Video Enhancer AI, users should carefully choose the settings based on their specific video needs. It’s advisable to experiment with different upscaling options and noise reduction levels to find the best combination for each project. Content creators, such as YouTubers or social media influencers, can greatly benefit from this tool by producing visually stunning videos that attract more viewers.
+            To effectively leverage AVC Labs Video Enhancer AI, users should carefully choose the settings based on their specific video needs. It's advisable to experiment with different upscaling options and noise reduction levels to find the best combination for each project. Content creators, such as YouTubers or social media influencers, can greatly benefit from this tool by producing visually stunning videos that attract more viewers.
             </p>
 
             {/* ... (rest of the component code) ... */}

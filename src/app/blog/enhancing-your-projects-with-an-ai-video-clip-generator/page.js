@@ -106,7 +106,7 @@
             </h2>
 
             <p className="mb-4">
-            When using an AI video clip generator like Leonardo AI, it’s important to have a clear vision of your project. If you are a business owner, consider how the generated videos can promote your services or products. By inputting specific themes and objectives into the generator, you can create tailored content that speaks directly to your audience. This targeted approach can significantly enhance viewer engagement and drive conversions.
+            When using an AI video clip generator like Leonardo AI, it s important to have a clear vision of your project. If you are a business owner, consider how the generated videos can promote your services or products. By inputting specific themes and objectives into the generator, you can create tailored content that speaks directly to your audience. This targeted approach can significantly enhance viewer engagement and drive conversions.
             </p>
 
             {/* ... (rest of the component code) ... */}

@@ -2001,8 +2001,12 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
           </div>
 
           <nav className="hidden md:flex items-center gap-4">
-          <Link href="/" className="hover:text-gray-700 transition-colors   " prefetch={false}>
-              Home
+
+
+
+
+          <Link href="https://imagify.gumroad.com/l/xuhxv" className="hover:text-gray-700 transition-colors   " prefetch={false}>
+              List your Tool (10 usd)
             </Link>
 
             <Link href="./privacy" className="hover:text-gray-700 transition-colors   " prefetch={false}>

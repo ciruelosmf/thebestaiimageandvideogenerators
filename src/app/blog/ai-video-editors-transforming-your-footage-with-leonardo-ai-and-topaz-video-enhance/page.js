@@ -157,6 +157,10 @@
                 </Link>
           </div>
  
+
+
+
+
  
               </div>
      
@@ -165,10 +169,22 @@
 
 
 
+    <footer className="  bg-slate-800 py-4 mt-32 text-center">
+                <div className="container mx-auto px-4">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <span className="font-bold text-sm text-red-300 text-center md:text-left">
+                            aiimageandvideogenerators.xyz and aiimageandvideogenerators are registered trademarks.
+                        </span>
+                    </div>
+                </div>
+            </footer>
+
 
 
 
         </div>
+
+       
     );
     }
     

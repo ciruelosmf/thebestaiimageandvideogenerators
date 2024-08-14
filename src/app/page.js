@@ -2006,7 +2006,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
 
 
           <Link href="https://imagify.gumroad.com/l/xuhxv" className="hover:text-gray-700 transition-colors   " prefetch={false}>
-              List your Tool (10 usd)
+              List your Tool (25 usd)
             </Link>
 
             <Link href="./privacy" className="hover:text-gray-700 transition-colors   " prefetch={false}>

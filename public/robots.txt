@@ -1,3 +1,5 @@
 User-agent: *
 Allow: /
-Sitemap: https://aiimageandvideogenerators.xyz/sitemap.xml
+Disallow: /private/
+
+Sitemap: https://www.aiimageandvideogenerators.xyz/sitemap.xml

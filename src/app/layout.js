@@ -13,36 +13,35 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
- 
 
+          <head>
+                <Script
+                  async
+                  src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
+                />
 
-
-      <Script
-        async
-        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
-      />
-
-      <Script id="google-analytics">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}',{
-          page_path: window.location.pathname,
-          
-});
-         `}
-      </Script>
-      <meta name="saashub-verification" content="71q2g0y0qjqw" />
+                <Script id="google-analytics">
+                  {`
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+                    gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}',{
+                    page_path: window.location.pathname,                    
+          });
+                  `}
+                </Script>   
 
           </head>
-          <CSPostHogProvider>
-      <body    className={inter.className}>  
-        {children}
 
-      </body>
-      </CSPostHogProvider>
+
+
+
+          <CSPostHogProvider>
+              <body    
+              className={inter.className}>  
+                       {children}
+              </body>
+          </CSPostHogProvider>
     </html>
   );
 }

@@ -128,16 +128,16 @@ export default function Component() {
               <div className="grid grid-cols-2 gap-4">
               <Image
                   src="/photoaicom_1.jpg"
-                  width={300}
-                  height={300}
+                  width={140}
+                  height={140}
                   alt="Photo AI"
                   className="  object-cover  shadow-lg"
                   loading="lazy" 
                 />
                 <Image
                   src="/photoaicom_2.jpg"
-                  width={300}
-                  height={300}
+                  width={140}
+                  height={140}
                   alt="Photo AI"
                   className="  object-cover  shadow-lg"
                   loading="lazy" 
@@ -185,8 +185,8 @@ export default function Component() {
   <div className="grid grid-cols-2 gap-4">
     <video
       src="https://cdn2.imagine.art/imagine-frontend/assets/video/landing-page/tools/text-to-img.webm"
-      width={300}
-      height={300}
+      width={140}
+      height={140}
       className="aspect-square object-cover  shadow-lg"
       autoPlay
       muted
@@ -199,8 +199,8 @@ export default function Component() {
     </video>
     <video
       src="https://cdn2.imagine.art/imagine-frontend/assets/video/landing-page/tools/text-to-video.webm"
-      width={300}
-      height={300}
+      width={140}
+      height={140}
       className="aspect-square object-cover  shadow-lg"
       autoPlay
       muted
@@ -277,8 +277,8 @@ export default function Component() {
               <Image
 
                   src="/fliki_1.jpg"
-                  width={300}
-                  height={300}
+                  width={140}
+                  height={140}
                   alt="Fliki"
                   className="aspect-square object-cover  shadow-lg"
                   loading="lazy" 
@@ -286,8 +286,8 @@ export default function Component() {
                               <Image
 
                   src="/fliki_2.jpg"
-                  width={300}
-                  height={300}
+                  width={140}
+                  height={140}
                   alt="Fliki"
                   className="aspect-square object-cover  shadow-lg"
                   loading="lazy" 
@@ -355,8 +355,8 @@ export default function Component() {
 
               <video
      src="https://artisse.ai/wp-content/uploads/2024/06/Web-Hero-Animation.mp4"
-      width={300}
-      height={300}
+      width={140}
+      height={140}
       className="aspect-square object-cover   "
       autoPlay
       muted
@@ -368,8 +368,8 @@ export default function Component() {
 
           <video
      src="https://artisse.ai/wp-content/uploads/2024/06/Actual-photo.mp4"
-      width={300}
-      height={300}
+      width={140}
+      height={140}
       className="aspect-square object-cover  "
       autoPlay
       muted
@@ -462,16 +462,16 @@ export default function Component() {
               <Image
 
                   src="/HeadshotPro_1.jpg"
-                  width={300}
-                  height={300}
+                  width={140}
+                  height={140}
                   alt="HeadshotPro"
                   className="aspect-square object-cover  shadow-lg"
                 />
                              <Image
 
                       src="/HeadshotPro_2.jpg"
-                      width={300}
-                  height={300}
+                      width={140}
+                  height={140}
                   alt="HeadshotPro"
                   className="aspect-square object-cover  shadow-lg"
                 />
@@ -551,8 +551,8 @@ portfolios, digital displays, social media showcases, or personal projects.
               <img
 
                   src="https://leonardo-cdn.b-cdn.net/wp-content/uploads/2024/04/AI-Video-of-alien-in-Las-vegas.gif "
-                  width={300}
-                  height={300}
+                  width={140}
+                  height={140}
                   alt="Leonardoai.jpg"
                   className="aspect-square object-cover  shadow-lg"
                   loading="lazy" 
@@ -560,8 +560,8 @@ portfolios, digital displays, social media showcases, or personal projects.
                               <Image
 
                   src="/Leonardoai.jpg"
-                  width={300}
-                  height={300}
+                  width={140}
+                  height={140}
                   alt="Leonardoai.jpg"
                   className="aspect-square object-cover  shadow-lg"
                   loading="lazy" 
@@ -640,15 +640,15 @@ portfolios, digital displays, social media showcases, or personal projects.
  
                 <img
                   src="./writesonic_1.webp "
-                  width={300}
-                  height={300}
+                  width={140}
+                  height={140}
                   alt="Writesonic"
                   className="aspect-square object-cover  shadow-lg"
                 />
                 <img
                   src="./writesonic_2.webp"
-                  width={300}
-                  height={300}
+                  width={140}
+                  height={140}
                   alt="Writesonic"
                   className="aspect-square object-cover  shadow-lg"
                 />
@@ -715,15 +715,15 @@ portfolios, digital displays, social media showcases, or personal projects.
               <div className="grid grid-cols-2 gap-4">         
                            <img
                   src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*8-R5XPmVZyV9ZMTjhUm_RQ.gif"
-                  width={300}
-                  height={300}
+                  width={140}
+                  height={140}
                   alt="dreamstudio_1"
                   className="aspect-square object-cover  shadow-lg"
                 />
 <video
       src="https://cdn-luma.com/public/lumalabs.ai/june-12-launch-dream-machine-high-res/assets/dream-machine/featured/videos/2.webm"
-      width={300}
-      height={300}
+      width={140}
+      height={140}
       className="aspect-square object-cover  shadow-lg"
       autoPlay
       muted
@@ -789,8 +789,8 @@ portfolios, digital displays, social media showcases, or personal projects.
               <div className="grid grid-cols-2 gap-4">
               <video
       src="https://cdn.basedlabs.ai/a3960a51-6463-4271-b8fa-4c830a5df9a1"
-      width={300}
-      height={300}
+      width={140}
+      height={140}
       className="aspect-square object-cover  shadow-lg"
       autoPlay
       muted
@@ -801,8 +801,8 @@ portfolios, digital displays, social media showcases, or personal projects.
     </video>
     <video
       src="https://cdn.basedlabs.ai/8cf57d10-2598-11ef-91c0-6b7a39e8938f.mp4"
-      width={300}
-      height={300}
+      width={140}
+      height={140}
       className="aspect-square object-cover  shadow-lg"
       autoPlay
       muted
@@ -889,15 +889,15 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
       <div className="grid grid-cols-2 gap-4">
         <img
           src="/photoai_1.webp"
-          width={300}
-          height={300}
+          width={140}
+          height={140}
           alt="Imagen"
           className="  object-cover  shadow-lg"
         />
         <img
           src="/photoai_2.webp"
-          width={300}
-          height={300}
+          width={140}
+          height={140}
           alt="Imagen"
           className="  object-cover  shadow-lg"
         />
@@ -957,15 +957,15 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
  
                 <img
                   src="./dreamstudio_1.jfif"
-                  width={300}
-                  height={300}
+                  width={140}
+                  height={140}
                   alt="dreamstudio_1"
                   className="aspect-square object-cover  shadow-lg"
                 />
                 <img
                   src="./dreamstudio_2.jfif"
-                  width={300}
-                  height={300}
+                  width={140}
+                  height={140}
                   alt="dreamstudio_1"
                   className="aspect-square object-cover  shadow-lg"
                 />
@@ -1028,8 +1028,8 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
               <div className="grid grid-cols-2 gap-4">
                 <img
                   src=" ./midjourney_1.webp   "
-                  width={300}
-                  height={300}
+                  width={140}
+                  height={140}
                   alt="Midjourney"
                   className="aspect-square object-cover "
       loading="lazy" 
@@ -1037,8 +1037,8 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
                 />
                 <img
                   src="./midjourney_2.webp "
-                  width={300}
-                  height={300}
+                  width={140}
+                  height={140}
                   alt="Midjourney"
                   className="aspect-square object-cover"
       loading="lazy" 
@@ -1098,8 +1098,8 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
               <img
 
       src="./interiorai_1.jpg"
-      width={300}
-      height={300}
+      width={140}
+      height={140}
       className="aspect-square object-cover  shadow-lg"
       loading="lazy" 
       alt="Interior AI"
@@ -1109,8 +1109,8 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
      
     <img
                   src="./interiorai_2.jpg"
-                  width={300}
-                  height={300}
+                  width={140}
+                  height={140}
                   alt="Interior AI"
                   className="aspect-square object-cover  shadow-lg"
                   loading="lazy" 
@@ -1173,8 +1173,8 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
   <div className="grid grid-cols-2 gap-4">
     <video
       src="https://d3phaj0sisr2ct.cloudfront.net/site/videos/gen-3-alpha/carousel-01/gen-3-alpha-output-002.mp4"
-      width={300}
-      height={300}
+      width={140}
+      height={140}
       className="aspect-square object-cover  shadow-lg"
       autoPlay
       muted
@@ -1187,8 +1187,8 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
     </video>
     <video
       src="https://d3phaj0sisr2ct.cloudfront.net/site/videos/gen-3-alpha/homepage/carousel/gen-3-alpha-output-003.mp4"
-      width={300}
-      height={300}
+      width={140}
+      height={140}
       className="aspect-square object-cover  shadow-lg"
       autoPlay
       muted
@@ -1236,8 +1236,8 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
               <div className="grid grid-cols-2 gap-4">
               <img
                   src="./DeepBrainAI_1.jpg"
-                  width={300}
-                  height={300}
+                  width={140}
+                  height={140}
                   alt="DeepBrain AI"
                   className="aspect-square object-cover  shadow-lg shadow-lg"
       loading="lazy" 
@@ -1245,8 +1245,8 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
                 />
                 <img
                   src="./DeepBrainAI_2.jpg"
-                  width={300}
-                  height={300}
+                  width={140}
+                  height={140}
                   alt="DeepBrain AI"
                   className="aspect-square object-cover  shadow-lg shadow-lg"
                   loading="lazy" 
@@ -1291,8 +1291,8 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
               <div className="grid grid-cols-2 gap-4">
                 <img
                   src="https://images.ctfassets.net/kftzwdyauwt9/As8KNbCDwnOSNYCPHRPOR/5cd4506d01ddc8b772cdb206327b0985/hero-still-life-desktop.jpg?w=640&q=80&fm=webp"
-                  width={300}
-                  height={300}
+                  width={140}
+                  height={140}
                   alt="DALL-E 2"
                   className="aspect-square object-cover  shadow-lg"
       loading="lazy" 
@@ -1300,8 +1300,8 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
                 />
                 <img
                   src="https://images.ctfassets.net/kftzwdyauwt9/5JZsznv2kZBJhcntpSLEL9/fbe72de7edaceb8a44176170312ccf2a/picnic-cherry-tree.jpeg?w=1080&q=90&fm=webp"
-                  width={300}
-                  height={300}
+                  width={140}
+                  height={140}
                   alt="DALL-E 2"
                   className="aspect-square object-cover  shadow-lg"
                   loading="lazy" 
@@ -1331,53 +1331,6 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
 
 
 
-
-
-
-
-
-
-
-
-          <Link href="https://lumalabs.ai/dream-machine" className="block  " prefetch={false}>
-          <Card className="">
-            <CardHeader>
-              <div className="flex items-center gap-4">
- 
-                <div>
-                  <CardTitle>Pictory AI</CardTitle>
-                  <CardDescription>
-                  Enterprise Teams Create highly engaging videos in minutes using the power of AI. No video editing experience required. Get Started For Free!
-                  </CardDescription>
-                </div>
-              </div>
-            </CardHeader>
-            <CardContent>
-              <div className="grid grid-cols-2 gap-4">
-                <img
-                  src="/pictory.JPG"
-                  width={300}
-                  height={300}
-                  alt="Imagen"
-                  className="aspect-square object-cover  shadow-lg"
-      loading="lazy" 
-
-                />
-                <img
-                  src="/pictory.JPG"
-                  width={300}
-                  height={300}
-                  alt="Imagen"
-                  className="aspect-square object-cover  shadow-lg"
-      loading="lazy" 
-
-                />
-              </div>
-            </CardContent>
-            <CardFooter> 
-            </CardFooter>
-          </Card>
-          </Link>
 
 
 
@@ -1428,8 +1381,8 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
               <div className="grid grid-cols-2 gap-4">
                 <img
                   src="https://framerusercontent.com/images/rbCdOqlduGxFDJRA1VMw6QJx0s.gif"
-                  width={300}
-                  height={300}
+                  width={140}
+                  height={140}
                   alt="Imagen"
                   className="aspect-square object-cover  shadow-lg"
       loading="lazy" 
@@ -1437,8 +1390,8 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
                 />
                 <img
                   src="https://framerusercontent.com/images/YR0QoptQ9rYXwm2co5MkWmSsgUg.gif"
-                  width={300}
-                  height={300}
+                  width={140}
+                  height={140}
                   alt="Imagen"
                   className="aspect-square object-cover  shadow-lg"
       loading="lazy" 
@@ -1493,8 +1446,8 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
               <div className="grid grid-cols-2 gap-4">
               <video
       src="https://ext.cdn.opus.pro/corp-it/landing-page/desktop_update.mp4"
-      width={300}
-      height={300}
+      width={140}
+      height={140}
       className="aspect-square object-cover  shadow-lg"
       autoPlay
       muted
@@ -1507,8 +1460,8 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
     </video>
     <video
       src="https://assets-global.website-files.com/6388604483b03a9ecb34d695/65bb7ef012f2fd3fed4c1231_OpusClip%20Video%203-transcode.mp4"
-      width={300}
-      height={300}
+      width={140}
+      height={140}
       className="aspect-square object-cover  shadow-lg"
       autoPlay
       muted
@@ -1572,8 +1525,8 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
               <div className="grid grid-cols-2 gap-4">
               <video
       src="https://virbo.wondershare.com/assets/video/homepage2024/step1-video.mp4"
-      width={300}
-      height={300}
+      width={140}
+      height={140}
       className="aspect-square object-cover  shadow-lg"
       autoPlay
       muted
@@ -1586,8 +1539,8 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
     </video>
     <video
       src="https://virbo.wondershare.com/assets/video/homepage2024/education-training.mp4"
-      width={300}
-      height={300}
+      width={140}
+      height={140}
       className="aspect-square object-cover  shadow-lg"
       autoPlay
       muted
@@ -1650,9 +1603,9 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
             <CardContent>
               <div className="grid grid-cols-2 gap-4">
               <img
-      src="https://collov.ai/img/interior.2df65ae7.jpg"
-      width={300}
-      height={300}
+      src="collov_1.jpg"
+      width={140}
+      height={140}
       className="aspect-square object-cover  shadow-lg"
       loading="lazy" 
       alt="Collov AI"
@@ -1660,9 +1613,9 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
       
      
     <img
-                  src="https://d17axom7zrjq3q.cloudfront.net/20230901/7e2c925c-fb7e-48f9-9001-7296343f4bd3.jpg"
-                  width={300}
-                  height={300}
+                  src="collov_2.jpg"
+                  width={140}
+                  height={140}
                   alt="Collov AI"
                   className="aspect-square object-cover  shadow-lg"
                   loading="lazy" 
@@ -1790,8 +1743,8 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
               <div className="grid grid-cols-2 gap-4">
               <img
                   src="https://magnific.ai/magnific-highres2low.jpg"
-                  width={300}
-                  height={300}
+                  width={140}
+                  height={140}
                   alt="Imagen"
                   className="aspect-square object-cover  shadow-lg"
                   loading="lazy" 
@@ -1799,8 +1752,8 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
 
                   <img
                   src="https://magnific.ai/ilu8low.jpg"
-                  width={300}
-                  height={300}
+                  width={140}
+                  height={140}
                   alt="Imagen"
                   className="aspect-square object-cover  shadow-lg"
                   loading="lazy" 
@@ -1865,18 +1818,18 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
             <CardContent>
               <div className="grid grid-cols-2 gap-4">
               <img
-                  src="https://cdn.prod.website-files.com/668281ece7b010ab6b0d2eac/6691549e18a22e39ee6ad5e3_hero-img.jpg"
-                  width={300}
-                  height={300}
+                  src="cgdream_1.jpg"
+                  width={140}
+                  height={140}
                   alt="Imagen"
                   className="aspect-square object-cover  shadow-lg"
                   loading="lazy" 
                 />
 
                   <img
-                  src="https://cdn.prod.website-files.com/668281ece7b010ab6b0d2eac/668fe73923d765b325136a8e_hamster%202.jpg"
-                  width={300}
-                  height={300}
+                  src="cgdream_2.jpg"
+                  width={140}
+                  height={140}
                   alt="Imagen"
                   className="aspect-square object-cover  shadow-lg"
                   loading="lazy" 
@@ -1938,8 +1891,8 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
               <div className="grid grid-cols-2 gap-4">
               <img
                   src="https://rendernet.ai/images/second-p-1080.webp"
-                  width={300}
-                  height={300}
+                  width={140}
+                  height={140}
                   alt="Imagen"
                   className="aspect-square object-cover  shadow-lg"
                   loading="lazy" 
@@ -1947,8 +1900,8 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
 
                   <img
                   src="https://rendernet.ai/images/TrueTouch-landing-page-p-1080.webp"
-                  width={300}
-                  height={300}
+                  width={140}
+                  height={140}
                   alt="Imagen"
                   className="aspect-square object-cover  shadow-lg"
                   loading="lazy" 

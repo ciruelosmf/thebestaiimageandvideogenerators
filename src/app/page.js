@@ -1959,7 +1959,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
 
 
           <Link href="https://imagify.gumroad.com/l/xuhxv" className="hover:text-gray-700 transition-colors   " prefetch={false}>
-              List your Tool (25 usd)
+              List your Tool (20 USD)
             </Link>
 
             <Link href="./privacy" className="hover:text-gray-700 transition-colors   " prefetch={false}>
@@ -1975,11 +1975,14 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
               X
             </Link>
 
-            <Link className="hover:text-gray-700 transition-colors" href="https://x.com/bestaigeneratrs">
+            <Link className="hover:text-gray-700 transition-colors" href="https://www.youtube.com/@AIImageandVideoGenerators">
               YouTube
             </Link>
 
-
+            <Link className="hover:text-gray-700 transition-colors" href="https://www.toolify.ai/">
+            Discover more AI Tools
+            </Link>
+            
 
           </nav>
 

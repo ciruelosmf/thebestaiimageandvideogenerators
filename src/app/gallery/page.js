@@ -176,13 +176,13 @@ export default function Component() {
                             src="/photoai_3.JPG"
                             width={300}
                             height={300}
-                            alt="Imagen"
+                            alt="photoai_3"
                             className="  object-cover  shadow-lg"    />
                             <img
                             src="/photoai_2.webp"
                             width={300}
                             height={300}
-                            alt="Imagen"
+                            alt="photoai_2"
                             className="  object-cover  shadow-lg"   />
                         </div>        
   </Card>
@@ -222,7 +222,7 @@ export default function Component() {
                                 preload="metadata"
 
                                 >
-                                Your browser does not support the video tag.
+                                Luma Dream Machine
                                 </video>
                                 <video
                                 src="https://cdn-luma.com/public/lumalabs.ai/june-12-launch-dream-machine-high-res/assets/dream-machine/featured/videos/6.webm"
@@ -235,7 +235,7 @@ export default function Component() {
                                 playsInline
                                     preload="metadata"
                                 >
-                                Your browser does not support the video tag.
+                                Luma Dream Machine
                         </video>
 
 
@@ -275,7 +275,7 @@ export default function Component() {
                                 preload="metadata"
 
                                 >
-                                Your browser does not support the video tag.
+                                Leonardo.Ai
                                 </video>
                                 <video
                                 src="https://leonardo-cdn.b-cdn.net/wp-content/uploads/2024/05/Image_gen_email__.webm"
@@ -288,7 +288,7 @@ export default function Component() {
                                 playsInline
                                     preload="metadata"
                                 >
-                                Your browser does not support the video tag.
+                                Leonardo.Ai
                         </video>
 
 
@@ -333,7 +333,7 @@ export default function Component() {
                                 preload="metadata"
 
                                 >
-                                Your browser does not support the video tag.
+                                BasedLabs
                                 </video>
                                 <video
                                 src="https://cdn.basedlabs.ai/9c7f8ea0-3a98-11ef-9d9b-e54cf96b531b.mp4"
@@ -346,8 +346,7 @@ export default function Component() {
                                 playsInline
                                     preload="metadata"
                                 >
-                                Your browser does not support the video tag.
-                        </video>
+                                BasedLabs
 
 
                         </div>        

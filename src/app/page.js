@@ -110,7 +110,7 @@ export default function Component() {
 
 
 
-        <Link  href="https://photoai.com/?via=aiimageandvideogenerators" className="  block      " prefetch={false}>
+        <Link id="photoai-main-link"  href="https://photoai.com/?via=aiimageandvideogenerators" className="  block      " prefetch={false}>
 
         <Card className="  block      ">
             <CardHeader>
@@ -130,7 +130,7 @@ export default function Component() {
                   src="/photoaicom_1.jpg"
                   width={140}
                   height={140}
-                  alt="Photo AI"
+                  alt="photoaicom_1"
                   className="  object-cover  shadow-lg"
                   loading="lazy" 
                 />
@@ -138,7 +138,7 @@ export default function Component() {
                   src="/photoaicom_2.jpg"
                   width={140}
                   height={140}
-                  alt="Photo AI"
+                  alt="photoaicom_2"
                   className="  object-cover  shadow-lg"
                   loading="lazy" 
                 />
@@ -195,7 +195,7 @@ export default function Component() {
       preload="metadata"
 
     >
-      Your browser does not support the video tag.
+      Imagine AI Art Generator
     </video>
     <video
       src="https://cdn2.imagine.art/imagine-frontend/assets/video/landing-page/tools/text-to-video.webm"
@@ -208,7 +208,7 @@ export default function Component() {
       playsInline
            preload="metadata"
     >
-      Your browser does not support the video tag.
+      Imagine AI Art Generator
     </video>
   </div>
 </CardContent>
@@ -279,7 +279,7 @@ export default function Component() {
                   src="/fliki_1.jpg"
                   width={140}
                   height={140}
-                  alt="Fliki"
+                  alt="fliki_1"
                   className="aspect-square object-cover  shadow-lg"
                   loading="lazy" 
                 />
@@ -288,7 +288,7 @@ export default function Component() {
                   src="/fliki_2.jpg"
                   width={140}
                   height={140}
-                  alt="Fliki"
+                  alt="fliki_2"
                   className="aspect-square object-cover  shadow-lg"
                   loading="lazy" 
                 />
@@ -332,17 +332,18 @@ export default function Component() {
 
 
 
-
-          <Link href="       https://app.artisse.ai/?via=aiimageandvideogenerators" className="block  " prefetch={false}>
+          <Link href="       https://www.basedlabs.ai/?via=aiimageandvideogenerators" className="block  " prefetch={false}>
           <Card className="">
             <CardHeader>
               <div className="flex items-center gap-4">
  
                 <div>
-                  <CardTitle>         Artisse AI
+                  <CardTitle>         BasedLabs AI
                   </CardTitle>
                   <CardDescription>
-                  Redefine Photography. Stunning photos in minutes. Effortless creativity for any purpose with personal AI photos.
+                  From AI anime art, AI image generation, and AI image extending. BasedLabs offers a lot of based AI tools to help you do more.
+
+
              
 
                   </CardDescription>
@@ -351,40 +352,37 @@ export default function Component() {
             </CardHeader>
             <CardContent>
               <div className="grid grid-cols-2 gap-4">
-
-
               <video
-     src="https://artisse.ai/wp-content/uploads/2024/06/Web-Hero-Animation.mp4"
+      src="https://cdn.basedlabs.ai/a3960a51-6463-4271-b8fa-4c830a5df9a1"
       width={140}
       height={140}
-      className="aspect-square object-cover   "
+      className="aspect-square object-cover  shadow-lg"
+      autoPlay
+      muted
+      loop
+      playsInline
+      preload="metadata">
+      BasedLabs AI
+    </video>
+    <video
+      src="https://cdn.basedlabs.ai/8cf57d10-2598-11ef-91c0-6b7a39e8938f.mp4"
+      width={140}
+      height={140}
+      className="aspect-square object-cover  shadow-lg"
       autoPlay
       muted
       loop
       playsInline
            preload="metadata"
     >
-          </video>
-
-          <video
-     src="https://artisse.ai/wp-content/uploads/2024/06/Actual-photo.mp4"
-      width={140}
-      height={140}
-      className="aspect-square object-cover  "
-      autoPlay
-      muted
-      loop
-      playsInline
-           preload="metadata"
-    >
-          </video>
+      BasedLabs AI
+    </video>
               </div>
             </CardContent>
             <CardFooter> 
             </CardFooter>
           </Card>
           </Link>
-
 
 
 
@@ -464,7 +462,7 @@ export default function Component() {
                   src="/HeadshotPro_1.jpg"
                   width={140}
                   height={140}
-                  alt="HeadshotPro"
+                  alt="HeadshotPro_1"
                   className="aspect-square object-cover  shadow-lg"
                 />
                              <Image
@@ -472,7 +470,7 @@ export default function Component() {
                       src="/HeadshotPro_2.jpg"
                       width={140}
                   height={140}
-                  alt="HeadshotPro"
+                  alt="HeadshotPro_2"
                   className="aspect-square object-cover  shadow-lg"
                 />
               </div>
@@ -553,7 +551,7 @@ portfolios, digital displays, social media showcases, or personal projects.
                   src="https://leonardo-cdn.b-cdn.net/wp-content/uploads/2024/04/AI-Video-of-alien-in-Las-vegas.gif "
                   width={140}
                   height={140}
-                  alt="Leonardoai.jpg"
+                  alt="LeonardoAI"
                   className="aspect-square object-cover  shadow-lg"
                   loading="lazy" 
                 />
@@ -562,7 +560,7 @@ portfolios, digital displays, social media showcases, or personal projects.
                   src="/Leonardoai.jpg"
                   width={140}
                   height={140}
-                  alt="Leonardoai.jpg"
+                  alt="LeonardoAI"
                   className="aspect-square object-cover  shadow-lg"
                   loading="lazy" 
                 />
@@ -642,14 +640,14 @@ portfolios, digital displays, social media showcases, or personal projects.
                   src="./writesonic_1.webp "
                   width={140}
                   height={140}
-                  alt="Writesonic"
+                  alt="Writesonic_1"
                   className="aspect-square object-cover  shadow-lg"
                 />
                 <img
                   src="./writesonic_2.webp"
                   width={140}
                   height={140}
-                  alt="Writesonic"
+                  alt="Writesonic_2"
                   className="aspect-square object-cover  shadow-lg"
                 />
             </div>
@@ -717,7 +715,7 @@ portfolios, digital displays, social media showcases, or personal projects.
                   src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*8-R5XPmVZyV9ZMTjhUm_RQ.gif"
                   width={140}
                   height={140}
-                  alt="dreamstudio_1"
+                  alt="Dream_Machine_1"
                   className="aspect-square object-cover  shadow-lg"
                 />
 <video
@@ -730,7 +728,7 @@ portfolios, digital displays, social media showcases, or personal projects.
       loop
       playsInline
            preload="metadata"
-    >
+    >Dream Machine
     </video> 
               </div>
             </CardContent>
@@ -767,18 +765,20 @@ portfolios, digital displays, social media showcases, or personal projects.
 
 
 
-          <Link href="       https://www.basedlabs.ai/?via=aiimageandvideogenerators" className="block  " prefetch={false}>
+
+
+
+
+          <Link href="       https://app.artisse.ai/?via=aiimageandvideogenerators" className="block  " prefetch={false}>
           <Card className="">
             <CardHeader>
               <div className="flex items-center gap-4">
  
                 <div>
-                  <CardTitle>         BasedLabs AI
+                  <CardTitle>         Artisse AI
                   </CardTitle>
                   <CardDescription>
-                  From AI anime art, AI image generation, and AI image extending. BasedLabs offers a lot of based AI tools to help you do more.
-
-
+                  Redefine Photography. Stunning photos in minutes. Effortless creativity for any purpose with personal AI photos.
              
 
                   </CardDescription>
@@ -787,39 +787,39 @@ portfolios, digital displays, social media showcases, or personal projects.
             </CardHeader>
             <CardContent>
               <div className="grid grid-cols-2 gap-4">
+
+
               <video
-      src="https://cdn.basedlabs.ai/a3960a51-6463-4271-b8fa-4c830a5df9a1"
+     src="https://artisse.ai/wp-content/uploads/2024/06/Web-Hero-Animation.mp4"
       width={140}
       height={140}
-      className="aspect-square object-cover  shadow-lg"
-      autoPlay
-      muted
-      loop
-      playsInline
-      preload="metadata">
-      Your browser does not support the video tag.
-    </video>
-    <video
-      src="https://cdn.basedlabs.ai/8cf57d10-2598-11ef-91c0-6b7a39e8938f.mp4"
-      width={140}
-      height={140}
-      className="aspect-square object-cover  shadow-lg"
+      className="aspect-square object-cover   "
       autoPlay
       muted
       loop
       playsInline
            preload="metadata"
-    >
-      Your browser  aa support the video tag.
-    </video>
+    >Artisse AI
+          </video>
+
+          <video
+     src="https://artisse.ai/wp-content/uploads/2024/06/Actual-photo.mp4"
+      width={140}
+      height={140}
+      className="aspect-square object-cover  "
+      autoPlay
+      muted
+      loop
+      playsInline
+           preload="metadata"
+    >Artisse AI
+          </video>
               </div>
             </CardContent>
             <CardFooter> 
             </CardFooter>
           </Card>
           </Link>
-
-
 
 
 
@@ -891,14 +891,14 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
           src="/photoai_1.webp"
           width={140}
           height={140}
-          alt="Imagen"
+          alt="photoai_1"
           className="  object-cover  shadow-lg"
         />
         <img
           src="/photoai_2.webp"
           width={140}
           height={140}
-          alt="Imagen"
+          alt="photoai_2"
           className="  object-cover  shadow-lg"
         />
       </div>
@@ -966,7 +966,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
                   src="./dreamstudio_2.jfif"
                   width={140}
                   height={140}
-                  alt="dreamstudio_1"
+                  alt="dreamstudio_2"
                   className="aspect-square object-cover  shadow-lg"
                 />
             </div>
@@ -1030,7 +1030,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
                   src=" ./midjourney_1.webp   "
                   width={140}
                   height={140}
-                  alt="Midjourney"
+                  alt="midjourney_1"
                   className="aspect-square object-cover "
       loading="lazy" 
 
@@ -1039,7 +1039,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
                   src="./midjourney_2.webp "
                   width={140}
                   height={140}
-                  alt="Midjourney"
+                  alt="midjourney_2"
                   className="aspect-square object-cover"
       loading="lazy" 
 
@@ -1102,7 +1102,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
       height={140}
       className="aspect-square object-cover  shadow-lg"
       loading="lazy" 
-      alt="Interior AI"
+      alt="interiorai_1"
 
       />
       
@@ -1111,7 +1111,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
                   src="./interiorai_2.jpg"
                   width={140}
                   height={140}
-                  alt="Interior AI"
+                  alt="interiorai_2"
                   className="aspect-square object-cover  shadow-lg"
                   loading="lazy" 
                 />
@@ -1183,7 +1183,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
       preload="metadata"
 
     >
-      Your browser does not support the video tag.
+      Runway AI Gen-3 Alpha
     </video>
     <video
       src="https://d3phaj0sisr2ct.cloudfront.net/site/videos/gen-3-alpha/homepage/carousel/gen-3-alpha-output-003.mp4"
@@ -1196,7 +1196,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
       playsInline
            preload="metadata"
     >
-      Your browser does not support the video tag.
+      Runway AI Gen-3 Alpha
     </video>
   </div>
 </CardContent>
@@ -1238,7 +1238,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
                   src="./DeepBrainAI_1.jpg"
                   width={140}
                   height={140}
-                  alt="DeepBrain AI"
+                  alt="DeepBrainAI_1"
                   className="aspect-square object-cover  shadow-lg shadow-lg"
       loading="lazy" 
 
@@ -1247,7 +1247,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
                   src="./DeepBrainAI_2.jpg"
                   width={140}
                   height={140}
-                  alt="DeepBrain AI"
+                  alt="DeepBrainAI_2"
                   className="aspect-square object-cover  shadow-lg shadow-lg"
                   loading="lazy" 
 
@@ -1293,7 +1293,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
                   src="https://images.ctfassets.net/kftzwdyauwt9/As8KNbCDwnOSNYCPHRPOR/5cd4506d01ddc8b772cdb206327b0985/hero-still-life-desktop.jpg?w=640&q=80&fm=webp"
                   width={140}
                   height={140}
-                  alt="DALL-E 2"
+                  alt="DALL-E 3"
                   className="aspect-square object-cover  shadow-lg"
       loading="lazy" 
 
@@ -1302,7 +1302,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
                   src="https://images.ctfassets.net/kftzwdyauwt9/5JZsznv2kZBJhcntpSLEL9/fbe72de7edaceb8a44176170312ccf2a/picnic-cherry-tree.jpeg?w=1080&q=90&fm=webp"
                   width={140}
                   height={140}
-                  alt="DALL-E 2"
+                  alt="DALL-E 3"
                   className="aspect-square object-cover  shadow-lg"
                   loading="lazy" 
 
@@ -1383,7 +1383,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
                   src="https://framerusercontent.com/images/rbCdOqlduGxFDJRA1VMw6QJx0s.gif"
                   width={140}
                   height={140}
-                  alt="Imagen"
+                  alt="VideoFast"
                   className="aspect-square object-cover  shadow-lg"
       loading="lazy" 
 
@@ -1392,7 +1392,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
                   src="https://framerusercontent.com/images/YR0QoptQ9rYXwm2co5MkWmSsgUg.gif"
                   width={140}
                   height={140}
-                  alt="Imagen"
+                  alt="VideoFast"
                   className="aspect-square object-cover  shadow-lg"
       loading="lazy" 
 
@@ -1456,7 +1456,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
       preload="metadata"
 
     >
-      Your browser does not support the video tag.
+      OpusClip
     </video>
     <video
       src="https://assets-global.website-files.com/6388604483b03a9ecb34d695/65bb7ef012f2fd3fed4c1231_OpusClip%20Video%203-transcode.mp4"
@@ -1469,7 +1469,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
       playsInline
            preload="metadata"
     >
-      Your browser does not support the video tag.
+      OpusClip
     </video>
               </div>
             </CardContent>
@@ -1535,7 +1535,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
       preload="metadata"
 
     >
-      Your browser does not support the video tag.
+      Wondershare Virbo
     </video>
     <video
       src="https://virbo.wondershare.com/assets/video/homepage2024/education-training.mp4"
@@ -1548,7 +1548,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
       playsInline
            preload="metadata"
     >
-      Your browser does not support the video tag.
+      Wondershare Virbo
     </video>
               </div>
             </CardContent>
@@ -1608,7 +1608,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
       height={140}
       className="aspect-square object-cover  shadow-lg"
       loading="lazy" 
-      alt="Collov AI"
+      alt="collov_1"
       />
       
      
@@ -1616,7 +1616,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
                   src="collov_2.jpg"
                   width={140}
                   height={140}
-                  alt="Collov AI"
+                  alt="collov_2"
                   className="aspect-square object-cover  shadow-lg"
                   loading="lazy" 
 
@@ -1745,7 +1745,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
                   src="https://magnific.ai/magnific-highres2low.jpg"
                   width={140}
                   height={140}
-                  alt="Imagen"
+                  alt="Magnific1"
                   className="aspect-square object-cover  shadow-lg"
                   loading="lazy" 
                 />
@@ -1754,7 +1754,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
                   src="https://magnific.ai/ilu8low.jpg"
                   width={140}
                   height={140}
-                  alt="Imagen"
+                  alt="Magnific2"
                   className="aspect-square object-cover  shadow-lg"
                   loading="lazy" 
                 />
@@ -1821,7 +1821,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
                   src="cgdream_1.jpg"
                   width={140}
                   height={140}
-                  alt="Imagen"
+                  alt="cgdream_1"
                   className="aspect-square object-cover  shadow-lg"
                   loading="lazy" 
                 />
@@ -1830,7 +1830,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
                   src="cgdream_2.jpg"
                   width={140}
                   height={140}
-                  alt="Imagen"
+                  alt="cgdream_2"
                   className="aspect-square object-cover  shadow-lg"
                   loading="lazy" 
                 />
@@ -1893,7 +1893,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
                   src="https://rendernet.ai/images/second-p-1080.webp"
                   width={140}
                   height={140}
-                  alt="Imagen"
+                  alt="RenderNet1"
                   className="aspect-square object-cover  shadow-lg"
                   loading="lazy" 
                 />
@@ -1902,7 +1902,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
                   src="https://rendernet.ai/images/TrueTouch-landing-page-p-1080.webp"
                   width={140}
                   height={140}
-                  alt="Imagen"
+                  alt="RenderNet2"
                   className="aspect-square object-cover  shadow-lg"
                   loading="lazy" 
                 />

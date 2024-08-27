@@ -118,7 +118,7 @@ export default function Component() {
 
 
 
-        <Link onClick={handleLinkClick("photoai-main-link")}   href="https://photoai.com/?via=aiimageandvideogenerators" className="  block      " prefetch={false}>
+        <Link onClick={() => handleLinkClick("photoai-main-link")}   href="https://photoai.com/?via=aiimageandvideogenerators" className="  block      " prefetch={false}>
 
         <Card className="  block      ">
             <CardHeader>
@@ -176,7 +176,7 @@ export default function Component() {
 
 
 
-          <Link  onClick={handleLinkClick("imagineai-main-link")}  href="https://www.imagine.art/?ref=mwe1nji" className="block  " prefetch={false}>
+          <Link  onClick={() => handleLinkClick("imagineai-main-link")}  href="https://www.imagine.art/?ref=mwe1nji" className="block  " prefetch={false}>
           <Card className="  ">
             <CardHeader>
               <div className="flex items-center gap-4">     
@@ -260,7 +260,7 @@ export default function Component() {
 
 
 
-          <Link onClick={handleLinkClick("fliki-main-link")} href="       https://fliki.ai/?via=aiimageandvideogenerators" className="block  " prefetch={false}>
+          <Link onClick={() => handleLinkClick("fliki-main-link")} href="       https://fliki.ai/?via=aiimageandvideogenerators" className="block  " prefetch={false}>
           <Card className="">
             <CardHeader>
               <div className="flex items-center gap-4">

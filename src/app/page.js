@@ -558,7 +558,7 @@ portfolios, digital displays, social media showcases, or personal projects.
 
               <Image
 
-                  src="/leonardoai.jpg "
+                  src="/leonardoai.jpg"
                   width={140}
                   height={140}
                   alt="LeonardoAI"
@@ -647,7 +647,7 @@ portfolios, digital displays, social media showcases, or personal projects.
             <div className="grid grid-cols-2 gap-4">
  
                 <Image
-                  src="/writesonic_1.webp "
+                  src="/writesonic_1.webp"
                   width={140}
                   height={140}
                   alt="Writesonic_1"
@@ -724,17 +724,21 @@ portfolios, digital displays, social media showcases, or personal projects.
               </div>
             </CardHeader>
             <CardContent>
-              <div className="grid grid-cols-2 gap-4">         
-                           <img
-                  src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*8-R5XPmVZyV9ZMTjhUm_RQ.gif"
+              <div className="grid grid-cols-2 gap-4">        
+                 
+                           <video
+                  src="/luma_1.webm"
                   width={140}
                   height={140}
                   alt="Dream_Machine_1"
                   className="aspect-square object-cover  shadow-lg"
-                  loading="lazy" 
-                />
+                  
+                > 
+Dream Machine
+             </video> 
+
 <video
-      src="https://cdn-luma.com/public/lumalabs.ai/june-12-launch-dream-machine-high-res/assets/dream-machine/featured/videos/2.webm"
+      src="/luma_2.webm"
       width={140}
       height={140}
       className="aspect-square object-cover  shadow-lg"

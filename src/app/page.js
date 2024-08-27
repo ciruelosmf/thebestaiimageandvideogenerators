@@ -11,7 +11,16 @@ import DynamicBackground from '@/components/DynamicBackground'; // Make sure to 
 import Script from "next/script";
 import Head from 'next/head';
  
+import posthog from 'posthog-js';
+import { CSPostHogProvider } from './providers'
 
+const handleLinkClick = () => {
+  posthog.capture('photoai-link-click', {
+    element: 'photoai-main-link',
+    location: 'Card Header',
+    description: 'Clicked main link for Photo AI',
+  });
+};
 
 
 export default function Component() {
@@ -110,7 +119,7 @@ export default function Component() {
 
 
 
-        <Link id="photoai-main-link"  href="https://photoai.com/?via=aiimageandvideogenerators" className="  block      " prefetch={false}>
+        <Link onClick={handleLinkClick} id="photoai-main-link"  href="https://photoai.com/?via=aiimageandvideogenerators" className="  block      " prefetch={false}>
 
         <Card className="  block      ">
             <CardHeader>

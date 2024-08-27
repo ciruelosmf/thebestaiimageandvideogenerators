@@ -332,8 +332,7 @@ export default function Component() {
                                 playsInline
                                 preload="metadata"
 
-                                >
-                                BasedLabs
+                                > BasedLabs
                                 </video>
                                 <video
                                 src="https://cdn.basedlabs.ai/9c7f8ea0-3a98-11ef-9d9b-e54cf96b531b.mp4"
@@ -345,8 +344,9 @@ export default function Component() {
                                 loop
                                 playsInline
                                     preload="metadata"
-                                >
-                                BasedLabs
+                                >BasedLabs
+                                </video>
+                                
 
 
                         </div>        

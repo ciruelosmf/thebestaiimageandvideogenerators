@@ -558,7 +558,7 @@ portfolios, digital displays, social media showcases, or personal projects.
 
               <Image
 
-                  src="/leonardoai.jpg"
+                  src="/leonardoai.JPG"
                   width={140}
                   height={140}
                   alt="LeonardoAI"
@@ -788,6 +788,92 @@ Dream Machine
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+          <Link  href="https://app.photoai.me/?via=aiimageandvideogenerators" className="  block      " prefetch={false}>
+
+<Card className="  block      ">
+    <CardHeader>
+      <div className="flex items-center gap-4">
+        
+        <div>
+          <CardTitle  >PhotoAI</CardTitle>
+          <CardDescription>
+          Boost your profile picture on Tinder, LinkedIn, Twitter, Instagram or elsewhere with photoai.me
+
+Upload photos of yourself and get new stunning AI photos! With photoai.me, you can generate AI images for as low as 20 cents per picture. Try it out.  
+          </CardDescription>
+        </div>
+      </div>
+    </CardHeader>
+    <CardContent>
+      <div className="grid grid-cols-2 gap-4">
+        <Image
+          src="/photoai_1.webp"
+          width={140}
+          height={140}
+          alt="photoai_1"
+          className="  object-cover  shadow-lg"
+          loading="lazy" 
+
+        />
+        <Image
+          src="/photoai_2.webp"
+          width={140}
+          height={140}
+          alt="photoai_2"
+          className="  object-cover  shadow-lg"
+          loading="lazy" 
+
+        />
+      </div>
+    </CardContent>
+    <CardFooter>
+     
+
+         
+    </CardFooter>
+  </Card>
+  </Link>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
           <Link href="       https://app.artisse.ai/?via=aiimageandvideogenerators" className="block  " prefetch={false}>
           <Card className="">
             <CardHeader>
@@ -877,62 +963,6 @@ Dream Machine
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-          <Link  href="https://app.photoai.me/?via=aiimageandvideogenerators" className="  block      " prefetch={false}>
-
-<Card className="  block      ">
-    <CardHeader>
-      <div className="flex items-center gap-4">
-        
-        <div>
-          <CardTitle  >PhotoAI</CardTitle>
-          <CardDescription>
-          Boost your profile picture on Tinder, LinkedIn, Twitter, Instagram or elsewhere with photoai.me
-
-Upload photos of yourself and get new stunning AI photos! With photoai.me, you can generate AI images for as low as 20 cents per picture. Try it out.  
-          </CardDescription>
-        </div>
-      </div>
-    </CardHeader>
-    <CardContent>
-      <div className="grid grid-cols-2 gap-4">
-        <Image
-          src="/photoai_1.webp"
-          width={140}
-          height={140}
-          alt="photoai_1"
-          className="  object-cover  shadow-lg"
-          loading="lazy" 
-
-        />
-        <Image
-          src="/photoai_2.webp"
-          width={140}
-          height={140}
-          alt="photoai_2"
-          className="  object-cover  shadow-lg"
-          loading="lazy" 
-
-        />
-      </div>
-    </CardContent>
-    <CardFooter>
-     
-
-         
-    </CardFooter>
-  </Card>
-  </Link>
 
 
 
@@ -1202,7 +1232,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
             <CardContent>
   <div className="grid grid-cols-2 gap-4">
     <video
-      src="https://d3phaj0sisr2ct.cloudfront.net/site/videos/gen-3-alpha/carousel-01/gen-3-alpha-output-002.mp4"
+      src="/gen3_2.webm"
       width={140}
       height={140}
       className="aspect-square object-cover  shadow-lg"
@@ -1216,7 +1246,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
       Runway AI Gen-3 Alpha
     </video>
     <video
-      src="https://d3phaj0sisr2ct.cloudfront.net/site/videos/gen-3-alpha/homepage/carousel/gen-3-alpha-output-003.mp4"
+      src="/gen3_1.webm"
       width={140}
       height={140}
       className="aspect-square object-cover  shadow-lg"

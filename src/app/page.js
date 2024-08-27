@@ -14,14 +14,13 @@ import Head from 'next/head';
 import posthog from 'posthog-js';
 import { CSPostHogProvider } from './providers'
 
-const handleLinkClick = () => {
-  posthog.capture('photoai-link-click', {
-    element: 'photoai-main-link',
+const handleLinkClick = (id) => {
+  posthog.capture('link-click', {
+    element: id,
     location: 'Card Header',
-    description: 'Clicked main link for Photo AI',
+    description: `Clicked link for ${id}`,
   });
 };
-
 
 export default function Component() {
   return (
@@ -119,13 +118,13 @@ export default function Component() {
 
 
 
-        <Link onClick={handleLinkClick} id="photoai-main-link"  href="https://photoai.com/?via=aiimageandvideogenerators" className="  block      " prefetch={false}>
+        <Link onClick={handleLinkClick("photoai-main-link")}   href="https://photoai.com/?via=aiimageandvideogenerators" className="  block      " prefetch={false}>
 
         <Card className="  block      ">
             <CardHeader>
               <div className="flex items-center gap-4">
                 
-                <div  id="photoai-main-link" data-event="photoai-main-link-click">
+                <div  >
                   <CardTitle  >Photo AI</CardTitle>
                   <CardDescription>
                   Generate photorealistic images of people with AI.  Save time and money and do an AI photo shoot from your laptop or phone instead of hiring an expensive photographer
@@ -177,7 +176,7 @@ export default function Component() {
 
 
 
-          <Link href="https://www.imagine.art/?ref=mwe1nji" className="block  " prefetch={false}>
+          <Link  onClick={handleLinkClick("imagineai-main-link")}  href="https://www.imagine.art/?ref=mwe1nji" className="block  " prefetch={false}>
           <Card className="  ">
             <CardHeader>
               <div className="flex items-center gap-4">     
@@ -261,7 +260,7 @@ export default function Component() {
 
 
 
-          <Link href="       https://fliki.ai/?via=aiimageandvideogenerators" className="block  " prefetch={false}>
+          <Link onClick={handleLinkClick("fliki-main-link")} href="       https://fliki.ai/?via=aiimageandvideogenerators" className="block  " prefetch={false}>
           <Card className="">
             <CardHeader>
               <div className="flex items-center gap-4">

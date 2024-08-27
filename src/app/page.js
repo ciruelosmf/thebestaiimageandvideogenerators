@@ -558,7 +558,7 @@ portfolios, digital displays, social media showcases, or personal projects.
 
               <Image
 
-                  src="https://leonardo-cdn.b-cdn.net/wp-content/uploads/2024/04/AI-Video-of-alien-in-Las-vegas.gif "
+                  src="/leonardoai.jpg "
                   width={140}
                   height={140}
                   alt="LeonardoAI"
@@ -567,7 +567,7 @@ portfolios, digital displays, social media showcases, or personal projects.
                 />
                               <Image
 
-                  src="/Leonardoai.jpg"
+                  src="/leonardoai_gif.webp"
                   width={140}
                   height={140}
                   alt="LeonardoAI"
@@ -647,7 +647,7 @@ portfolios, digital displays, social media showcases, or personal projects.
             <div className="grid grid-cols-2 gap-4">
  
                 <Image
-                  src="./writesonic_1.webp "
+                  src="/writesonic_1.webp "
                   width={140}
                   height={140}
                   alt="Writesonic_1"
@@ -656,7 +656,7 @@ portfolios, digital displays, social media showcases, or personal projects.
 
                 />
                 <Image
-                  src="./writesonic_2.webp"
+                  src="/writesonic_2.webp"
                   width={140}
                   height={140}
                   alt="Writesonic_2"
@@ -725,7 +725,7 @@ portfolios, digital displays, social media showcases, or personal projects.
             </CardHeader>
             <CardContent>
               <div className="grid grid-cols-2 gap-4">         
-                           <Image
+                           <img
                   src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*8-R5XPmVZyV9ZMTjhUm_RQ.gif"
                   width={140}
                   height={140}
@@ -975,7 +975,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
             <div className="grid grid-cols-2 gap-4">
  
                 <Image
-                  src="./dreamstudio_1.jfif"
+                  src="/dreamstudio_1.jfif"
                   width={140}
                   height={140}
                   alt="dreamstudio_1"
@@ -988,7 +988,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
                 />
 
                 <Image
-                  src="./dreamstudio_2.jfif"
+                  src="/dreamstudio_2.jfif"
                   width={140}
                   height={140}
                   alt="dreamstudio_2"
@@ -1053,7 +1053,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
             <CardContent>
               <div className="grid grid-cols-2 gap-4">
                 <Image
-                  src=" ./midjourney_1.webp   "
+                  src="/midjourney_1.webp"
                   width={140}
                   height={140}
                   alt="midjourney_1"
@@ -1062,7 +1062,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
 
                 />
                 <Image
-                  src="./midjourney_2.webp "
+                  src="/midjourney_2.webp"
                   width={140}
                   height={140}
                   alt="midjourney_2"
@@ -1123,7 +1123,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
               <div className="grid grid-cols-2 gap-4">
               <Image
 
-      src="./interiorai_1.jpg"
+      src="/interiorai_1.jpg"
       width={140}
       height={140}
       className="aspect-square object-cover  shadow-lg"
@@ -1134,7 +1134,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
       
      
     <Image
-                  src="./interiorai_2.jpg"
+                  src="/interiorai_2.jpg"
                   width={140}
                   height={140}
                   alt="interiorai_2"
@@ -1261,7 +1261,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
                         <CardContent>
               <div className="grid grid-cols-2 gap-4">
               <Image
-                  src="./DeepBrainAI_1.jpg"
+                  src="/DeepBrainAI_1.jpg"
                   width={140}
                   height={140}
                   alt="DeepBrainAI_1"
@@ -1270,7 +1270,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
 
                 />
                 <Image
-                  src="./DeepBrainAI_2.jpg"
+                  src="/DeepBrainAI_2.jpg"
                   width={140}
                   height={140}
                   alt="DeepBrainAI_2"
@@ -1315,7 +1315,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
             </CardHeader>
             <CardContent>
               <div className="grid grid-cols-2 gap-4">
-                <Image
+                <img
                   src="https://images.ctfassets.net/kftzwdyauwt9/As8KNbCDwnOSNYCPHRPOR/5cd4506d01ddc8b772cdb206327b0985/hero-still-life-desktop.jpg?w=640&q=80&fm=webp"
                   width={140}
                   height={140}
@@ -1324,7 +1324,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
       loading="lazy" 
 
                 />
-                <Image
+                <img
                   src="https://images.ctfassets.net/kftzwdyauwt9/5JZsznv2kZBJhcntpSLEL9/fbe72de7edaceb8a44176170312ccf2a/picnic-cherry-tree.jpeg?w=1080&q=90&fm=webp"
                   width={140}
                   height={140}
@@ -1405,7 +1405,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
             </CardHeader>
             <CardContent>
               <div className="grid grid-cols-2 gap-4">
-                <Image
+                <img
                   src="https://framerusercontent.com/images/rbCdOqlduGxFDJRA1VMw6QJx0s.gif"
                   width={140}
                   height={140}
@@ -1414,7 +1414,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
       loading="lazy" 
 
                 />
-                <Image
+                <img
                   src="https://framerusercontent.com/images/YR0QoptQ9rYXwm2co5MkWmSsgUg.gif"
                   width={140}
                   height={140}
@@ -1610,7 +1610,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
 
 
 
-          <Link href="       https://collov.ai/" className="block  " prefetch={false}>
+          <Link href="https://collov.ai/" className="block  " prefetch={false}>
           <Card className="">
             <CardHeader>
               <div className="flex items-center gap-4">
@@ -1629,7 +1629,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
             <CardContent>
               <div className="grid grid-cols-2 gap-4">
               <Image
-      src="collov_1.jpg"
+      src="/collov_1.jpg"
       width={140}
       height={140}
       className="aspect-square object-cover  shadow-lg"
@@ -1639,7 +1639,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
       
      
     <Image
-                  src="collov_2.jpg"
+                  src="/collov_2.jpg"
                   width={140}
                   height={140}
                   alt="collov_2"
@@ -1751,7 +1751,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
 
 
 
-          <Link href="       https://magnific.ai/" className="block  " prefetch={false}>
+          <Link href="https://magnific.ai/" className="block  " prefetch={false}>
           <Card className="">
             <CardHeader>
               <div className="flex items-center gap-4">
@@ -1768,7 +1768,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
             <CardContent>
               <div className="grid grid-cols-2 gap-4">
               <Image
-                  src="https://magnific.ai/magnific-highres2low.jpg"
+                  src="/magnificai_1.jpg"
                   width={140}
                   height={140}
                   alt="Magnific1"
@@ -1777,7 +1777,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
                 />
 
                   <Image
-                  src="https://magnific.ai/ilu8low.jpg"
+                  src="/magnificai_2.jpg"
                   width={140}
                   height={140}
                   alt="Magnific2"
@@ -1844,7 +1844,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
             <CardContent>
               <div className="grid grid-cols-2 gap-4">
               <Image
-                  src="cgdream_1.jpg"
+                  src="/cgdream_1.jpg"
                   width={140}
                   height={140}
                   alt="cgdream_1"
@@ -1853,7 +1853,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
                 />
 
                   <Image
-                  src="cgdream_2.jpg"
+                  src="/cgdream_2.jpg"
                   width={140}
                   height={140}
                   alt="cgdream_2"
@@ -1896,7 +1896,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
 
 
 
-          <Link href="       https://rendernet.ai/   " className="block  " prefetch={false}>
+          <Link href="https://rendernet.ai/   " className="block  " prefetch={false}>
           <Card className="">
             <CardHeader>
               <div className="flex items-center gap-4">
@@ -1916,7 +1916,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
             <CardContent>
               <div className="grid grid-cols-2 gap-4">
               <Image
-                  src="https://rendernet.ai/images/second-p-1080.webp"
+                  src="/rendernet_1.jpg"
                   width={140}
                   height={140}
                   alt="RenderNet1"
@@ -1925,7 +1925,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
                 />
 
                   <Image
-                  src="https://rendernet.ai/images/TrueTouch-landing-page-p-1080.webp"
+                  src="/rendernet_2.jpg"
                   width={140}
                   height={140}
                   alt="RenderNet2"

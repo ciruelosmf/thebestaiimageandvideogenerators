@@ -233,33 +233,6 @@ export default function Component() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
           <Link onClick={() => handleLinkClick("fliki-main-link")} href="       https://fliki.ai/?via=aiimageandvideogenerators" className="block  " prefetch={false}>
           <Card className="">
             <CardHeader>
@@ -312,35 +285,7 @@ export default function Component() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          <Link href="       https://www.basedlabs.ai/?via=aiimageandvideogenerators" className="block  " prefetch={false}>
+          <Link onClick={() => handleLinkClick("basedlabs-main-link")} href="https://www.basedlabs.ai/?via=aiimageandvideogenerators" className="block  " prefetch={false}>
           <Card className="">
             <CardHeader>
               <div className="flex items-center gap-4">
@@ -401,48 +346,7 @@ export default function Component() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          <Link href="     https://www.headshotpro.com/?via=aiimageandvideogenerators" className="block  " prefetch={false}>
+          <Link onClick={() => handleLinkClick("headshotpro-main-link")} href="https://www.headshotpro.com/?via=aiimageandvideogenerators" className="block  " prefetch={false}>
           <Card className="">
             <CardHeader>
               <div className="flex items-center gap-4">
@@ -494,45 +398,47 @@ export default function Component() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
  
 
 
 
 
-          <Link href="       https://app.leonardo.ai/?via=aiimageandvideogenerators" className="block  " prefetch={false}>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <Link onClick={() => handleLinkClick("leonardo-main-link")} href="https://app.leonardo.ai/?via=aiimageandvideogenerators" className="block  " prefetch={false}>
           <Card className="">
             <CardHeader>
               <div className="flex items-center gap-4">
@@ -590,47 +496,7 @@ portfolios, digital displays, social media showcases, or personal projects.
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <Link href="https://writesonic.com/photosonic-ai-art-generator" className="block  " prefetch={false}>
+    <Link onClick={() => handleLinkClick("writesonic-main-link")} href="https://writesonic.com/photosonic-ai-art-generator" className="block  " prefetch={false}>
           <Card className=" ">
             <CardHeader>
               <div className="flex items-center gap-4">     
@@ -683,34 +549,7 @@ portfolios, digital displays, social media showcases, or personal projects.
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          <Link href="https://lumalabs.ai/dream-machine" className="block   " prefetch={false}>
+          <Link onClick={() => handleLinkClick("lumalabs-main-link")} href="https://lumalabs.ai/dream-machine" className="block   " prefetch={false}>
           <Card className="">
             <CardHeader>
               <div className="flex items-center gap-4">
@@ -768,38 +607,7 @@ Dream Machine
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          <Link  href="https://app.photoai.me/?via=aiimageandvideogenerators" className="  block      " prefetch={false}>
+          <Link  onClick={() => handleLinkClick("photoaime-main-link")}  href="https://app.photoai.me/?via=aiimageandvideogenerators" className="  block      " prefetch={false}>
 
 <Card className="  block      ">
     <CardHeader>
@@ -850,31 +658,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          <Link href="       https://app.artisse.ai/?via=aiimageandvideogenerators" className="block  " prefetch={false}>
+          <Link  onClick={() => handleLinkClick("artisse-main-link")} href="https://app.artisse.ai/?via=aiimageandvideogenerators" className="block  " prefetch={false}>
           <Card className="">
             <CardHeader>
               <div className="flex items-center gap-4">
@@ -950,7 +734,6 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
 
 
 
-   
 
 
 
@@ -989,9 +772,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
 
 
 
-
-
-  <Link href="https://dreamstudio.ai/" className="block   " prefetch={false}>
+  <Link  onClick={() => handleLinkClick("dreamstudio-main-link")} href="https://dreamstudio.ai/" className="block   " prefetch={false}>
           <Card className="">
             <CardHeader>
               <div className="flex items-center gap-4">     
@@ -1042,36 +823,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          <Link href="https://www.midjourney.com/home" className="block  " prefetch={false}>
+          <Link  onClick={() => handleLinkClick("midjourney-main-link")} href="https://www.midjourney.com/home" className="block  " prefetch={false}>
 
           <Card className="">
             <CardHeader>
@@ -1117,26 +869,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          <Link href="       https://interiorai.com/?via=aiimageandvideogenerators" className="block  " prefetch={false}>
+          <Link onClick={() => handleLinkClick("interiorai-main-link")} href="https://interiorai.com/?via=aiimageandvideogenerators" className="block  " prefetch={false}>
           <Card className="">
             <CardHeader>
               <div className="flex items-center gap-4">
@@ -1218,7 +951,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
 
 
 
-          <Link href="https://app.runwayml.com/login" className="block  " prefetch={false}>
+          <Link onClick={() => handleLinkClick("runwayml-main-link")}  href="https://app.runwayml.com/login" className="block  " prefetch={false}>
           <Card className="  ">
             <CardHeader>
               <div className="flex items-center gap-4">     
@@ -1278,7 +1011,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
 
 
 
-          <Link href="https://www.deepbrain.io/features/ai-video-generator" className="block  " prefetch={false}>
+          <Link onClick={() => handleLinkClick("deepbrain-main-link")} href="https://www.deepbrain.io/features/ai-video-generator" className="block  " prefetch={false}>
           <Card className="  ">
             <CardHeader>
               <div className="flex items-center gap-4">     
@@ -1333,7 +1066,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
 
 
 
-          <Link href="https://openai.com/index/dall-e-3/" className="block  " prefetch={false}>
+          <Link  onClick={() => handleLinkClick("dalle3-main-link")} href="https://openai.com/index/dall-e-3/" className="block  " prefetch={false}>
 
           <Card className="">
             <CardHeader>
@@ -1424,7 +1157,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
 
 
 
-          <Link href="https://www.videofast.app/" className="block  " prefetch={false}>
+          <Link onClick={() => handleLinkClick("videofast-main-link")} href="https://www.videofast.app/" className="block  " prefetch={false}>
           <Card className="">
             <CardHeader>
               <div className="flex items-center gap-4">
@@ -1488,7 +1221,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
 
 
 
-          <Link href="https://www.opus.pro/" className="block  " prefetch={false}>
+          <Link  onClick={() => handleLinkClick("opus-main-link")} href="https://www.opus.pro/" className="block  " prefetch={false}>
           <Card className="">
             <CardHeader>
               <div className="flex items-center gap-4">
@@ -1565,7 +1298,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
 
 
 
-          <Link href="https://virbo.wondershare.com/" className="block  " prefetch={false}>
+          <Link onClick={() => handleLinkClick("wondershare-main-link")} href="https://virbo.wondershare.com/" className="block  " prefetch={false}>
           <Card className="">
             <CardHeader>
               <div className="flex items-center gap-4">
@@ -1644,7 +1377,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
 
 
 
-          <Link href="https://collov.ai/" className="block  " prefetch={false}>
+          <Link onClick={() => handleLinkClick("collov-main-link")} href="https://collov.ai/" className="block  " prefetch={false}>
           <Card className="">
             <CardHeader>
               <div className="flex items-center gap-4">
@@ -1785,7 +1518,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
 
 
 
-          <Link href="https://magnific.ai/" className="block  " prefetch={false}>
+          <Link onClick={() => handleLinkClick("magnific-main-link")} href="https://magnific.ai/" className="block  " prefetch={false}>
           <Card className="">
             <CardHeader>
               <div className="flex items-center gap-4">
@@ -1861,7 +1594,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
 
 
 
-          <Link href="        https://cgdream.ai/   " className="block  " prefetch={false}>
+          <Link onClick={() => handleLinkClick("cgdream-main-link")} href="https://cgdream.ai/   " className="block  " prefetch={false}>
           <Card className="">
             <CardHeader>
               <div className="flex items-center gap-4">
@@ -1930,7 +1663,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
 
 
 
-          <Link href="https://rendernet.ai/   " className="block  " prefetch={false}>
+          <Link s href="https://rendernet.ai/   " className="block  " prefetch={false}>
           <Card className="">
             <CardHeader>
               <div className="flex items-center gap-4">

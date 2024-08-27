@@ -15,7 +15,7 @@ import posthog from 'posthog-js';
 import { CSPostHogProvider } from './providers'
 
 const handleLinkClick = (id) => {
-  posthog.capture('link-click', {
+  posthog.capture(id, {
     element: id,
     location: 'Card Header',
     description: `Clicked link for ${id}`,

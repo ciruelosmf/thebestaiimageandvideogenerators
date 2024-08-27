@@ -116,7 +116,7 @@ export default function Component() {
             <CardHeader>
               <div className="flex items-center gap-4">
                 
-                <div>
+                <div  id="photoai-main-link" data-event="photoai-main-link-click">
                   <CardTitle  >Photo AI</CardTitle>
                   <CardDescription>
                   Generate photorealistic images of people with AI.  Save time and money and do an AI photo shoot from your laptop or phone instead of hiring an expensive photographer

@@ -558,7 +558,7 @@ portfolios, digital displays, social media showcases, or personal projects.
 
               <Image
 
-                  src="/leonardoai.JPG"
+                  src="/leonardoai_1.JPG"
                   width={140}
                   height={140}
                   alt="LeonardoAI"

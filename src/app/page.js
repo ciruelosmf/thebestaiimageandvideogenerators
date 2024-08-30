@@ -118,7 +118,7 @@ export default function Component() {
 
 
 
-        <Link onClick={() => handleLinkClick("photoai-main-link")}   href="https://photoai.com/?via=aiimageandvideogenerators" className="  block      " prefetch={false}>
+        <Link onClick={() => handleLinkClick("photoai-main-link-aff")}   href="https://photoai.com/?via=aiimageandvideogenerators" className="  block      " prefetch={false}>
 
         <Card className="  block      ">
             <CardHeader>
@@ -176,7 +176,7 @@ export default function Component() {
 
 
 
-          <Link  onClick={() => handleLinkClick("imagineai-main-link")}  href="https://www.imagine.art/?ref=mwe1nji" className="block  " prefetch={false}>
+          <Link  onClick={() => handleLinkClick("imagineai-main-link-aff")}  href="https://www.imagine.art/?ref=mwe1nji" className="block  " prefetch={false}>
           <Card className="  ">
             <CardHeader>
               <div className="flex items-center gap-4">     
@@ -233,7 +233,7 @@ export default function Component() {
 
 
 
-          <Link onClick={() => handleLinkClick("fliki-main-link")} href="       https://fliki.ai/?via=aiimageandvideogenerators" className="block  " prefetch={false}>
+          <Link onClick={() => handleLinkClick("fliki-main-link-aff")} href="       https://fliki.ai/?via=aiimageandvideogenerators" className="block  " prefetch={false}>
           <Card className="">
             <CardHeader>
               <div className="flex items-center gap-4">
@@ -285,7 +285,7 @@ export default function Component() {
 
 
 
-          <Link onClick={() => handleLinkClick("basedlabs-main-link")} href="https://www.basedlabs.ai/?via=aiimageandvideogenerators" className="block  " prefetch={false}>
+          <Link onClick={() => handleLinkClick("basedlabs-main-link-aff")} href="https://www.basedlabs.ai/?via=aiimageandvideogenerators" className="block  " prefetch={false}>
           <Card className="">
             <CardHeader>
               <div className="flex items-center gap-4">
@@ -346,7 +346,7 @@ export default function Component() {
 
 
 
-          <Link onClick={() => handleLinkClick("headshotpro-main-link")} href="https://www.headshotpro.com/?via=aiimageandvideogenerators" className="block  " prefetch={false}>
+          <Link onClick={() => handleLinkClick("headshotpro-main-link-aff")} href="https://www.headshotpro.com/?via=aiimageandvideogenerators" className="block  " prefetch={false}>
           <Card className="">
             <CardHeader>
               <div className="flex items-center gap-4">
@@ -438,7 +438,7 @@ export default function Component() {
 
 
 
-          <Link onClick={() => handleLinkClick("leonardo-main-link")} href="https://app.leonardo.ai/?via=aiimageandvideogenerators" className="block  " prefetch={false}>
+          <Link onClick={() => handleLinkClick("leonardo-main-link-aff")} href="https://app.leonardo.ai/?via=aiimageandvideogenerators" className="block  " prefetch={false}>
           <Card className="">
             <CardHeader>
               <div className="flex items-center gap-4">
@@ -607,7 +607,7 @@ Dream Machine
 
 
 
-          <Link  onClick={() => handleLinkClick("photoaime-main-link")}  href="https://app.photoai.me/?via=aiimageandvideogenerators" className="  block      " prefetch={false}>
+          <Link  onClick={() => handleLinkClick("photoaime-main-link-aff")}  href="https://app.photoai.me/?via=aiimageandvideogenerators" className="  block      " prefetch={false}>
 
 <Card className="  block      ">
     <CardHeader>
@@ -658,7 +658,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
 
 
 
-          <Link  onClick={() => handleLinkClick("artisse-main-link")} href="https://app.artisse.ai/?via=aiimageandvideogenerators" className="block  " prefetch={false}>
+          <Link  onClick={() => handleLinkClick("artisse-main-link-aff")} href="https://app.artisse.ai/?via=aiimageandvideogenerators" className="block  " prefetch={false}>
           <Card className="">
             <CardHeader>
               <div className="flex items-center gap-4">
@@ -869,7 +869,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
 
 
 
-          <Link onClick={() => handleLinkClick("interiorai-main-link")} href="https://interiorai.com/?via=aiimageandvideogenerators" className="block  " prefetch={false}>
+          <Link onClick={() => handleLinkClick("interiorai-main-link-aff")} href="https://interiorai.com/?via=aiimageandvideogenerators" className="block  " prefetch={false}>
           <Card className="">
             <CardHeader>
               <div className="flex items-center gap-4">

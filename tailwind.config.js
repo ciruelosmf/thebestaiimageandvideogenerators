@@ -12,8 +12,6 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
-    },
- 
       borderRadius: {
             "lg": "var(--radius)",
             "md": "calc(var(--radius) - 2px)",
@@ -36,7 +34,11 @@ module.exports = {
                 "height": "0"
               }
             }
-          }
-},
-  plugins: [require("tailwindcss-animate")],
+          },
+      clipPath: {
+        'custom': 'polygon(10px 0, calc(100% - 10px) 0, 100% 10px, 100% calc(100% - 10px), calc(100% - 10px) 100%, 10px 100%, 0 calc(100% - 10px), 0 10px)',
+      },
+    },
+  },
+  plugins: [],
 };

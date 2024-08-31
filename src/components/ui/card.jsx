@@ -4,8 +4,9 @@ import { cn } from "@/lib/utils"
 const Card = React.forwardRef(({ className, ...props }, ref) => (
   <div
     ref={ref}
+    style={{ clipPath: 'polygon(3% 0%, 98% 0%, 100% 3%, 100% 98%, 98% 100%, 3% 100%, 0% 98%, 0% 3%)' }}
     className={cn(
-      "flex flex-col bg-slate-50/80 text-black    shadow-lg relative",
+      "flex flex-col bg-slate-50/80 text-black border-2 border-indigo-100 shadow-lg relative overflow-hidden",
       className
     )}
     {...props}
@@ -18,7 +19,7 @@ Card.displayName = "Card"
 const CardHeader = React.forwardRef(({ className, ...props }, ref) => (
   <div
     ref={ref}
-    className={cn("flex flex-col text-black space-y-1.5   lg:px-2 p-1   relative z-10", className)}
+    className={cn("flex flex-col text-black space-y-1.5   lg:px-2 p-2   relative z-10 ", className)}
     {...props}
   />
 ))

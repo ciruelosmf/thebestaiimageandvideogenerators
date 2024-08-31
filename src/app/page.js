@@ -612,7 +612,10 @@ portfolios, digital displays, social media showcases, or personal projects.
                   height={140}
                   alt="Dream_Machine_1"
                   className="aspect-square object-cover  shadow-lg"
-                  
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
                 > 
 Dream Machine
              </video> 

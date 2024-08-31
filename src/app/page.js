@@ -536,6 +536,60 @@ portfolios, digital displays, social media showcases, or personal projects.
 
 
 
+          <Link onClick={() => handleLinkClick("writesonic-main-link")} href="crayo.ai/?ref=aiimageandvideogenerators" className="block  " prefetch={false}>
+          <Card className=" ">
+            <CardHeader>
+              <div className="flex items-center gap-4 " >     
+                <div>
+                  <CardTitle>Crayo Ai </CardTitle>
+                  <CardDescription>
+                  The fastest way to Generate Short Videos. Create unlimited short videos at once. Auto generate captions, effects, background and music for you.
+
+                  </CardDescription>
+                </div>
+              </div>
+            </CardHeader>
+            <CardContent>
+            <div className="grid grid-cols-2 gap-4 justify-items-center">
+ 
+                <Image
+                  src="/crayo_1.jpg"
+                  width={140}
+                  height={140}
+                  alt="Writesonic_1"
+                  className="aspect-square object-cover  shadow-lg"
+                  loading="lazy" 
+
+                />
+                <Image
+                  src="/crayo_2.jpg"
+                  width={140}
+                  height={140}
+                  alt="Writesonic_2"
+                  className="aspect-square object-cover  shadow-lg"
+                  loading="lazy" 
+
+                />
+            </div>
+          </CardContent>
+            <CardFooter> 
+            </CardFooter>
+          </Card>
+          </Link>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <Link onClick={() => handleLinkClick("writesonic-main-link")} href="https://writesonic.com/photosonic-ai-art-generator" className="block  " prefetch={false}>
           <Card className=" ">

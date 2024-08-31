@@ -505,7 +505,7 @@ portfolios, digital displays, social media showcases, or personal projects.
 
               <Image
 
-                  src="/leonardoai_1.JPG"
+                  src="/leonardoai_1.jpg"
                   width={140}
                   height={140}
                   alt="LeonardoAI"
@@ -553,7 +553,7 @@ portfolios, digital displays, social media showcases, or personal projects.
             <div className="grid grid-cols-2 gap-4 justify-items-center">
  
                 <Image
-                  src="/crayo_1.jpg"
+                  src="/crayo_1.JPG"
                   width={140}
                   height={140}
                   alt="Writesonic_1"
@@ -562,7 +562,7 @@ portfolios, digital displays, social media showcases, or personal projects.
 
                 />
                 <Image
-                  src="/crayo_2.jpg"
+                  src="/crayo_2.JPG"
                   width={140}
                   height={140}
                   alt="Writesonic_2"

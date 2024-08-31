@@ -30,7 +30,7 @@ export default function Component() {
 
 
 
-    <div className="  relative min-h-screen flex flex-col items-center">
+    <div className="relative min-h-screen flex flex-col items-center">
 
       <Head>
         <meta property="og:title" content="✨AI Image and Video Generators" />
@@ -66,7 +66,7 @@ export default function Component() {
 
 
 
-<DynamicBackground rows={8} cols={7} /> {/* Add this line */}
+<DynamicBackground rows={7} cols={7} /> {/* Add this line */}
 
 
 
@@ -76,7 +76,7 @@ export default function Component() {
           <div className="flex flex-wrap items-center justify-center gap-2 ">
  
             <h1 className="md:text-xl text-base font-semibold text-black  px-4 md:px-6">AI Image and Video Generators - AI directory</h1>
-          <nav className=" flex flex-row items-center gap-4">
+          <nav className=" flex flex-row items-center gap-4 " >
             <Link href="/" className="text-sm font-medium hover:text-primary" prefetch={false}>
               Home
             </Link>
@@ -106,11 +106,34 @@ export default function Component() {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       <h1 className="   md:text-5xl text-center w-5/6 h-3/6 text-base font-semibold text-white  my-3 md:mb-6 px-4 md:px-6">Discover Top AI Visual Tools.</h1>
 
       <main className="container  md:max-w-screen-7xl	 max-w-fit px-2 md:px-6 pb-12 flex-1">
 
-      <div className="    mx-auto"> {/* Add this wrapper */}
+      <div className="    mx-auto"> {/*  */}
 
         <div className="grid grid-cols-1  md:grid-cols-5 gap-8 md:gap-5  ">
 
@@ -118,11 +141,29 @@ export default function Component() {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <Link onClick={() => handleLinkClick("photoai-main-link-aff")}   href="https://photoai.com/?via=aiimageandvideogenerators" className="  block      " prefetch={false}>
 
-        <Card className="  block      ">
+        <Card className="block">
             <CardHeader>
-              <div className="flex items-center gap-4">
+              <div className="flex items-center gap-4 " >
                 
                 <div  >
                   <CardTitle  >Photo AI</CardTitle>
@@ -133,7 +174,7 @@ export default function Component() {
               </div>
             </CardHeader>
             <CardContent>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-2 gap-4 justify-items-center">
               <Image
                   src="/photoaicom_1.jpg"
                   width={140}
@@ -179,7 +220,7 @@ export default function Component() {
           <Link  onClick={() => handleLinkClick("imagineai-main-link-aff")}  href="https://www.imagine.art/?ref=mwe1nji" className="block  " prefetch={false}>
           <Card className="  ">
             <CardHeader>
-              <div className="flex items-center gap-4">     
+              <div className="flex items-center gap-4 " >     
                 <div>
                   <CardTitle>Imagine AI Art Generator</CardTitle>
                   <CardDescription>
@@ -190,7 +231,7 @@ export default function Component() {
               </div>
             </CardHeader>
             <CardContent>
-  <div className="grid grid-cols-2 gap-4">
+  <div className="grid grid-cols-2 gap-4 justify-items-center">
     <video
       src="https://cdn2.imagine.art/imagine-frontend/assets/video/landing-page/tools/text-to-img.webm"
       width={140}
@@ -236,7 +277,7 @@ export default function Component() {
           <Link onClick={() => handleLinkClick("fliki-main-link-aff")} href="       https://fliki.ai/?via=aiimageandvideogenerators" className="block  " prefetch={false}>
           <Card className="">
             <CardHeader>
-              <div className="flex items-center gap-4">
+              <div className="flex items-center gap-4 " >
  
                 <div>
                   <CardTitle>         Fliki 
@@ -252,7 +293,7 @@ export default function Component() {
               </div>
             </CardHeader>
             <CardContent>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-2 gap-4 justify-items-center">
 
 
               <Image
@@ -288,7 +329,7 @@ export default function Component() {
           <Link onClick={() => handleLinkClick("basedlabs-main-link-aff")} href="https://www.basedlabs.ai/?via=aiimageandvideogenerators" className="block  " prefetch={false}>
           <Card className="">
             <CardHeader>
-              <div className="flex items-center gap-4">
+              <div className="flex items-center gap-4 " >
  
                 <div>
                   <CardTitle>         BasedLabs AI
@@ -304,7 +345,7 @@ export default function Component() {
               </div>
             </CardHeader>
             <CardContent>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-2 gap-4 justify-items-center">
               <video
       src="https://cdn.basedlabs.ai/a3960a51-6463-4271-b8fa-4c830a5df9a1"
       width={140}
@@ -349,7 +390,7 @@ export default function Component() {
           <Link onClick={() => handleLinkClick("headshotpro-main-link-aff")} href="https://www.headshotpro.com/?via=aiimageandvideogenerators" className="block  " prefetch={false}>
           <Card className="">
             <CardHeader>
-              <div className="flex items-center gap-4">
+              <div className="flex items-center gap-4 " >
  
                 <div>
                   <CardTitle>         HeadshotPro 
@@ -366,7 +407,7 @@ export default function Component() {
               </div>
             </CardHeader>
             <CardContent>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-2 gap-4 justify-items-center">
 
 
               <Image
@@ -441,7 +482,7 @@ export default function Component() {
           <Link onClick={() => handleLinkClick("leonardo-main-link-aff")} href="https://app.leonardo.ai/?via=aiimageandvideogenerators" className="block  " prefetch={false}>
           <Card className="">
             <CardHeader>
-              <div className="flex items-center gap-4">
+              <div className="flex items-center gap-4 " >
  
                 <div>
                   <CardTitle>         Leonardo.Ai
@@ -459,7 +500,7 @@ portfolios, digital displays, social media showcases, or personal projects.
               </div>
             </CardHeader>
             <CardContent>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-2 gap-4 justify-items-center">
 
 
               <Image
@@ -499,7 +540,7 @@ portfolios, digital displays, social media showcases, or personal projects.
     <Link onClick={() => handleLinkClick("writesonic-main-link")} href="https://writesonic.com/photosonic-ai-art-generator" className="block  " prefetch={false}>
           <Card className=" ">
             <CardHeader>
-              <div className="flex items-center gap-4">     
+              <div className="flex items-center gap-4 " >     
                 <div>
                   <CardTitle>Writesonic </CardTitle>
                   <CardDescription>
@@ -510,7 +551,7 @@ portfolios, digital displays, social media showcases, or personal projects.
               </div>
             </CardHeader>
             <CardContent>
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-2 gap-4 justify-items-center">
  
                 <Image
                   src="/writesonic_1.webp"
@@ -552,7 +593,7 @@ portfolios, digital displays, social media showcases, or personal projects.
           <Link onClick={() => handleLinkClick("lumalabs-main-link")} href="https://lumalabs.ai/dream-machine" className="block   " prefetch={false}>
           <Card className="">
             <CardHeader>
-              <div className="flex items-center gap-4">
+              <div className="flex items-center gap-4 " >
                        <div>
                   <CardTitle>Dream Machine</CardTitle>
                   <CardDescription>
@@ -563,7 +604,7 @@ portfolios, digital displays, social media showcases, or personal projects.
               </div>
             </CardHeader>
             <CardContent>
-              <div className="grid grid-cols-2 gap-4">        
+              <div className="grid grid-cols-2 gap-4 justify-items-center">        
                  
                            <video
                   src="/luma_1.webm"
@@ -611,7 +652,7 @@ Dream Machine
 
 <Card className="  block      ">
     <CardHeader>
-      <div className="flex items-center gap-4">
+      <div className="flex items-center gap-4 " >
         
         <div>
           <CardTitle  >PhotoAI</CardTitle>
@@ -624,7 +665,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
       </div>
     </CardHeader>
     <CardContent>
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-2 gap-4 justify-items-center">
         <Image
           src="/photoai_1.webp"
           width={140}
@@ -655,60 +696,6 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
 
 
 
-
-
-
-          <Link  onClick={() => handleLinkClick("artisse-main-link-aff")} href="https://app.artisse.ai/?via=aiimageandvideogenerators" className="block  " prefetch={false}>
-          <Card className="">
-            <CardHeader>
-              <div className="flex items-center gap-4">
- 
-                <div>
-                  <CardTitle>         Artisse AI
-                  </CardTitle>
-                  <CardDescription>
-                  Redefine Photography. Stunning photos in minutes. Effortless creativity for any purpose with personal AI photos.
-             
-
-                  </CardDescription>
-                </div>
-              </div>
-            </CardHeader>
-            <CardContent>
-              <div className="grid grid-cols-2 gap-4">
-
-
-              <video
-     src="https://artisse.ai/wp-content/uploads/2024/06/Web-Hero-Animation.mp4"
-      width={140}
-      height={140}
-      className="aspect-square object-cover   "
-      autoPlay
-      muted
-      loop
-      playsInline
-           preload="metadata"
-    >Artisse AI
-          </video>
-
-          <video
-     src="https://artisse.ai/wp-content/uploads/2024/06/Actual-photo.mp4"
-      width={140}
-      height={140}
-      className="aspect-square object-cover  "
-      autoPlay
-      muted
-      loop
-      playsInline
-           preload="metadata"
-    >Artisse AI
-          </video>
-              </div>
-            </CardContent>
-            <CardFooter> 
-            </CardFooter>
-          </Card>
-          </Link>
 
 
 
@@ -775,7 +762,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
   <Link  onClick={() => handleLinkClick("dreamstudio-main-link")} href="https://dreamstudio.ai/" className="block   " prefetch={false}>
           <Card className="">
             <CardHeader>
-              <div className="flex items-center gap-4">     
+              <div className="flex items-center gap-4 " >     
                 <div>
                   <CardTitle>DreamStudio </CardTitle>
                   <CardDescription>
@@ -787,7 +774,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
               </div>
             </CardHeader>
             <CardContent>
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-2 gap-4 justify-items-center">
  
                 <Image
                   src="/dreamstudio_1.jfif"
@@ -827,7 +814,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
 
           <Card className="">
             <CardHeader>
-              <div className="flex items-center gap-4">                 
+              <div className="flex items-center gap-4 " >                 
                 <div>
                   <CardTitle>Midjourney</CardTitle>
                   <CardDescription>
@@ -837,7 +824,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
               </div>
             </CardHeader>
             <CardContent>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-2 gap-4 justify-items-center">
                 <Image
                   src="/midjourney_1.webp"
                   width={140}
@@ -872,7 +859,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
           <Link onClick={() => handleLinkClick("interiorai-main-link-aff")} href="https://interiorai.com/?via=aiimageandvideogenerators" className="block  " prefetch={false}>
           <Card className="">
             <CardHeader>
-              <div className="flex items-center gap-4">
+              <div className="flex items-center gap-4 " >
  
                 <div>
                   <CardTitle>         Interior AI
@@ -887,7 +874,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
               </div>
             </CardHeader>
             <CardContent>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-2 gap-4 justify-items-center">
               <Image
 
       src="/interiorai_1.jpg"
@@ -954,7 +941,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
           <Link onClick={() => handleLinkClick("runwayml-main-link")}  href="https://app.runwayml.com/login" className="block  " prefetch={false}>
           <Card className="  ">
             <CardHeader>
-              <div className="flex items-center gap-4">     
+              <div className="flex items-center gap-4 " >     
                 <div>
                   <CardTitle>Runway AI Gen-3 Alpha</CardTitle>
                   <CardDescription>
@@ -963,7 +950,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
               </div>
             </CardHeader>
             <CardContent>
-  <div className="grid grid-cols-2 gap-4">
+  <div className="grid grid-cols-2 gap-4 justify-items-center">
     <video
       src="/gen3_2.webm"
       width={140}
@@ -1014,7 +1001,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
           <Link onClick={() => handleLinkClick("deepbrain-main-link")} href="https://www.deepbrain.io/features/ai-video-generator" className="block  " prefetch={false}>
           <Card className="  ">
             <CardHeader>
-              <div className="flex items-center gap-4">     
+              <div className="flex items-center gap-4 " >     
                 <div>
                               <CardTitle>DeepBrain AI</CardTitle>
                               <CardDescription>
@@ -1026,7 +1013,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
                           </div>
                         </CardHeader>
                         <CardContent>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-2 gap-4 justify-items-center">
               <Image
                   src="/DeepBrainAI_1.jpg"
                   width={140}
@@ -1070,7 +1057,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
 
           <Card className="">
             <CardHeader>
-              <div className="flex items-center gap-4">
+              <div className="flex items-center gap-4 " >
      
                 <div>
                   <CardTitle>DALL-E 3</CardTitle>
@@ -1081,7 +1068,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
               </div>
             </CardHeader>
             <CardContent>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-2 gap-4 justify-items-center">
                 <img
                   src="https://images.ctfassets.net/kftzwdyauwt9/As8KNbCDwnOSNYCPHRPOR/5cd4506d01ddc8b772cdb206327b0985/hero-still-life-desktop.jpg?w=640&q=80&fm=webp"
                   width={140}
@@ -1160,7 +1147,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
           <Link onClick={() => handleLinkClick("videofast-main-link")} href="https://www.videofast.app/" className="block  " prefetch={false}>
           <Card className="">
             <CardHeader>
-              <div className="flex items-center gap-4">
+              <div className="flex items-center gap-4 " >
  
                 <div>
                   <CardTitle>VideoFast </CardTitle>
@@ -1171,7 +1158,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
               </div>
             </CardHeader>
             <CardContent>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-2 gap-4 justify-items-center">
                 <img
                   src="https://framerusercontent.com/images/rbCdOqlduGxFDJRA1VMw6QJx0s.gif"
                   width={140}
@@ -1224,7 +1211,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
           <Link  onClick={() => handleLinkClick("opus-main-link")} href="https://www.opus.pro/" className="block  " prefetch={false}>
           <Card className="">
             <CardHeader>
-              <div className="flex items-center gap-4">
+              <div className="flex items-center gap-4 " >
  
                 <div>
                   <CardTitle>OpusClip  </CardTitle>
@@ -1236,7 +1223,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
               </div>
             </CardHeader>
             <CardContent>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-2 gap-4 justify-items-center">
               <video
       src="https://ext.cdn.opus.pro/corp-it/landing-page/desktop_update.mp4"
       width={140}
@@ -1301,7 +1288,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
           <Link onClick={() => handleLinkClick("wondershare-main-link")} href="https://virbo.wondershare.com/" className="block  " prefetch={false}>
           <Card className="">
             <CardHeader>
-              <div className="flex items-center gap-4">
+              <div className="flex items-center gap-4 " >
  
                 <div>
                   <CardTitle>          Wondershare Virbo
@@ -1315,7 +1302,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
               </div>
             </CardHeader>
             <CardContent>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-2 gap-4 justify-items-center">
               <video
       src="https://virbo.wondershare.com/assets/video/homepage2024/step1-video.mp4"
       width={140}
@@ -1380,7 +1367,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
           <Link onClick={() => handleLinkClick("collov-main-link")} href="https://collov.ai/" className="block  " prefetch={false}>
           <Card className="">
             <CardHeader>
-              <div className="flex items-center gap-4">
+              <div className="flex items-center gap-4 " >
  
                 <div>
                   <CardTitle>         Collov AI
@@ -1394,7 +1381,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
               </div>
             </CardHeader>
             <CardContent>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-2 gap-4 justify-items-center">
               <Image
       src="/collov_1.jpg"
       width={140}
@@ -1521,7 +1508,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
           <Link onClick={() => handleLinkClick("magnific-main-link")} href="https://magnific.ai/" className="block  " prefetch={false}>
           <Card className="">
             <CardHeader>
-              <div className="flex items-center gap-4">
+              <div className="flex items-center gap-4 " >
  
                 <div>
                   <CardTitle>         Magnific 
@@ -1533,7 +1520,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
               </div>
             </CardHeader>
             <CardContent>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-2 gap-4 justify-items-center">
               <Image
                   src="/magnificai_1.jpg"
                   width={140}
@@ -1597,7 +1584,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
           <Link onClick={() => handleLinkClick("cgdream-main-link")} href="https://cgdream.ai/   " className="block  " prefetch={false}>
           <Card className="">
             <CardHeader>
-              <div className="flex items-center gap-4">
+              <div className="flex items-center gap-4 " >
  
                 <div>
                   <CardTitle>         CGDream AI Image Generator 
@@ -1609,7 +1596,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
               </div>
             </CardHeader>
             <CardContent>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-2 gap-4 justify-items-center">
               <Image
                   src="/cgdream_1.jpg"
                   width={140}
@@ -1666,7 +1653,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
           <Link s href="https://rendernet.ai/   " className="block  " prefetch={false}>
           <Card className="">
             <CardHeader>
-              <div className="flex items-center gap-4">
+              <div className="flex items-center gap-4 " >
  
                 <div>
                   <CardTitle>         RenderNet 
@@ -1681,7 +1668,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
               </div>
             </CardHeader>
             <CardContent>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-2 gap-4 justify-items-center">
               <Image
                   src="/rendernet_1.jpg"
                   width={140}
@@ -1746,7 +1733,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
             <span className="text-sm font-medium px-4 ">AI Image and Video Generators</span>
           </div>
 
-          <nav className="hidden md:flex items-center gap-4">
+          <nav className="hidden md:flex items-center gap-4 " >
 
 
 

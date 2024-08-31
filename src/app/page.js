@@ -517,7 +517,7 @@ portfolios, digital displays, social media showcases, or personal projects.
                   src="/leonardoai_gif.webp"
                   width={140}
                   height={140}
-                  alt="LeonardoAI"
+                  alt="LeonardoAI2"
                   className="aspect-square object-cover  shadow-lg"
                   loading="lazy" 
                 />
@@ -536,7 +536,7 @@ portfolios, digital displays, social media showcases, or personal projects.
 
 
 
-          <Link onClick={() => handleLinkClick("writesonic-main-link")} href="crayo.ai/?ref=aiimageandvideogenerators" className="block  " prefetch={false}>
+          <Link onClick={() => handleLinkClick("crayo-main-link")} href="https://crayo.ai/?ref=aiimageandvideogenerators" className="block" prefetch={false}>
           <Card className=" ">
             <CardHeader>
               <div className="flex items-center gap-4 " >     
@@ -556,7 +556,7 @@ portfolios, digital displays, social media showcases, or personal projects.
                   src="/crayo_1.JPG"
                   width={140}
                   height={140}
-                  alt="Writesonic_1"
+                  alt="crayo_1"
                   className="aspect-square object-cover  shadow-lg"
                   loading="lazy" 
 
@@ -565,7 +565,7 @@ portfolios, digital displays, social media showcases, or personal projects.
                   src="/crayo_2.JPG"
                   width={140}
                   height={140}
-                  alt="Writesonic_2"
+                  alt="crayo_2"
                   className="aspect-square object-cover  shadow-lg"
                   loading="lazy" 
 

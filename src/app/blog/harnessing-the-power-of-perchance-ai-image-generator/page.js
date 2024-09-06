@@ -113,8 +113,9 @@
 
 
 
-
-
+            <Link  href="https://perchance.org/ai-text-to-image-generator" className="text-sm font-medium hover:text-primary" prefetch={false}>
+              Go to Perchance AI
+            </Link>
 
 
 

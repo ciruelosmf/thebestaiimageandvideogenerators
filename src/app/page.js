@@ -76,24 +76,24 @@ export default function Component() {
           <div className="flex flex-wrap items-center justify-center gap-2 ">
  
             <h1 className="md:text-xl text-base font-semibold text-black  px-4 md:px-6">AI Image and Video Generators - AI directory</h1>
-          <nav className=" flex flex-row items-center gap-4 " >
-            <Link href="/" className="text-sm font-medium hover:text-primary" prefetch={false}>
+          <nav className=" flex flex-row items-center gap-4" >
+            <Link href="/" className="text-sm font-medium  hover:bg-lime-100" prefetch={false}>
               Home
             </Link>
-            <Link href="./gallery" className="text-sm font-medium hover:text-primary" prefetch={false}>
+            <Link href="./gallery" className="text-sm font-medium  hover:bg-lime-100" prefetch={false}>
               Gallery
             </Link>
-            <Link href="./blog" className="text-sm font-medium hover:text-primary" prefetch={false}>
+            <Link href="./blog" className="text-sm font-medium  hover:bg-lime-100" prefetch={false}>
               Blog
             </Link>
-            <Link href="./prompts" className="text-sm font-medium hover:text-primary" prefetch={false}>
+            <Link href="./prompts" className="text-sm font-medium hover:text-primary hover:bg-lime-100 " prefetch={false}>
               Prompts
             </Link>
-            <Link href="./about" className="text-sm font-medium hover:text-primary" prefetch={false}>
+            <Link href="./about" className="text-sm font-medium hover:text-primary hover:bg-lime-100 " prefetch={false}>
               About
             </Link>
-            <Link href="./contact" className="text-sm font-medium hover:text-primary" prefetch={false}>
-              Contact
+            <Link href="./contact" className="text-sm font-medium hover:text-primary hover:bg-lime-100 " prefetch={false}>
+              Contact 
             </Link>
           </nav>
           </div> 
@@ -129,7 +129,11 @@ export default function Component() {
 
 
 
-      <h1 className="   md:text-5xl text-center w-5/6 h-3/6 text-base font-semibold text-white  my-3 md:mb-6 px-4 md:px-6">Discover Top AI Visual Tools.</h1>
+      <h1 className="   md:text-4xl text-center w-5/6 h-3/6 text-base font-semibold text-white  my-3 md:mb-6 px-4 md:px-6">
+
+      AI Visual Tools to Supercharge Your Business & Inspire Creativity
+      
+      </h1>
 
       <main className="container  md:max-w-screen-7xl	 max-w-fit px-2 md:px-6 pb-12 flex-1">
 
@@ -168,7 +172,7 @@ export default function Component() {
                 <div  >
                   <CardTitle  >Photo AI</CardTitle>
                   <CardDescription>
-                  Generate photorealistic images of people with AI.  Save time and money and do an AI photo shoot from your laptop or phone instead of hiring an expensive photographer
+                  Generate photorealistic images of people with AI.  Save time and money and do an AI photo shoot from your laptop or phone instead of hiring an expensive photographer.  
                   </CardDescription>
                 </div>
               </div>
@@ -479,59 +483,6 @@ export default function Component() {
 
 
 
-          <Link onClick={() => handleLinkClick("leonardo-main-link-aff")} href="https://app.leonardo.ai/?via=aiimageandvideogenerators" className="block  " prefetch={false}>
-          <Card className="">
-            <CardHeader>
-              <div className="flex items-center gap-4 " >
- 
-                <div>
-                  <CardTitle>         Leonardo.Ai
- 
-                  </CardTitle>
-                  <CardDescription>
-                  With Leonardo.Ai, you can unlock your creative potential, crafting unique AI-driven art for galleries,
-portfolios, digital displays, social media showcases, or personal projects. 
-
-
-             
-
-                  </CardDescription>
-                </div>
-              </div>
-            </CardHeader>
-            <CardContent>
-              <div className="grid grid-cols-2 gap-4 justify-items-center">
-
-
-              <Image
-
-                  src="/leonardoai_1.jpg"
-                  width={140}
-                  height={140}
-                  alt="LeonardoAI"
-                  className="aspect-square object-cover  shadow-lg"
-                  loading="lazy" 
-                />
-                              <Image
-
-                  src="/leonardoai_gif.webp"
-                  width={140}
-                  height={140}
-                  alt="LeonardoAI2"
-                  className="aspect-square object-cover  shadow-lg"
-                  loading="lazy" 
-                />
-              </div>
-            </CardContent>
-            <CardFooter> 
-            </CardFooter>
-          </Card>
-          </Link>
-
-
-
-
-
 
 
 
@@ -580,6 +531,61 @@ portfolios, digital displays, social media showcases, or personal projects.
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <Link onClick={() => handleLinkClick("leonardo-main-link-aff")} href="https://app.leonardo.ai/?via=aiimageandvideogenerators" className="block  " prefetch={false}>
+          <Card className="">
+            <CardHeader>
+              <div className="flex items-center gap-4 " > 
+                <div>
+                  <CardTitle>         
+                    Leonardo.Ai 
+                  </CardTitle>
+                  <CardDescription>
+                  With Leonardo.Ai, you can unlock your creative potential, crafting unique AI-driven art for galleries,
+portfolios, digital displays, social media showcases, or personal projects.           
+                  </CardDescription>
+                </div>
+              </div>
+            </CardHeader>
+            <CardContent>
+              <div className="grid grid-cols-2 gap-4 justify-items-center">
+              <Image
+                  src="/leonardoai_1.jpg"
+                  width={140}
+                  height={140}
+                  alt="LeonardoAI"
+                  className="aspect-square object-cover  shadow-lg"
+                  loading="lazy" 
+                />
+                              <Image
+                  src="/leonardoai_gif.webp"
+                  width={140}
+                  height={140}
+                  alt="LeonardoAI2"
+                  className="aspect-square object-cover  shadow-lg"
+                  loading="lazy" 
+                />
+              </div>
+            </CardContent>
+            <CardFooter> 
+            </CardFooter>
+          </Card>
+          </Link>
 
 
 
@@ -707,16 +713,16 @@ Dream Machine
 
           <Link  onClick={() => handleLinkClick("photoaime-main-link-aff")}  href="https://app.photoai.me/?via=aiimageandvideogenerators" className="  block      " prefetch={false}>
 
-<Card className="  block      ">
+<Card className="block">
     <CardHeader>
       <div className="flex items-center gap-4 " >
         
         <div>
-          <CardTitle  >PhotoAI</CardTitle>
+          <CardTitle  >PhotoAI.me </CardTitle>
           <CardDescription>
           Boost your profile picture on Tinder, LinkedIn, Twitter, Instagram or elsewhere with photoai.me
 
-Upload photos of yourself and get new stunning AI photos! With photoai.me, you can generate AI images for as low as 20 cents per picture. Try it out.  
+Upload photos of yourself and get new stunning AI photos!  
           </CardDescription>
         </div>
       </div>
@@ -1282,7 +1288,7 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
             <CardContent>
               <div className="grid grid-cols-2 gap-4 justify-items-center">
               <video
-      src="https://ext.cdn.opus.pro/corp-it/landing-page/desktop_update.mp4"
+      src="https://assets-global.website-files.com/6388604483b03a9ecb34d695/65e972429a572af78dc53306_Le%20Figaro-transcode.mp4"
       width={140}
       height={140}
       className="aspect-square object-cover  shadow-lg"
@@ -1783,40 +1789,39 @@ Upload photos of yourself and get new stunning AI photos! With photoai.me, you c
 
 
 
-      <footer className=" border-t border-t-muted bg-slate-50 ">
+      <footer className=" border-t border-t-muted bg-slate-50 text-black  ">
         <div className="container max-w-7xl py-6 px-4 md:px-6 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <BotIcon className="w-6 h-6" />
             <span className="text-sm font-medium px-4 ">AI Image and Video Generators</span>
           </div>
 
-          <nav className="hidden md:flex items-center gap-4 " >
+          <nav className="hidden md:flex items-center text-black gap-4 " >
 
 
 
 
-          <Link href="https://imagify.gumroad.com/l/xuhxv" className="hover:text-gray-700 transition-colors   " prefetch={false}>
+          <Link href="https://imagify.gumroad.com/l/xuhxv" className="hover:bg-lime-100 transition-colors   " prefetch={false}>
               List your Tool (20 USD)
             </Link>
 
-            <Link href="./privacy" className="hover:text-gray-700 transition-colors   " prefetch={false}>
+            <Link href="./privacy" className="hover:bg-lime-100 transition-colors   " prefetch={false}>
               Privacy
             </Link>
  
-            <Link href="./terms" className="hover:text-gray-700 transition-colors " prefetch={false}>
+            <Link href="./terms" className="hover:bg-lime-100 transition-colors " prefetch={false}>
             Terms
             </Link>
  
-
-            <Link className="hover:text-gray-700 transition-colors" href="https://x.com/bestaigeneratrs">
+             <Link className="hover:bg-lime-100 transition-colors" href="https://x.com/bestaigeneratrs">
               X
             </Link>
 
-            <Link className="hover:text-gray-700 transition-colors" href="https://www.youtube.com/@AIImageandVideoGenerators">
+            <Link className="hover:bg-lime-100 transition-colors" href="https://www.youtube.com/@AIImageandVideoGenerators">
               YouTube
             </Link>
 
-            <Link className="hover:text-gray-700 transition-colors" href="https://www.toolify.ai/">
+            <Link className="hover:bg-lime-100 transition-colors" href="https://www.toolify.ai/">
             Discover more AI Tools
             </Link>
             

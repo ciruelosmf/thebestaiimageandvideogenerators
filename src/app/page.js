@@ -10,7 +10,7 @@ import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter }
 import DynamicBackground from '@/components/DynamicBackground'; // Make sure to create this file
 import Script from "next/script";
 import Head from 'next/head';
- 
+import { useState, useEffect } from 'react';
 import posthog from 'posthog-js';
 import { CSPostHogProvider } from './providers'
 
@@ -23,6 +23,23 @@ const handleLinkClick = (id) => {
 };
 
 export default function Component() {
+    const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 10) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
   return (
 
 
@@ -65,36 +82,63 @@ export default function Component() {
 
 
 
-
 <DynamicBackground rows={7} cols={7} /> {/* Add this line */}
 
 
 
-
-      <header className=" sticky top-0 z-40 border-b border-b-muted block bg-slate-50  ">
-        <div className="container max-w-7xl py-2 px-4 md:px-6 flex items-center justify-between">
+      <header className=" sticky top-0 z-40   block    ">
+        <div className="container max-w-7xl py-1 px-1 md:px-6 flex items-center justify-between">
           <div className="flex flex-wrap items-center justify-center gap-2 ">
  
-            <h1 className="md:text-xl text-base font-semibold text-black  px-4 md:px-6">AI Image and Video Generators - AI directory</h1>
-          <nav className=" flex flex-row items-center gap-4" >
-            <Link href="/" className="text-sm font-medium  hover:bg-lime-100" prefetch={false}>
+            <h1 className={`border-2  md:text-xl text-base font-semibold text-white  px-4 md:px-6 ${isScrolled ? 'bg-black' : 'bg-transparent'} transition-colors duration-300`}>AI Image and Video Generators - AI directory</h1>
+          <nav className={`flex flex-row flex-wrap items-center justify-center gap-2 text-white p-1    md:text-xl text-base font-semibold text-white  px-4 md:px-6 ${isScrolled ? 'bg-black' : 'bg-transparent'} transition-colors duration-300`} >
+            <Link href="/" className="text-xs  md:text-sm font-medium  hover:bg-red-900 border-2 p-1" prefetch={false}>
               Home
             </Link>
-            <Link href="./gallery" className="text-sm font-medium  hover:bg-lime-100" prefetch={false}>
+            <Link href="./gallery" className="text-xs  md:text-sm font-medium  hover:bg-red-900 border-2 p-1" prefetch={false}>
               Gallery
             </Link>
-            <Link href="./blog" className="text-sm font-medium  hover:bg-lime-100" prefetch={false}>
+            <Link href="./full-tools-list" className="text-xs  md:text-sm font-medium  hover:bg-red-900 border-2 p-1" prefetch={false}>
+              Full List of Tools
+            </Link>
+
+
+            <Link href="./blog" className="text-xs  md:text-sm font-medium  hover:bg-red-900 border-2 p-1" prefetch={false}>
               Blog
             </Link>
-            <Link href="./prompts" className="text-sm font-medium hover:text-primary hover:bg-lime-100 " prefetch={false}>
+            <Link href="./prompts" className="text-xs  md:text-sm font-medium hover:text-primary hover:bg-red-900 border-2 p-1" prefetch={false}>
               Prompts
             </Link>
-            <Link href="./about" className="text-sm font-medium hover:text-primary hover:bg-lime-100 " prefetch={false}>
+            <Link href="./about" className="text-xs  md:text-sm font-medium hover:text-primary hover:bg-red-900 border-2 p-1" prefetch={false}>
               About
             </Link>
-            <Link href="./contact" className="text-sm font-medium hover:text-primary hover:bg-lime-100 " prefetch={false}>
+            <Link href="./contact" className="text-xs  md:text-sm font-medium hover:text-primary hover:bg-red-900 border-2 p-1" prefetch={false}>
               Contact 
             </Link>
+
+
+
+
+
+                      <Link href="https://imagify.gumroad.com/l/xuhxv" className="text-sm font-medium hover:text-primary hover:bg-red-900   border-2 p-1" prefetch={false}>
+              List your Tool (20 USD)
+            </Link>
+
+
+ 
+             <Link className="text-xs  md:text-sm font-medium hover:text-primary hover:bg-red-900 border-2 p-1" href="https://x.com/bestaigeneratrs">
+              X
+            </Link>
+
+            <Link className="text-xs  md:text-sm font-medium hover:text-primary hover:bg-red-900 border-2 p-1" href="https://www.youtube.com/@AIImageandVideoGenerators">
+              YouTube
+            </Link>
+
+            <Link className="text-xs  md:text-sm font-medium hover:text-primary hover:bg-red-900 border-2 p-1" href="https://www.toolify.ai/">
+            Discover more AI Tools
+            </Link>
+
+
           </nav>
           </div> 
         </div>    
@@ -129,7 +173,7 @@ export default function Component() {
 
 
 
-      <h1 className="   md:text-4xl text-center w-5/6 h-3/6 text-base font-semibold text-white  my-3 md:mb-6 px-4 md:px-6">
+      <h1 className="font-mono   text-sm md:text-4xl text-center w-5/6 h-3/6  font-semibold text-white  my-1  md:mb-6     px-4 md:px-6">
 
       AI Visual Tools to Supercharge Your Business & Inspire Creativity
       
@@ -1801,27 +1845,18 @@ Upload photos of yourself and get new stunning AI photos!
 
 
 
-          <Link href="https://imagify.gumroad.com/l/xuhxv" className="hover:bg-lime-100 transition-colors   " prefetch={false}>
-              List your Tool (20 USD)
-            </Link>
 
-            <Link href="./privacy" className="hover:bg-lime-100 transition-colors   " prefetch={false}>
+
+            <Link href="./privacy" className="text-sm font-medium hover:text-primary hover:bg-red-900   " prefetch={false}>
               Privacy
             </Link>
  
-            <Link href="./terms" className="hover:bg-lime-100 transition-colors " prefetch={false}>
+            <Link href="./terms" className="text-sm font-medium hover:text-primary hover:bg-red-900 " prefetch={false}>
             Terms
             </Link>
  
-             <Link className="hover:bg-lime-100 transition-colors" href="https://x.com/bestaigeneratrs">
-              X
-            </Link>
 
-            <Link className="hover:bg-lime-100 transition-colors" href="https://www.youtube.com/@AIImageandVideoGenerators">
-              YouTube
-            </Link>
-
-            <Link className="hover:bg-lime-100 transition-colors" href="https://www.toolify.ai/">
+            <Link className="text-sm font-medium hover:text-primary hover:bg-red-900" href="https://www.toolify.ai/">
             Discover more AI Tools
             </Link>
             

@@ -1,6 +1,9 @@
 // urls.js
 
 const urls = [
+  'https://choppity.com/?via=aiimageandvideogenerators',
+  'https://www.basedlabs.ai/?via=aiimageandvideogenerators',
+'https://www.headshotpro.com/?via=aiimageandvideogenerators',
   'https://topart.ai/',
   'https://autoshorts.ai/',
   'https://www.kapwing.com/',

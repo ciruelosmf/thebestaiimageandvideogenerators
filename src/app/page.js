@@ -175,7 +175,7 @@ export default function Component() {
 
       <h1 className="font-mono   text-sm md:text-4xl text-center w-5/6 h-3/6  font-semibold text-white  my-1  md:mb-6     px-4 md:px-6">
 
-      AI Visual Tools to Supercharge Your Business & Inspire Creativity
+      AI Art Tools to Supercharge Your Business & Inspire Creativity
       
       </h1>
 

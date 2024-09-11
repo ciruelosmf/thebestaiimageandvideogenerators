@@ -130,7 +130,9 @@
             </h2>
 
             <p className="mb-4 text-xl">
-            <p>MiniMax's offering stands out for several reasons:</p>
+            <h2 className="text-xl font-semibold mt-8 mb-4">
+              MiniMax's offering stands out for several reasons:
+              </h2>
     
     <ul class="feature-list">
         <li class="feature-item mb-2">
@@ -165,7 +167,7 @@
             <p className="mb-4 text-xl">
             
             Before MiniMax's entry, the text-to-video AI arena was primarily dominated by three major players:
-            <hr className="my-1 border-t mt-2 border-gray-300" />
+            <hr className="my-2 border-t  border-gray-300" />
 
 ### 1. Kling.ai
 

@@ -14,7 +14,7 @@ const colorValues = [
   '#0e7490'  // cyan-800
 ];
 
-const DynamicBackground = ({ rows = 7, cols = 7 }) => {
+const DynamicBackground = ({ rows = 7, cols = 7 , secs = 1700}) => {
   const [rectangles, setRectangles] = useState([]);
 
   useEffect(() => {
@@ -35,7 +35,7 @@ const DynamicBackground = ({ rows = 7, cols = 7 }) => {
           return { ...rect, colorIndex: newIndex };
         })
       );
-    }, 1700);
+    }, secs);
 
     return () => clearInterval(interval);
   }, [rows, cols]);

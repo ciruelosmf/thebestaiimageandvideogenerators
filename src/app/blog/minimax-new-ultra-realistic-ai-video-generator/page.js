@@ -167,7 +167,7 @@
             <p className="mb-4 text-xl">
             
             Before MiniMax's entry, the text-to-video AI arena was primarily dominated by three major players:
-            <hr className="my-2 border-t  border-gray-300" />
+            <hr className="my-4 border-t  border-gray-300" />
 
 ### 1. Kling.ai
 

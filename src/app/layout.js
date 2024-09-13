@@ -4,6 +4,10 @@ import Script from "next/script";
 import Head from 'next/head';
 const inter = Inter({ subsets: ["latin"] });
 import { CSPostHogProvider } from './providers'
+import GoogleAdsense from "../components/GoogleAdsense";
+
+
+
 export const metadata = {
   title: "✨AI Image and Video Generators",
   description: "✨AI Image and Video Generators is a directory to discover the best tools to create stunning visuals using AI",
@@ -41,6 +45,8 @@ export default function RootLayout({ children }) {
               className={inter.className}>  
                        {children}
               </body>
+              <GoogleAdsense pId={process.env.NEXT_PUBLIC_GOOGLE_ADSENSE_ID} />
+
           </CSPostHogProvider>
     </html>
   );

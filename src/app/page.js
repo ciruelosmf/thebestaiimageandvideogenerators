@@ -82,7 +82,7 @@ export default function Component() {
 
 
 
-<DynamicBackground rows={7} cols={7} /> {/* Add this line */}
+<DynamicBackground rows={8} cols={9} /> {/* Add this line */}
 
 
 
@@ -90,8 +90,8 @@ export default function Component() {
         <div className="container max-w-7xl py-1 px-1 md:px-6 flex items-center justify-between">
           <div className="flex flex-wrap items-center justify-center gap-2 ">
  
-            <h1 className={`border-2  md:text-xl text-base font-semibold text-white  px-4 md:px-6 ${isScrolled ? 'bg-black' : 'bg-transparent'} transition-colors duration-300`}>AI Image and Video Generators - AI directory</h1>
-          <nav className={`flex flex-row flex-wrap items-center justify-center gap-2 text-white p-1    md:text-xl text-base font-semibold text-white  px-4 md:px-6 ${isScrolled ? 'bg-black' : 'bg-transparent'} transition-colors duration-300`} >
+            <h1 className={`border-2  md:text-xl text-base font-semibold text-white  px-2 md:px-6 ${isScrolled ? 'bg-black' : 'bg-transparent'} transition-colors duration-300`}>AI Image and Video Generators - AI directory</h1>
+          <nav className={`flex flex-row flex-wrap items-center justify-center gap-2 text-white p-1    md:text-xl text-base font-semibold text-white  px-2 md:p-2 ${isScrolled ? 'bg-black' : 'bg-transparent'} transition-colors duration-300`} >
             <Link href="/" className="text-xs  md:text-sm font-medium  hover:bg-red-900 border-2 p-1" prefetch={false}>
               Home
             </Link>

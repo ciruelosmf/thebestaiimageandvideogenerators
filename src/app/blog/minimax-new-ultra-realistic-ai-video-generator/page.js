@@ -111,6 +111,7 @@
             <Link  href="https://hailuoai.com/video" className="text-xl font-medium hover:text-primary text-white mb-2" prefetch={false}>
               Go to MiniMax 
             </Link>
+            
             <div className="  mb-2">
             <Image
                 src="/minimax_1.jpg"

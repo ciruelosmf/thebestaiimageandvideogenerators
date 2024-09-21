@@ -4,7 +4,7 @@ import Script from "next/script";
 import Head from 'next/head';
 const inter = Inter({ subsets: ["latin"] });
 import { CSPostHogProvider } from './providers'
-import GoogleAdsense from "../components/GoogleAdsense";
+ 
 
 
 

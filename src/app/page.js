@@ -121,7 +121,7 @@ export default function Component() {
 
 
                       <Link href="https://imagify.gumroad.com/l/xuhxv" className="text-sm font-medium hover:text-primary hover:bg-red-900   border-2 p-1" prefetch={false}>
-              List your Tool (20 USD)
+              List your Tool 
             </Link>
 
 
@@ -175,7 +175,7 @@ export default function Component() {
 
       <h1 className="font-mono   text-sm md:text-4xl text-center w-5/6 h-3/6  font-semibold text-white  my-1  md:mb-6     px-4 md:px-6">
 
-      AI Art Tools to Supercharge Your Business & Inspire Creativity
+      Unleash Creative Power With Leading AI Tools
       
       </h1>
 
@@ -183,7 +183,7 @@ export default function Component() {
 
       <div className="    mx-auto"> {/*  */}
 
-        <div className="grid grid-cols-1  md:grid-cols-5 gap-8 md:gap-5  ">
+        <div className="grid grid-cols-1  md:grid-cols-4 gap-8 md:gap-7  ">
 
 
 
@@ -242,9 +242,13 @@ export default function Component() {
 
               </div>
             </CardContent>
+
+
             <CardFooter>
              
-
+            <Link href="https://photoai.com/?via=aiimageandvideogenerators" className="text-xs  md:text-sm font-medium hover:text-primary hover:bg-red-200 border-2 p-1" prefetch={false}>
+              Go to PhotoAI
+            </Link>
                  
             </CardFooter>
           </Card>

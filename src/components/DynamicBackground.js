@@ -5,13 +5,7 @@ const colorValues = [
   '#18181b', // zinc-900
   '#1c1917', // stone-900
   '#0c0a09', // zinc-950
-  '#171717', // neutral-900
-  '#0f172a', // slate-900
-  '#7c2d12', // orange-900
-  '#4d7c0f', // lime-800
-  '#166534', // green-800
-  '#115e59', // teal-800
-  '#0e7490'  // cyan-800
+
 ];
 
 const DynamicBackground = ({ rows = 8, cols = 8 , secs = 1890}) => {

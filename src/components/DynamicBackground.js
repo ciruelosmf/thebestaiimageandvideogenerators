@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react';
 
 const colorValues = [
-  '#000000', // black
-  '#18181b', // zinc-900
+  '#001d000', // black
+  '#72181b', // zinc-900
   '#1c1917', // stone-900
   '#0c0a09', // zinc-950
 
 ];
 
-const DynamicBackground = ({ rows = 8, cols = 8 , secs = 1890}) => {
+const DynamicBackground = ({ rows = 11, cols = 10 , secs = 1430}) => {
   const [rectangles, setRectangles] = useState([]);
 
   useEffect(() => {

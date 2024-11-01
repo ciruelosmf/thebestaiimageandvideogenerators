@@ -160,10 +160,22 @@ export default function Component() {
 
 
  
+        <blockquote class="twitter-tweet"><p lang="en" dir="ltr">I just tested <a href="https://twitter.com/Kling_ai?ref_src=twsrc%5Etfw">@Kling_ai</a> AI for meme creation and… it&#39;s 100% out of control! You won’t believe the results. 😱🔥 Check out these 7 crazy examples I’ve made. You’re not ready for this! 😂👇 <a href="https://t.co/yU0MWJzrdg">pic.twitter.com/yU0MWJzrdg</a></p>&mdash; Pierrick Chevallier | IA (@CharaspowerAI) <a href="https://twitter.com/CharaspowerAI/status/1849489556996858023?ref_src=twsrc%5Etfw">October 24, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+  <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Ghost judge chooses the winning 
+    worm cake in the zombie bake-off 🔊 on <a href="https://t.co/52UXaEMfIy">pic.twitter.com/52UXaEMfIy</a>
+    </p>&mdash; PAM (@Heartwords3) <a href="https://twitter.com/Heartwords3/status/1851843021207187888?ref_src=twsrc%5Etfw">October 31, 2024</a>
+  </blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
 
-<Link  href="https://app.photoai.me/?via=aiimageandvideogenerators" className="         " prefetch={false}>
+
+
+
+
+
+
+  <Link  href="https://app.photoai.me/?via=aiimageandvideogenerators" className="         " prefetch={false}>
 <Card className="  block      p-1 "> 
                         <div className="flex items-center gap-1">                            
                             <div>
@@ -189,7 +201,8 @@ export default function Component() {
   </Link>
 
 
- 
+
+
 
 
 

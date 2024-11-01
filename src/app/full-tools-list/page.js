@@ -86,7 +86,7 @@ export default function Blog() {
  
       <ul className="text-xl font-medium text-left text-slate-50 ">
         {urls.map((url, index) => (
-          <li  className="text-2xl mb-4" key={index}>
+          <li  className="text-2xl mb-8" key={index}>
                         <Link href={url} className="font-medium hover:text-primary" target="_blank" rel="noopener noreferrer" prefetch={false}>
                         {url}
             </Link>

@@ -645,6 +645,95 @@ portfolios, digital displays, social media showcases, or personal projects.
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <Link onClick={() => handleLinkClick("recraft-main-link")} href="https://www.recraft.ai/" className="block  " prefetch={false}>
+          <Card className=" ">
+            <CardHeader>
+              <div className="flex items-center gap-4 " >     
+                <div>
+                  <CardTitle>Recraft.ai </CardTitle>
+                  <CardDescription>
+                  AI for pro designers.
+
+                  Image Generator. AI Image 
+                  Vectorizer. AI Vector Generator. Mockup Generator. Image Upscaler. Background Remover. AI Eraser.
+                  </CardDescription>
+                </div>
+              </div>
+            </CardHeader>
+            <CardContent>
+            <div className="grid grid-cols-2 gap-4 justify-items-center">
+ 
+                <Image
+                  src="/recraft_1.jpg"
+                  width={140}
+                  height={140}
+                  alt="Writesonic_1"
+                  className="aspect-square object-cover  shadow-lg"
+                  loading="lazy" 
+
+                />
+                <Image
+                  src="/recraft_2.jpg"
+                  width={140}
+                  height={140}
+                  alt="Writesonic_2"
+                  className="aspect-square object-cover  shadow-lg"
+                  loading="lazy" 
+
+                />
+            </div>
+          </CardContent>
+            <CardFooter> 
+            </CardFooter>
+          </Card>
+          </Link>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <Link onClick={() => handleLinkClick("writesonic-main-link")} href="https://writesonic.com/photosonic-ai-art-generator" className="block  " prefetch={false}>
           <Card className=" ">
             <CardHeader>

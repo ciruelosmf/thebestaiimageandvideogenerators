@@ -1948,6 +1948,10 @@ Upload photos of yourself and get new stunning AI photos!
             Terms
             </Link>
  
+            <Link className="text-sm font-medium hover:text-primary hover:bg-red-900" href="https://www.limeparrottech.site/eulogygenerator">
+            Eulogy Generator
+            </Link>
+
 
             <Link className="text-sm font-medium hover:text-primary hover:bg-red-900" href="https://www.toolify.ai/">
             Discover more AI Tools

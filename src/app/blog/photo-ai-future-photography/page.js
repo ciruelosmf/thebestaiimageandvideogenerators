@@ -6,10 +6,28 @@ import Script from "next/script";
 import Link from "next/link"
 import DynamicBackground from '@/components/DynamicBackground';
 import Image from "next/image";
+import Head from 'next/head';
 
 export default function Blog() {
 return (
     <div className="relative min-h-screen flex flex-col items-center">
+
+
+
+
+<Head>
+        <link
+          rel="canonical"
+          href="https://www.aiimageandvideogenerators.xyz/blog/photo-ai-future-photography"
+          key="canonical"
+        />
+      </Head>
+
+
+
+
+
+
         <Script
             strategy="lazyOnload"
             src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
@@ -87,7 +105,7 @@ return (
 
 
         <h1 className="text-4xl font-bold text-center mb-12">
-        PhotoAI - An advanced AI-powered photo generation tool
+        PhotoAI - Fire your photographer 
         </h1>
 
 
@@ -111,11 +129,11 @@ return (
         <hr className="my-8 border-t mt-12 border-gray-300" />
 
         <h2 className="text-3xl font-semibold mt-8 mb-4">
-        High-Quality Image Generation   
+        
         </h2>
 
         <p className="mb-4 text-xl">
-        PhotoAI excels in producing detailed images, ranging from wide shots to extreme close-ups, with a focus on photorealism and character consistency. Users can generate images that closely resemble real-life scenarios, overcoming common issues found in other AI image generators, such as distorted faces or inconsistent character appearances.
+        Take stunning photos of people with the first AI Photographer! Generate photo and video content for your social media with AI. Save time and money and do an AI photo shoot from your laptop or phone instead of hiring an expensive photographer.
         </p>
 
 
@@ -124,14 +142,13 @@ return (
 
 
         <h2 className="text-3xl font-semibold mt-8 mb-4">
-        Custom AI Models   
+        The most detailed AI image generator for people   
         </h2>
 
         <p className="mb-4 text-xl">
-        Users can create personalized AI models by uploading a small set of photos 
-        (10 to 20) that represent various settings and styles. This process trains 
-        the AI to recognize and replicate the user's unique characteristics, allowing 
-        for infinite image generation tailored to their specifications</p>
+        Photo AI is capable of extreme detail going from wide shots to extreme close ups and macro photography. All packs are included in your membership! You can try as many as you want.
+
+</p>
 
 
 
@@ -145,14 +162,13 @@ return (
 
 
            <h2 className="text-3xl font-semibold mt-8 mb-4">
-           Scene Design Flexibility   
+           Create your own AI model 
         </h2>
 
         <p className="mb-4 text-xl">
-        The application enables users to design entire photo shoots from their computers.
-         By simply describing a scene or uploading clothing images,
-          users can generate photographs of models in various outfits 
-          and settings without the logistical challenges of traditional photography
+        Create photography with artificial intelligence by creating your own AI model. Upload a set of just 10 to 20 photos in a diverse range of places, settings, and times. By inputting these images into your model, you're teaching it to recognize and replicate it.
+
+You only need to train your model once which takes about 30 minutes. Then you can take infinite photos with it.
           </p>
 
 

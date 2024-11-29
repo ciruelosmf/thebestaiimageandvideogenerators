@@ -6,10 +6,28 @@ import Script from "next/script";
 import Link from "next/link"
 import DynamicBackground from '@/components/DynamicBackground';
 import Image from "next/image";
+import Head from 'next/head';
+
+
+
+
 
 export default function Blog() {
 return (
     <div className="relative min-h-screen flex flex-col items-center">
+
+
+
+<Head>
+        <link
+          rel="canonical"
+          href="https://www.aiimageandvideogenerators.xyz/blog/photoai-fire-your-photographer"
+          key="canonical"
+        />
+      </Head>
+
+
+
         <Script
             strategy="lazyOnload"
             src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
@@ -87,7 +105,7 @@ return (
 
 
         <h1 className="text-4xl font-bold text-center mb-12">
-        PhotoAI - An advanced AI-powered photo generation tool
+        PhotoAI -  AI-powered photo generation tool
         </h1>
 
 
@@ -131,7 +149,7 @@ return (
         Users can create personalized AI models by uploading a small set of photos 
         (10 to 20) that represent various settings and styles. This process trains 
         the AI to recognize and replicate the user's unique characteristics, allowing 
-        for infinite image generation tailored to their specifications</p>
+        for infinite image generation tailored to their specifications.</p>
 
 
 
@@ -152,8 +170,69 @@ return (
         The application enables users to design entire photo shoots from their computers.
          By simply describing a scene or uploading clothing images,
           users can generate photographs of models in various outfits 
-          and settings without the logistical challenges of traditional photography
+          and settings without the logistical challenges of traditional photography.
           </p>
+
+
+          <hr className="my-8 border-t mt-12 border-gray-300" />
+
+
+
+
+          <h2 className="text-3xl font-semibold mt-8 mb-4">
+          Try on clothes 2.0  
+        </h2>
+
+        <p className="mb-4 text-xl">
+        Take any outfit you like (like from Shein or Zara), take a screenshot and paste it into Photo AI and it will dress up your model with it. The new version 2 of our try on model is better than ever and now even works with patterns and prints.
+
+
+Do entire photo shoots from your computer without having to fly around models and entire crews of photographers, light people, directors and producers half way around the world for a shoot. Just prompt the shoot design yourself, select your model and upload a piece of clothing!
+
+
+Perfect for Shopify store owners who want unique photos of models trying out their products.
+          </p>
+
+
+
+
+
+          <hr className="my-8 border-t mt-12 border-gray-300" />
+
+
+
+
+          <h2 className="text-3xl font-semibold mt-8 mb-4">
+          Design photorealistic scenes 
+        </h2>
+
+        <p className="mb-4 text-xl">
+        Design any scene you wish, from commonplace to rare, stunning instances. Imagine the ability to create a photograph of a sunlit Parisian cafe in the 1920s, or a moonlit beach in Bali with just the right clothes, all from the comfort of your living room.
+
+Simply describe your desired scene and watch as the model generates a highly realistic photo that aligns with your vision. Taking photos is fast: right now it takes about 29 seconds per photo.
+          </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
            <hr className="my-8 border-t mt-48 border-gray-300" />

@@ -6,6 +6,7 @@ import Script from "next/script";
 import Link from "next/link"
 import DynamicBackground from '@/components/DynamicBackground';
 import Image from "next/image";
+import Head from 'next/head';
 
 export default function Blog() {
 return (

@@ -16,6 +16,7 @@ export default function Blog() {
 return (
     <div className="relative min-h-screen flex flex-col items-center">
 
+<title>PhotoAI - Fire your photographer - Image to Video Generators</title>
 
 
 <Head>
@@ -105,7 +106,7 @@ return (
 
 
         <h1 className="text-4xl font-bold text-center mb-12">
-        PhotoAI -  AI-powered photo generation tool
+         AI photo generation tool
         </h1>
 
 
@@ -133,7 +134,7 @@ return (
         </h2>
 
         <p className="mb-4 text-xl">
-        PhotoAI excels in producing detailed images, ranging from wide shots to extreme close-ups, with a focus on photorealism and character consistency. Users can generate images that closely resemble real-life scenarios, overcoming common issues found in other AI image generators, such as distorted faces or inconsistent character appearances.
+        PhotoAI delivers exceptional image generation capabilities, specializing in photorealistic imagery that maintains consistent visual quality across diverse perspectives. The platform distinguishes itself by addressing common AI image generation limitations, producing highly accurate representations with precise facial details and maintaining character integrity throughout various photographic compositions.
         </p>
 
 
@@ -146,10 +147,7 @@ return (
         </h2>
 
         <p className="mb-4 text-xl">
-        Users can create personalized AI models by uploading a small set of photos 
-        (10 to 20) that represent various settings and styles. This process trains 
-        the AI to recognize and replicate the user's unique characteristics, allowing 
-        for infinite image generation tailored to their specifications.</p>
+        The platform offers a sophisticated personalization feature that allows users to develop custom AI models through a streamlined training process. By uploading a curated collection of 10-20 representative photographs, users can effectively teach the AI system to recognize and replicate their distinctive visual preferences, thereby enabling comprehensive and personalized image generation that reflects their unique aesthetic requirements.</p>
 
 
 
@@ -167,10 +165,7 @@ return (
         </h2>
 
         <p className="mb-4 text-xl">
-        The application enables users to design entire photo shoots from their computers.
-         By simply describing a scene or uploading clothing images,
-          users can generate photographs of models in various outfits 
-          and settings without the logistical challenges of traditional photography.
+        PhotoAI revolutionizes digital photography workflows by providing users with comprehensive photo shoot simulation capabilities directly from their computer interface. Through intuitive description tools or image upload functionality, users can effortlessly generate professional-quality photographs featuring models in diverse wardrobe configurations and environmental settings, effectively eliminating traditional photography's complex logistical constraints and resource-intensive production processes.
           </p>
 
 

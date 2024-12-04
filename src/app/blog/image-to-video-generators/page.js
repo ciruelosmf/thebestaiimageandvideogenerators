@@ -10,7 +10,7 @@ import Image from "next/image";
 export default function Blog() {
 return (
     <div className="relative min-h-screen flex flex-col items-center">
-        <title>Image to Video Generators</title>
+        <title>Best Image to Video Generators - Image to Video Generators</title>
 
         <Script
             strategy="lazyOnload"

@@ -10,6 +10,20 @@ import Image from "next/image";
 export default function Blog() {
 return (
     <div className="relative min-h-screen flex flex-col items-center">
+
+<title>PhotoAI - An advanced AI-powered photo generation tool - Image to Video Generators</title>
+
+
+<Head>
+        <link
+          rel="canonical"
+          href="https://www.aiimageandvideogenerators.xyz/blog/photo-ai-headshot"
+          key="canonical"
+        />
+      </Head>
+
+
+
         <Script
             strategy="lazyOnload"
             src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}

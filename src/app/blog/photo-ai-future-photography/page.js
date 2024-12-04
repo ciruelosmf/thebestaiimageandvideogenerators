@@ -13,6 +13,7 @@ return (
     <div className="relative min-h-screen flex flex-col items-center">
 
 
+<title>PhotoAI - Stunning AI photos - Image to Video Generators</title>
 
 
 <Head>

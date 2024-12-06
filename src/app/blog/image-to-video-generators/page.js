@@ -6,11 +6,27 @@ import Script from "next/script";
 import Link from "next/link"
 import DynamicBackground from '@/components/DynamicBackground';
 import Image from "next/image";
+import { Tweet } from 'react-tweet'
+import Head from 'next/head';
+
+
 
 export default function Blog() {
 return (
     <div className="relative min-h-screen flex flex-col items-center">
-        <title>Best Image to Video Generators - Image to Video Generators</title>
+        <title>Best Image to Video Generators</title>
+
+
+        <Head>
+        <link
+          rel="canonical"
+          href="https://www.aiimageandvideogenerators.xyz/blog/image-to-video-generators"
+          key="canonical"
+        />
+      </Head>
+
+
+
 
         <Script
             strategy="lazyOnload"
@@ -89,7 +105,7 @@ return (
 
 
         <h1 className="text-4xl font-bold text-center mb-12">
-        Luma Labs' Dream Machine is one the Best Image to Video Generators right now
+        Luma Labs' Dream Machine is the most popular Image to Video Generators right now
 
         </h1>
 
@@ -97,15 +113,14 @@ return (
         <div className="  flex flex-wrap flex-col items-center justify-center gap-2 ">
 
         <Link  href="https://lumalabs.ai/dream-machine" className="text-xl font-medium hover:text-primary text-white " prefetch={false}>
+        <p className="mb-4 text-center border border-gray-300 rounded-xl p-2 shadow-lg  text-xl">
+
           Go to Dream Machine 
+          </p>
+
+
         <div className="  mt-12">
-        <Image
-            src="/dream_machine_1.jpg"
-            width={400}
-            height={400}
-            alt="dream_machine_1"
-            className="aspect-square object-cover  shadow-lg"
-          />
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/CGrLh8-NJLM?si=PDL8wBNZ5Bqgx-xR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
         </Link>
 
@@ -117,15 +132,66 @@ return (
 
 
 
+        <div className="grid grid-cols-1 sm:grid-cols-4 gap-4">
+  <div className="transform scale-75">
+    <Tweet id="1860424711055790548" />
+  </div>
+  <div className="transform scale-75">
+    <Tweet id="1862409032767873284" />
+  </div>
+  <div className="transform scale-75">
+    <Tweet id="1861054912790139329" />
+  </div>
+  <div className="transform scale-75">
+    <Tweet id="1857069782043890175" />
+  </div>
+</div>
+
+
+
+
+
+
+  <hr className="my-8 border-t mt-12 border-gray-300" />
+
+
+
+
+
+
+
+
+
         
 
         <h2 className="text-3xl font-semibold m-8 ">
         Check out these other  <span class="font-bold text-2xl text-red-300"> Image to Video Generator      </span>          tools:  
         </h2>
 
+
+
+
+
+
+
+
+
+
+
+
+
         <hr className="my-8 border-t mt-12 border-gray-300" />
 
         <p className="mb-4 text-xl">
+
+
+
+        <Link  href="  https://app.runwayml.com/" className="text-xl font-medium hover:text-primary text-white mb-2" prefetch={false}>
+          Go to Runway AI 
+        </Link>
+
+        <hr className="my-8 border-t m-2 border-gray-50" />
+
 
 
         <Link  href="https://www.klingai.com/" className="text-xl font-medium hover:text-primary text-white mb-2" prefetch={false}>
@@ -157,12 +223,15 @@ return (
 
   
 
-        <hr className="my-8 border-t mt-4border-gray-300" />
-
-  
+ 
 
 
+        <div className="w-full sm:w-1/2 lg:w-1/4 aspect-w-16 aspect-h-9">
 
+  </div>
+
+
+  <hr className="my-8 border-t mt-4border-gray-300" />
 
 
 

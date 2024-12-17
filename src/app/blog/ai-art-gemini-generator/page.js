@@ -20,7 +20,7 @@ return (
         <Head>
         <link
           rel="canonical"
-          href="https://www.aiimageandvideogenerators.xyz/blog/xyz-video-generator"
+          href="https://www.aiimageandvideogenerators.xyz/blog/gemini-ai-art-generator"
           key="canonical"
         />
       </Head>

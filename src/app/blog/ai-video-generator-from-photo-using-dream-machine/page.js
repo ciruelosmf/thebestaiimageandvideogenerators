@@ -130,7 +130,10 @@ return (
 
 
 
-      <li><strong>Create an Account:</strong> Visit the Dream Machine website and sign up for an account. The registration process is quick and user-friendly, allowing you to get started without delays.</li>
+      <li><strong>Create an Account:</strong> Visit the Dream Machine website  
+      <Link href="https://lumalabs.ai/dream-machine">
+      <span class="font-bold text-2xl text-blue-300"> https://lumalabs.ai/dream-machine  </span> </Link>
+       and sign up for an account. The registration process is quick and user-friendly, allowing you to get started without delays.</li>
 
    
 
@@ -164,7 +167,7 @@ return (
 
       <li><strong>Craft Your Prompt:</strong> Write a detailed prompt that describes the action or scene you want to create from the image. For example, if your image is of a beach sunset, your prompt could be,  
       
-      <span class="font-bold text-2xl text-blue-300">"Animate the waves gently lapping at the shore with seagulls flying above." HeadshotPro</span>
+      <span class="font-bold text-2xl text-blue-300">"Animate the waves gently lapping at the shore with seagulls flying above." </span>
       
       
       </li>

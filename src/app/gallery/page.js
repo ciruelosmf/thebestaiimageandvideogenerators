@@ -10,6 +10,7 @@ import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter }
 import DynamicBackground from '@/components/DynamicBackground'; // Make sure to create this file
 import Script from "next/script";
 import Head from 'next/head';
+import { Tweet } from 'react-tweet'
  
 
 
@@ -74,7 +75,7 @@ export default function Component() {
               Home
             </Link>
             <Link href="./gallery" className="text-sm font-medium hover:text-primary" prefetch={false}>
-              Gallery
+            Twitter Generative AI Gallery
             </Link>
             <Link href="./blog" className="text-sm font-medium hover:text-primary" prefetch={false}>
               Blog
@@ -100,7 +101,7 @@ export default function Component() {
 
 
 
-      <h1 className="   md:text-5xl text-center w-5/6 h-3/6 text-base font-semibold text-white  my-3 md:my-4 px-4 md:px-6">Gallery of AI art made by our listed tools</h1>
+      <h1 className="   md:text-5xl text-center w-5/6 h-3/6 text-base font-semibold text-white  my-3 md:my-4 px-4 md:px-6">Twitter Generative AI Gallery</h1>
 
 
 
@@ -155,20 +156,72 @@ export default function Component() {
 
       <div className="    mx-auto"> {/* Add this wrapper */}
 
+
+
+      <div className="grid grid-cols-1 sm:grid-cols-4 gap-4">
+  <div className="">
+    <Tweet id="1824383008343810091" />
+  </div>
+  <div className="">
+    <Tweet id="1849489556996858023" />
+  </div>
+  <div className="">
+    <Tweet id="1851843021207187888" />
+  </div>
+
+  <div className="">
+    <Tweet id="1857069782043890175" />
+  </div>
+
+
+  <div className="">
+    <Tweet id="1874122969439756329" />
+  </div>
+
+  <div className="">
+    <Tweet id="1870497804617150926" />
+  </div>
+
+  <div className="">
+    <Tweet id="1872614428598014298" />
+  </div>
+
+  <div className="">
+    <Tweet id="1824382973858234465" />
+  </div>
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <div className="grid grid-cols-1  md:grid-cols-2 gap-8 md:gap-5  ">
 
 
 
+         
+
+
  
-        <blockquote class="twitter-tweet"><p lang="en" dir="ltr">I just tested <a href="https://twitter.com/Kling_ai?ref_src=twsrc%5Etfw">@Kling_ai</a> AI for meme creation and… it&#39;s 100% out of control! You won’t believe the results. 😱🔥 Check out these 7 crazy examples I’ve made. You’re not ready for this! 😂👇 <a href="https://t.co/yU0MWJzrdg">pic.twitter.com/yU0MWJzrdg</a></p>&mdash; Pierrick Chevallier | IA (@CharaspowerAI) <a href="https://twitter.com/CharaspowerAI/status/1849489556996858023?ref_src=twsrc%5Etfw">October 24, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-  <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Ghost judge chooses the winning 
-    worm cake in the zombie bake-off 🔊 on <a href="https://t.co/52UXaEMfIy">pic.twitter.com/52UXaEMfIy</a>
-    </p>&mdash; PAM (@Heartwords3) <a href="https://twitter.com/Heartwords3/status/1851843021207187888?ref_src=twsrc%5Etfw">October 31, 2024</a>
-  </blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-
-
+ 
 
 
 

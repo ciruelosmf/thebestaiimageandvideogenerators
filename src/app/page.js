@@ -96,7 +96,7 @@ export default function Component() {
               Home
             </Link>
             <Link href="./gallery" className="text-xs  md:text-sm font-medium  hover:bg-red-900 border-2 p-1" prefetch={false}>
-              Gallery
+            Twitter Generative AI Gallery
             </Link>
             <Link href="./full-tools-list" className="text-xs  md:text-sm font-medium  hover:bg-red-900 border-2 p-1" prefetch={false}>
               Full List of Tools

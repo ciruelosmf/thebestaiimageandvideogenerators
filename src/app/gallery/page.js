@@ -159,6 +159,27 @@ export default function Component() {
 
 
       <div className="grid grid-cols-1 sm:grid-cols-4 gap-4">
+
+
+
+      
+
+      <div className="">
+    <Tweet id="1874746828899655894" />
+  </div>
+
+
+
+      <div className="">
+    <Tweet id="1874875362020122741" />
+  </div>
+
+
+      <div className="">
+    <Tweet id="1874627041934602410" />
+  </div>
+
+
   <div className="">
     <Tweet id="1824383008343810091" />
   </div>

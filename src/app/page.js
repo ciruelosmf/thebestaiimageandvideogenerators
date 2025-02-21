@@ -13,6 +13,11 @@ import Head from 'next/head';
 import { useState, useEffect } from 'react';
 import posthog from 'posthog-js';
 import { CSPostHogProvider } from './providers'
+import { Tweet } from 'react-tweet'
+
+
+
+
 
 const handleLinkClick = (id) => {
   posthog.capture(id, {
@@ -183,31 +188,63 @@ export default function Component() {
       
       </h1>
 
+
+
+
+
+
+
+
+
+
       <main className="container  md:max-w-screen-7xl	 max-w-fit px-2 md:px-6 pb-12 flex-1">
-
-      <div className="    mx-auto"> {/*  */}
-
-        <div className="grid grid-cols-1  md:grid-cols-4 gap-8 md:gap-7  ">
+      <div className="flex flex-col md:flex-row gap-8">
 
 
 
+{/* Sidebar for Tweet Cards */}
+<aside className="md:w-1/4">
+            <h2 className="text-xl font-semibold mb-4 text-white">Gallery Tweets</h2>
+            <div className="space-y-4">
+ 
+
+
+            <div className="">
+    <Tweet id="1892585851218993651" />
+  </div>
+
+  <div className="">
+    <Tweet id="1874122969439756329" />
+  </div>
+
+
+  <div className="">
+    <Tweet id="1892277720723423315" />
+  </div>
+
+
+
+  <div className="">
+    <Tweet id="1874746828899655894" />
+  </div>
+
+
+
+      <div className="">
+    <Tweet id="1874875362020122741" />
+  </div>
 
 
 
 
+            </div>
+          </aside>
 
 
 
+    
 
-
-
-
-
-
-
-
-
-
+        <div className="grid grid-cols-1  md:grid-cols-3 gap-8 md:gap-7  ">
 
 
 
@@ -260,6 +297,12 @@ export default function Component() {
 
 
 
+
+
+
+
+
+ 
 
 
 
@@ -321,6 +364,17 @@ export default function Component() {
             </CardFooter>
           </Card>
           </Link>
+
+
+
+
+
+
+
+
+
+ 
+
 
 
 

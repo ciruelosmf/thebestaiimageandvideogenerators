@@ -117,6 +117,10 @@ export default function Component() {
             </Link>
 
 
+            <Link href="https://t.me/tate_chess_bot" className="text-xs border-lime-400 md:text-sm font-medium hover:text-primary hover:bg-red-900 border-2 p-1" prefetch={false}>
+              Play Tate Telegram Chess Game 
+            </Link>
+
 
 
 
@@ -207,7 +211,7 @@ export default function Component() {
 
 
 
-        <Link onClick={() => handleLinkClick("photoai-main-link-aff")}   href="https://photoai.com/?via=aiimageandvideogenerators" className="  block      " prefetch={false}>
+        <Link onClick={() => handleLinkClick("photoai-main-link-aff")}   href="https://app.photoai.me/?via=aiimageandvideogenerators" className="  block      " prefetch={false}>
 
         <Card className="block">
             <CardHeader>
@@ -246,7 +250,7 @@ export default function Component() {
 
             <CardFooter>
              
-            <Link href="https://photoai.com/?via=aiimageandvideogenerators" className="text-xs  md:text-sm font-medium hover:text-primary hover:bg-red-200 border-2 p-1" prefetch={false}>
+            <Link href="https://app.photoai.me/?via=aiimageandvideogenerators" className="text-xs  md:text-sm font-medium hover:text-primary hover:bg-red-200 border-2 p-1" prefetch={false}>
               Go to PhotoAI
             </Link>
                  

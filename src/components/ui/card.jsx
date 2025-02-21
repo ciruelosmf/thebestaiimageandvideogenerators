@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils"
 const Card = React.forwardRef(({ className, ...props }, ref) => (
   <div
     ref={ref}
-    style={{ clipPath: 'polygon(3% 0%, 97% 0%, 100% 3%, 100% 97%, 97% 100%, 3% 100%, 0% 97%, 0% 3%)' }}
+    style={{ clipPath: 'polygon(1% 0%, 99% 0%, 100% 1%, 100% 99%, 99% 100%, 1% 100%, 0% 99%, 0% 1%)' }}
     className={cn(
       "flex flex-col bg-slate-50/80 text-black border-2 border-slate-400 shadow-lg relative overflow-hidden hover:bg-emerald-50",
       className

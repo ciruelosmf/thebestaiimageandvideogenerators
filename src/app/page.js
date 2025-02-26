@@ -208,6 +208,17 @@ export default function Component() {
             <div className="space-y-4">
  
 
+ 
+            <div className="">
+              <Tweet id="1894415836980678792" />
+            </div>
+
+
+
+            <div className="">
+              <Tweet id="1894095021093040268" />
+            </div>
+
 
             <div className="">
     <Tweet id="1892585851218993651" />

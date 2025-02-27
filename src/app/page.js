@@ -428,9 +428,18 @@ export default function Component() {
 
         {/* Testimonials Section - New Addition */}
         <section className="mt-16 pt-16 border-t border-white/10">
-          <h2 className="text-2xl md:text-3xl font-bold text-white mb-10 text-center">What World is Creating</h2>
-          
+          <h2 className="text-2xl md:text-3xl font-bold text-white mb-10 text-center">What the World is creating</h2>          
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+
+
+
+          <div className="">
+    <Tweet id="1894822930552627426" />
+  </div>
+
+
+
             <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4">
               <Tweet id="1894415836980678792" />
             </div>
@@ -456,9 +465,7 @@ export default function Component() {
   <div className="">
     <Tweet id="1849489556996858023" />
   </div>
-  <div className="">
-    <Tweet id="1851843021207187888" />
-  </div>
+ 
 
 
 

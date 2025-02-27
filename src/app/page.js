@@ -1,64 +1,61 @@
 "use client"
 import Image from "next/image";
-/**
- * v0 by Vercel.
- 
- */
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card"
-import DynamicBackground from '@/components/DynamicBackground'; // Make sure to create this file
 import Script from "next/script";
 import Head from 'next/head';
 import { useState, useEffect } from 'react';
 import posthog from 'posthog-js';
 import { CSPostHogProvider } from './providers'
 import { Tweet } from 'react-tweet'
+import { tools } from './tools';
+import ToolCard from '../components/ToolCard';
 
 
 
-
-
-const handleLinkClick = (id) => {
-  posthog.capture(id, {
-    element: id,
-    location: 'Card Header',
-    description: `Clicked link for ${id}`,
+// Improved analytics tracking function with additional parameters
+const trackConversion = (id, location, action = 'click') => {
+  posthog.capture(`conversion_${action}`, {
+    element_id: id,
+    location: location,
+    description: `${action} on ${id} in ${location}`,
+    timestamp: new Date().toISOString()
   });
 };
 
 export default function Component() {
-    const [isScrolled, setIsScrolled] = useState(false);
+
+    // You can add filtering and sorting logic here
+  // For example, to show featured tools first:
+  const sortedTools = [...tools].sort((a, b) => {
+    if (a.featured && !b.featured) return -1;
+    if (!a.featured && b.featured) return 1;
+    return 0;
+  });
+
+
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [activeTab, setActiveTab] = useState('all');
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 10) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
+      setIsScrolled(window.scrollY > 10);
     };
 
     window.addEventListener('scroll', handleScroll);
-
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+
   return (
-
-
-
-
-
-
-    <div className="relative min-h-screen flex flex-col items-center">
-
+    <div className="min-h-screen flex flex-col bg-gradient-to-b from-slate-900 to-slate-800">
       <Head>
-        <meta property="og:title" content="✨AI Image and Video Generators" />
+        <meta property="og:title" content="✨ AI Image & Video Generators | Top Tools for 2025" />
         <meta
           property="og:description"
-          content="✨AI Image and Video Generator is a directory to discover the best tools to create stunning visuals using AI"
+          content="Discover the best AI tools to create stunning visuals and videos instantly. Save time and money with these powerful AI image generators."
         />
         <meta
           property="og:image"
@@ -66,8 +63,7 @@ export default function Component() {
         />
       </Head>
 
-
-<Script
+      <Script
         async
         src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
       />
@@ -79,80 +75,332 @@ export default function Component() {
           gtag('js', new Date());
           gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}',{
           page_path: window.location.pathname,
-          
-});
-         `}
+          });
+        `}
       </Script>
 
-
-
-
-<DynamicBackground rows={8} cols={9} /> {/* Add this line */}
-
-
-
-      <header className=" sticky top-0 z-40   block    ">
-        <div className="container max-w-7xl py-1 px-1 md:px-6 flex items-center justify-between">
-          <div className="flex flex-wrap items-center justify-center gap-2 ">
- 
-            <h1 className={`border-2  md:text-xl text-base font-semibold text-white  px-2 md:px-6 ${isScrolled ? 'bg-black' : 'bg-transparent'} transition-colors duration-300`}>AI Image and Video Generators - AI directory</h1>
-          <nav className={`flex flex-row flex-wrap items-center justify-center gap-2 text-white p-1    md:text-xl text-base font-semibold text-white  px-2 md:p-2 ${isScrolled ? 'bg-black' : 'bg-transparent'} transition-colors duration-300`} >
-            <Link href="/" className="text-xs  md:text-sm font-medium  hover:bg-red-900 border-2 p-1" prefetch={false}>
+      {/* Streamlined Header */}
+      <header className={`sticky top-0 z-40 transition-colors duration-300 ${isScrolled ? 'bg-black/90 backdrop-blur-md' : 'bg-transparent'}`}>
+        <div className="container max-w-7xl py-3 px-4 md:px-6 flex items-center justify-between">
+          <Link href="/" className="flex items-center gap-2" prefetch={false}>
+            <BotIcon className="w-6 h-6 text-white" />
+            <h1 className="text-lg md:text-xl font-bold text-white">AI Image & Video Generators</h1>
+          </Link>
+          
+          {/* Mobile menu button */}
+          <div className="md:hidden">
+            <Button variant="ghost" size="icon" className="text-white">
+              <MenuIcon className="w-6 h-6" />
+            </Button>
+          </div>
+          
+          {/* Desktop navigation - simplified */}
+          <nav className="hidden md:flex items-center gap-6">
+            <Link href="/" className="text-sm font-medium text-white hover:text-purple-300 transition" prefetch={false}>
               Home
             </Link>
-            <Link href="./gallery" className="text-xs  md:text-sm font-medium  hover:bg-red-900 border-2 p-1" prefetch={false}>
-            Twitter Generative AI Gallery
+            <Link href="./gallery" className="text-sm font-medium text-white hover:text-purple-300 transition" prefetch={false}>
+              Gallery
             </Link>
-            <Link href="./full-tools-list" className="text-xs  md:text-sm font-medium  hover:bg-red-900 border-2 p-1" prefetch={false}>
-              Full List of Tools
+            <Link href="./full-tools-list" className="text-sm font-medium text-white hover:text-purple-300 transition" prefetch={false}>
+            Full List of Tools
             </Link>
 
-
-            <Link href="./blog" className="text-xs  md:text-sm font-medium  hover:bg-red-900 border-2 p-1" prefetch={false}>
+ 
+            <Link href="./blog" className="text-sm font-medium text-white hover:text-purple-300 transition" prefetch={false}>
               Blog
             </Link>
-            <Link href="./prompts" className="text-xs  md:text-sm font-medium hover:text-primary hover:bg-red-900 border-2 p-1" prefetch={false}>
-              Prompts
-            </Link>
-            <Link href="./about" className="text-xs  md:text-sm font-medium hover:text-primary hover:bg-red-900 border-2 p-1" prefetch={false}>
-              About
-            </Link>
-            <Link href="./contact" className="text-xs  md:text-sm font-medium hover:text-primary hover:bg-red-900 border-2 p-1" prefetch={false}>
-              Contact 
-            </Link>
-
-
-            <Link href="https://t.me/tate_chess_bot" className="text-xs border-lime-400 md:text-sm font-medium hover:text-primary hover:bg-red-900 border-2 p-1" prefetch={false}>
-              Play Tate Telegram Chess Game 
-            </Link>
-
-
-
-
-                      <Link href="https://imagify.gumroad.com/l/xuhxv" className="text-sm font-medium hover:text-primary hover:bg-red-900   border-2 p-1" prefetch={false}>
-              List your Tool 
-            </Link>
-
-
- 
-             <Link className="text-xs  md:text-sm font-medium hover:text-primary hover:bg-red-900 border-2 p-1" href="https://x.com/bestaigeneratrs">
-              X
-            </Link>
-
-            <Link className="text-xs  md:text-sm font-medium hover:text-primary hover:bg-red-900 border-2 p-1" href="https://www.youtube.com/@AIImageandVideoGenerators">
-              YouTube
-            </Link>
-
-            <Link className="text-xs  md:text-sm font-medium hover:text-primary hover:bg-red-900 border-2 p-1" href="https://www.toolify.ai/">
-            Discover more AI Tools
-            </Link>
-
-
+            
+            {/* Primary CTA Button */}
+            <Button 
+              className="bg-gradient-to-r from-purple-600 to-pink-600 text-white font-medium px-4 py-2 rounded-md hover:from-purple-700 hover:to-pink-700 transition"
+              onClick={() => trackConversion('list-your-tool-header', 'header-nav')}
+            >
+              <Link href="https://imagify.gumroad.com/l/xuhxv" prefetch={false}>
+                List Your Tool
+              </Link>
+            </Button>
           </nav>
-          </div> 
-        </div>    
+        </div>
       </header>
 
+      {/* Hero Section - New Addition */}
+      <section className="py-16 md:py-24 px-4 text-center">
+        <div className="container max-w-4xl mx-auto">
+          <h1 className="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
+            Create Stunning Visuals with <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-red-500">AI-Powered Tools</span>
+          </h1>
+          <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+            Save time and money by generating professional-quality images and videos in seconds.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button 
+              className="bg-gradient-to-r from-purple-600 to-pink-600 text-white font-bold px-6 py-3 rounded-md text-lg hover:from-purple-700 hover:to-pink-700 transition shadow-lg"
+              onClick={() => trackConversion('explore-tools-hero', 'hero-section')}
+            >
+              <Link href="#tools-section">
+                Explore Top Tools
+              </Link>
+            </Button>
+            <Button 
+              variant="outline" 
+              className="border-2 border-white text-white font-bold px-6 py-3 rounded-md text-lg hover:bg-white/10 transition"
+              onClick={() => trackConversion('view-gallery-hero', 'hero-section')}
+            >
+              <Link href="./gallery">
+                View Gallery
+              </Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Main Content */}
+      <main id="tools-section" className="container max-w-7xl px-4 md:px-6 pb-16 flex-1 mx-auto">
+        {/* Tool Category Tabs */}
+        <div className="mb-10">
+          <div className="flex overflow-x-auto pb-2 -mx-4 px-4 space-x-4">
+            {['all', 'image', 'video', 'character', 'animation'].map((tab) => (
+              <Button 
+                key={tab}
+                variant={activeTab === tab ? "default" : "outline"}
+                className={`${activeTab === tab ? 'bg-purple-600 text-white' : 'bg-transparent text-white border-white/30'} whitespace-nowrap px-6 py-2 rounded-full font-medium capitalize`}
+                onClick={() => setActiveTab(tab)}
+              >
+                {tab === 'all' ? 'All Tools' : `${tab.charAt(0).toUpperCase() + tab.slice(1)} Generators`}
+              </Button>
+            ))}
+          </div>
+        </div>
+
+
+
+
+
+
+        {/* Featured Tools Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+
+
+
+          {/* PhotoAI Card - improved for conversion */}
+          <Card className="bg-white/5 backdrop-blur-sm border border-white/10 text-white overflow-hidden hover:shadow-xl hover:shadow-purple-500/10 transition-all duration-300">
+            <CardHeader className="pb-3">
+              <div className="flex items-center justify-between">
+                <CardTitle className="text-xl font-bold text-red-500">Photo AI</CardTitle>
+                <span className="px-2 py-1 bg-purple-600 text-xs font-semibold rounded-full">Featured</span>
+              </div>
+              <CardDescription className="text-gray-300 mt-2">
+                Generate photorealistic images of people with AI. Save time and money on expensive photo shoots.
+              </CardDescription>
+            </CardHeader>
+            <CardContent className="pt-0">
+              <div className="relative overflow-hidden rounded-lg aspect-video mb-4">
+                <div className="grid grid-cols-2 gap-2 h-full">
+                  <Image
+                    src="/photoaicom_1.jpg"
+                    width={300}
+                    height={300}
+                    alt="PhotoAI generated portrait"
+                    className="rounded-lg object-cover hover:scale-105 transition-transform duration-300 h-full"
+                    loading="lazy" 
+                  />
+                  <Image
+                    src="/photoaicom_2.jpg"
+                    width={300}
+                    height={300}
+                    alt="PhotoAI generated portrait"
+                    className="rounded-lg object-cover hover:scale-105 transition-transform duration-300 h-full"
+                    loading="lazy" 
+                  />
+                </div>
+              </div>
+              
+              <div className="flex flex-wrap gap-2">
+                <span className="text-xs px-2 py-1 bg-white/10 rounded-full">Portrait</span>
+                <span className="text-xs px-2 py-1 bg-white/10 rounded-full">Photorealistic</span>
+                <span className="text-xs px-2 py-1 bg-white/10 rounded-full">Professional</span>
+              </div>
+            </CardContent>
+            <CardFooter className="pt-0">
+              <Button 
+                className="w-full bg-gradient-to-r from-red-400 to-green-600 hover:from-purple-700 hover:to-pink-700 text-white font-medium py-2 rounded-md"
+                onClick={() => trackConversion('photoai-cta', 'card-footer', 'conversion')}
+              >
+                <Link 
+                  href="https://app.photoai.me/?via=aiimageandvideogenerators" 
+                  className="w-full text-center" 
+                  prefetch={false}
+                >
+                  Try PhotoAI Now →
+                </Link>
+              </Button>
+            </CardFooter>
+          </Card>
+
+
+
+
+          {/* Imagine AI Card */}
+          <Card className="bg-white/5 backdrop-blur-sm border border-white/10 text-white overflow-hidden hover:shadow-xl hover:shadow-purple-500/10 transition-all duration-300">
+            <CardHeader className="pb-3">
+              <div className="flex items-center justify-between">
+                <CardTitle className="text-xl font-bold text-red-500">Imagine AI Art</CardTitle>
+                <span className="px-2 py-1 bg-green-600 text-xs font-semibold rounded-full">Popular</span>
+              </div>
+              <CardDescription className="text-gray-300 mt-2">
+                Turn your imagination into stunning visual art with advanced AI technology.
+              </CardDescription>
+            </CardHeader>
+            <CardContent className="pt-0">
+              <div className="relative overflow-hidden rounded-lg aspect-video mb-4">
+                <div className="grid grid-cols-2 gap-2 h-full">
+                  <video
+                    src="https://cdn2.imagine.art/imagine-frontend/assets/video/landing-page/tools/text-to-img.webm"
+                    className="rounded-lg object-cover hover:scale-105 transition-transform duration-300 h-full w-full"
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    preload="metadata"
+                  />
+                  <video
+                    src="https://cdn2.imagine.art/imagine-frontend/assets/video/landing-page/tools/text-to-video.webm"
+                    className="rounded-lg object-cover hover:scale-105 transition-transform duration-300 h-full w-full"
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    preload="metadata"
+                  />
+                </div>
+              </div>
+              
+              <div className="flex flex-wrap gap-2">
+                <span className="text-xs px-2 py-1 bg-white/10 rounded-full">Art</span>
+                <span className="text-xs px-2 py-1 bg-white/10 rounded-full">Creative</span>
+                <span className="text-xs px-2 py-1 bg-white/10 rounded-full">Text-to-Image</span>
+              </div>
+            </CardContent>
+            <CardFooter className="pt-0">
+              <Button 
+                className="w-full bg-gradient-to-r from-green-600 to-green-500 hover:from-green-600 hover:to-teal-600 text-white font-medium py-2 rounded-md"
+                onClick={() => trackConversion('imagineai-cta', 'card-footer', 'conversion')}
+              >
+                <Link 
+                  href="https://www.imagine.art/?ref=mwe1nji" 
+                  className="w-full text-center" 
+                  prefetch={false}
+                >
+                  Create with Imagine AI →
+                </Link>
+              </Button>
+            </CardFooter>
+          </Card>
+
+
+
+
+
+
+
+
+        {sortedTools.map((tool) => (
+          <ToolCard key={tool.id} tool={tool} trackConversion={trackConversion} />
+        ))}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          {/* RenderNet Card */}
+          <Card className="bg-white/5 backdrop-blur-sm border border-white/10 text-white overflow-hidden hover:shadow-xl hover:shadow-purple-500/10 transition-all duration-300">
+            <CardHeader className="pb-3">
+              <div className="flex items-center justify-between">
+                <CardTitle className="text-xl font-bold text-red-500">RenderNet</CardTitle>
+                <span className="px-2 py-1 bg-blue-600 text-xs font-semibold rounded-full">Characters</span>
+              </div>
+              <CardDescription className="text-gray-300 mt-2">
+                Create consistent AI characters with precise control over poses, expressions, and more.
+              </CardDescription>
+            </CardHeader>
+            <CardContent className="pt-0">
+              <div className="relative overflow-hidden rounded-lg aspect-video mb-4">
+                <div className="grid grid-cols-2 gap-2 h-full">
+                  <Image
+                    src="/rendernet_1.jpg"
+                    width={300}
+                    height={300}
+                    alt="RenderNet character example"
+                    className="rounded-lg object-cover hover:scale-105 transition-transform duration-300 h-full"
+                    loading="lazy" 
+                  />
+                  <Image
+                    src="/rendernet_2.jpg"
+                    width={300}
+                    height={300}
+                    alt="RenderNet character example"
+                    className="rounded-lg object-cover hover:scale-105 transition-transform duration-300 h-full"
+                    loading="lazy" 
+                  />
+                </div>
+              </div>
+              
+              <div className="flex flex-wrap gap-2">
+                <span className="text-xs px-2 py-1 bg-white/10 rounded-full">Characters</span>
+                <span className="text-xs px-2 py-1 bg-white/10 rounded-full">Consistency</span>
+                <span className="text-xs px-2 py-1 bg-white/10 rounded-full">Pose Control</span>
+              </div>
+            </CardContent>
+            <CardFooter className="pt-0">
+              <Button 
+                className="w-full bg-gradient-to-r from-blue-100 to-indigo-500 hover:from-blue-600 hover:to-indigo-600 text-white font-medium py-2 rounded-md"
+                onClick={() => trackConversion('rendernet-cta', 'card-footer', 'conversion')}
+              >
+                <Link 
+                  href="https://rendernet.ai/" 
+                  className="w-full text-center" 
+                  prefetch={false}
+                >
+                  Try RenderNet →
+                </Link>
+              </Button>
+            </CardFooter>
+          </Card>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
 
 
 
@@ -178,1863 +426,166 @@ export default function Component() {
 
 
 
-
-
-
-
-      <h1 className="font-mono   text-sm md:text-4xl text-center w-5/6 h-3/6  font-semibold text-white  my-1  md:mb-6     px-4 md:px-6">
-
-      Unleash Creative Power With Leading AI Tools
-      
-      </h1>
-
-
-
-
-
-
-
-
-
-
-      <main className="container  md:max-w-screen-7xl	 max-w-fit px-2 md:px-6 pb-12 flex-1">
-      <div className="flex flex-col md:flex-row gap-8">
-
-
-
-{/* Sidebar for Tweet Cards */}
-<aside className="md:w-1/4">
-            <h2 className="text-xl font-semibold mb-4 text-white">Gallery Tweets</h2>
-            <div className="space-y-4">
- 
-
- 
-            <div className="">
+        {/* Testimonials Section - New Addition */}
+        <section className="mt-16 pt-16 border-t border-white/10">
+          <h2 className="text-2xl md:text-3xl font-bold text-white mb-10 text-center">What World is Creating</h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4">
               <Tweet id="1894415836980678792" />
             </div>
-
-
-
-            <div className="">
+            <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4">
               <Tweet id="1894095021093040268" />
+            </div>
+            <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4">
+              <Tweet id="1892585851218993651" />
             </div>
 
 
             <div className="">
-    <Tweet id="1892585851218993651" />
-  </div>
-
-  <div className="">
-    <Tweet id="1874122969439756329" />
-  </div>
-
-
-  <div className="">
-    <Tweet id="1892277720723423315" />
-  </div>
-
-
-
-  <div className="">
-    <Tweet id="1874746828899655894" />
-  </div>
-
-
-
-      <div className="">
     <Tweet id="1874875362020122741" />
   </div>
 
 
-
-
-            </div>
-          </aside>
-
-
-
-    
-
-        <div className="grid grid-cols-1  md:grid-cols-3 gap-8 md:gap-7  ">
-
-
-
-        <Link onClick={() => handleLinkClick("photoai-main-link-aff")}   href="https://app.photoai.me/?via=aiimageandvideogenerators" className="  block      " prefetch={false}>
-
-        <Card className="block">
-            <CardHeader>
-              <div className="flex items-center gap-4 " >
-                
-                <div  >
-                  <CardTitle  >Photo AI</CardTitle>
-                  <CardDescription>
-                  Generate photorealistic images of people with AI.  Save time and money and do an AI photo shoot from your laptop or phone instead of hiring an expensive photographer.  
-                  </CardDescription>
-                </div>
-              </div>
-            </CardHeader>
-            <CardContent>
-              <div className="grid grid-cols-2 gap-4 justify-items-center">
-              <Image
-                  src="/photoaicom_1.jpg"
-                  width={140}
-                  height={140}
-                  alt="photoaicom_1"
-                  className="  object-cover  shadow-lg"
-                  loading="lazy" 
-                />
-                <Image
-                  src="/photoaicom_2.jpg"
-                  width={140}
-                  height={140}
-                  alt="photoaicom_2"
-                  className="  object-cover  shadow-lg"
-                  loading="lazy" 
-                />
-
-              </div>
-            </CardContent>
-
-
-            <CardFooter>
-             
-            <Link href="https://app.photoai.me/?via=aiimageandvideogenerators" className="text-xs  md:text-sm font-medium hover:text-primary hover:bg-red-200 border-2 p-1" prefetch={false}>
-              Go to PhotoAI
-            </Link>
-                 
-            </CardFooter>
-          </Card>
-          </Link>
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-          <Link  onClick={() => handleLinkClick("imagineai-main-link-aff")}  href="https://www.imagine.art/?ref=mwe1nji" className="block  " prefetch={false}>
-          <Card className="  ">
-            <CardHeader>
-              <div className="flex items-center gap-4 " >     
-                <div>
-                  <CardTitle>Imagine AI Art Generator</CardTitle>
-                  <CardDescription>
-                  Create AI Art and turn your imaginations into reality with Imagine's AI Art Generator and produce stunning visuals to cover up your artistic thoughts.
-
-                  </CardDescription>
-                </div>
-              </div>
-            </CardHeader>
-            <CardContent>
-  <div className="grid grid-cols-2 gap-4 justify-items-center">
-    <video
-      src="https://cdn2.imagine.art/imagine-frontend/assets/video/landing-page/tools/text-to-img.webm"
-      width={140}
-      height={140}
-      className="aspect-square object-cover  shadow-lg"
-      autoPlay
-      muted
-      loop
-      playsInline
-      preload="metadata"
-
-    >
-      Imagine AI Art Generator
-    </video>
-    <video
-      src="https://cdn2.imagine.art/imagine-frontend/assets/video/landing-page/tools/text-to-video.webm"
-      width={140}
-      height={140}
-      className="aspect-square object-cover  shadow-lg"
-      autoPlay
-      muted
-      loop
-      playsInline
-           preload="metadata"
-    >
-      Imagine AI Art Generator
-    </video>
+      <div className="">
+    <Tweet id="1874627041934602410" />
   </div>
-</CardContent>
-            <CardFooter> 
-            </CardFooter>
-          </Card>
-          </Link>
-
-
-
-
-
-
-
 
 
  
-
-
-
-
-
-
-
-
-
-
-          <Link onClick={() => handleLinkClick("fliki-main-link-aff")} href="       https://fliki.ai/?via=aiimageandvideogenerators" className="block  " prefetch={false}>
-          <Card className="">
-            <CardHeader>
-              <div className="flex items-center gap-4 " >
- 
-                <div>
-                  <CardTitle>         Fliki 
-                  </CardTitle>
-                  <CardDescription>
-                  Fliki helps you create audio and video content at scale with the power of generative AI.
-
-
-             
-
-                  </CardDescription>
-                </div>
-              </div>
-            </CardHeader>
-            <CardContent>
-              <div className="grid grid-cols-2 gap-4 justify-items-center">
-
-
-              <Image
-
-                  src="/fliki_1.jpg"
-                  width={140}
-                  height={140}
-                  alt="fliki_1"
-                  className="aspect-square object-cover  shadow-lg"
-                  loading="lazy" 
-                />
-                              <Image
-
-                  src="/fliki_2.jpg"
-                  width={140}
-                  height={140}
-                  alt="fliki_2"
-                  className="aspect-square object-cover  shadow-lg"
-                  loading="lazy" 
-                />
-              </div>
-            </CardContent>
-            <CardFooter> 
-            </CardFooter>
-          </Card>
-          </Link>
-
-
-
-
-
-
-          <Link onClick={() => handleLinkClick("basedlabs-main-link-aff")} href="https://www.basedlabs.ai/?via=aiimageandvideogenerators" className="block  " prefetch={false}>
-          <Card className="">
-            <CardHeader>
-              <div className="flex items-center gap-4 " >
- 
-                <div>
-                  <CardTitle>         BasedLabs AI
-                  </CardTitle>
-                  <CardDescription>
-                  From AI anime art, AI image generation, and AI image extending. BasedLabs offers a lot of based AI tools to help you do more.
-
-
-             
-
-                  </CardDescription>
-                </div>
-              </div>
-            </CardHeader>
-            <CardContent>
-              <div className="grid grid-cols-2 gap-4 justify-items-center">
-              <video
-      src="https://cdn.basedlabs.ai/a3960a51-6463-4271-b8fa-4c830a5df9a1"
-      width={140}
-      height={140}
-      className="aspect-square object-cover  shadow-lg"
-      autoPlay
-      muted
-      loop
-      playsInline
-      preload="metadata">
-      BasedLabs AI
-    </video>
-    <video
-      src="https://cdn.basedlabs.ai/8cf57d10-2598-11ef-91c0-6b7a39e8938f.mp4"
-      width={140}
-      height={140}
-      className="aspect-square object-cover  shadow-lg"
-      autoPlay
-      muted
-      loop
-      playsInline
-           preload="metadata"
-    >
-      BasedLabs AI
-    </video>
-              </div>
-            </CardContent>
-            <CardFooter> 
-            </CardFooter>
-          </Card>
-          </Link>
-
-
-
-
-
-
-
-
-
-
-          <Link onClick={() => handleLinkClick("headshotpro-main-link-aff")} href="https://www.headshotpro.com/?via=aiimageandvideogenerators" className="block  " prefetch={false}>
-          <Card className="">
-            <CardHeader>
-              <div className="flex items-center gap-4 " >
- 
-                <div>
-                  <CardTitle>         HeadshotPro 
- 
-                  </CardTitle>
-                  <CardDescription>
-                  Get professional business headshots in minutes with our AI-photographer. Upload photos, pick your styles & receive 120+ headshots.
-
-
-             
-
-                  </CardDescription>
-                </div>
-              </div>
-            </CardHeader>
-            <CardContent>
-              <div className="grid grid-cols-2 gap-4 justify-items-center">
-
-
-              <Image
-
-                  src="/HeadshotPro_1.jpg"
-                  width={140}
-                  height={140}
-                  alt="HeadshotPro_1"
-                  className="aspect-square object-cover  shadow-lg"
-                  loading="lazy" 
-                />
-                             <Image
-
-                      src="/HeadshotPro_2.jpg"
-                      width={140}
-                  height={140}
-                  alt="HeadshotPro_2"
-                  className="aspect-square object-cover  shadow-lg"
-                  loading="lazy" 
-                />
-              </div>
-            </CardContent>
-            <CardFooter> 
-            </CardFooter>
-          </Card>
-          </Link>
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          <Link onClick={() => handleLinkClick("crayo-main-link")} href="https://crayo.ai/?ref=aiimageandvideogenerators" className="block" prefetch={false}>
-          <Card className=" ">
-            <CardHeader>
-              <div className="flex items-center gap-4 " >     
-                <div>
-                  <CardTitle>Crayo Ai </CardTitle>
-                  <CardDescription>
-                  The fastest way to Generate Short Videos. Create unlimited short videos at once. Auto generate captions, effects, background and music for you.
-
-                  </CardDescription>
-                </div>
-              </div>
-            </CardHeader>
-            <CardContent>
-            <div className="grid grid-cols-2 gap-4 justify-items-center">
- 
-                <Image
-                  src="/crayo_1.JPG"
-                  width={140}
-                  height={140}
-                  alt="crayo_1"
-                  className="aspect-square object-cover  shadow-lg"
-                  loading="lazy" 
-
-                />
-                <Image
-                  src="/crayo_2.JPG"
-                  width={140}
-                  height={140}
-                  alt="crayo_2"
-                  className="aspect-square object-cover  shadow-lg"
-                  loading="lazy" 
-
-                />
+  <div className="">
+    <Tweet id="1849489556996858023" />
+  </div>
+  <div className="">
+    <Tweet id="1851843021207187888" />
+  </div>
+
+
+
+
+
+          </div>
+        </section>
+
+        {/* Newsletter Section - New Addition */}
+        <section className="mt-16 py-12 px-6 bg-gradient-to-r from-purple-900/30 to-pink-900/30 rounded-2xl backdrop-blur-sm border border-white/10">
+          <div className="text-center max-w-2xl mx-auto">
+            <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">Stay Updated with AI Image Trends</h2>
+            <p className="text-gray-300 mb-6">Get weekly tips, prompts, and news about the latest AI image generation tools.</p>
+            
+            <div className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+              <input 
+                type="email" 
+                placeholder="Your email address" 
+                className="px-4 py-3 bg-white/10 border border-white/20 rounded-md text-white placeholder-gray-400 flex-grow focus:outline-none focus:ring-2 focus:ring-purple-500"
+              />
+              <Button 
+                className="bg-gradient-to-r from-purple-600 to-pink-600 text-white font-medium py-3 px-6 rounded-md hover:from-purple-700 hover:to-pink-700"
+                onClick={() => trackConversion('newsletter-signup', 'newsletter-section', 'signup')}
+              >
+                Subscribe
+              </Button>
             </div>
-          </CardContent>
-            <CardFooter> 
-            </CardFooter>
-          </Card>
-          </Link>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          <Link onClick={() => handleLinkClick("leonardo-main-link-aff")} href="https://app.leonardo.ai/?via=aiimageandvideogenerators" className="block  " prefetch={false}>
-          <Card className="">
-            <CardHeader>
-              <div className="flex items-center gap-4 " > 
-                <div>
-                  <CardTitle>         
-                    Leonardo.Ai 
-                  </CardTitle>
-                  <CardDescription>
-                  With Leonardo.Ai, you can unlock your creative potential, crafting unique AI-driven art for galleries,
-portfolios, digital displays, social media showcases, or personal projects.           
-                  </CardDescription>
-                </div>
-              </div>
-            </CardHeader>
-            <CardContent>
-              <div className="grid grid-cols-2 gap-4 justify-items-center">
-              <Image
-                  src="/leonardoai_1.jpg"
-                  width={140}
-                  height={140}
-                  alt="LeonardoAI"
-                  className="aspect-square object-cover  shadow-lg"
-                  loading="lazy" 
-                />
-                              <Image
-                  src="/leonardoai_gif.webp"
-                  width={140}
-                  height={140}
-                  alt="LeonardoAI2"
-                  className="aspect-square object-cover  shadow-lg"
-                  loading="lazy" 
-                />
-              </div>
-            </CardContent>
-            <CardFooter> 
-            </CardFooter>
-          </Card>
-          </Link>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          <Link onClick={() => handleLinkClick("recraft-main-link")} href="https://www.recraft.ai/" className="block  " prefetch={false}>
-          <Card className=" ">
-            <CardHeader>
-              <div className="flex items-center gap-4 " >     
-                <div>
-                  <CardTitle>Recraft.ai </CardTitle>
-                  <CardDescription>
-                  AI for pro designers.
-
-                  Image Generator. AI Image 
-                  Vectorizer. AI Vector Generator. Mockup Generator. Image Upscaler. Background Remover. AI Eraser.
-                  </CardDescription>
-                </div>
-              </div>
-            </CardHeader>
-            <CardContent>
-            <div className="grid grid-cols-2 gap-4 justify-items-center">
- 
-                <Image
-                  src="/recraft_1.jpg"
-                  width={140}
-                  height={140}
-                  alt="Writesonic_1"
-                  className="aspect-square object-cover  shadow-lg"
-                  loading="lazy" 
-
-                />
-                <Image
-                  src="/recraft_2.jpg"
-                  width={140}
-                  height={140}
-                  alt="Writesonic_2"
-                  className="aspect-square object-cover  shadow-lg"
-                  loading="lazy" 
-
-                />
-            </div>
-          </CardContent>
-            <CardFooter> 
-            </CardFooter>
-          </Card>
-          </Link>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <Link onClick={() => handleLinkClick("writesonic-main-link")} href="https://writesonic.com/photosonic-ai-art-generator" className="block  " prefetch={false}>
-          <Card className=" ">
-            <CardHeader>
-              <div className="flex items-center gap-4 " >     
-                <div>
-                  <CardTitle>Writesonic </CardTitle>
-                  <CardDescription>
-                  Create something that has never been seen before. Let Writesonic’s AI art generator be your paintbrush. It's time to say goodbye to stock image hunting and awaiting new creatives for weeks.
-
-                  </CardDescription>
-                </div>
-              </div>
-            </CardHeader>
-            <CardContent>
-            <div className="grid grid-cols-2 gap-4 justify-items-center">
- 
-                <Image
-                  src="/writesonic_1.webp"
-                  width={140}
-                  height={140}
-                  alt="Writesonic_1"
-                  className="aspect-square object-cover  shadow-lg"
-                  loading="lazy" 
-
-                />
-                <Image
-                  src="/writesonic_2.webp"
-                  width={140}
-                  height={140}
-                  alt="Writesonic_2"
-                  className="aspect-square object-cover  shadow-lg"
-                  loading="lazy" 
-
-                />
-            </div>
-          </CardContent>
-            <CardFooter> 
-            </CardFooter>
-          </Card>
-          </Link>
-
-
-
-
-
-
-
-
-
-
-
-
-
-          <Link onClick={() => handleLinkClick("lumalabs-main-link")} href="https://lumalabs.ai/dream-machine" className="block   " prefetch={false}>
-          <Card className="">
-            <CardHeader>
-              <div className="flex items-center gap-4 " >
-                       <div>
-                  <CardTitle>Dream Machine</CardTitle>
-                  <CardDescription>
-                  Dream Machine is an AI model that makes high quality, realistic videos fast from text and images.
-                  It is capable of generating physically accurate, consistent and eventful shots. Available to everyone now!
-                  </CardDescription>
-                </div>
-              </div>
-            </CardHeader>
-            <CardContent>
-              <div className="grid grid-cols-2 gap-4 justify-items-center">        
-                 
-                           <video
-                  src="/luma_1.webm"
-                  width={140}
-                  height={140}
-                  alt="Dream_Machine_1"
-                  className="aspect-square object-cover  shadow-lg"
-                  autoPlay
-                  muted
-                  loop
-                  playsInline
-                > 
-Dream Machine
-             </video> 
-
-<video
-      src="/luma_2.webm"
-      width={140}
-      height={140}
-      className="aspect-square object-cover  shadow-lg"
-      autoPlay
-      muted
-      loop
-      playsInline
-           preload="metadata"
-    >Dream Machine
-    </video> 
-              </div>
-            </CardContent>
-            <CardFooter>
-            </CardFooter>
-          </Card>
-          </Link>
-
-
-
-
-
-
-
-
-
-
-
-
-
-          <Link  onClick={() => handleLinkClick("photoaime-main-link-aff")}  href="https://app.photoai.me/?via=aiimageandvideogenerators" className="  block      " prefetch={false}>
-
-<Card className="block">
-    <CardHeader>
-      <div className="flex items-center gap-4 " >
+          </div>
+        </section>
         
-        <div>
-          <CardTitle  >PhotoAI.me </CardTitle>
-          <CardDescription>
-          Boost your profile picture on Tinder, LinkedIn, Twitter, Instagram or elsewhere with photoai.me
-
-Upload photos of yourself and get new stunning AI photos!  
-          </CardDescription>
-        </div>
-      </div>
-    </CardHeader>
-    <CardContent>
-      <div className="grid grid-cols-2 gap-4 justify-items-center">
-        <Image
-          src="/photoai_1.webp"
-          width={140}
-          height={140}
-          alt="photoai_1"
-          className="  object-cover  shadow-lg"
-          loading="lazy" 
-
-        />
-        <Image
-          src="/photoai_2.webp"
-          width={140}
-          height={140}
-          alt="photoai_2"
-          className="  object-cover  shadow-lg"
-          loading="lazy" 
-
-        />
-      </div>
-    </CardContent>
-    <CardFooter>
-     
-
-         
-    </CardFooter>
-  </Card>
-  </Link>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <Link  onClick={() => handleLinkClick("dreamstudio-main-link")} href="https://dreamstudio.ai/" className="block   " prefetch={false}>
-          <Card className="">
-            <CardHeader>
-              <div className="flex items-center gap-4 " >     
-                <div>
-                  <CardTitle>DreamStudio </CardTitle>
-                  <CardDescription>
-                  Start generating the
-                  images of your dreams.
-
-                  </CardDescription>
-                </div>
-              </div>
-            </CardHeader>
-            <CardContent>
-            <div className="grid grid-cols-2 gap-4 justify-items-center">
- 
-                <Image
-                  src="/dreamstudio_1.jfif"
-                  width={140}
-                  height={140}
-                  alt="dreamstudio_1"
-                  className="aspect-square object-cover  shadow-lg"
-                  loading="lazy" 
-                  
-                  
-                  
-
-                />
-
-                <Image
-                  src="/dreamstudio_2.jfif"
-                  width={140}
-                  height={140}
-                  alt="dreamstudio_2"
-                  className="aspect-square object-cover  shadow-lg"
-                  loading="lazy" 
-                />
-            </div>
-          </CardContent>
-            <CardFooter> 
-            </CardFooter>
-          </Card>
-          </Link>
-
-
-
-
-
-
-
-          <Link  onClick={() => handleLinkClick("midjourney-main-link")} href="https://www.midjourney.com/home" className="block  " prefetch={false}>
-
-          <Card className="">
-            <CardHeader>
-              <div className="flex items-center gap-4 " >                 
-                <div>
-                  <CardTitle>Midjourney</CardTitle>
-                  <CardDescription>
-                    An AI-powered image generation tool that creates unique and imaginative images from text prompts.
-                  </CardDescription>
-                </div>
-              </div>
-            </CardHeader>
-            <CardContent>
-              <div className="grid grid-cols-2 gap-4 justify-items-center">
-                <Image
-                  src="/midjourney_1.webp"
-                  width={140}
-                  height={140}
-                  alt="midjourney_1"
-                  className="aspect-square object-cover "
-      loading="lazy" 
-
-                />
-                <Image
-                  src="/midjourney_2.webp"
-                  width={140}
-                  height={140}
-                  alt="midjourney_2"
-                  className="aspect-square object-cover"
-      loading="lazy" 
-
-                />
-              </div>
-            </CardContent>
-            <CardFooter>  
-            </CardFooter>
-          </Card>
-          </Link>
-
-
-
-
-
-
-
-          <Link onClick={() => handleLinkClick("interiorai-main-link-aff")} href="https://interiorai.com/?via=aiimageandvideogenerators" className="block  " prefetch={false}>
-          <Card className="">
-            <CardHeader>
-              <div className="flex items-center gap-4 " >
- 
-                <div>
-                  <CardTitle>         Interior AI
-                  </CardTitle>
-                  <CardDescription>
-                  Redesign your interior in seconds using AI.
-                  Save money and use AI to redesign your interior from your laptop or phone instead of hiring an expensive interior designer.
-             
-
-                  </CardDescription>
-                </div>
-              </div>
-            </CardHeader>
-            <CardContent>
-              <div className="grid grid-cols-2 gap-4 justify-items-center">
-              <Image
-
-      src="/interiorai_1.jpg"
-      width={140}
-      height={140}
-      className="aspect-square object-cover  shadow-lg"
-      loading="lazy" 
-      alt="interiorai_1"
-
-      />
-      
-     
-    <Image
-                  src="/interiorai_2.jpg"
-                  width={140}
-                  height={140}
-                  alt="interiorai_2"
-                  className="aspect-square object-cover  shadow-lg"
-                  loading="lazy" 
-                />
-              </div>
-            </CardContent>
-            <CardFooter> 
-            </CardFooter>
-          </Card>
-          </Link>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          <Link onClick={() => handleLinkClick("runwayml-main-link")}  href="https://app.runwayml.com/login" className="block  " prefetch={false}>
-          <Card className="  ">
-            <CardHeader>
-              <div className="flex items-center gap-4 " >     
-                <div>
-                  <CardTitle>Runway AI Gen-3 Alpha</CardTitle>
-                  <CardDescription>
-                  Produce hyper-realistic AI videos from text, image or video prompts. A new frontier for high-fidelity, controllable video generation.</CardDescription>
-                </div>
-              </div>
-            </CardHeader>
-            <CardContent>
-  <div className="grid grid-cols-2 gap-4 justify-items-center">
-    <video
-      src="/gen3_2.webm"
-      width={140}
-      height={140}
-      className="aspect-square object-cover  shadow-lg"
-      autoPlay
-      muted
-      loop
-      playsInline
-      preload="metadata"
-
-    >
-      Runway AI Gen-3 Alpha
-    </video>
-    <video
-      src="/gen3_1.webm"
-      width={140}
-      height={140}
-      className="aspect-square object-cover  shadow-lg"
-      autoPlay
-      muted
-      loop
-      playsInline
-           preload="metadata"
-    >
-      Runway AI Gen-3 Alpha
-    </video>
-  </div>
-</CardContent>
-            <CardFooter> 
-            </CardFooter>
-          </Card>
-          </Link>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          <Link onClick={() => handleLinkClick("deepbrain-main-link")} href="https://www.deepbrain.io/features/ai-video-generator" className="block  " prefetch={false}>
-          <Card className="  ">
-            <CardHeader>
-              <div className="flex items-center gap-4 " >     
-                <div>
-                              <CardTitle>DeepBrain AI</CardTitle>
-                              <CardDescription>
-                              Save time and money by turning any text into high quality videos in minutes. No cameras, mics, or actors needed.
-
-
-</CardDescription>
-                            </div>
-                          </div>
-                        </CardHeader>
-                        <CardContent>
-              <div className="grid grid-cols-2 gap-4 justify-items-center">
-              <Image
-                  src="/DeepBrainAI_1.jpg"
-                  width={140}
-                  height={140}
-                  alt="DeepBrainAI_1"
-                  className="aspect-square object-cover  shadow-lg shadow-lg"
-      loading="lazy" 
-
-                />
-                <Image
-                  src="/DeepBrainAI_2.jpg"
-                  width={140}
-                  height={140}
-                  alt="DeepBrainAI_2"
-                  className="aspect-square object-cover  shadow-lg shadow-lg"
-                  loading="lazy" 
-
-                />
-              </div>
-</CardContent>
-            <CardFooter> 
-            </CardFooter>
-          </Card>
-          </Link>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          <Link  onClick={() => handleLinkClick("dalle3-main-link")} href="https://openai.com/index/dall-e-3/" className="block  " prefetch={false}>
-
-          <Card className="">
-            <CardHeader>
-              <div className="flex items-center gap-4 " >
-     
-                <div>
-                  <CardTitle>DALL-E 3</CardTitle>
-                  <CardDescription>
-                    A powerful AI model that can create unique images from text descriptions.
-                  </CardDescription>
-                </div>
-              </div>
-            </CardHeader>
-            <CardContent>
-              <div className="grid grid-cols-2 gap-4 justify-items-center">
-                <img
-                  src="https://images.ctfassets.net/kftzwdyauwt9/As8KNbCDwnOSNYCPHRPOR/5cd4506d01ddc8b772cdb206327b0985/hero-still-life-desktop.jpg?w=640&q=80&fm=webp"
-                  width={140}
-                  height={140}
-                  alt="DALL-E 3"
-                  className="aspect-square object-cover  shadow-lg"
-      loading="lazy" 
-
-                />
-                <img
-                  src="https://images.ctfassets.net/kftzwdyauwt9/5JZsznv2kZBJhcntpSLEL9/fbe72de7edaceb8a44176170312ccf2a/picnic-cherry-tree.jpeg?w=1080&q=90&fm=webp"
-                  width={140}
-                  height={140}
-                  alt="DALL-E 3"
-                  className="aspect-square object-cover  shadow-lg"
-                  loading="lazy" 
-
-                />
-              </div>
-            </CardContent>
-            <CardFooter>
- 
- 
-            </CardFooter>
-          </Card>
-
-          </Link>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          <Link onClick={() => handleLinkClick("videofast-main-link")} href="https://www.videofast.app/" className="block  " prefetch={false}>
-          <Card className="">
-            <CardHeader>
-              <div className="flex items-center gap-4 " >
- 
-                <div>
-                  <CardTitle>VideoFast </CardTitle>
-                  <CardDescription>
-                  Video Fast is an online video generation tool to create high-quality videos with AI-generated avatars and voices in minutes
-                  </CardDescription>
-                </div>
-              </div>
-            </CardHeader>
-            <CardContent>
-              <div className="grid grid-cols-2 gap-4 justify-items-center">
-                <img
-                  src="https://framerusercontent.com/images/rbCdOqlduGxFDJRA1VMw6QJx0s.gif"
-                  width={140}
-                  height={140}
-                  alt="VideoFast"
-                  className="aspect-square object-cover  shadow-lg"
-      loading="lazy" 
-
-                />
-                <img
-                  src="https://framerusercontent.com/images/YR0QoptQ9rYXwm2co5MkWmSsgUg.gif"
-                  width={140}
-                  height={140}
-                  alt="VideoFast"
-                  className="aspect-square object-cover  shadow-lg"
-      loading="lazy" 
-
-                />
-              </div>
-            </CardContent>
-            <CardFooter> 
-            </CardFooter>
-          </Card>
-          </Link>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          <Link  onClick={() => handleLinkClick("opus-main-link")} href="https://www.opus.pro/" className="block  " prefetch={false}>
-          <Card className="">
-            <CardHeader>
-              <div className="flex items-center gap-4 " >
- 
-                <div>
-                  <CardTitle>OpusClip  </CardTitle>
-                  <CardDescription>
-                  OpusClip is a generative AI video tool that repurposes long videos into shorts in one click. Powered by     OPENAI                
-
-                  </CardDescription>
-                </div>
-              </div>
-            </CardHeader>
-            <CardContent>
-              <div className="grid grid-cols-2 gap-4 justify-items-center">
-              <video
-      src="https://assets-global.website-files.com/6388604483b03a9ecb34d695/65e972429a572af78dc53306_Le%20Figaro-transcode.mp4"
-      width={140}
-      height={140}
-      className="aspect-square object-cover  shadow-lg"
-      autoPlay
-      muted
-      loop
-      playsInline
-      preload="metadata"
-
-    >
-      OpusClip
-    </video>
-    <video
-      src="https://assets-global.website-files.com/6388604483b03a9ecb34d695/65bb7ef012f2fd3fed4c1231_OpusClip%20Video%203-transcode.mp4"
-      width={140}
-      height={140}
-      className="aspect-square object-cover  shadow-lg"
-      autoPlay
-      muted
-      loop
-      playsInline
-           preload="metadata"
-    >
-      OpusClip
-    </video>
-              </div>
-            </CardContent>
-            <CardFooter> 
-            </CardFooter>
-          </Card>
-          </Link>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          <Link onClick={() => handleLinkClick("wondershare-main-link")} href="https://virbo.wondershare.com/" className="block  " prefetch={false}>
-          <Card className="">
-            <CardHeader>
-              <div className="flex items-center gap-4 " >
- 
-                <div>
-                  <CardTitle>          Wondershare Virbo
-                  </CardTitle>
-                  <CardDescription>
-                  Generate Engaging AI Videos in Minutes! Convert text into expert spokesperson videos in 460+ voices and languages with ease.
-             
-
-                  </CardDescription>
-                </div>
-              </div>
-            </CardHeader>
-            <CardContent>
-              <div className="grid grid-cols-2 gap-4 justify-items-center">
-              <video
-      src="https://virbo.wondershare.com/assets/video/homepage2024/step1-video.mp4"
-      width={140}
-      height={140}
-      className="aspect-square object-cover  shadow-lg"
-      autoPlay
-      muted
-      loop
-      playsInline
-      preload="metadata"
-
-    >
-      Wondershare Virbo
-    </video>
-    <video
-      src="https://virbo.wondershare.com/assets/video/homepage2024/education-training.mp4"
-      width={140}
-      height={140}
-      className="aspect-square object-cover  shadow-lg"
-      autoPlay
-      muted
-      loop
-      playsInline
-           preload="metadata"
-    >
-      Wondershare Virbo
-    </video>
-              </div>
-            </CardContent>
-            <CardFooter> 
-            </CardFooter>
-          </Card>
-          </Link>
-
-
-
-
-
-
-
-
-
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          <Link onClick={() => handleLinkClick("collov-main-link")} href="https://collov.ai/" className="block  " prefetch={false}>
-          <Card className="">
-            <CardHeader>
-              <div className="flex items-center gap-4 " >
- 
-                <div>
-                  <CardTitle>         Collov AI
-                  </CardTitle>
-                  <CardDescription>
-                  collov.ai uses artificial intelligence to transforms your interior aspirations into stunning, visionary design renderings, merging convenience with aesthetics. You’ll love the Collov way.
-             
-
-                  </CardDescription>
-                </div>
-              </div>
-            </CardHeader>
-            <CardContent>
-              <div className="grid grid-cols-2 gap-4 justify-items-center">
-              <Image
-      src="/collov_1.jpg"
-      width={140}
-      height={140}
-      className="aspect-square object-cover  shadow-lg"
-      loading="lazy" 
-      alt="collov_1"
-      />
-      
-     
-    <Image
-                  src="/collov_2.jpg"
-                  width={140}
-                  height={140}
-                  alt="collov_2"
-                  className="aspect-square object-cover  shadow-lg"
-                  loading="lazy" 
-
-                />
-              </div>
-            </CardContent>
-            <CardFooter> 
-            </CardFooter>
-          </Card>
-          </Link>
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          <Link onClick={() => handleLinkClick("magnific-main-link")} href="https://magnific.ai/" className="block  " prefetch={false}>
-          <Card className="">
-            <CardHeader>
-              <div className="flex items-center gap-4 " >
- 
-                <div>
-                  <CardTitle>         Magnific 
-                  </CardTitle>
-                  <CardDescription>
-                  The most advanced AI tech to achieve insanely high-res upscaling. Not only upscale, enhance & transform! Magnific can reimagine as many details as you wish guided by your own prompt and parameters!           
-                  </CardDescription>
-                </div>
-              </div>
-            </CardHeader>
-            <CardContent>
-              <div className="grid grid-cols-2 gap-4 justify-items-center">
-              <Image
-                  src="/magnificai_1.jpg"
-                  width={140}
-                  height={140}
-                  alt="Magnific1"
-                  className="aspect-square object-cover  shadow-lg"
-                  loading="lazy" 
-                />
-
-                  <Image
-                  src="/magnificai_2.jpg"
-                  width={140}
-                  height={140}
-                  alt="Magnific2"
-                  className="aspect-square object-cover  shadow-lg"
-                  loading="lazy" 
-                />
-              </div>
-            </CardContent>
-            <CardFooter> 
-            </CardFooter>
-          </Card>
-          </Link>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          <Link onClick={() => handleLinkClick("cgdream-main-link")} href="https://cgdream.ai/   " className="block  " prefetch={false}>
-          <Card className="">
-            <CardHeader>
-              <div className="flex items-center gap-4 " >
- 
-                <div>
-                  <CardTitle>         CGDream AI Image Generator 
-                  </CardTitle>
-                  <CardDescription>
-                  Take full control of your visuals with our AI image generator, creating stunning images with various customization options, filters, and 3D controls.          
-                  </CardDescription>
-                </div>
-              </div>
-            </CardHeader>
-            <CardContent>
-              <div className="grid grid-cols-2 gap-4 justify-items-center">
-              <Image
-                  src="/cgdream_1.jpg"
-                  width={140}
-                  height={140}
-                  alt="cgdream_1"
-                  className="aspect-square object-cover  shadow-lg"
-                  loading="lazy" 
-                />
-
-                  <Image
-                  src="/cgdream_2.jpg"
-                  width={140}
-                  height={140}
-                  alt="cgdream_2"
-                  className="aspect-square object-cover  shadow-lg"
-                  loading="lazy" 
-                />
-              </div>
-            </CardContent>
-            <CardFooter> 
-            </CardFooter>
-          </Card>
-          </Link>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          <Link s href="https://rendernet.ai/   " className="block  " prefetch={false}>
-          <Card className="">
-            <CardHeader>
-              <div className="flex items-center gap-4 " >
- 
-                <div>
-                  <CardTitle>         RenderNet 
-                  </CardTitle>
-                  <CardDescription>
-                  Create AI characters with complete control and consistency. Create your own character! Generate exact poses. Get the same face. Change anything in any image.
-
-
-          
-                  </CardDescription>
-                </div>
-              </div>
-            </CardHeader>
-            <CardContent>
-              <div className="grid grid-cols-2 gap-4 justify-items-center">
-              <Image
-                  src="/rendernet_1.jpg"
-                  width={140}
-                  height={140}
-                  alt="RenderNet1"
-                  className="aspect-square object-cover  shadow-lg"
-                  loading="lazy" 
-                />
-
-                  <Image
-                  src="/rendernet_2.jpg"
-                  width={140}
-                  height={140}
-                  alt="RenderNet2"
-                  className="aspect-square object-cover  shadow-lg"
-                  loading="lazy" 
-                />
-              </div>
-            </CardContent>
-            <CardFooter> 
-            </CardFooter>
-          </Card>
-          </Link>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        </div>
-
-
-        </div>
-
-
+        {/* CTA Banner - New Addition */}
+        <section className="mt-16 text-center">
+          <div className="bg-gradient-to-r from-purple-600/20 via-pink-600/20 to-red-600/20 border border-white/10 rounded-xl p-8 md:p-12">
+            <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">Want to List Your AI Tool?</h2>
+            <p className="text-gray-300 mb-6 max-w-2xl mx-auto">Reach thousands of potential users looking for AI image and video generation solutions.</p>
+            
+            <Button 
+              className="bg-white text-purple-900 font-bold px-8 py-3 rounded-md text-lg hover:bg-gray-100 transition"
+              onClick={() => trackConversion('list-tool-banner', 'cta-banner', 'conversion')}
+            >
+              <Link href="https://imagify.gumroad.com/l/xuhxv" prefetch={false}>
+                List Your Tool Now
+              </Link>
+            </Button>
+          </div>
+        </section>
       </main>
 
 
 
 
 
-      <footer className=" border-t border-t-muted bg-slate-50 text-black  ">
-        <div className="container max-w-7xl py-6 px-4 md:px-6 flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <BotIcon className="w-6 h-6" />
-            <span className="text-sm font-medium px-4 ">AI Image and Video Generators</span>
-          </div>
-
-          <nav className="hidden md:flex items-center text-black gap-4 " >
 
 
 
-
-
-
-            <Link href="./privacy" className="text-sm font-medium hover:text-primary hover:bg-red-900   " prefetch={false}>
-              Privacy
-            </Link>
- 
-            <Link href="./terms" className="text-sm font-medium hover:text-primary hover:bg-red-900 " prefetch={false}>
-            Terms
-            </Link>
- 
-            <Link className="text-sm font-medium hover:text-primary hover:bg-red-900" href="https://www.limeparrottech.site/eulogygenerator">
-            Eulogy Generator
-            </Link>
-
-
-            <Link className="text-sm font-medium hover:text-primary hover:bg-red-900" href="https://www.toolify.ai/">
-            Discover more AI Tools
-            </Link>
+      {/* Footer - Redesigned */}
+      <footer className="bg-slate-900 border-t border-white/10 py-12 text-white">
+        <div className="container max-w-7xl px-4 md:px-6 mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+              <div className="flex items-center gap-2 mb-4">
+                <BotIcon className="w-6 h-6" />
+                <span className="text-lg font-bold">AI Image & Video Generators</span>
+              </div>
+              <p className="text-gray-400 text-sm mb-4">
+                Your trusted resource for finding the best AI tools to unleash your creative potential.
+              </p>
+              <div className="flex gap-4">
+                <Link href="https://x.com/bestaigeneratrs" className="text-gray-400 hover:text-white" aria-label="Twitter">
+                  <TwitterIcon className="w-5 h-5" />
+                </Link>
+                <Link href="https://www.youtube.com/@AIImageandVideoGenerators" className="text-gray-400 hover:text-white" aria-label="YouTube">
+                  <YouTubeIcon className="w-5 h-5" />
+                </Link>
+              </div>
+            </div>
             
-
-          </nav>
-
+            <div>
+              <h3 className="font-semibold mb-4 text-lg">Navigation</h3>
+              <ul className="space-y-2">
+                <li><Link href="/" className="text-gray-400 hover:text-white text-sm" prefetch={false}>Home</Link></li>
+                <li><Link href="./gallery" className="text-gray-400 hover:text-white text-sm" prefetch={false}>Gallery</Link></li>
+                <li><Link href="./full-tools-list" className="text-gray-400 hover:text-white text-sm" prefetch={false}>Tools Directory</Link></li>
+                <li><Link href="./blog" className="text-gray-400 hover:text-white text-sm" prefetch={false}>Blog</Link></li>
+                <li><Link href="./prompts" className="text-gray-400 hover:text-white text-sm" prefetch={false}>Prompts</Link></li>
+              </ul>
+            </div>
+            
+            <div>
+              <h3 className="font-semibold mb-4 text-lg">Resources</h3>
+              <ul className="space-y-2">
+                <li><Link href="./about" className="text-gray-400 hover:text-white text-sm" prefetch={false}>About Us</Link></li>
+                <li><Link href="./contact" className="text-gray-400 hover:text-white text-sm" prefetch={false}>Contact</Link></li>
+                <li><Link href="https://t.me/tate_chess_bot" className="text-gray-400 border py-2 px-1 border-green-400 hover:text-white text-sm" prefetch={false}>PLAY Tate Telegram Chess Game</Link></li>
+                <li><Link href="https://www.toolify.ai/" className="text-gray-400 hover:text-white text-sm" prefetch={false}>More AI Tools</Link></li>
+              </ul>
+            </div>
+            
+            <div>
+              <h3 className="font-semibold mb-4 text-lg">Legal</h3>
+              <ul className="space-y-2">
+                <li><Link href="./privacy" className="text-gray-400 hover:text-white text-sm" prefetch={false}>Privacy Policy</Link></li>
+                <li><Link href="./terms" className="text-gray-400 hover:text-white text-sm" prefetch={false}>Terms of Service</Link></li>
+              </ul>
+              
+              <div className="mt-6">
+                <Link 
+                  href="https://imagify.gumroad.com/l/xuhxv" 
+                  className="inline-block bg-gradient-to-r from-purple-600 to-pink-600 text-white font-medium px-4 py-2 rounded-md hover:from-purple-700 hover:to-pink-700 transition text-sm"
+                  prefetch={false}
+                  onClick={() => trackConversion('list-tool-footer', 'footer', 'conversion')}
+                >
+                  List Your Tool
+                </Link>
+              </div>
+            </div>
+          </div>
+          
+          <div className="mt-12 pt-6 border-t border-white/10 flex flex-col md:flex-row justify-between items-center">
+            <p className="text-gray-400 text-sm">© 2025 AI Image & Video Generators. All rights reserved.</p>
+            <p className="text-gray-400 text-sm mt-2 md:mt-0">Built with ❤️ for AI creators and enthusiasts</p>
+          </div>
         </div>
       </footer>
     </div>
-  )
+  );
 }
- 
 
 function BotIcon(props) {
   return (
@@ -2059,4 +610,63 @@ function BotIcon(props) {
     </svg>
   )
 }
- 
+
+function MenuIcon(props) {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <line x1="4" x2="20" y1="12" y2="12" />
+      <line x1="4" x2="20" y1="6" y2="6" />
+      <line x1="4" x2="20" y1="18" y2="18" />
+    </svg>
+  )
+}
+
+function TwitterIcon(props) {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" />
+    </svg>
+  )
+}
+
+function YouTubeIcon(props) {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17" />
+      <path d="m10 15 5-3-5-3z" />
+    </svg>
+  )
+}

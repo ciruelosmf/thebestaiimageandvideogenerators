@@ -252,9 +252,7 @@ export default function Component() {
   </div>
 
 
-  <div className="">
-    <Tweet id="1824383008343810091" />
-  </div>
+ 
   <div className="">
     <Tweet id="1849489556996858023" />
   </div>

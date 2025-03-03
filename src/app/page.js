@@ -190,7 +190,7 @@ export default function Component() {
             <CardHeader className="pb-3">
               <div className="flex items-center justify-between">
                 <CardTitle className="text-xl font-bold text-red-500">Photo AI</CardTitle>
-                <span className="px-2 py-1 bg-purple-600 text-xs font-semibold rounded-full">Featured</span>
+                <span className="px-2 py-1 bg-purple-600 text-xs font-semibold text-white rounded-full">Amazing experience</span>
               </div>
               <CardDescription className="text-gray-300 mt-2">
                 Generate photorealistic images of people with AI. Save time and money on expensive photo shoots.
@@ -248,7 +248,7 @@ export default function Component() {
             <CardHeader className="pb-3">
               <div className="flex items-center justify-between">
                 <CardTitle className="text-xl font-bold text-red-500">Imagine AI Art</CardTitle>
-                <span className="px-2 py-1 bg-green-600 text-xs font-semibold rounded-full">Popular</span>
+                <span className="px-2 py-1 bg-green-600 text-xs font-semibold rounded-full text-white">Very creative</span>
               </div>
               <CardDescription className="text-gray-300 mt-2">
                 Turn your imagination into stunning visual art with advanced AI technology.

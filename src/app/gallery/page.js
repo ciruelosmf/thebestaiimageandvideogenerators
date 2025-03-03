@@ -127,6 +127,9 @@ export default function Component() {
                 List Your Tool
               </Link>
             </Button>
+
+
+           <Link href="https://t.me/tate_chess_bot" className="text-gray-100 border py-2 px-1 border-green-400 hover:text-white text-sm" prefetch={false}>PLAY Tate Telegram Chess Game</Link>
           </nav>
         </div>
       </header>
@@ -614,7 +617,7 @@ export default function Component() {
       </footer>
 
 
-      
+
     </div>
   )
 }

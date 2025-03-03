@@ -109,12 +109,12 @@ export const tools = [
     media: [
       {
         type: "image",
-        src: "/recraft_11.jpg",
+        src: "/recraft_11.JPG",
         alt: "Recraft_1"
       },
       {
         type: "image",
-        src: "/recraft_22.jpg",
+        src: "/recraft_22.JPG",
         alt: "Recraft_2"
       }
     ],

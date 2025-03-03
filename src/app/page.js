@@ -125,15 +125,15 @@ export default function Component() {
       </header>
 
       {/* Hero Section - New Addition */}
-      <section className="py-16 md:py-24 px-4 text-center">
+      <section className="py-4 md:py-80 px-4 text-center">
         <div className="container max-w-4xl mx-auto">
           <h1 className="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
-            Create Stunning Visuals with <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-red-500">AI-Powered Tools</span>
+          Crush Your Creative Limits—Slay the Design Dragon  <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-red-500">Without Hiring a Single ‘Artist’</span>
           </h1>
           <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-            Save time and money by generating professional-quality images and videos in seconds.
+          Rip the filters off: Generate brand-aligned, soul-snatching visuals faster than you can type “make it pop.”
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
             <Button 
               className="bg-gradient-to-r from-purple-600 to-pink-600 text-white font-bold px-6 py-3 rounded-md text-lg hover:from-purple-700 hover:to-pink-700 transition shadow-lg"
               onClick={() => trackConversion('explore-tools-hero', 'hero-section')}
@@ -153,6 +153,55 @@ export default function Component() {
             </Button>
           </div>
         </div>
+
+
+ 
+
+
+ 
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+        <Link     href="https://amzn.to/3DePr8Z">
+
+        <div className="flex flex-row items-center justify-center">
+    <img 
+          src="/amzn.JPG"
+      alt="Product placeholder" 
+      className="w-24 h-12 object-cover" 
+    />
+
+
+    <button className="relative overflow-hidden ml-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 focus:outline-none">
+      <span className="relative z-10">Might interest you: Sony WH-1000XM5 The Best Wireless Noise Canceling Headphones. Buy on Amazon</span>
+      <span className="absolute inset-0 rounded border-4 border-transparent animate-borderTrail"></span>
+    </button>
+    </div>
+    </Link>
+
+
+
+
+
+ 
+ 
+ 
+ 
+
+
+
+
       </section>
 
       {/* Main Content */}
@@ -179,6 +228,8 @@ export default function Component() {
 
 
 
+
+
         {/* Featured Tools Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
@@ -190,7 +241,7 @@ export default function Component() {
             <CardHeader className="pb-3">
               <div className="flex items-center justify-between">
                 <CardTitle className="text-xl font-bold text-red-500">Photo AI</CardTitle>
-                <span className="px-2 py-1 bg-purple-600 text-xs font-semibold text-white rounded-full">Amazing experience</span>
+                <span className="px-2 py-1 bg-purple-600 text-xs font-semibold text-white rounded-full">Amazing experience  </span>
               </div>
               <CardDescription className="text-gray-300 mt-2">
                 Generate photorealistic images of people with AI. Save time and money on expensive photo shoots.

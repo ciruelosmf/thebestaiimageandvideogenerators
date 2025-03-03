@@ -18,6 +18,13 @@ module.exports = {
             "sm": "calc(var(--radius) - 4px)"
           },
       keyframes: {
+        borderTrail: {
+          '0%': { borderColor: '#ff5733' }, // Red
+          '25%': { borderColor: '#ffc300' }, // Yellow
+          '50%': { borderColor: '#33ff57' }, // Green
+          '75%': { borderColor: '#3380ff' }, // Blue
+          '100%': { borderColor: '#ff5733' }, // Back to Red
+        },
             "accordion-down": {
               "from": {
                 "height": "0"
@@ -38,7 +45,11 @@ module.exports = {
       clipPath: {
         'custom': 'polygon(10px 0, calc(100% - 10px) 0, 100% 10px, 100% calc(100% - 10px), calc(100% - 10px) 100%, 10px 100%, 0 calc(100% - 10px), 0 10px)',
       },
+      animation: {
+        borderTrail: 'borderTrail 2s linear infinite',
+        },
+
     },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-animate")],
 };

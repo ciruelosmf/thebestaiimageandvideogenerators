@@ -86,66 +86,49 @@ export default function Component() {
 
 
 
-<header className=" sticky top-0 z-40   block    ">
-        <div className="container max-w-7xl py-1 px-1 md:px-6 flex items-center justify-between">
-          <div className="flex flex-wrap items-center justify-center gap-2 ">
- 
-            <h1 className={`border-2  md:text-xl text-base font-semibold text-white  px-2 md:px-6 ${isScrolled ? 'bg-black' : 'bg-transparent'} transition-colors duration-300`}>AI Image and Video Generators - AI directory</h1>
-          <nav className={`flex flex-row flex-wrap items-center justify-center gap-2 text-white p-1    md:text-xl text-base font-semibold text-white  px-2 md:p-2 ${isScrolled ? 'bg-black' : 'bg-transparent'} transition-colors duration-300`} >
-            <Link href="/" className="text-xs  md:text-sm font-medium  hover:bg-red-900 border-2 p-1" prefetch={false}>
+    {/* Streamlined Header */}
+    <header className={`sticky top-0 z-40 transition-colors duration-300 ${isScrolled ? 'bg-slate-700 backdrop-blur-md' : 'bg-transparent'}`}>
+        <div className="container max-w-7xl py-3 px-4 md:px-6 flex items-center justify-between">
+          <Link href="/" className="flex items-center gap-2" prefetch={false}>
+            <BotIcon className="w-6 h-6 text-white" />
+            <h1 className="text-lg md:text-xl font-bold text-white">AI Image & Video Generators</h1>
+          </Link>
+          
+          {/* Mobile menu button */}
+          <div className="md:hidden">
+            <Button variant="ghost" size="icon" className="text-white">
+              <MenuIcon className="w-6 h-6" />
+            </Button>
+          </div>
+          
+          {/* Desktop navigation - simplified */}
+          <nav className="hidden md:flex items-center gap-6">
+            <Link href="/" className="text-sm font-medium text-white hover:text-purple-300 transition" prefetch={false}>
               Home
             </Link>
-            <Link href="./gallery" className="text-xs  md:text-sm font-medium  hover:bg-red-900 border-2 p-1" prefetch={false}>
-            Twitter Generative AI Gallery
+            <Link href="./gallery" className="text-sm font-medium text-white hover:text-purple-300 transition" prefetch={false}>
+              Gallery
             </Link>
-            <Link href="./full-tools-list" className="text-xs  md:text-sm font-medium  hover:bg-red-900 border-2 p-1" prefetch={false}>
-              Full List of Tools
+            <Link href="./full-tools-list" className="text-sm font-medium text-white hover:text-purple-300 transition" prefetch={false}>
+            Full List of Tools
             </Link>
-
-
-            <Link href="./blog" className="text-xs  md:text-sm font-medium  hover:bg-red-900 border-2 p-1" prefetch={false}>
-              Blog
-            </Link>
-            <Link href="./prompts" className="text-xs  md:text-sm font-medium hover:text-primary hover:bg-red-900 border-2 p-1" prefetch={false}>
-              Prompts
-            </Link>
-            <Link href="./about" className="text-xs  md:text-sm font-medium hover:text-primary hover:bg-red-900 border-2 p-1" prefetch={false}>
-              About
-            </Link>
-            <Link href="./contact" className="text-xs  md:text-sm font-medium hover:text-primary hover:bg-red-900 border-2 p-1" prefetch={false}>
-              Contact 
-            </Link>
-
-
-            <Link href="https://t.me/tate_chess_bot" className="text-xs border-lime-400 md:text-sm font-medium hover:text-primary hover:bg-red-900 border-2 p-1" prefetch={false}>
-              Play Tate Telegram Chess Game 
-            </Link>
-
-
-
-
-                      <Link href="https://imagify.gumroad.com/l/xuhxv" className="text-sm font-medium hover:text-primary hover:bg-red-900   border-2 p-1" prefetch={false}>
-              List your Tool 
-            </Link>
-
 
  
-             <Link className="text-xs  md:text-sm font-medium hover:text-primary hover:bg-red-900 border-2 p-1" href="https://x.com/bestaigeneratrs">
-              X
+            <Link href="./blog" className="text-sm font-medium text-white hover:text-purple-300 transition" prefetch={false}>
+              Blog
             </Link>
-
-            <Link className="text-xs  md:text-sm font-medium hover:text-primary hover:bg-red-900 border-2 p-1" href="https://www.youtube.com/@AIImageandVideoGenerators">
-              YouTube
-            </Link>
-
-            <Link className="text-xs  md:text-sm font-medium hover:text-primary hover:bg-red-900 border-2 p-1" href="https://www.toolify.ai/">
-            Discover more AI Tools
-            </Link>
-
-
+            
+            {/* Primary CTA Button */}
+            <Button 
+              className="bg-gradient-to-r from-purple-600 to-pink-600 text-white font-medium px-4 py-2 rounded-md hover:from-purple-700 hover:to-pink-700 transition"
+              onClick={() => trackConversion('list-your-tool-header', 'header-nav')}
+            >
+              <Link href="https://imagify.gumroad.com/l/xuhxv" prefetch={false}>
+                List Your Tool
+              </Link>
+            </Button>
           </nav>
-          </div> 
-        </div>    
+        </div>
       </header>
 
 
@@ -560,41 +543,86 @@ export default function Component() {
 
 
 
-      <footer className=" border-t border-t-muted bg-slate-50 ">
-        <div className="container max-w-7xl py-6 px-4 md:px-6 flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <BotIcon className="w-6 h-6" />
-            <span className="text-sm font-medium px-4 ">AI Image and Video Generators</span>
+{/* Footer - Redesigned */}
+<footer className="bg-slate-900 border-t border-white/10 py-12 text-white">
+        <div className="container max-w-7xl px-4 md:px-6 mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+              <div className="flex items-center gap-2 mb-4">
+                <BotIcon className="w-6 h-6" />
+                <span className="text-lg font-bold">AI Image & Video Generators</span>
+              </div>
+              <p className="text-gray-400 text-sm mb-4">
+                Your trusted resource for finding the best AI tools to unleash your creative potential.
+              </p>
+              <div className="flex gap-4">
+                <Link href="https://x.com/bestaigeneratrs" className="text-gray-400 hover:text-white" aria-label="Twitter">
+                  <TwitterIcon className="w-5 h-5" />
+                </Link>
+                <Link href="https://www.youtube.com/@AIImageandVideoGenerators" className="text-gray-400 hover:text-white" aria-label="YouTube">
+                  <YouTubeIcon className="w-5 h-5" />
+                </Link>
+              </div>
+            </div>
+            
+            <div>
+              <h3 className="font-semibold mb-4 text-lg">Navigation</h3>
+              <ul className="space-y-2">
+                <li><Link href="/" className="text-gray-400 hover:text-white text-sm" prefetch={false}>Home</Link></li>
+                <li><Link href="./gallery" className="text-gray-400 hover:text-white text-sm" prefetch={false}>Gallery</Link></li>
+                <li><Link href="./full-tools-list" className="text-gray-400 hover:text-white text-sm" prefetch={false}>Tools Directory</Link></li>
+                <li><Link href="./blog" className="text-gray-400 hover:text-white text-sm" prefetch={false}>Blog</Link></li>
+                <li><Link href="./prompts" className="text-gray-400 hover:text-white text-sm" prefetch={false}>Prompts</Link></li>
+              </ul>
+            </div>
+            
+            <div>
+              <h3 className="font-semibold mb-4 text-lg">Resources</h3>
+              <ul className="space-y-2">
+                <li><Link href="./about" className="text-gray-400 hover:text-white text-sm" prefetch={false}>About Us</Link></li>
+                <li><Link href="./contact" className="text-gray-400 hover:text-white text-sm" prefetch={false}>Contact</Link></li>
+                <li><Link href="https://t.me/tate_chess_bot" className="text-gray-400 border py-2 px-1 border-green-400 hover:text-white text-sm" prefetch={false}>PLAY Tate Telegram Chess Game</Link></li>
+                <li><Link href="https://www.toolify.ai/" className="text-gray-400 hover:text-white text-sm" prefetch={false}>More AI Tools</Link></li>
+              </ul>
+            </div>
+            
+            <div>
+              <h3 className="font-semibold mb-4 text-lg">Legal</h3>
+              <ul className="space-y-2">
+                <li><Link href="./privacy" className="text-gray-400 hover:text-white text-sm" prefetch={false}>Privacy Policy</Link></li>
+                <li><Link href="./terms" className="text-gray-400 hover:text-white text-sm" prefetch={false}>Terms of Service</Link></li>
+              </ul>
+              
+              <div className="mt-6">
+                <Link 
+                  href="https://imagify.gumroad.com/l/xuhxv" 
+                  className="inline-block bg-gradient-to-r from-purple-600 to-pink-600 text-white font-medium px-4 py-2 rounded-md hover:from-purple-700 hover:to-pink-700 transition text-sm"
+                  prefetch={false}
+                  onClick={() => trackConversion('list-tool-footer', 'footer', 'conversion')}
+                >
+                  List Your Tool
+                </Link>
+              </div>
+            </div>
           </div>
-
-          <nav className="hidden md:flex items-center gap-4">
-            <Link href="./privacy" className="hover:text-gray-700 transition-colors   " prefetch={false}>
-              Privacy
-            </Link>
- 
-            <Link href="./terms" className="hover:text-gray-700 transition-colors " prefetch={false}>
-            Terms
-            </Link>
- 
-
-            <Link className="hover:text-gray-700 transition-colors" href="https://x.com/bestaigeneratrs">
-              X
-            </Link>
-
-            <Link className="hover:text-gray-700 transition-colors" href="https://x.com/bestaigeneratrs">
-              YouTube
-            </Link>
-
-
-
-          </nav>
-
+          
+          <div className="mt-12 pt-6 border-t border-white/10 flex flex-col md:flex-row justify-between items-center">
+            <p className="text-gray-400 text-sm">© 2025 AI Image & Video Generators. All rights reserved.</p>
+            <p className="text-gray-400 text-sm mt-2 md:mt-0">Built with ❤️ for AI creators and enthusiasts</p>
+          </div>
         </div>
       </footer>
+
+
+      
     </div>
   )
 }
  
+
+
+
+
 
 function BotIcon(props) {
   return (
@@ -619,4 +647,65 @@ function BotIcon(props) {
     </svg>
   )
 }
- 
+
+function MenuIcon(props) {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <line x1="4" x2="20" y1="12" y2="12" />
+      <line x1="4" x2="20" y1="6" y2="6" />
+      <line x1="4" x2="20" y1="18" y2="18" />
+    </svg>
+  )
+}
+
+function TwitterIcon(props) {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" />
+    </svg>
+  )
+}
+
+function YouTubeIcon(props) {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17" />
+      <path d="m10 15 5-3-5-3z" />
+    </svg>
+  )
+}
+
+

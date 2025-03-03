@@ -1,9 +1,12 @@
-// urls.js
+  // urls.js
 
 const urls = [
   'https://choppity.com/?via=aiimageandvideogenerators',
   'https://www.basedlabs.ai/?via=aiimageandvideogenerators',
 'https://www.headshotpro.com/?via=aiimageandvideogenerators',
+'https://ideogram.ai/',
+'https://pika.art/',
+
   'https://topart.ai/',
   "https://www.recraft.ai/",
   'https://autoshorts.ai/',
@@ -45,7 +48,7 @@ const urls = [
   'https://www.rephrase.ai/',
   'https://www.vidu.studio/',
   'https://replicate.com/blog/flux-first-impressions',
-  'https://ideogram.ai/',
+
   'https://clapper.app/',
   'https://enigmaproject.ai/',
   'https://peerlist.io/aykutkardas/project/mindtown-ai',

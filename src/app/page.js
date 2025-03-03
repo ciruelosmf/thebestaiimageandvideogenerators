@@ -157,7 +157,8 @@ export default function Component() {
 
       {/* Main Content */}
       <main id="tools-section" className="container max-w-7xl px-4 md:px-6 pb-16 flex-1 mx-auto">
-        {/* Tool Category Tabs */}
+
+        {/* Tool Category Tabs 
         <div className="mb-10">
           <div className="flex overflow-x-auto pb-2 -mx-4 px-4 space-x-4">
             {['all', 'image', 'video', 'character', 'animation'].map((tab) => (
@@ -171,7 +172,7 @@ export default function Component() {
               </Button>
             ))}
           </div>
-        </div>
+        </div>*/}
 
 
 

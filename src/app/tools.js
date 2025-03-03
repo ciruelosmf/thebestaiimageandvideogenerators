@@ -164,26 +164,7 @@ export const tools = [
   
 
   
-  {
-    id: "dreamstudio",
-    title: "DreamStudio",
-    description: "Start generating the images of your dreams.",
-    link: "https://dreamstudio.ai/",
-    trackingId: "dreamstudio-main-link",
-    media: [
-      {
-        type: "image",
-        src: "/dreamstudio_1.jfif",
-        alt: "dreamstudio_1"
-      },
-      {
-        type: "image",
-        src: "/dreamstudio_2.jfif",
-        alt: "dreamstudio_2"
-      }
-    ],
-    tags: ["Images", "Dreams", "Creative"]
-  },
+ 
   // Add the rest of your tools here
   {
     id: "midjourney",

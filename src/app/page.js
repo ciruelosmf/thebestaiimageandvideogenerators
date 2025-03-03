@@ -465,7 +465,18 @@ export default function Component() {
 
 
 
+        <Link     href="https://amzn.to/43DZWh5">
 
+        <div className="flex flex-row pt-12 items-center justify-center">
+ 
+
+
+    <button className="relative overflow-hidden ml-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 focus:outline-none">
+      <span className="relative z-10">Book might interest you:  Superintelligence: Paths, Dangers, Strategies. Buy on Amazon</span>
+      <span className="absolute inset-0 rounded border-4 border-transparent animate-borderTrail"></span>
+    </button>
+    </div>
+    </Link>
 
 
 

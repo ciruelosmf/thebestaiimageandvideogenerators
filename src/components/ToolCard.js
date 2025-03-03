@@ -49,7 +49,7 @@ const ToolCard = ({ tool, trackConversion }) => {
   };
 
   return (
-    <Card className="bg-white/5 backdrop-blur-sm border border-white/10 text-white overflow-hidden hover:shadow-xl hover:shadow-purple-500/10 transition-all duration-300">
+    <Card className="bg-white/5 backdrop-blur-sm border border-white/10 text-white overflow-hidden hover:shadow-xl hover:shadow-red-500/10 hover:bg-slate-700 transition-all duration-600">
       <CardHeader className="pb-3">
         <div className="flex items-center justify-between">
           <CardTitle className="text-xl font-bold text-red-500">{title}</CardTitle>
@@ -57,7 +57,7 @@ const ToolCard = ({ tool, trackConversion }) => {
             <span className="px-2 py-1 bg-purple-600 text-xs font-semibold rounded-full">Featured</span>
           )}
         </div>
-        <CardDescription className="text-gray-300 mt-2">
+        <CardDescription className="text-gray-300    mt-2">
           {description}
         </CardDescription>
       </CardHeader>
@@ -83,7 +83,7 @@ const ToolCard = ({ tool, trackConversion }) => {
       </CardContent>
       <CardFooter className="pt-0">
         <Button 
-          className="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-medium py-2 rounded-md"
+          className="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-blue-700 text-white font-medium py-2 rounded-md"
           onClick={handleClick}
         >
           <Link 

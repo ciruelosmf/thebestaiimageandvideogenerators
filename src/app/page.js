@@ -80,7 +80,7 @@ export default function Component() {
       </Script>
 
       {/* Streamlined Header */}
-      <header className={`sticky top-0 z-40 transition-colors duration-300 ${isScrolled ? 'bg-black/90 backdrop-blur-md' : 'bg-transparent'}`}>
+      <header className={`sticky top-0 z-40 transition-colors duration-300 ${isScrolled ? 'bg-slate-700 backdrop-blur-md' : 'bg-transparent'}`}>
         <div className="container max-w-7xl py-3 px-4 md:px-6 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-2" prefetch={false}>
             <BotIcon className="w-6 h-6 text-white" />
@@ -186,7 +186,7 @@ export default function Component() {
 
 
           {/* PhotoAI Card - improved for conversion */}
-          <Card className="bg-white/5 backdrop-blur-sm border border-white/10 text-white overflow-hidden hover:shadow-xl hover:shadow-purple-500/10 transition-all duration-300">
+          <Card className="bg-white/5 backdrop-blur-sm border border-white/10 text-white overflow-hidden hover:shadow-xl hover:shadow-purple-500/10 hover:bg-slate-700 transition-all duration-600">
             <CardHeader className="pb-3">
               <div className="flex items-center justify-between">
                 <CardTitle className="text-xl font-bold text-red-500">Photo AI</CardTitle>
@@ -244,7 +244,7 @@ export default function Component() {
 
 
           {/* Imagine AI Card */}
-          <Card className="bg-white/5 backdrop-blur-sm border border-white/10 text-white overflow-hidden hover:shadow-xl hover:shadow-purple-500/10 transition-all duration-300">
+          <Card className="bg-white/5 backdrop-blur-sm border border-white/10 text-white overflow-hidden hover:shadow-xl hover:shadow-purple-500/10 hover:bg-slate-700 transition-all duration-600">
             <CardHeader className="pb-3">
               <div className="flex items-center justify-between">
                 <CardTitle className="text-xl font-bold text-red-500">Imagine AI Art</CardTitle>
@@ -331,7 +331,7 @@ export default function Component() {
 
 
           {/* RenderNet Card */}
-          <Card className="bg-white/5 backdrop-blur-sm border border-white/10 text-white overflow-hidden hover:shadow-xl hover:shadow-purple-500/10 transition-all duration-300">
+          <Card className="bg-white/5 backdrop-blur-sm border border-white/10 text-white overflow-hidden hover:shadow-xl hover:shadow-purple-500/10 hover:bg-slate-700 transition-all duration-600">
             <CardHeader className="pb-3">
               <div className="flex items-center justify-between">
                 <CardTitle className="text-xl font-bold text-red-500">RenderNet</CardTitle>

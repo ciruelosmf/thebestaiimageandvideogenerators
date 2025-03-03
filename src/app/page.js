@@ -183,8 +183,8 @@ export default function Component() {
     />
 
 
-    <button className="relative overflow-hidden ml-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 focus:outline-none">
-      <span className="relative z-10">Might interest you: Sony WH-1000XM5 The Best Wireless Noise Canceling Headphones. Buy on Amazon</span>
+    <button className="relative overflow-hidden ml-4 px-4 md:py-4 py-0.5 bg-blue-500 text-white rounded hover:bg-blue-600 focus:outline-none">
+      <span className="relative z-10 md:text-base text-xs ">Might interest you: Sony WH-1000XM5 The Best Wireless Noise Canceling Headphones. Buy on Amazon</span>
       <span className="absolute inset-0 rounded border-4 border-transparent animate-borderTrail"></span>
     </button>
     </div>

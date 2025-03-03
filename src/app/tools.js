@@ -109,12 +109,12 @@ export const tools = [
     media: [
       {
         type: "image",
-        src: "/recraft_1.jpg",
+        src: "/recraft_11.jpg",
         alt: "Recraft_1"
       },
       {
         type: "image",
-        src: "/recraft_2.jpg",
+        src: "/recraft_22.jpg",
         alt: "Recraft_2"
       }
     ],
@@ -194,12 +194,12 @@ export const tools = [
     media: [
       {
         type: "image",
-        src: "/midjourney_1.webp",
+        src: "/midjourney_11.webp",
         alt: "midjourney_1"
       },
       {
         type: "image",
-        src: "/midjourney_2.webp",
+        src: "/midjourney_22.webp",
         alt: "midjourney_2"
       }
     ],

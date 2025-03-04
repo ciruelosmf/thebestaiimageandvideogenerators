@@ -40,38 +40,52 @@ export default function Blog() {
 
 
 
-      <header className=" sticky top-0 z-40 border-b border-b-muted block bg-slate-50  ">
-        <div className="container max-w-7xl py-2 px-4 md:px-6 flex items-center justify-between">
-          <div className="flex flex-wrap items-center justify-center gap-2 ">
-             
-            <h1 className="md:text-xl text-base font-semibold text-black  px-4 md:px-6">AI Image and Video Generators - AI directory</h1>
-          <nav className=" flex flex-row items-center gap-4">
-            <Link href="/" className="text-sm font-medium hover:text-primary" prefetch={false}>
+ {/* Streamlined Header */}
+ <header className={`sticky top-0 z-40 transition-colors duration-300 ${isScrolled ? 'bg-slate-700 backdrop-blur-md' : 'bg-transparent'}`}>
+        <div className="container max-w-7xl py-3 px-4 md:px-6 flex items-center justify-between">
+          <Link href="/" className="flex items-center gap-2" prefetch={false}>
+ 
+            <h1 className="text-lg md:text-xl font-bold text-white">AI Image & Video Generators</h1>
+          </Link>
+          
+          {/* Mobile menu button */}
+          <div className="md:hidden">
+            <Button variant="ghost" size="icon" className="text-white">
+              <MenuIcon className="w-6 h-6" />
+            </Button>
+          </div>
+          
+          {/* Desktop navigation - simplified */}
+          <nav className="hidden md:flex items-center gap-6">
+            <Link href="/" className="text-sm font-medium text-white hover:text-purple-300 transition" prefetch={false}>
               Home
             </Link>
-            <Link href="/gallery" className="text-sm font-medium hover:text-primary" prefetch={false}>
+            <Link href="./gallery" className="text-sm font-medium text-white hover:text-purple-300 transition" prefetch={false}>
               Gallery
             </Link>
-            <Link href="/blog" className="text-sm font-medium hover:text-primary" prefetch={false}>
+            <Link href="./full-tools-list" className="text-sm font-medium text-white hover:text-purple-300 transition" prefetch={false}>
+            Full List of Tools
+            </Link>
+
+ 
+            <Link href="./blog" className="text-sm font-medium text-white hover:text-purple-300 transition" prefetch={false}>
               Blog
             </Link>
-            <Link href="/prompts" className="text-sm font-medium hover:text-primary" prefetch={false}>
-              Prompts
-            </Link>
-            <Link href="/about" className="text-sm font-medium hover:text-primary" prefetch={false}>
-              About
-            </Link>
-            <Link href="/contact" className="text-sm font-medium hover:text-primary" prefetch={false}>
-              Contact
-            </Link>
+            
+            {/* Primary CTA Button */}
+            <Button 
+              className="bg-gradient-to-r from-purple-600 to-pink-600 text-white font-medium px-4 py-2 rounded-md hover:from-purple-700 hover:to-pink-700 transition"
+              onClick={() => trackConversion('list-your-tool-header', 'header-nav')}
+            >
+              <Link href="https://imagify.gumroad.com/l/xuhxv" prefetch={false}>
+                List Your Tool
+              </Link>
+            </Button>
+
+
+           <Link href="https://t.me/tate_chess_bot" className="text-gray-100 border py-2 px-1 border-green-400 hover:text-white text-sm" prefetch={false}>PLAY Tate Telegram Chess Game</Link>
           </nav>
-          </div>
- 
         </div>
-
-
-        
-
       </header>
 
 
@@ -220,4 +234,24 @@ export default function Blog() {
 
     </div>
   );
+}
+function MenuIcon(props) {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <line x1="4" x2="20" y1="12" y2="12" />
+      <line x1="4" x2="20" y1="6" y2="6" />
+      <line x1="4" x2="20" y1="18" y2="18" />
+    </svg>
+  )
 }

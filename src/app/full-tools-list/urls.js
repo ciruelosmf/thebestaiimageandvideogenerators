@@ -1,18 +1,22 @@
   // urls.js
 
 const urls = [
+  "https://klingai.com/",
   'https://choppity.com/?via=aiimageandvideogenerators',
   'https://www.basedlabs.ai/?via=aiimageandvideogenerators',
-'https://www.headshotpro.com/?via=aiimageandvideogenerators',
-'https://ideogram.ai/',
 'https://pika.art/',
 
+'https://www.headshotpro.com/?via=aiimageandvideogenerators',
+'https://ideogram.ai/',
+'https://haiper.ai/home',
+
+'https://hailuoai.com/video',
   'https://topart.ai/',
   "https://www.recraft.ai/",
   'https://autoshorts.ai/',
   'https://www.kapwing.com/',
   'https://www.deepbrain.io/',
-  "https://klingai.com/",
+
   'https://www.pipio.ai/',
   'https://www.myarchitectai.com/',
   'https://vivago.ai/video?type=txt2video',
@@ -35,7 +39,6 @@ const urls = [
   'https://huggingface.co/alvdansen/frosting_lane_redux',
   'https://apob.ai/',
   'https://www.dreamflare.ai/',
-  'https://haiper.ai/home',
   'https://x.com/ArtDotTech',
   'https://www.freepik.com/pikaso/ai-image-generator',
   'https://productscope.ai/',
@@ -45,7 +48,7 @@ const urls = [
   'https://looka.com/',
   'https://pixverse.ai/',
   'https://www.gendo.ai/',
-  'https://www.rephrase.ai/',
+ 
   'https://www.vidu.studio/',
   'https://replicate.com/blog/flux-first-impressions',
 
@@ -57,7 +60,7 @@ const urls = [
   'https://discopixel.app/animator',
   'https://huggingface.co/spaces/Kwai-Kolors/Kolors-Virtual-Try-On',
   'https://anifusion.ai/',
-  'https://hailuoai.com/video',
+
   'https://playground.com/'
 ];
 

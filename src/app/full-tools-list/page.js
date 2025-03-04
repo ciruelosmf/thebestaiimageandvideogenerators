@@ -38,7 +38,7 @@ export default function Blog() {
 
 
 
-    < div className="  relative min-h-screen flex flex-col items-center">
+    < div className="  min-h-screen flex flex-col">
 
             <Script
         strategy="lazyOnload"
@@ -65,7 +65,7 @@ export default function Blog() {
 
 
       <header className={`sticky top-0 z-40 transition-colors duration-300 ${isScrolled ? 'bg-slate-700 backdrop-blur-md' : 'bg-transparent'}`}>
-        <div className="container max-w-7xl py-3 px-4 md:px-6 flex items-center justify-between">
+        <div className="container max-w-7xl mx-auto  py-3 px-4 md:px-6 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-2" prefetch={false}>
  
             <h1 className="text-lg md:text-xl font-bold text-white">AI Image & Video Generators</h1>
@@ -120,16 +120,20 @@ export default function Blog() {
       <h1 className="text-3xl font-bold text-center text-slate-50 mb-12">Full list of Tools</h1>
         
  
-      <ul className="text-xl font-medium text-left text-slate-50 ">
+      <ul className="text-xl font-medium text-left text-slate-50 bg-slate-800 p-8 rounded rounded-xl shadow ">
         {urls.map((url, index) => (
-          <li  className="text-2xl mb-8" key={index}>
+          <li  className="text-2xl mb-12 pt-12" key={index}>
                         <Link href={url} className="font-medium hover:text-primary" target="_blank" rel="noopener noreferrer" prefetch={false}>
                         {url}
             </Link>
 
-            
+            <div className="bg-red-200/20 h-1 mt-2 rounded rounded-xl">
+            </div>
 
           </li>
+          
+
+
         ))}
       </ul>
  

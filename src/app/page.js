@@ -81,9 +81,9 @@ export default function Component() {
 
       {/* Streamlined Header */}
       <header className={`sticky top-0 z-40 transition-colors duration-300 ${isScrolled ? 'bg-slate-700 backdrop-blur-md' : 'bg-transparent'}`}>
-        <div className="container max-w-7xl py-3 px-4 md:px-6 flex items-center justify-between">
+        <div className="container max-w-7xl mx-auto py-3 px-4 md:px-6 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-2" prefetch={false}>
-            <BotIcon className="w-6 h-6 text-white" />
+            
             <h1 className="text-lg md:text-xl font-bold text-white">AI Image & Video Generators</h1>
           </Link>
           

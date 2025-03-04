@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 
 const colorValues = [
-  '#001d000', // black
-  '#72181b', // zinc-900
-  '#1c1917', // stone-900
-  '#0c0a09', // zinc-950
+  '#001d660', // black
+  '#06b6d4', // zinc-900
+  '#312e81', // stone-900
+  '#5b21b6', // zinc-950
 
 ];
 

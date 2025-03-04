@@ -9,19 +9,37 @@ import DynamicBackground from '@/components/DynamicBackground'; // Make sure to 
 
 
 export default function Blog() {
+
+
+
+
+        const [isScrolled, setIsScrolled] = useState(false);    
+      useEffect(() => {
+        const handleScroll = () => {
+          if (window.scrollY > 10) {
+            setIsScrolled(true);
+          } else {
+            setIsScrolled(false);
+          }
+        };    
+        window.addEventListener('scroll', handleScroll);    
+        return () => {
+          window.removeEventListener('scroll', handleScroll);
+        };
+      }, []);
+
+
+
+
   return (
-
-
-
-
     < div className="  relative min-h-screen flex flex-col items-center">
 
             <Script
         strategy="lazyOnload"
         src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
       />
-
       <Script strategy="lazyOnload">
+
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
@@ -32,6 +50,9 @@ export default function Blog() {
 });
          `}
       </Script>
+
+
+
 
  
       <DynamicBackground rows={3} cols={5} /> {/* Add this line */}
@@ -115,7 +136,7 @@ export default function Blog() {
 
         <li>
             <Link href="/blog/best-ai-video-generators" className="text-xl font-semibold text-slate-50 hover:text-blue-800">
-            The best AI video generators
+            The best AI video Generators
             </Link>
           </li>
 
@@ -124,7 +145,7 @@ export default function Blog() {
 
           <li>
             <Link href="/blog/best-ai-image-generators" className="text-xl font-semibold text-slate-50 hover:text-blue-800">
-            The best AI image generators
+            The best AI image Generators
             </Link>
           </li>
 

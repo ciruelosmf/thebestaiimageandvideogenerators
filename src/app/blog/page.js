@@ -4,6 +4,7 @@ import React from 'react';
 import Script from "next/script";
 import Link from "next/link"
 import DynamicBackground from '@/components/DynamicBackground'; // Make sure to create this file
+import { Button } from "@/components/ui/button"
 
 
 

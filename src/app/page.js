@@ -497,6 +497,15 @@ export default function Component() {
 
 
 
+
+
+      <div className="">
+    <Tweet id="1897296618157957238" />
+  </div>
+
+
+
+
           <div className="">
     <Tweet id="1894822930552627426" />
   </div>

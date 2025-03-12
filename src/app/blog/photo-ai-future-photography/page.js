@@ -112,7 +112,7 @@ return (
 
         <div className="  flex flex-wrap flex-col items-center justify-center gap-2 ">
 
-        <Link  href="https://photoai.com/?via=aiimageandvideogenerators" className="text-xl font-medium hover:text-primary text-white mb-2" prefetch={false}>
+        <Link  href="https://app.photoai.me/?via=aiimageandvideogenerators" className="text-xl font-medium hover:text-primary text-white mb-2" prefetch={false}>
           Check out PhotoAI 
         </Link>
         <div className="  mb-2">

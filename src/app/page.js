@@ -321,26 +321,25 @@ export default function Component() {
                 <span className="px-2 py-1 bg-purple-600 text-xs font-semibold text-white rounded-full">Passive income  </span>
               </div>
               <CardDescription className="text-gray-300 mt-2">
-              Create Faceless Accounts in
-              One Click.
+              Create Faceless Accounts in One Click, Share in Youtube/TikTok.
               </CardDescription>
             </CardHeader>
             <CardContent className="pt-0">
               <div className="relative overflow-hidden rounded-lg aspect-video mb-4">
                 <div className="grid grid-cols-2 gap-2 h-full">
                   <Image
-                    src="/faceless_1.jpg"
+                    src="/faceless_1.JPG"
                     width={300}
                     height={300}
-                    alt="PhotoAI generated portrait"
+                    alt="faceless.video examples"
                     className="rounded-lg object-cover hover:scale-105 transition-transform duration-300 h-full"
                     loading="lazy" 
                   />
                   <Image
-                    src="/faceless_2.jpg"
+                    src="/faceless_2.JPG"
                     width={300}
                     height={300}
-                    alt="PhotoAI generated portrait"
+                    alt="faceless.video work flow"
                     className="rounded-lg object-cover hover:scale-105 transition-transform duration-300 h-full"
                     loading="lazy" 
                   />

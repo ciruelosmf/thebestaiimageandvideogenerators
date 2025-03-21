@@ -230,10 +230,16 @@ export default function Component() {
 
 
 
+
+
+
+
+
+
+
+
         {/* Featured Tools Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-
 
 
           {/* PhotoAI Card - improved for conversion */}
@@ -294,6 +300,87 @@ export default function Component() {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <Card className="bg-white/5 backdrop-blur-sm border border-white/10 text-white overflow-hidden hover:shadow-xl hover:shadow-purple-500/10 hover:bg-slate-700 transition-all duration-600">
+            <CardHeader className="pb-3">
+              <div className="flex items-center justify-between">
+                <CardTitle className="text-xl font-bold text-red-500">faceless.video</CardTitle>
+                <span className="px-2 py-1 bg-purple-600 text-xs font-semibold text-white rounded-full">Passive income  </span>
+              </div>
+              <CardDescription className="text-gray-300 mt-2">
+              Create Faceless Accounts in
+              One Click.
+              </CardDescription>
+            </CardHeader>
+            <CardContent className="pt-0">
+              <div className="relative overflow-hidden rounded-lg aspect-video mb-4">
+                <div className="grid grid-cols-2 gap-2 h-full">
+                  <Image
+                    src="/faceless_1.jpg"
+                    width={300}
+                    height={300}
+                    alt="PhotoAI generated portrait"
+                    className="rounded-lg object-cover hover:scale-105 transition-transform duration-300 h-full"
+                    loading="lazy" 
+                  />
+                  <Image
+                    src="/faceless_2.jpg"
+                    width={300}
+                    height={300}
+                    alt="PhotoAI generated portrait"
+                    className="rounded-lg object-cover hover:scale-105 transition-transform duration-300 h-full"
+                    loading="lazy" 
+                  />
+                </div>
+              </div>
+              
+              <div className="flex flex-wrap gap-2">
+                <span className="text-xs px-2 py-1 bg-white/10 rounded-full">TikTok/Youtube</span>
+                <span className="text-xs px-2 py-1 bg-white/10 rounded-full">Monetization</span>
+                <span className="text-xs px-2 py-1 bg-white/10 rounded-full">MArketing</span>
+              </div>
+            </CardContent>
+            <CardFooter className="pt-0">
+              <Button 
+                className="w-full bg-gradient-to-r from-red-400 to-green-600 hover:from-purple-700 hover:to-pink-700 text-white font-medium py-2 rounded-md"
+                onClick={() => trackConversion('photoai-cta', 'card-footer', 'conversion')}
+              >
+                <Link 
+                  href="https://faceless.video/?ref=aiimageandvideo" 
+                  className="w-full text-center" 
+                  prefetch={false}
+                >
+                  Try faceless.video →
+                </Link>
+              </Button>
+            </CardFooter>
+          </Card>
+
+
+
+
+
+
+
+
+
+
+
+
+
           {/* Imagine AI Card */}
           <Card className="bg-white/5 backdrop-blur-sm border border-white/10 text-white overflow-hidden hover:shadow-xl hover:shadow-purple-500/10 hover:bg-slate-700 transition-all duration-600">
             <CardHeader className="pb-3">
@@ -350,6 +437,25 @@ export default function Component() {
               </Button>
             </CardFooter>
           </Card>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

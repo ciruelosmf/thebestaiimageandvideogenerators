@@ -348,8 +348,8 @@ export default function Component() {
               
               <div className="flex flex-wrap gap-2">
                 <span className="text-xs px-2 py-1 bg-white/10 rounded-full">TikTok/Youtube</span>
-                <span className="text-xs px-2 py-1 bg-white/10 rounded-full">Monetization</span>
-                <span className="text-xs px-2 py-1 bg-white/10 rounded-full">MArketing</span>
+                <span className="text-xs px-2 py-1 bg-white/10 rounded-full">Text-to-Video</span>
+                <span className="text-xs px-2 py-1 bg-white/10 rounded-full">Marketing</span>
               </div>
             </CardContent>
             <CardFooter className="pt-0">

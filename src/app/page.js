@@ -125,33 +125,24 @@ export default function Component() {
       </header>
 
       {/* Hero Section - New Addition */}
-      <section className="py-4 md:py-80 px-4 text-center">
+      <section className="py-4 md:py-40 md:pb-4 px-4 text-center">
         <div className="container max-w-4xl mx-auto">
-          <h1 className="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
-          Crush Your Creative Limits—Slay the Design Dragon  <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-red-500">Without Hiring a Single ‘Artist’</span>
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-12 leading-tight">
+          Crush Your Creative Limits
           </h1>
-          <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-          Rip the filters off: Generate brand-aligned, soul-snatching visuals faster than you can type “make it pop.”
+          <h2 className="text-3xl md:text-5xl font-bold text-white mb-12 leading-tight">
+       <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-red-500">Slay the Design Dragon </span>
+          </h2>
+
+
+
+          <p className="text-lg md:text-xl text-gray-300 mb-12 max-w-2xl mx-auto">
+          Rip the filters off: Generate brand-aligned, soul-snatching visuals faster with AI tools.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-            <Button 
-              className="bg-gradient-to-r from-purple-600 to-pink-600 text-white font-bold px-6 py-3 rounded-md text-lg hover:from-purple-700 hover:to-pink-700 transition shadow-lg"
-              onClick={() => trackConversion('explore-tools-hero', 'hero-section')}
-            >
-              <Link href="#tools-section">
-                Explore Top Tools
-              </Link>
-            </Button>
-            <Button 
-              variant="outline" 
-              className="border-2 border-white text-white font-bold px-6 py-3 rounded-md text-lg hover:bg-white/10 transition"
-              onClick={() => trackConversion('view-gallery-hero', 'hero-section')}
-            >
-              <Link href="./gallery">
-                View Gallery
-              </Link>
-            </Button>
-          </div>
+ 
+          <p className="text-lg md:text-xl text-gray-300 mb-64 max-w-2xl mx-auto">
+          Check out our curated list below:
+          </p>
         </div>
 
 
@@ -174,15 +165,12 @@ export default function Component() {
 
 
         <Link     href="https://amzn.to/3DePr8Z">
-
-        <div className="flex flex-row items-center justify-center">
+        <div className="flex flex-row items-center justify-center py-24 pb-2">
     <img 
           src="/amzn.JPG"
       alt="Product placeholder" 
       className="w-24 h-12 object-cover" 
     />
-
-
     <button className="relative overflow-hidden ml-4 px-4 md:py-4 py-0.5 bg-blue-500 text-white rounded hover:bg-blue-600 focus:outline-none">
       <span className="relative z-10 md:text-base text-xs ">Might interest you: Sony WH-1000XM5 The Best Wireless Noise Canceling Headphones. Buy on Amazon</span>
       <span className="absolute inset-0 rounded border-4 border-transparent animate-borderTrail"></span>
@@ -198,14 +186,13 @@ export default function Component() {
  
  
  
-
-
+ 
 
 
       </section>
 
       {/* Main Content */}
-      <main id="tools-section" className="container max-w-7xl px-4 md:px-6 pb-16 flex-1 mx-auto">
+      <main id="tools-section" className="container max-w-7xl px-4 md:px-6 pt-8 pb-16 flex-1 mx-auto">
 
         {/* Tool Category Tabs 
         <div className="mb-10">

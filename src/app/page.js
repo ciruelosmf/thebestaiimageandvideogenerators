@@ -135,13 +135,10 @@ export default function Component() {
           </h2>
 
 
-
-          <p className="text-lg md:text-xl text-gray-300 mb-12 max-w-2xl mx-auto">
-          Rip the filters off: Generate brand-aligned, soul-snatching visuals faster with AI tools.
-          </p>
+ 
  
           <p className="text-lg md:text-xl text-gray-300 mb-64 max-w-2xl mx-auto">
-          Check out our curated list below:
+          Check out our curated list of AI Generators below:
           </p>
         </div>
 
@@ -156,23 +153,27 @@ export default function Component() {
 
 
 
-
-
  
 
 
-
-
-
-        <Link     href="https://amzn.to/3DePr8Z">
-        <div className="flex flex-row items-center justify-center py-24 pb-2">
-    <img 
-          src="/amzn.JPG"
-      alt="Product placeholder" 
-      className="w-24 h-12 object-cover" 
-    />
+        <Link     href="https://www.genfoo.com">
+        <div className="flex flex-col items-center justify-center py-24 pb-2">
+ 
+                      <Image
+                    src="/genfoo.jpg"
+                    width={300}
+                    height={300}
+                    alt="RenderNet character example"
+                    className="w-48 h-48 pt-8 object-cover"
+                    loading="lazy" 
+                  />
     <button className="relative overflow-hidden ml-4 px-4 md:py-4 py-0.5 bg-blue-500 text-white rounded hover:bg-blue-600 focus:outline-none">
-      <span className="relative z-10 md:text-base text-xs ">Might interest you: Sony WH-1000XM5 The Best Wireless Noise Canceling Headphones. Buy on Amazon</span>
+      <span className="relative z-10 md:text-base text-xs ">
+        
+
+Try GenFoo, a cooler AI interfaces to chat with
+
+      </span>
       <span className="absolute inset-0 rounded border-4 border-transparent animate-borderTrail"></span>
     </button>
     </div>
@@ -740,7 +741,13 @@ export default function Component() {
               <ul className="space-y-2">
                 <li><Link href="./about" className="text-gray-400 hover:text-white text-sm" prefetch={false}>About Us</Link></li>
                 <li><Link href="./contact" className="text-gray-400 hover:text-white text-sm" prefetch={false}>Contact</Link></li>
-                <li><Link href="https://t.me/tate_chess_bot" className="text-gray-400 border py-2 px-1 border-green-400 hover:text-white text-sm" prefetch={false}>PLAY Tate Telegram Chess Game</Link></li>
+
+                
+                <li><Link href="https://www.genfoo.com" className="text-gray-400   py-2 px-1 border-green-400 hover:text-white text-sm" prefetch={false}>Try GenFoo, cooler AI interfaces </Link></li>
+
+                <li><Link href="https://rocketcatcher69.vercel.app" className="text-gray-400   py-2 px-1 border-green-400 hover:text-white text-sm" prefetch={false}>Play RocketCatcher69</Link></li>
+
+                <li><Link href="https://t.me/tate_chess_bot" className="text-gray-400 border py-2 px-1 border-green-400 hover:text-white text-sm" prefetch={false}>Play Tate Telegram Chess Game</Link></li>
                 <li><Link href="https://www.toolify.ai/" className="text-gray-400 hover:text-white text-sm" prefetch={false}>More AI Tools</Link></li>
               </ul>
             </div>

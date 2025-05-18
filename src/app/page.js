@@ -137,7 +137,7 @@ export default function Component() {
 
  
  
-          <p className="text-lg md:text-xl text-gray-300 mb-64 max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl text-gray-300 mb-18 md:mb-12 max-w-2xl mx-auto">
           Check out our curated list of AI Generators below:
           </p>
         </div>
@@ -153,31 +153,32 @@ export default function Component() {
 
 
 
- 
-
-
-        <Link     href="https://www.genfoo.com">
-        <div className="flex flex-col items-center justify-center py-24 pb-2">
- 
-                      <Image
-                    src="/genfoo.jpg"
-                    width={300}
-                    height={300}
-                    alt="RenderNet character example"
-                    className="w-48 h-48 pt-8 object-cover"
-                    loading="lazy" 
-                  />
-    <button className="relative overflow-hidden ml-4 px-4 md:py-4 py-0.5 bg-blue-500 text-white rounded hover:bg-blue-600 focus:outline-none">
-      <span className="relative z-10 md:text-base text-xs ">
-        
-
-Try GenFoo, a cooler AI interfaces to chat with
-
-      </span>
-      <span className="absolute inset-0 rounded border-4 border-transparent animate-borderTrail"></span>
-    </button>
-    </div>
+<div className="flex justify-center">
+  <div className="flex flex-col items-center justify-center gap-2 py-12 px-4 w-full max-w-sm rounded-lg shadow-lg hover:shadow-xl transition duration-300 bg-white dark:bg-gray-900">
+    
+    <Link href="https://www.genfoo.com">
+      <Image
+        src="/genfoo.jpg"
+        width={300}
+        height={300}
+        alt="RenderNet character example"
+        className="w-48 h-48 object-cover rounded border-4 border-transparent animate-borderTrail cursor-pointer"
+        loading="lazy"
+      />
     </Link>
+
+    <Link href="https://www.genfoo.com">
+      <button className="relative overflow-hidden mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 focus:outline-none">
+        <span className="relative z-10 text-sm md:text-base">
+          Try GenFoo, cooler AI interfaces to chat with
+        </span>
+        <span className="absolute inset-0 rounded border-4 border-transparent animate-borderTrail"></span>
+      </button>
+    </Link>
+
+  </div>
+</div>
+
 
 
 
@@ -558,18 +559,32 @@ Try GenFoo, a cooler AI interfaces to chat with
 
 
 
-        <Link     href="https://amzn.to/43DZWh5">
-
-        <div className="flex flex-row pt-12 items-center justify-center">
- 
-
-
-    <button className="relative overflow-hidden ml-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 focus:outline-none">
-      <span className="relative z-10">Book might interest you:  Superintelligence: Paths, Dangers, Strategies. Buy on Amazon</span>
-      <span className="absolute inset-0 rounded border-4 border-transparent animate-borderTrail"></span>
-    </button>
-    </div>
+<div className="flex justify-center">
+  <div className="flex flex-col items-center justify-center gap-2 py-12 px-4 w-full max-w-sm rounded-lg   transition duration-300    ">
+    
+    <Link href="https://www.genfoo.com">
+      <Image
+        src="/genfoo.jpg"
+        width={300}
+        height={300}
+        alt="RenderNet character example"
+        className="w-48 h-48 object-cover rounded border-4 border-transparent animate-borderTrail cursor-pointer"
+        loading="lazy"
+      />
     </Link>
+
+    <Link href="https://www.genfoo.com">
+      <button className="relative overflow-hidden mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 focus:outline-none">
+        <span className="relative z-10 text-sm md:text-base">
+          Try GenFoo, cooler AI interfaces to chat with
+        </span>
+        <span className="absolute inset-0 rounded border-4 border-transparent animate-borderTrail"></span>
+      </button>
+    </Link>
+
+  </div>
+</div>
+
 
 
 

@@ -158,7 +158,7 @@ return (
 
 
 <div class="max-w-4xl mx-auto p-6">
-    <h2 class="text-4xl font-bold mb-6">A new fun way tto chat with AI</h2>
+    <h2 class="text-4xl font-bold mb-6">A new fun way to chat with AI</h2>
     <p class="mb-4">
 AI conversations have become part of our daily lives, but they're still trapped in sterile, corporate interfaces that feel cold and impersonal. GenFoo changes that, transforming your AI interactions into visually rich experiences that match your personal style. Whether you're nostalgic for the green text of early computing, inspired by the whimsical worlds of animation, or simply tired of the same minimalist design everywhere, GenFoo lets you choose the digital environment where your AI conversations take place.
     </p>

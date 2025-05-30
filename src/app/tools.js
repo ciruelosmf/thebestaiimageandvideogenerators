@@ -49,12 +49,12 @@ export const tools = [
     media: [
       {
         type: "image",
-        src: "/HeadshotPro_1.jpg",
+        src: "/HeadshotPro_1.webp",
         alt: "HeadshotPro_1"
       },
       {
         type: "image",
-        src: "/HeadshotPro_2.jpg",
+        src: "/HeadshotPro_2.webp",
         alt: "HeadshotPro_2"
       }
     ],

@@ -177,15 +177,35 @@ export default function Component() {
     </Link>
 
   </div>
+ 
+  <div className="flex flex-col items-center justify-center gap-2 py-12 px-4 w-full max-w-sm rounded-lg shadow-lg hover:shadow-xl transition duration-300 bg-white dark:bg-gray-900">
+    
+    <Link href="https://matiasciruelos.gumroad.com/l/ddrdm">
+      <Image
+        src="/veo3_3.jpg"
+        width={300}
+        height={300}
+        alt="RenderNet character example"
+        className="w-48 h-48 object-cover rounded border-4 border-transparent animate-borderTrail cursor-pointer"
+        loading="lazy"
+      />
+    </Link>
+
+    <Link href="https://matiasciruelos.gumroad.com/l/ddrdm">
+      <button className="relative overflow-hidden mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 focus:outline-none">
+        <span className="relative z-10 text-sm md:text-base">
+          Introducing XYZ Video Generator with Veo 3 technology
+        </span>
+        <span className="absolute inset-0 rounded border-4 border-transparent animate-borderTrail"></span>
+      </button>
+    </Link>
+
+  </div>
 </div>
 
 
 
 
-
-
- 
- 
  
  
  

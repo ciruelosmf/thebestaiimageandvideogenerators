@@ -780,6 +780,9 @@ export default function Component() {
                 
                 <li><Link href="https://www.genfoo.com" className="text-gray-400   py-2 px-1 border-green-400 hover:text-white text-sm" prefetch={false}>Try GenFoo, cooler AI interfaces </Link></li>
 
+
+                <li><Link href="https://www.aiimageandvideogenerators.xyz/introducing-new-xyz-video-generator-with-veo-3-tech" className="text-gray-400   py-2 px-1 border-green-400 hover:text-white text-sm" prefetch={false}>Introducing New XYZ Video Generator with Veo 3 tech </Link></li>
+
                 <li><Link href="https://rocketcatcher69.vercel.app" className="text-gray-400   py-2 px-1 border-green-400 hover:text-white text-sm" prefetch={false}>Play RocketCatcher69</Link></li>
 
                 <li><Link href="https://t.me/tate_chess_bot" className="text-gray-400 border py-2 px-1 border-green-400 hover:text-white text-sm" prefetch={false}>Play Tate Telegram Chess Game</Link></li>

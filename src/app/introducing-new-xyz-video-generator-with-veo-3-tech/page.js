@@ -211,11 +211,11 @@ Heres how it works:
              width={800}
              height={800}
              alt="Perchance AI"
-             className="   rounded-xl shadow-lg object-cover my-12 shadow-lg"
+             className="   rounded-xl shadow-lg object-cover my-12  "
            />
          </div>
 
-      <hr className="my-8 border-t my-4 border-gray-300" />
+      <hr className="my-8 border-t  first-line: border-gray-300" />
 
 
  

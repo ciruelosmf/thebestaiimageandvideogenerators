@@ -119,13 +119,17 @@ export default function Blog() {
       <h1 className="text-3xl font-bold text-center text-slate-50 mb-12">AI Image and Video Generators</h1>
         
         <h1 className="text-3xl font-bold text-center text-slate-50 mb-12">Blog Posts</h1>
-        <ul className="space-y-6 bg-slate-800 p-8 rounded rounded-xl shadow">
+        <ul className="space-y-6 bg-slate-800 p-8   rounded-xl shadow">
 
 
 
 
 
-
+        <li>
+            <Link href="https://www.aiimageandvideogenerators.xyz/introducing-new-xyz-video-generator-with-veo-3-tech" className="text-xl font-semibold text-slate-50 hover:text-blue-800">
+            Introducing New XYZ Video Generator with Veo 3 tech
+            </Link>
+          </li>
 
 
         <li>

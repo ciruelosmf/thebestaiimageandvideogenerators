@@ -182,14 +182,14 @@ Heres how it works:
 
 <div className="grid grid-cols-2 gap-4 mb-12">
         <img
-            src="/veo3_1.jpg"
+            src="/veo3_1.JPG"
             width={300}
             height={300}
             alt="GenFoo"
             className="aspect-square object-cover rounded-xl shadow-lg"
           />
           <img
-            src="/veo3_2.jpg"
+            src="/veo3_2.JPG"
             width={300}
             height={300}
             alt="GenFoo"
@@ -207,7 +207,7 @@ Heres how it works:
  
       <div className="  shadow-lg  flex justify-center  ">
          <Image
-             src="/veo3_3.jpg"
+             src="/veo3_3.JPG"
              width={800}
              height={800}
              alt="Perchance AI"

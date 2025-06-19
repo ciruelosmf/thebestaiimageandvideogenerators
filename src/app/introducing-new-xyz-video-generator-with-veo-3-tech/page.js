@@ -37,7 +37,7 @@ export default function Blog() {
 
 return (
     <div className="relative min-h-screen flex flex-col items-center">
-        <title>New XYZ Video Generator</title>
+        <title>Introducing New XYZ Video Generator with Veo 3 tech</title>
 
 
         <Head>

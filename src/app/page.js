@@ -177,7 +177,7 @@ export default function Component() {
   <div className="flex flex-col items-center justify-center gap-2 py-8 px-4 w-full max-w-sm mx-auto rounded-lg shadow-lg hover:shadow-xl transition duration-300 bg-white dark:bg-gray-900">
     <Link href="https://try.elevenlabs.io/yf672nrp61q2">
       <Image
-        src="/veo3_3.jpg"
+        src="/veo3_3.JPG"
         width={300}
         height={300}
         alt="RenderNet character example"

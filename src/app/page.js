@@ -125,7 +125,7 @@ export default function Component() {
       </header>
 
       {/* Hero Section - New Addition */}
-      <section className="py-4 md:py-40 md:pb-4 px-4 text-center">
+      <section className="py-4 md:py-10 md:pb-4 px-4 text-center">
         <div className="container max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-12 leading-tight">
           Crush Your Creative Limits
@@ -151,11 +151,52 @@ export default function Component() {
 
 
 
-
-
-<div className="flex justify-center">
-  <div className="flex flex-col items-center justify-center gap-2 py-12 px-4 w-full max-w-sm rounded-lg shadow-lg hover:shadow-xl transition duration-300 bg-white dark:bg-gray-900">
+<div className="flex flex-col md:flex-row md:justify-center gap-4 md:gap-6 px-4">
+  <div className="flex flex-col items-center justify-center gap-2 py-8 px-4 w-full max-w-sm mx-auto rounded-lg shadow-lg hover:shadow-xl transition duration-300 bg-white dark:bg-gray-900">
+    <Link href="https://app.outlier.ai/expert/referrals/link/KoTQGM5EbKFijK6v3ja8s0zhhCk">
+      <Image
+        src="/as.jpg"
+        width={300}
+        height={300}
+        alt="RenderNet character example"
+        className="w-48 h-48 object-cover rounded border-4 border-transparent animate-borderTrail cursor-pointer"
+        loading="lazy"
+      />
+    </Link>
     
+    <Link href="https://app.outlier.ai/expert/referrals/link/KoTQGM5EbKFijK6v3ja8s0zhhCk">
+      <button className="relative overflow-hidden mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 focus:outline-none">
+        <span className="relative z-10 text-sm md:text-base">
+          Looking for an AI side hustle? This platform pays you to work on interesting AI projects, from coding challenges to data analysis. Pass a qualification test and start earning on your own schedule making data labeling. Use my referral link to get started!
+        </span>
+        <span className="absolute inset-0 rounded border-4 border-transparent animate-borderTrail"></span>
+      </button>
+    </Link>
+  </div>
+           
+  <div className="flex flex-col items-center justify-center gap-2 py-8 px-4 w-full max-w-sm mx-auto rounded-lg shadow-lg hover:shadow-xl transition duration-300 bg-white dark:bg-gray-900">
+    <Link href="https://try.elevenlabs.io/yf672nrp61q2">
+      <Image
+        src="/veo3_3.jpg"
+        width={300}
+        height={300}
+        alt="RenderNet character example"
+        className="w-48 h-48 object-cover rounded border-4 border-transparent animate-borderTrail cursor-pointer"
+        loading="lazy"
+      />
+    </Link>
+    
+    <Link href="https://try.elevenlabs.io/yf672nrp61q2">
+      <button className="relative overflow-hidden mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 focus:outline-none">
+        <span className="relative z-10 text-sm md:text-base">
+          Create your AI voice clone from just a few minutes of audio with @elevenlabsio. No more need to record multiple takes to get the audio for your content right. The best thing? Your clone can even speak almost 30 languages!
+        </span>
+        <span className="absolute inset-0 rounded border-4 border-transparent animate-borderTrail"></span>
+      </button>
+    </Link>
+  </div>
+          
+  <div className="flex flex-col items-center justify-center gap-2 py-8 px-4 w-full max-w-sm mx-auto rounded-lg shadow-lg hover:shadow-xl transition duration-300 bg-white dark:bg-gray-900">
     <Link href="https://www.genfoo.com">
       <Image
         src="/genfoo.jpg"
@@ -166,7 +207,7 @@ export default function Component() {
         loading="lazy"
       />
     </Link>
-
+    
     <Link href="https://www.genfoo.com">
       <button className="relative overflow-hidden mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 focus:outline-none">
         <span className="relative z-10 text-sm md:text-base">
@@ -175,34 +216,8 @@ export default function Component() {
         <span className="absolute inset-0 rounded border-4 border-transparent animate-borderTrail"></span>
       </button>
     </Link>
-
-  </div>
- 
-  <div className="flex flex-col items-center justify-center gap-2 py-12 px-4 w-full max-w-sm rounded-lg shadow-lg hover:shadow-xl transition duration-300 bg-white dark:bg-gray-900">
-    
-    <Link href="https://matiasciruelos.gumroad.com/l/ddrdm">
-      <Image
-        src="/veo3_3.jpg"
-        width={300}
-        height={300}
-        alt="RenderNet character example"
-        className="w-48 h-48 object-cover rounded border-4 border-transparent animate-borderTrail cursor-pointer"
-        loading="lazy"
-      />
-    </Link>
-
-    <Link href="https://matiasciruelos.gumroad.com/l/ddrdm">
-      <button className="relative overflow-hidden mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 focus:outline-none">
-        <span className="relative z-10 text-sm md:text-base">
-          Introducing XYZ Video Generator with Veo 3 technology
-        </span>
-        <span className="absolute inset-0 rounded border-4 border-transparent animate-borderTrail"></span>
-      </button>
-    </Link>
-
   </div>
 </div>
-
 
 
 

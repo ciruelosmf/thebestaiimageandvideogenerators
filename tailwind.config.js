@@ -46,7 +46,7 @@ module.exports = {
         'custom': 'polygon(10px 0, calc(100% - 10px) 0, 100% 10px, 100% calc(100% - 10px), calc(100% - 10px) 100%, 10px 100%, 0 calc(100% - 10px), 0 10px)',
       },
       animation: {
-        borderTrail: 'borderTrail 2s linear infinite',
+        borderTrail: 'borderTrail 6s linear infinite',
         },
 
     },

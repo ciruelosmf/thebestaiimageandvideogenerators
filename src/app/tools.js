@@ -1,25 +1,56 @@
 // tools.js
 export const tools = [
+
+
   {
     id: "fliki",
     title: "Fliki",
-    description: "Fliki helps you create audio and video content at scale with the power of generative AI.",
+    description: "Fliki creates professional and engaging videos for every usecase: Training and L&D, HR & Internal Communications, Content Creation, Education, Marketing.",
     link: "https://fliki.ai/?via=aiimageandvideogenerators",
     trackingId: "fliki-main-link-aff",
     media: [
       {
         type: "image",
-        src: "/fliki_1.jpg",
+        src: "/fliki_1.webp",
         alt: "fliki_1"
       },
       {
         type: "image",
-        src: "/fliki_2.jpg",
+        src: "/fliki_2.webp",
         alt: "fliki_2"
       }
     ],
-    tags: ["Audio", "Video", "Content"]
+    tags: ["Audio", "Video", "Marketing, Education Content"]
   },
+
+
+
+
+    {
+    id: "wan",
+    title: "Wan ",
+    description: "State of the Art Video & Image Generation Model from Alibaba.",
+    link: "https://wanxai.com",
+    trackingId: "Wan-main-link",
+    media: [
+      {
+        type: "video",
+        src: "https://cdn.wanxai.com/static/recommend/img2video_20250725/73_watermark.mp4",
+        alt: "Wan"
+      },
+      {
+        type: "image",
+        src: "/wan_2.webp",
+        alt: "Wan"
+      }
+    ],
+    tags: ["Audio", "Video", "VEO 3 level"]
+  },
+
+
+
+
+
   {
     id: "basedlabs",
     title: "BasedLabs AI",
@@ -89,17 +120,51 @@ export const tools = [
     media: [
       {
         type: "image",
-        src: "/leonardoai_1.jpg",
+        src: "/leonardoai_1.webp",
         alt: "LeonardoAI"
       },
       {
         type: "image",
-        src: "/leonardoai_gif.webp",
+        src: "/leonardoai_2.webp",
         alt: "LeonardoAI2"
       }
     ],
     tags: ["Art", "Creative", "Portfolio"]
   },
+
+
+
+
+
+
+
+
+
+  {
+    id: "ChatGPT",
+    title: "ChatGPT Image Generator",
+    description: "The classic one, great level of customization.",
+    link: "https://www.chatgpt.com/",
+    trackingId: "ChatGPT-main-link",
+    media: [
+      {
+        type: "image",
+        src: "/chatgpt_1.webp",
+        alt: "ChatGPT"
+      },
+      {
+        type: "image",
+        src: "/chatgpt_2.webp",
+        alt: "ChatGPT"
+      }
+    ],
+    tags: ["ALL-IN-ONE Designer", "Vector", "Mockup"]
+  },
+
+
+
+
+
   {
     id: "recraft",
     title: "Recraft.ai",
@@ -120,6 +185,9 @@ export const tools = [
     ],
     tags: ["Designer", "Vector", "Mockup"]
   },
+
+
+
   {
     id: "writesonic",
     title: "Writesonic",
@@ -186,6 +254,41 @@ export const tools = [
     ],
     tags: ["Images", "Text-to-Image", "Art"]
   },
+
+
+
+
+
+
+
+  {
+    id: "Perhance",
+    title: "Perhance Image to Video Generator ",
+    description: "AI text to image or video generator with extended controls as well as chats and an image gallery. Free, No sign-up, No login, No limits, No watermark, limitless.",
+    link: "https://perchance.org/image-generator-professional",
+    trackingId: "Perhance-main-link",
+    media: [
+      {
+        type: "image",
+        src: "/perhance_1.webp",
+        alt: "perhance_1"
+      },
+      {
+        type: "image",
+        src: "/perhance_2.webp",
+        alt: "perhance_1"
+      }
+    ],
+    tags: ["Images", "Text-to-Image", "Free", "Adult"]
+  },
+
+
+
+
+
+
+
+
   {
     id: "interiorai",
     title: "Interior AI",

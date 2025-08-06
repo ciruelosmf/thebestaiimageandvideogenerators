@@ -37,7 +37,7 @@ export default function Component() {
 
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeTab, setActiveTab] = useState('all');
-
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10);
@@ -48,6 +48,18 @@ export default function Component() {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+
+
+
+  // Prevent scrolling when mobile menu is open
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
+  }, [isMenuOpen]);
+
 
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-slate-900 to-slate-800">
@@ -79,42 +91,47 @@ export default function Component() {
         `}
       </Script>
 
-      {/* Streamlined Header */}
-      <header className={`sticky top-0 z-40 transition-colors duration-300 ${isScrolled ? 'bg-slate-700 backdrop-blur-md' : 'bg-transparent'}`}>
-        <div className="container max-w-7xl mx-auto py-3 px-4 md:px-6 flex items-center justify-between">
+       <header
+        className={`sticky top-0 z-50 transition-colors duration-300 ease-in-out 
+          ${isScrolled || isMenuOpen ? 'bg-slate-800/90 backdrop-blur-lg' : 'bg-slate-800/90 md:bg-transparent'}`}
+          // FIX:
+          // 1. Increased z-index to z-50 to be safe.
+          // 2. The header is ALWAYS dark on mobile (`bg-slate-800/90`).
+          // 3. It's ONLY transparent on desktop (`md:bg-transparent`) when NOT scrolled.
+          // 4. Added a background when the mobile menu is open for better UX.
+      >
+        <div className="container mx-auto flex max-w-7xl items-center justify-between px-4 py-3 md:px-6">
           <Link href="/" className="flex items-center gap-2" prefetch={false}>
-            
-            <h1 className="text-lg md:text-xl font-bold text-white">AI Image & Video Generators</h1>
+            <h1 className="text-lg font-bold text-white md:text-xl">AI Image & Video Generators</h1>
           </Link>
-          
+
           {/* Mobile menu button */}
           <div className="md:hidden">
-            <Button variant="ghost" size="icon" className="text-white">
-              <MenuIcon className="w-6 h-6" />
+            <Button variant="ghost" size="icon" className="text-white hover:bg-slate-700" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+              {isMenuOpen ? <MenuIcon className="h-6 w-6" /> : <MenuIcon className="h-6 w-6" />}
+              <span className="sr-only">Toggle Menu</span>
             </Button>
           </div>
-          
-          {/* Desktop navigation - simplified */}
-          <nav className="hidden md:flex items-center gap-6">
-            <Link href="/" className="text-sm font-medium text-white hover:text-purple-300 transition" prefetch={false}>
+
+          {/* Desktop navigation */}
+          <nav className="hidden items-center gap-6 md:flex">
+            <Link href="/" className="text-sm font-medium text-gray-200 hover:text-white transition-colors" prefetch={false}>
               Home
             </Link>
-            <Link href="./gallery" className="text-sm font-medium text-white hover:text-purple-300 transition" prefetch={false}>
+            <Link href="/gallery" className="text-sm font-medium text-gray-200 hover:text-white transition-colors" prefetch={false}>
               Gallery
             </Link>
-            <Link href="./full-tools-list" className="text-sm font-medium text-white hover:text-purple-300 transition" prefetch={false}>
-            Full List of Tools
+            <Link href="/full-tools-list" className="text-sm font-medium text-gray-200 hover:text-white transition-colors" prefetch={false}>
+              Full List of Tools
             </Link>
-
- 
-            <Link href="./blog" className="text-sm font-medium text-white hover:text-purple-300 transition" prefetch={false}>
+            <Link href="/blog" className="text-sm font-medium text-gray-200 hover:text-white transition-colors" prefetch={false}>
               Blog
             </Link>
             
-            {/* Primary CTA Button */}
-            <Button 
-              className="bg-gradient-to-r from-purple-600 to-pink-600 text-white font-medium px-4 py-2 rounded-md hover:from-purple-700 hover:to-pink-700 transition"
+            <Button
+              className="bg-gradient-to-r from-purple-600 to-pink-600 px-4 py-2 font-medium text-white transition hover:from-purple-700 hover:to-pink-700 rounded-md"
               onClick={() => trackConversion('list-your-tool-header', 'header-nav')}
+              asChild // Use asChild to make the Button a wrapper around the Link
             >
               <Link href="https://imagify.gumroad.com/l/xuhxv" prefetch={false}>
                 List Your Tool
@@ -124,22 +141,40 @@ export default function Component() {
         </div>
       </header>
 
+      {/* Mobile Menu Overlay */}
+      <div 
+        className={`fixed inset-0 z-40 flex flex-col items-center justify-center bg-slate-900/95 backdrop-blur-lg transition-transform duration-300 ease-in-out md:hidden
+        ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}
+      >
+        <nav className="flex flex-col items-center gap-8">
+          <Link href="/" className="text-2xl font-bold text-white" onClick={() => setIsMenuOpen(false)}>Home</Link>
+          <Link href="/gallery" className="text-2xl font-bold text-white" onClick={() => setIsMenuOpen(false)}>Gallery</Link>
+          <Link href="/full-tools-list" className="text-2xl font-bold text-white" onClick={() => setIsMenuOpen(false)}>Full List</Link>
+          <Link href="/blog" className="text-2xl font-bold text-white" onClick={() => setIsMenuOpen(false)}>Blog</Link>
+          <Button
+              className="mt-4 bg-gradient-to-r from-purple-600 to-pink-600 px-6 py-3 font-medium text-white transition hover:from-purple-700 hover:to-pink-700 rounded-md text-lg"
+              onClick={() => trackConversion('list-your-tool-header', 'header-nav')}
+              asChild
+            >
+              <Link href="https://imagify.gumroad.com/l/xuhxv" prefetch={false}>
+                List Your Tool
+              </Link>
+            </Button>
+        </nav>
+      </div> 
+
       {/* Hero Section - New Addition */}
       <section className="py-4 md:py-10 md:pb-4 px-4 text-center">
         <div className="container max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-12 leading-tight">
-          Crush Your Creative Limits
+ 
+          <h1 className="text-2xl md:text-5xl font-bold text-white my-5 leading-tight">
+       <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-red-500">Check out our curated list of AI Generators below </span>
           </h1>
-          <h2 className="text-3xl md:text-5xl font-bold text-white mb-12 leading-tight">
-       <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-red-500">Slay the Design Dragon </span>
-          </h2>
 
 
  
  
-          <p className="text-lg md:text-xl text-gray-300 mb-18 md:mb-12 max-w-2xl mx-auto">
-          Check out our curated list of AI Generators below:
-          </p>
+ 
         </div>
 
 
@@ -152,71 +187,126 @@ export default function Component() {
 
 
 <div className="flex flex-col md:flex-row md:justify-center gap-4 md:gap-6 px-4">
-  <div className="flex flex-col items-center justify-center gap-2 py-8 px-4 w-full max-w-sm mx-auto rounded-lg shadow-lg hover:shadow-xl transition duration-300 bg-white dark:bg-gray-900">
-    <Link href="https://app.outlier.ai/expert/referrals/link/KoTQGM5EbKFijK6v3ja8s0zhhCk">
-      <Image
-        src="/as.jpg"
-        width={300}
-        height={300}
-        alt="RenderNet character example"
-        className="w-48 h-48 object-cover rounded border-4 border-transparent animate-borderTrail cursor-pointer"
-        loading="lazy"
-      />
-    </Link>
-    
-    <Link href="https://app.outlier.ai/expert/referrals/link/KoTQGM5EbKFijK6v3ja8s0zhhCk">
-      <button className="relative overflow-hidden mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 focus:outline-none">
-        <span className="relative z-10 text-sm md:text-base">
-          Looking for an AI side hustle? This platform pays you to work on interesting AI projects, from coding challenges to data analysis. Pass a qualification test and start earning on your own schedule making data labeling. Use my referral link to get started!
-        </span>
-        <span className="absolute inset-0 rounded border-4 border-transparent animate-borderTrail"></span>
-      </button>
-    </Link>
+
+
+
+
+
+<Link
+  href="https://app.outlier.ai/expert/referrals/link/KoTQGM5EbKFijK6v3ja8s0zhhCk"
+  // The 'group' class enables group-hover effects
+  className="group h-24 flex w-full max-w-md cursor-pointer items-center overflow-hidden rounded-lg bg-white shadow-md transition-all duration-300 hover:shadow-lg dark:bg-gray-800 border-2 border-transparent animate-borderTrail"
+>
+  {/* Image Container */}
+  <div className="flex-shrink-0 w-24 h-24 sm:w-28 sm:h-28">
+    <Image
+      src="/as.webp"
+      width={112} // Corresponds to w-28
+      height={112} // Corresponds to h-28
+      alt="Data labeler working on an AI project"
+      // The image fills its container, scales on hover, and is high quality
+      className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110"
+      loading="lazy"
+    />
   </div>
-           
-  <div className="flex flex-col items-center justify-center gap-2 py-8 px-4 w-full max-w-sm mx-auto rounded-lg shadow-lg hover:shadow-xl transition duration-300 bg-white dark:bg-gray-900">
-    <Link href="https://try.elevenlabs.io/yf672nrp61q2">
-      <Image
-        src="/veo3_3.JPG"
-        width={300}
-        height={300}
-        alt="RenderNet character example"
-        className="w-48 h-48 object-cover rounded border-4 border-transparent animate-borderTrail cursor-pointer"
-        loading="lazy"
-      />
-    </Link>
-    
-    <Link href="https://try.elevenlabs.io/yf672nrp61q2">
-      <button className="relative overflow-hidden mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 focus:outline-none">
-        <span className="relative z-10 text-sm md:text-base">
-          Create your AI voice clone from just a few minutes of audio with @elevenlabsio. No more need to record multiple takes to get the audio for your content right. The best thing? Your clone can even speak almost 30 languages!
-        </span>
-        <span className="absolute inset-0 rounded border-4 border-transparent animate-borderTrail"></span>
-      </button>
-    </Link>
+
+  {/* Content Section */}
+  <div className="flex-1 p-4">
+    <h3 className="text-sm font-bold text-gray-900 sm:text-base dark:text-white">
+      AI Side Hustle: Data Labeler
+    </h3>
+    <p className="mt-1 text-xs text-gray-600 sm:text-sm dark:text-gray-400">
+      Get paid to work on interesting AI projects. Click to get started with my referral link!
+    </p>
   </div>
-          
-  <div className="flex flex-col items-center justify-center gap-2 py-8 px-4 w-full max-w-sm mx-auto rounded-lg shadow-lg hover:shadow-xl transition duration-300 bg-white dark:bg-gray-900">
-    <Link href="https://www.genfoo.com">
-      <Image
-        src="/genfoo.jpg"
-        width={300}
-        height={300}
-        alt="RenderNet character example"
-        className="w-48 h-48 object-cover rounded border-4 border-transparent animate-borderTrail cursor-pointer"
-        loading="lazy"
-      />
-    </Link>
-    
-    <Link href="https://www.genfoo.com">
-      <button className="relative overflow-hidden mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 focus:outline-none">
-        <span className="relative z-10 text-sm md:text-base">
-          Try GenFoo, cooler AI interfaces to chat with
-        </span>
-        <span className="absolute inset-0 rounded border-4 border-transparent animate-borderTrail"></span>
-      </button>
-    </Link>
+</Link>
+
+
+
+
+
+
+
+
+<Link
+  href="https://try.elevenlabs.io/yf672nrp61q2"
+  // The 'group' class enables group-hover effects
+  className="group h-36 flex w-full max-w-md cursor-pointer items-center overflow-hidden rounded-lg bg-white shadow-md transition-all duration-300 hover:shadow-lg dark:bg-gray-800 border-4 border-transparent animate-borderTrail"
+>
+  {/* Image Container */}
+  <div className="flex-shrink-0 w-38 h-38 sm:w-36 sm:h-36">
+    <Image
+      src="/eleven.webp"
+      width={122} // Corresponds to w-28
+      height={122} // Corresponds to h-28
+      alt="ElevenMusic professional-level AI voiceovers"
+      // The image fills its container, scales on hover, and is high quality
+      className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110"
+      loading="lazy"
+    />
   </div>
+
+  {/* Content Section */}
+  <div className="flex-1 p-4">
+    <h3 className="text-sm font-bold text-gray-900 sm:text-base dark:text-white">
+      ElevenMusic IS OUT!
+    </h3>
+    <p className="mt-1 text-xs text-gray-600 sm:text-sm dark:text-gray-400">
+      Generate any AI music genre, instrumental/with vocals, multilingual output. Professional-level AI voiceovers with ElevenLabs!
+    </p>
+  </div>
+</Link>
+
+
+
+
+
+
+
+<Link
+  href="https://www.genfoo.com"
+  // The 'group' class enables group-hover effects
+  className="group flex h-24 w-full max-w-md cursor-pointer items-center overflow-hidden rounded-lg bg-white shadow-md transition-all duration-300 hover:shadow-lg dark:bg-gray-800 border-2 border-transparent animate-borderTrail"
+>
+  {/* Image Container */}
+  <div className="flex-shrink-0 w-24 h-24 sm:w-28 sm:h-28">
+    <Image
+      src="/genfoo.webp"
+      width={112} // Corresponds to w-28
+      height={112} // Corresponds to h-28
+      alt="GenFoo Ai Chat"
+      // The image fills its container, scales on hover, and is high quality
+      className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110"
+      loading="lazy"
+    />
+  </div>
+
+  {/* Content Section */}
+  <div className="flex-1 p-4">
+    <h3 className="text-sm font-bold text-gray-900 sm:text-base dark:text-white">
+      GenFoo AI Chat with skins
+    </h3>
+    <p className="mt-1 text-xs text-gray-600 sm:text-sm dark:text-gray-400">
+      Try GenFoo, cooler AI interfaces to chat with
+    </p>
+  </div>
+</Link>
+
+
+
+
+
+
+
+
+
+ 
+
+
+ 
+
+
+
 </div>
 
 
@@ -281,7 +371,7 @@ export default function Component() {
               <div className="relative overflow-hidden rounded-lg aspect-video mb-4">
                 <div className="grid grid-cols-2 gap-2 h-full">
                   <Image
-                    src="/photoaicom_1.jpg"
+                    src="/photoaicom_1.webp"
                     width={300}
                     height={300}
                     alt="PhotoAI generated portrait"
@@ -289,7 +379,7 @@ export default function Component() {
                     loading="lazy" 
                   />
                   <Image
-                    src="/photoaicom_2.jpg"
+                    src="/photoaicom_2.webp"
                     width={300}
                     height={300}
                     alt="PhotoAI generated portrait"
@@ -599,7 +689,7 @@ export default function Component() {
     
     <Link href="https://www.genfoo.com">
       <Image
-        src="/genfoo.jpg"
+        src="/genfoo.webp"
         width={300}
         height={300}
         alt="RenderNet character example"
@@ -640,6 +730,14 @@ export default function Component() {
 
 
 
+          <div className="">
+    <Tweet id="1946530149299634618" />
+  </div>
+
+
+            <div className="">
+    <Tweet id="1952774492347842929" />
+  </div>
 
 
 

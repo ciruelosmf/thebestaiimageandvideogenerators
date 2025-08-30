@@ -121,7 +121,11 @@ export default function Blog() {
         <h1 className="text-3xl font-bold text-center text-slate-50 mb-12">Blog Posts</h1>
         <ul className="space-y-6 bg-slate-800 p-8   rounded-xl shadow">
 
-
+   <li>
+            <Link href="/blog/new-nano-banana-image-generator-from-google" className="text-xl font-semibold text-slate-50 hover:text-blue-300">
+            Nano Banana, the best AI image generator
+            </Link>
+          </li>
 
 
 

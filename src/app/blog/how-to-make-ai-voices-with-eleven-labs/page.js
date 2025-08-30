@@ -43,7 +43,7 @@ return (
         <Head>
         <link
           rel="canonical"
-          href="https://www.aiimageandvideogenerators.xyz/blog/genfoo-fun-ai-chat"
+          href="https://www.aiimageandvideogenerators.xyz/blog/how-to-make-ai-voices-with-eleven-labs"
           key="canonical"
         />
       </Head>

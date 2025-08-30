@@ -37,13 +37,13 @@ export default function Blog() {
 
 return (
     <div className="relative min-h-screen flex flex-col items-center">
-        <title>Introducing New XYZ Video Generator with Veo 3 tech</title>
+        <title>Nano Banana, the new AI image generator</title>
 
 
         <Head>
         <link
           rel="canonical"
-          href="https://www.aiimageandvideogenerators.xyz/introducing-new-xyz-video-generator-with-veo-3-tech"
+          href="https://www.aiimageandvideogenerators.xyz/blog/new-nano-banana-image-generator-from-google"
           key="canonical"
         />
       </Head>
@@ -67,7 +67,7 @@ return (
             `}
         </Script>
 
-        <DynamicBackground rows={11} cols={11} secs={3333} />
+        <DynamicBackground rows={4} cols={5} secs={6666} />
 
         {/* ... (rest of the component code) ... */}
 
@@ -85,7 +85,7 @@ return (
         <div className="container max-w-7xl mx-auto py-3 px-4 md:px-6 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-2" prefetch={false}>
  
-            <h1 className="text-lg md:text-xl font-bold text-white">AI Image & Video Generators</h1>
+            <h1 className="text-lg md:text-xl font-bold text-white pr-6">AI Image & Video Generators</h1>
           </Link>
           
           {/* Mobile menu button */}
@@ -112,18 +112,10 @@ return (
               Blog
             </Link>
             
-            {/* Primary CTA Button */}
-            <Button 
-              className="bg-gradient-to-r from-purple-600 to-pink-600 text-white font-medium px-4 py-2 rounded-md hover:from-purple-700 hover:to-pink-700 transition"
-              onClick={() => trackConversion('list-your-tool-header', 'header-nav')}
-            >
-              <Link href="https://imagify.gumroad.com/l/xuhxv" prefetch={false}>
-                List Your Tool
-              </Link>
-            </Button>
+ 
 
 
-           <Link href="https://t.me/tate_chess_bot" className="text-gray-100 border py-2 px-1 border-green-400 hover:text-white text-sm" prefetch={false}>PLAY Tate Telegram Chess Game</Link>
+ 
           </nav>
         </div>
       </header>
@@ -137,14 +129,14 @@ return (
 
 
 
-<section className=" text-gray-100 py-16 bg-gradient-to-b from-purple-600/90 via-pink-600/90 to-red-600/90 shadow   rounded-xl">
+<section className=" text-gray-100 py-16 bg-gradient-to-b from-purple-600/90 via-pink-600/90 to-red-600/90 shadow rounded rounded-xl">
   <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
 
 
 
 
-        <h1 className="text-4xl font-bold text-center mb-1">
-        Introducing XYZ Video Generator
+        <h1 className="text-7xl font-bold text-center mb-1">
+        Google made it again: introducing Nano Banana, the best AI image generator
 
         </h1>
 
@@ -158,88 +150,154 @@ return (
 
 
 <div class="max-w-4xl mx-auto p-6">
-    <h2 class="text-4xl font-bold mb-6">Bring your idea to life with Google's newest AI video model Veo 3.
 
-</h2>
-    <p class="mb-12">
-Youll get a stunning 8-second, 1080p MP4 that can include built-in environmental audio thanks to Veo 3s sound-generation feature.
 
-Heres how it works:
-
-<ul className="space-y-12 mt-12 text-2xl">
-                <li>
-1. Send me your concept (scene, style, target use). </li>
-
-   <li>2. I design & share the exact Veo 3 prompt one round of edits included.  </li>
-
-   <li>3. Upon your approval I run the prompt in Veo 3 and deliver the raw output.  </li>
-
- </ul>
+    <h2 class="text-4xl font-bold mt-12">There is a new AI image generator in the scene.</h2>
+    <p class="my-4">
+Google released a new tool code-named Nano Banana, which was already ranking high in the benchmarks, but no one was sure if it was Google's creation.
     </p>
 
 
-<Link href="https://www.genfoo.com" className="ftext-xl font-medium hover:text-primary  " prefetch={false}> 
-
-<div className="grid grid-cols-2 gap-4 mb-12">
-        <img
-            src="/veo3_1.JPG"
-            width={300}
-            height={300}
-            alt="GenFoo"
-            className="aspect-square object-cover rounded-xl shadow-lg"
-          />
-          <img
-            src="/veo3_2.JPG"
-            width={300}
-            height={300}
-            alt="GenFoo"
-            className="aspect-square object-cover rounded-xl  shadow-lg"
-          />
-        </div>
-
-     
-
-          </Link>
 
 
-    <h2 class="text-2xl font-semibold mt-6 mb-4">Each render uses a full Veo 3 generation, so no extra re-renders are included once the video is produced; minor AI artifacts are normal.</h2>
-     
- 
-      <div className="  shadow-lg  flex justify-center  ">
-         <Image
-             src="/veo3_3.JPG"
-             width={800}
-             height={800}
-             alt="Perchance AI"
-             className="   rounded-xl shadow-lg object-cover my-12  "
-           />
-         </div>
 
-      <hr className="my-8 border-t  first-line: border-gray-300" />
+
 
 
  
 
-    <h2 class="text-2xl font-semibold mt-6 mb-4">An incredible Tool</h2>
-    <p class=" ">
-You'll receive: 8-sec MP4 + the final prompt for future reuse.
-
-Perfect for ads, social posts, memes, or concept previews.
+    <h2 class="text-4xl font-bold my-6 mt-24">The mistery is over</h2>
+    <p class="my-4">
+The tool is now public, and it has the best benchmarks among all other tools, some say it is the new Photoshop.
     </p>
+
+
+    <hr className="my-2 border-t  border-gray-300 " />
+
+
+        <section className= " flex flex-col items-center justify-between mt-16 pt-16  ">
+
+    <h2 class="text-4xl font-bold my-6 mt-24 ">Do you want to try Nano Banana? Use our editor powered by Google's tech</h2>
+    <p class="my-4">
+Go to XYZ Image Generator
+    </p>
+
+<Link
+  href="https://try.elevenlabs.io/yf672nrp61q2"
+  // The 'group' class enables group-hover effects
+  className="group h-36 flex w-full max-w-md cursor-pointer items-center overflow-hidden rounded-lg bg-white shadow-md transition-all duration-300 hover:shadow-lg dark:bg-gray-800 border-4 border-transparent animate-borderTrail"
+>
+  {/* Image Container */}
+  <div className="flex-shrink-0 w-38 h-38 sm:w-36 sm:h-36">
+    <Image
+      src="/s.webp"
+      width={122} // Corresponds to w-28
+      height={122} // Corresponds to h-28
+      alt="ElevenMusic professional-level AI voiceovers"
+      // The image fills its container, scales on hover, and is high quality
+      className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110"
+      loading="lazy"
+    />
+  </div>
+ 
+</Link>
+        </section>
+
+
+    <hr className="my-48 border-t  border-gray-300" />
+
+
+
+
+  <div className="flex justify-center flex-col items-center mt-12">
+    <p class="my-4">
+Create AI voices with ElevenLabs →
+
+    </p>
+
+<Link
+  href="https://try.elevenlabs.io/yf672nrp61q2"
+  // The 'group' class enables group-hover effects
+  className="group h-36 flex w-full max-w-md cursor-pointer items-center overflow-hidden rounded-lg bg-white shadow-md transition-all duration-300 hover:shadow-lg dark:bg-gray-800 border-4 border-transparent animate-borderTrail"
+>
+  {/* Image Container */}
+  <div className="flex-shrink-0 w-38 h-38 sm:w-36 sm:h-36">
+    <Image
+      src="/eleven.webp"
+      width={122} // Corresponds to w-28
+      height={122} // Corresponds to h-28
+      alt="ElevenMusic professional-level AI voiceovers"
+      // The image fills its container, scales on hover, and is high quality
+      className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110"
+      loading="lazy"
+    />
+  </div>
+
+  {/* Content Section */}
+  <div className="flex-1 p-4">
+    <h3 className="text-sm font-bold text-gray-900 sm:text-base dark:text-white">
+      ElevenLabs
+    </h3>
+    <p className="mt-1 text-xs text-gray-600 sm:text-sm dark:text-gray-400">
+      Generate any AI music genre, instrumental/with vocals, multilingual output. Professional-level AI voiceovers with ElevenLabs!
+    </p>
+  </div>
+</Link>
+  </div>
+
+ 
+
+
+
+
+
+
+
+
+
+
+        {/* Testimonials Section - New Addition */}
+        <section className="mt-16 pt-16 border-t border-white/10">
+          <h2 className="text-2xl md:text-3xl font-bold text-white mb-10 text-center">See Nano Banana results:</h2>          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+
+
+
+          <div className="">
+    <Tweet id="1960783672665128970" />
+  </div>
+
+ 
+          <div className="">
+    <Tweet id="1961674587533398376" />
+  </div>
+
+
+  <div className="">
+    <Tweet id="1960820873340051491" />
+  </div>
+
+  <div className="">
+    <Tweet id="1961384948302012597" />
   </div>
 
 
 
 
+          </div>
+        </section>
 
-    <hr className="my-4 border-t  border-gray-300" />
+
+
+
+
+
+
+    <hr className="my-48 border-t  border-gray-300" />
 
 
  
-
-
- 
-
 
 
 
@@ -262,26 +320,19 @@ Photoshop wizard all rolled into one AI-powered package. Now that's what we call
 
 
 
-
-
- 
-
-
-
-
       
-<Link href="https://www.headshotpro.com/?via=aiimageandvideogenerators" className="ftext-xl my-12 font-medium hover:text-primary  " prefetch={false}> 
+<Link href="https://www.headshotpro.com/?via=aiimageandvideogenerators" className="ftext-xl font-medium hover:text-primary  " prefetch={false}> 
 
-<div className="grid grid-cols-2 gap-4 my-24">
+<div className="grid grid-cols-2 gap-4 mb-12">
         <img
-            src="/HeadshotPro_1.jpg"
+            src="/HeadshotPro_1.webp"
             width={300}
             height={300}
             alt="HeadshotPro"
             className="aspect-square object-cover  shadow-lg"
           />
           <img
-            src="/HeadshotPro_2.jpg"
+            src="/HeadshotPro_2.webp"
             width={300}
             height={300}
             alt="HeadshotPro"
@@ -302,40 +353,38 @@ Photoshop wizard all rolled into one AI-powered package. Now that's what we call
 
 
           </div>
+          </div>
  
+  <div className="flex justify-center items-center mt-12"> 
+ <Link
+  href="https://app.outlier.ai/expert/referrals/link/KoTQGM5EbKFijK6v3ja8s0zhhCk"
+  // The 'group' class enables group-hover effects
+  className="group h-24 flex w-full max-w-md cursor-pointer items-center overflow-hidden rounded-lg bg-white shadow-md transition-all duration-300 hover:shadow-lg dark:bg-gray-800 border-2 border-transparent animate-borderTrail"
+>
+  {/* Image Container */}
+  <div className="flex-shrink-0 w-24 h-24 sm:w-28 sm:h-28">
+    <Image
+      src="/as.webp"
+      width={112} // Corresponds to w-28
+      height={112} // Corresponds to h-28
+      alt="Data labeler working on an AI project"
+      // The image fills its container, scales on hover, and is high quality
+      className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110"
+      loading="lazy"
+    />
+  </div>
 
-    <hr className="my-4 border-t  border-gray-300" />
-
-
-
-
-
- 
- <div className="flex justify-center pt-12">
-   <div className="flex flex-col items-center justify-center gap-2 py-12 px-4 w-full max-w-sm rounded-lg shadow-lg hover:shadow-xl transition duration-300  ">
-     
-     <Link href="https://www.genfoo.com">
-       <Image
-         src="/genfoo.jpg"
-         width={300}
-         height={300}
-         alt="RenderNet character example"
-         className="w-48 h-48 object-cover rounded border-4 border-transparent animate-borderTrail cursor-pointer"
-         loading="lazy"
-       />
-     </Link>
- 
-     <Link href="https://www.genfoo.com">
-       <button className="relative overflow-hidden mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 focus:outline-none">
-         <span className="relative z-10 text-sm md:text-base">
-           Try GenFoo, cooler AI interfaces to chat with
-         </span>
-         <span className="absolute inset-0 rounded border-4 border-transparent animate-borderTrail"></span>
-       </button>
-     </Link>
- 
-   </div>
- </div>
+  {/* Content Section */}
+  <div className="flex-1 p-4">
+    <h3 className="text-sm font-bold text-gray-900 sm:text-base dark:text-white">
+      AI Side Hustle: Data Labeler
+    </h3>
+    <p className="mt-1 text-xs text-gray-600 sm:text-sm dark:text-gray-400">
+      Get paid to work on interesting AI projects. Click to get started with my referral link!
+    </p>
+  </div>
+</Link>
+          </div>
 
 
 </section>

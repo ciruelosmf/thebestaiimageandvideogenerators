@@ -195,7 +195,7 @@ export default function Component() {
 <Link
   href="https://app.outlier.ai/expert/referrals/link/KoTQGM5EbKFijK6v3ja8s0zhhCk"
   // The 'group' class enables group-hover effects
-  className="group h-24 flex w-full max-w-md cursor-pointer items-center overflow-hidden rounded-lg bg-white shadow-md transition-all duration-300 hover:shadow-lg dark:bg-gray-800 border-2 border-transparent animate-borderTrail"
+  className="group h-24 flex w-full max-w-md cursor-pointer items-center overflow-hidden rounded-lg bg-white shadow-md transition-all duration-2300 hover:shadow-lg dark:bg-gray-800 border-2 border-transparent animate-borderTrail"
 >
   {/* Image Container */}
   <div className="flex-shrink-0 w-24 h-24 sm:w-28 sm:h-28">
@@ -231,7 +231,7 @@ export default function Component() {
 <Link
   href="https://try.elevenlabs.io/yf672nrp61q2"
   // The 'group' class enables group-hover effects
-  className="group h-36 flex w-full max-w-md cursor-pointer items-center overflow-hidden rounded-lg bg-white shadow-md transition-all duration-300 hover:shadow-lg dark:bg-gray-800 border-4 border-transparent animate-borderTrail"
+  className="group h-36 flex w-full max-w-md cursor-pointer items-center overflow-hidden rounded-lg bg-white shadow-md transition-all duration-700 hover:shadow-lg dark:bg-gray-800 border-4 border-transparent animate-borderTrail"
 >
   {/* Image Container */}
   <div className="flex-shrink-0 w-38 h-38 sm:w-36 sm:h-36">
@@ -266,7 +266,7 @@ export default function Component() {
 <Link
   href="https://www.genfoo.com"
   // The 'group' class enables group-hover effects
-  className="group flex h-24 w-full max-w-md cursor-pointer items-center overflow-hidden rounded-lg bg-white shadow-md transition-all duration-300 hover:shadow-lg dark:bg-gray-800 border-2 border-transparent animate-borderTrail"
+  className="group flex h-24 w-full max-w-md cursor-pointer items-center overflow-hidden rounded-lg bg-white shadow-md transition-all duration-2300 hover:shadow-lg dark:bg-gray-800 border-2 border-transparent animate-borderTrail"
 >
   {/* Image Container */}
   <div className="flex-shrink-0 w-24 h-24 sm:w-28 sm:h-28">
